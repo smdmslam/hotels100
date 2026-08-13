@@ -1,0 +1,17 @@
+[
+  { "name": "La Réserve Paris", "location": "Paris", "country": "France", "brand": "La Réserve", "source": "La Liste Top 1000" },
+  { "name": "The Connaught", "location": "London", "country": "United Kingdom", "brand": "Maybourne", "source": "La Liste Top 1000" },
+  { "name": "The Savoy", "location": "London", "country": "United Kingdom", "brand": "Fairmont", "source": "La Liste Top 1000" },
+  { "name": "Cheval Blanc Paris", "location": "Paris", "country": "France", "brand": "Cheval Blanc", "source": "La Liste Top 1000" },
+  { "name": "Il San Pietro di Positano", "location": "Positano", "country": "Italy", "brand": "Independent", "source": "La Liste Top 1000" },
+  { "name": "J.K. Place Capri", "location": "Capri", "country": "Italy", "brand": "J.K. Place", "source": "La Liste Top 1000" },
+  { "name": "Mandarin Oriental Bangkok", "location": "Bangkok", "country": "Thailand", "brand": "Mandarin Oriental", "source": "La Liste Top 1000" },
+  { "name": "The Peninsula Shanghai", "location": "Shanghai", "country": "China", "brand": "Peninsula", "source": "La Liste Top 1000" },
+  { "name": "The Peninsula Chicago", "location": "Chicago", "country": "USA", "brand": "Peninsula", "source": "La Liste Top 1000" },
+  { "name": "Rosewood Mayakoba", "location": "Riviera Maya", "country": "Mexico", "brand": "Rosewood", "source": "La Liste Top 1000" },
+  { "name": "Badrutt's Palace", "location": "St. Moritz", "country": "Switzerland", "brand": "Independent", "source": "La Liste Top 1000" },
+  { "name": "Hôtel de Paris Monte-Carlo", "location": "Monaco", "country": "Monaco", "brand": "Monte-Carlo SBM", "source": "La Liste Top 1000" },
+  { "name": "The Goring", "location": "London", "country": "United Kingdom", "brand": "Independent", "source": "La Liste Top 1000" },
+  { "name": "The Gritti Palace", "location": "Venice", "country": "Italy", "brand": "The Luxury Collection", "source": "La Liste Top 1000" },
+  { "name": "Taj Mahal Palace", "location": "Mumbai", "country": "India", "brand": "Taj", "source": "La Liste Top 1000" }
+]

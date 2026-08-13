@@ -1,0 +1,213 @@
+.profile {
+  padding-bottom: var(--space-9);
+}
+
+.notFound {
+  padding: var(--space-9) 0;
+}
+
+.notFoundContent {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.notFoundContent h2 {
+  margin-bottom: var(--space-4);
+}
+
+.notFoundContent p {
+  color: var(--color-stone);
+  margin-bottom: var(--space-6);
+}
+
+.hero {
+  background-color: var(--color-ink);
+  color: var(--color-ivory);
+  padding: var(--space-6) 0 var(--space-8);
+  margin-bottom: var(--space-8);
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: inherit;
+  text-decoration: none;
+  font-family: var(--font-sans);
+  font-size: var(--type-small);
+  opacity: 0.8;
+  margin-bottom: var(--space-6);
+  transition: opacity 0.2s ease;
+}
+
+.backLink:hover {
+  opacity: 1;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.heroMeta {
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+/* Ensure badges in dark hero are readable */
+.heroMeta span {
+  border-color: rgba(244, 240, 232, 0.4);
+  color: var(--color-ivory);
+}
+
+.heroMeta span:first-child {
+  background-color: var(--color-ivory);
+  color: var(--color-ink);
+  border-color: transparent;
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-size: var(--type-display-lg);
+  line-height: 1;
+  margin: 0;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-sans);
+  font-size: var(--type-body-lg);
+  opacity: 0.9;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.overviewText {
+  font-family: var(--font-serif);
+  font-size: var(--type-h3);
+  line-height: 1.4;
+  color: var(--color-ink);
+}
+
+.factGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-5);
+}
+
+.prose {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.prose h3 {
+  font-family: var(--font-sans);
+  font-size: var(--type-body);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-ink);
+}
+
+.prose p {
+  font-family: var(--font-sans);
+  font-size: var(--type-body);
+  color: var(--color-charcoal);
+  line-height: 1.6;
+}
+
+/* Field Report */
+.fieldReport {
+  background-color: var(--color-paper);
+  border: 1px solid rgba(18, 18, 18, 0.1);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.reportHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid rgba(18, 18, 18, 0.1);
+}
+
+.reportDate {
+  font-family: var(--font-sans);
+  font-size: var(--type-small);
+  color: var(--color-stone);
+}
+
+.reportGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-5);
+}
+
+.reportVerdict {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-5);
+  padding-top: var(--space-5);
+  border-top: 1px dashed rgba(18, 18, 18, 0.2);
+}
+
+.reportLabel {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: var(--type-label);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-stone);
+  margin-bottom: var(--space-2);
+}
+
+.reportText {
+  font-family: var(--font-sans);
+  font-size: var(--type-small);
+  line-height: 1.5;
+  color: var(--color-ink);
+}
+
+.thesisSection {
+  background-color: var(--color-ivory);
+  padding: var(--space-4);
+  border-left: 2px solid var(--color-antique-gold);
+}
+
+.thesisText {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: var(--color-ink);
+}
+
+@media (max-width: 768px) {
+  .factGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .reportGrid, .reportVerdict {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+}

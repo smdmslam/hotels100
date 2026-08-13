@@ -1,0 +1,98 @@
+.page {
+  padding: var(--space-7) 0 var(--space-10);
+}
+
+.masthead {
+  margin-bottom: var(--space-7);
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-size: var(--type-h1);
+  margin-bottom: var(--space-4);
+  line-height: 1;
+}
+
+.subtitle {
+  font-family: var(--font-sans);
+  font-size: var(--type-body-lg);
+  color: var(--color-stone);
+}
+
+.notice {
+  background-color: var(--color-paper);
+  border: 1px solid rgba(18, 18, 18, 0.1);
+  padding: var(--space-5);
+  margin-bottom: var(--space-8);
+}
+
+.notice p {
+  font-family: var(--font-sans);
+  font-size: var(--type-body);
+  color: var(--color-charcoal);
+  margin: 0;
+}
+
+.section {
+  margin-bottom: var(--space-8);
+}
+
+.prose {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.prose p {
+  font-family: var(--font-sans);
+  font-size: var(--type-body-lg);
+  color: var(--color-ink);
+  line-height: 1.6;
+}
+
+.dimensionList, .evidenceList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  margin-top: var(--space-4);
+}
+
+.dimensionList li, .evidenceList li {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding-bottom: var(--space-4);
+  border-bottom: 1px dashed rgba(18, 18, 18, 0.1);
+}
+
+.dimensionList li:last-child, .evidenceList li:last-child {
+  border-bottom: none;
+}
+
+.dimensionList strong, .evidenceList strong {
+  font-family: var(--font-sans);
+  font-size: var(--type-body);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-ink);
+}
+
+.dimensionList span {
+  font-family: var(--font-sans);
+  font-size: var(--type-body);
+  color: var(--color-charcoal);
+  line-height: 1.5;
+}
+
+.evidenceList li {
+  flex-direction: row;
+  gap: var(--space-3);
+  align-items: baseline;
+}
+
+.evidenceList strong {
+  flex: 0 0 150px;
+}

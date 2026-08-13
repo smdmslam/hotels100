@@ -1,0 +1,105 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  background-color: var(--color-paper);
+  border: 1px solid rgba(18, 18, 18, 0.1);
+  padding: var(--space-6);
+}
+
+.emptyState {
+  padding: var(--space-8);
+  background-color: var(--color-paper);
+  border: 1px dashed rgba(18, 18, 18, 0.2);
+  text-align: center;
+}
+
+.emptyState p {
+  font-family: var(--font-sans);
+  font-size: var(--type-body);
+  color: var(--color-stone);
+}
+
+.chartHeader {
+  display: flex;
+  gap: var(--space-6);
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid rgba(18, 18, 18, 0.1);
+  flex-wrap: wrap;
+}
+
+.chartMeta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.metaLabel {
+  font-family: var(--font-sans);
+  font-size: var(--type-label);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-stone);
+}
+
+.metaValue {
+  font-family: var(--font-serif);
+  font-size: var(--type-h3);
+  color: var(--color-ink);
+  line-height: 1.1;
+}
+
+.chartWrapper {
+  margin: var(--space-4) 0;
+}
+
+/* Tooltip */
+.tooltip {
+  background-color: var(--color-ink);
+  color: var(--color-ivory);
+  padding: var(--space-3);
+  border-radius: 2px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tooltipDate {
+  font-family: var(--font-sans);
+  font-size: var(--type-label);
+  text-transform: uppercase;
+  color: var(--color-stone);
+  margin-bottom: var(--space-1);
+}
+
+.tooltipRate {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  margin-bottom: var(--space-1);
+}
+
+.tooltipNotes {
+  font-family: var(--font-sans);
+  font-size: var(--type-small);
+  opacity: 0.8;
+}
+
+.interpretation {
+  background-color: var(--color-ivory);
+  padding: var(--space-4);
+  border-left: 2px solid var(--color-ink);
+}
+
+.interpretation h4 {
+  font-family: var(--font-sans);
+  font-size: var(--type-label);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-stone);
+  margin-bottom: var(--space-2);
+}
+
+.interpretation p {
+  font-family: var(--font-sans);
+  font-size: var(--type-body);
+  color: var(--color-ink);
+  line-height: 1.5;
+}

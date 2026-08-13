@@ -1,0 +1,153 @@
+{
+  "id": "hotel-st-martins-lane-london",
+  "slug": "st-martins-lane-london",
+  "edition": 2026,
+  "rank": 7,
+  "rankStatus": "illustrative",
+  "name": "St Martins Lane",
+  "location": {
+    "city": "London",
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "region": "Europe",
+    "neighbourhood": "Covent Garden",
+    "displayLocation": "London, United Kingdom"
+  },
+  "archetype": "Urban Lifestyle Hotel",
+  "publicationStatus": "prototype-ready",
+  "featured": true,
+  "dmwJudgement": "St Martins Lane compensates for limited room size by turning arrival, design and location into the luxury product. It sells theatricality and access rather than square metres.",
+  "dmwOverview": "St Martins Lane operates as a piece of hospitality theatre in central London. Since its opening, it has relied on sensory transition and social energy rather than traditional five-star conventions to justify its premium.",
+  "inclusionRationale": "A masterclass in extracting maximum rate from a highly constrained building through sheer force of design and atmosphere.",
+  "bestSuitedFor": [
+    "Design-focused travelers",
+    "Solo business travelers needing central access",
+    "Guests prioritizing social energy over quiet luxury"
+  ],
+  "identity": {
+    "brand": "Morgans Originals (Ennismore)",
+    "owner": "Sheikh Hamad bin Jassim bin Jaber Al Thani",
+    "ownershipPubliclyConfirmed": true,
+    "designer": "Philippe Starck"
+  },
+  "propertyFacts": {
+    "openingYear": 1999,
+    "lastMajorRenovationYear": 2015,
+    "roomCount": 204,
+    "propertyType": "Hotel"
+  },
+  "rates": {
+    "currency": "GBP",
+    "typicalRate": 350,
+    "rateLabel": "Typically £300 to £450",
+    "taxesIncluded": true,
+    "rateBasis": "Standard room, advance purchase"
+  },
+  "amenities": [
+    {
+      "id": "restaurant",
+      "label": "Restaurant",
+      "icon": "Utensils",
+      "category": "Food and Drink",
+      "available": true
+    },
+    {
+      "id": "bar",
+      "label": "Bar",
+      "icon": "Wine",
+      "category": "Food and Drink",
+      "available": true
+    },
+    {
+      "id": "gym",
+      "label": "Gym access",
+      "icon": "Dumbbell",
+      "category": "Wellness",
+      "available": true,
+      "detail": "Access to adjacent Gymbox"
+    },
+    {
+      "id": "workspace",
+      "label": "In-room workspace",
+      "icon": "Laptop",
+      "category": "Business",
+      "available": true
+    }
+  ],
+  "venues": [
+    {
+      "name": "The Restaurant at St Martins Lane",
+      "type": "Restaurant",
+      "mealPeriods": ["Breakfast", "Dinner"],
+      "attractsNonResidents": true
+    },
+    {
+      "name": "Blind Spot",
+      "type": "Bar",
+      "strategicRole": "Evening destination bar",
+      "mealPeriods": ["Late Night"],
+      "attractsNonResidents": true
+    }
+  ],
+  "analysis": {
+    "hospitalityProposition": "St Martins Lane sells access to a specific cultural atmosphere rather than traditional five-star deference.",
+    "revenueStrategy": "Highly reliant on high-occupancy room nights supported by a strong non-resident beverage operation."
+  },
+  "businessTravel": {
+    "suitability": "Strong",
+    "summary": "Excellent location for central London meetings, though rooms require adjustment for extended working.",
+    "workspace": "Limited desk space in standard rooms.",
+    "connectivity": "Excellent Wi-Fi."
+  },
+  "rooms": {
+    "summary": "Compact but highly engineered to feel larger through lighting and mirrors.",
+    "minimumSizeSqm": 24,
+    "categories": ["Standard", "Superior", "Deluxe", "Studio Suite"],
+    "lighting": "Customizable color-changing lighting scheme.",
+    "spatialCompromise": "Storage is extremely limited."
+  },
+  "pricingIntelligence": {
+    "status": "collecting",
+    "currency": "GBP",
+    "dmwInterpretation": "Pricing analysis in preparation",
+    "dataPoints": [],
+    "eventMarkers": []
+  },
+  "competitiveSet": [
+    {
+      "name": "The London EDITION",
+      "relativePricePosition": "Premium",
+      "locationDifference": "Fitzrovia vs Covent Garden",
+      "brandDifference": "More recent lifestyle iteration"
+    }
+  ],
+  "fieldReports": [
+    {
+      "id": "fr-st-martins-lane-2026",
+      "visitDate": "2026-03",
+      "nights": 2,
+      "approximateRatePaid": 400,
+      "currency": "EUR",
+      "travelPurpose": "Business",
+      "arrivalObservation": "The lack of signage outside creates a sense of crossing a threshold. The lobby is immediately energetic and theatrical.",
+      "roomObservation": "The interactive lighting remains a clever distraction from the room's small footprint.",
+      "serviceObservation": "Informal but fast. The staff manage the high volume of the lobby gracefully.",
+      "atmosphereObservation": "High energy, distinctly un-corporate.",
+      "amenitiesUsed": ["Restaurant (Breakfast)", "Bar", "Wi-Fi"],
+      "whatWorked": "The location is flawless for West End meetings. Sleep quality is surprisingly good given the area.",
+      "whatDisappointed": "The lack of meaningful clothes storage makes a stay of more than two nights difficult.",
+      "returnIntention": "Would return for short solo trips.",
+      "thesisConfirmation": "The visit confirms the thesis: the property relies on its public spaces and sensory design to command its premium, successfully distracting from the physical limitations of the rooms."
+    }
+  ],
+  "images": [],
+  "links": {
+    "officialWebsite": "https://book.ennismore.com/hotels/morgans-originals/st-martins-lane"
+  },
+  "sources": [
+    {
+      "type": "official",
+      "name": "Ennismore Fact Sheet"
+    }
+  ]
+}

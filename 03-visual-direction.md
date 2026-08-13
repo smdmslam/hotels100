@@ -547,7 +547,7 @@ Each row should contain:
 * DMW judgement
 * Selected facts
 * Amenities
-* Evidence status
+* Preliminary score or ranking confidence
 * Optional image
 * Directional action
 
@@ -593,7 +593,7 @@ The profile hero should combine:
 * Hotel name
 * Location
 * DMW judgement
-* Evidence status
+* Defining characteristics
 * One primary image
 
 The rank and name must remain strong even if the image is removed.
@@ -723,12 +723,6 @@ Suggested icons include:
 Use badges sparingly.
 
 Approved badge types:
-
-### Evidence status
-
-* DMW Researched
-* DMW Visited
-* DMW Revisited
 
 ### Distinctions
 
@@ -1019,7 +1013,7 @@ When space is limited, preserve this order:
 2. Hotel name
 3. Location
 4. DMW judgement
-5. Evidence status
+5. Defining characteristics
 6. Price
 7. Essential amenities
 8. Image

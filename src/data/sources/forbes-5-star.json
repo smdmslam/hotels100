@@ -1,0 +1,15 @@
+[
+  { "name": "The Broadmoor", "location": "Colorado Springs", "country": "USA", "brand": "Independent", "source": "Forbes 5-Star" },
+  { "name": "The Peninsula Beverly Hills", "location": "Los Angeles", "country": "USA", "brand": "Peninsula", "source": "Forbes 5-Star" },
+  { "name": "The St. Regis Bal Harbour", "location": "Miami", "country": "USA", "brand": "St. Regis", "source": "Forbes 5-Star" },
+  { "name": "Wynn Macau", "location": "Macau", "country": "Macau", "brand": "Wynn", "source": "Forbes 5-Star" },
+  { "name": "Baccarat Hotel", "location": "New York", "country": "USA", "brand": "Baccarat", "source": "Forbes 5-Star" },
+  { "name": "Waldorf Astoria Beverly Hills", "location": "Los Angeles", "country": "USA", "brand": "Waldorf Astoria", "source": "Forbes 5-Star" },
+  { "name": "Four Seasons Hotel George V", "location": "Paris", "country": "France", "brand": "Four Seasons", "source": "Forbes 5-Star" },
+  { "name": "The Dorchester", "location": "London", "country": "United Kingdom", "brand": "Dorchester Collection", "source": "Forbes 5-Star" },
+  { "name": "Mandarin Oriental Hyde Park", "location": "London", "country": "United Kingdom", "brand": "Mandarin Oriental", "source": "Forbes 5-Star" },
+  { "name": "Bulgari Hotel London", "location": "London", "country": "United Kingdom", "brand": "Bulgari", "source": "Forbes 5-Star" },
+  { "name": "The Ritz-Carlton, Kyoto", "location": "Kyoto", "country": "Japan", "brand": "Ritz-Carlton", "source": "Forbes 5-Star" },
+  { "name": "The Peninsula Tokyo", "location": "Tokyo", "country": "Japan", "brand": "Peninsula", "source": "Forbes 5-Star" },
+  { "name": "The Savoy", "location": "London", "country": "United Kingdom", "brand": "Fairmont", "source": "Forbes 5-Star" }
+]

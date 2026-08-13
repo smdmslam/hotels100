@@ -574,27 +574,25 @@ It must instead:
 
 A hotel does not require a DMW visit to enter the ranking.
 
-For a hotel not personally visited:
+For every hotel entering through structured research:
 
 * Complete all research-supported dimensions
 * Mark service and room-experience confidence appropriately
 * Separate official claims from independent evidence
 * Avoid first-person experiential language
 * Do not fabricate sensory observations
-* Add the evidence status **DMW Researched**
 
-Research-only hotels should not receive an automatic numerical penalty simply because they have not been visited.
+Hotels receive no penalty because they have not been visited. This is the normal operating model of the index.
 
 However, uncertainty must be documented and may affect whether the hotel is ready for final publication.
 
 ---
 
-# 10. Personally Visited Hotels
+# 10. Optional Firsthand Notes
 
-For a visited hotel:
+When firsthand experience exists:
 
-* Add a Field Report
-* Mark personally verified amenities
+* Add an optional dated firsthand note within the permanent profile
 * Reassess service, room function, arrival and atmosphere
 * Compare firsthand experience with the prior research thesis
 * Increase evidence confidence only where the visit genuinely provides evidence
@@ -602,7 +600,7 @@ For a visited hotel:
 
 A single stay does not prove perfect operational consistency.
 
-The Field Report must state:
+The firsthand note should state:
 
 * Length of stay
 * Approximate date

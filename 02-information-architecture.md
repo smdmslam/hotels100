@@ -9,7 +9,7 @@ The website must combine:
 * A luxury editorial homepage
 * A ranked hotel index
 * Permanent hotel reference profiles
-* Firsthand DMW Field Reports
+* Optional firsthand notes within relevant hotel profiles
 * Long-form strategic features
 * A transparent ranking methodology
 
@@ -167,7 +167,7 @@ Each preview item includes:
 * One-line DMW judgement
 * Indicative price band
 * A small number of relevant amenity icons
-* Evidence status
+* Preliminary score or ranking confidence
 * Optional image
 
 Include a clear link:
@@ -337,13 +337,6 @@ Suggested hotel archetypes:
 * Private-island hotel
 * Members-club hybrid
 * Branded residence ecosystem
-
-Suggested evidence-status options:
-
-* All hotels
-* DMW Researched
-* DMW Visited
-* DMW Revisited
 
 Suggested distinctions:
 
@@ -894,13 +887,9 @@ Explain:
 * Guest-feedback pattern analysis
 * Firsthand visits where available
 
-### 9.5 Evidence status
+### 9.5 Research basis
 
-Define:
-
-* DMW Researched
-* DMW Visited
-* DMW Revisited
+Explain that structured research is the standard basis of every entry and that occasional firsthand notes are supplementary. Do not create public hotel-status classes.
 
 ### 9.6 Editorial judgement
 
@@ -1055,12 +1044,9 @@ The interface must handle incomplete content elegantly.
 
 Examples:
 
-### No Field Report
+### No firsthand note
 
-Display a restrained note:
-
-**DMW Researched**
-This profile is based on structured research. A firsthand Field Report has not yet been published.
+Display nothing. This is the normal state of a complete hotel profile, not missing content.
 
 ### No pricing data
 

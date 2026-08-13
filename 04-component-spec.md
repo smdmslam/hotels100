@@ -191,7 +191,7 @@ Introduces a page section.
 
 ### Types
 
-* Evidence status
+* Preliminary score or ranking confidence
 * DMW distinction
 * Article category
 * Edition
@@ -336,7 +336,7 @@ Highlights one hotel with richer editorial context.
 ### Optional fields
 
 * Image
-* Evidence status
+* Defining characteristics
 * Field Report link
 * Strategic feature link
 * Price insight
@@ -521,7 +521,7 @@ Shows primary filters and opens full filter controls.
 * Price
 * Amenities
 * Business travel
-* Evidence status
+* Preliminary score or ranking confidence
 * Distinctions
 
 ### Behaviour
@@ -587,7 +587,7 @@ Example:
 
 ```text
 7 of 100 hotels
-London · DMW Visited
+London · Urban Lifestyle Hotel
 ```
 
 ---
@@ -638,7 +638,7 @@ Displays one ranked hotel.
 * Currency
 * Price band
 * Essential amenities
-* Evidence status
+* Defining characteristics
 * Distinctions
 * Brand
 * Operator
@@ -760,7 +760,7 @@ Clear the filters to return to the complete ranking.
 * Hotel archetype
 * Edition year
 * DMW judgement
-* Evidence status
+* Preliminary score or ranking confidence
 
 ### Optional fields
 
@@ -1086,30 +1086,6 @@ Explain why each competitor belongs in the set.
 
 ---
 
-## 6.13 ResearchStatusNotice
-
-### Purpose
-
-Explains the evidence basis.
-
-### Variants
-
-* Researched
-* Visited
-* Revisited
-
-### Example researched copy
-
-```text
-DMW Researched
-
-This profile is based on structured research, publicly available
-information and pricing observations. A firsthand Field Report has
-not yet been published.
-```
-
----
-
 ## 6.14 DMWConclusion
 
 ### Fields
@@ -1382,22 +1358,6 @@ Do not use colourful dashboard progress rings.
 
 ---
 
-## 9.2 EvidenceStatusExplainer
-
-### Displays
-
-* DMW Researched
-* DMW Visited
-* DMW Revisited
-
-Each status includes:
-
-* Definition
-* What evidence it represents
-* What it does not imply
-
----
-
 ## 9.3 MethodologyFlow
 
 ### Purpose
@@ -1523,7 +1483,7 @@ The remaining hotel profile is still available.
 * Dates should use one consistent formatting utility.
 * Currency should use `Intl.NumberFormat`.
 * Ranking values must be integers from 1 to 100 in production.
-* Evidence status must use a controlled enum.
+* Ranking confidence, where shown, must use a controlled enum.
 * Amenity and distinction values must use controlled vocabularies.
 
 ---

@@ -1,0 +1,12 @@
+[
+  { "name": "The OWO Residences by Raffles", "location": "London", "country": "United Kingdom", "brand": "Raffles", "source": "AHEAD Awards" },
+  { "name": "Six Senses Rome", "location": "Rome", "country": "Italy", "brand": "Six Senses", "source": "AHEAD Awards" },
+  { "name": "Capella Sydney", "location": "Sydney", "country": "Australia", "brand": "Capella", "source": "AHEAD Awards" },
+  { "name": "Janu Tokyo", "location": "Tokyo", "country": "Japan", "brand": "Janu", "source": "AHEAD Awards" },
+  { "name": "1 Hotel Hanalei Bay", "location": "Kauai", "country": "USA", "brand": "1 Hotels", "source": "AHEAD Awards" },
+  { "name": "The Standard, Ibiza", "location": "Ibiza", "country": "Spain", "brand": "The Standard", "source": "AHEAD Awards" },
+  { "name": "Bulgari Hotel Rome", "location": "Rome", "country": "Italy", "brand": "Bulgari", "source": "AHEAD Awards" },
+  { "name": "Gleneagles Townhouse", "location": "Edinburgh", "country": "United Kingdom", "brand": "Ennismore", "source": "AHEAD Awards" },
+  { "name": "Ace Hotel Sydney", "location": "Sydney", "country": "Australia", "brand": "Ace Hotel", "source": "AHEAD Awards" },
+  { "name": "The Fifth Avenue Hotel", "location": "New York", "country": "USA", "brand": "Independent", "source": "AHEAD Awards" }
+]

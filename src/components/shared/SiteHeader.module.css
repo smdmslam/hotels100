@@ -1,0 +1,135 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  border-bottom: 1px solid transparent;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.brand {
+  font-family: var(--font-serif);
+  font-size: var(--type-h3);
+  font-weight: 400;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+.desktopNav {
+  display: flex;
+  gap: var(--space-5);
+  align-items: center;
+}
+
+.navLink {
+  font-family: var(--font-sans);
+  font-size: var(--type-small);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+  opacity: 0.7;
+}
+
+.navLink:hover {
+  opacity: 1;
+}
+
+.navLink.active {
+  opacity: 1;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+}
+
+.actions {
+  display: flex;
+  gap: var(--space-3);
+  align-items: center;
+}
+
+.iconButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+
+.iconButton:hover {
+  background-color: rgba(128, 128, 128, 0.1);
+}
+
+.mobileMenuToggle {
+  display: none;
+}
+
+/* Variants */
+.light {
+  background-color: var(--color-ivory);
+  color: var(--color-ink);
+  border-bottom-color: rgba(18, 18, 18, 0.1);
+}
+
+.dark {
+  background-color: var(--color-ink);
+  color: var(--color-ivory);
+  border-bottom-color: rgba(244, 240, 232, 0.1);
+}
+
+.overlay {
+  position: absolute;
+  background-color: transparent;
+  color: var(--color-ink); /* Assumes light hero for now, could be passed as prop */
+}
+
+/* Mobile Menu */
+.mobileMenu {
+  position: fixed;
+  top: 64px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 64px);
+  background-color: var(--color-ivory);
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-5) var(--gutter);
+  overflow-y: auto;
+}
+
+.mobileNav {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.mobileNavLink {
+  font-family: var(--font-serif);
+  font-size: var(--type-h2);
+  color: var(--color-ink);
+  text-decoration: none;
+}
+
+.mobileNavLink.active {
+  color: var(--color-antique-gold);
+}
+
+@media (max-width: 768px) {
+  .desktopNav {
+    display: none;
+  }
+  .mobileMenuToggle {
+    display: flex;
+  }
+}

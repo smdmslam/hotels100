@@ -1,0 +1,24 @@
+.container {
+  margin: 0 auto;
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
+  width: 100%;
+}
+
+.wide {
+  max-width: var(--container-wide);
+}
+
+.standard {
+  max-width: var(--container-standard);
+}
+
+.reading {
+  max-width: var(--container-reading);
+}
+
+.full {
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}

@@ -132,25 +132,11 @@ An article may be based on firsthand experience, structured desk research or bot
 
 ---
 
-## 5. Evidence Model
+## 5. Research and Firsthand Notes
 
-The platform must never imply firsthand knowledge when a hotel has not been visited.
+Structured research is the normal basis of the index. Every ranked hotel is a complete hotel entry whether or not DMW has visited it. The public product must not classify ordinary entries as “researched,” “visited” or “revisited,” and visit status must never affect eligibility, ranking, card hierarchy or profile completeness.
 
-Each hotel will have a visible evidence status:
-
-### DMW Researched
-
-The hotel has been assessed through structured research, including official information, pricing data, reputable coverage, asset information and consistent patterns in guest feedback.
-
-### DMW Visited
-
-The hotel has been personally experienced by DMW and includes a Field Report.
-
-### DMW Revisited
-
-A previously assessed hotel has been visited again and its analysis has been updated.
-
-A hotel may be ranked before it is personally visited. The permanent profile must therefore function independently from the Field Report.
+When firsthand experience exists, it may be published as an optional dated note within the hotel profile. That note is additional editorial material—not an evidence tier, score, badge system or alternate type of hotel.
 
 ---
 
@@ -371,9 +357,9 @@ Search destination → Compare hotel profiles → Review amenities and pricing �
 
 Open hotel profile → Read DMW hospitality thesis → View pricing behaviour → Read full strategic feature
 
-### Journey D: Find firsthand evidence
+### Journey D: Read an available firsthand note
 
-Open hotel profile → See DMW Visited status → Read Field Report → Compare original thesis with lived experience
+Open hotel profile → Read the permanent assessment → Optionally read a dated note from a DMW stay
 
 ### Journey E: Discover DMW
 

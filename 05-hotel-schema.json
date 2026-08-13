@@ -12,7 +12,6 @@
     "name",
     "location",
     "archetype",
-    "evidenceStatus",
     "dmwJudgement",
     "publicationStatus"
   ],
@@ -63,9 +62,6 @@
       },
       "uniqueItems": true,
       "default": []
-    },
-    "evidenceStatus": {
-      "$ref": "#/$defs/evidenceStatus"
     },
     "publicationStatus": {
       "type": "string",
@@ -295,14 +291,6 @@
         "Branded Residence Ecosystem"
       ]
     },
-    "evidenceStatus": {
-      "type": "string",
-      "enum": [
-        "DMW Researched",
-        "DMW Visited",
-        "DMW Revisited"
-      ]
-    },
     "distinction": {
       "type": "string",
       "enum": [
@@ -458,10 +446,6 @@
         "icon": {
           "type": ["string", "null"],
           "description": "Lucide icon component name."
-        },
-        "personallyVerified": {
-          "type": "boolean",
-          "default": false
         }
       }
     },
@@ -1276,7 +1260,6 @@
       "secondaryArchetypes": [
         "Boutique Hotel"
       ],
-      "evidenceStatus": "DMW Visited",
       "publicationStatus": "draft",
       "featured": true,
       "dmwJudgement": "St Martins Lane compensates for limited room size by turning arrival, design and location into the luxury product. It sells theatricality and access rather than square metres.",

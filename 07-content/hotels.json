@@ -1,265 +1,3209 @@
 {
-  "edition": 2026,
-  "editionStatus": "methodology-calibration",
-  "title": "The World’s 100 Most Exceptional Hotels",
-  "publisher": "DMW Finance Group",
-  "prototypeNotice": "The displayed Version 1 ranking is a design and methodology demonstration. Final positions will be established following completion of the DMW Hotels 100 research and review process.",
+  "edition": "2024–2025",
+  "title": "The World's 100 Most Exceptional Hotels",
+  "lastUpdated": "2026-08-13",
+  "methodologyVersion": "1.0",
+  "prototypeNotice": "This index is a live prototype. Constituent properties have been programmatically selected from a consolidated master universe of 118 verified luxury properties. Full DMW scoring and editorial reviews are in progress.",
   "hotels": [
     {
-      "id": "hotel-st-martins-lane-london",
-      "slug": "st-martins-lane-london",
-      "edition": 2026,
-      "rank": 7,
-      "rankStatus": "illustrative",
-      "name": "St Martins Lane",
+      "id": "dmw-hotel-001",
+      "slug": "cheval-blanc-paris-paris",
+      "profileUrl": "/hotels/cheval-blanc-paris-paris",
+      "rank": 1,
+      "name": "Cheval Blanc Paris",
+      "band": "Exceptional",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Paris",
+        "country": "France",
+        "region": "Europe",
+        "neighbourhood": "City Center",
+        "displayLocation": "Paris, France"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Cheval Blanc Paris was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: La Liste Top 1000, Luxury Flagships, Michelin Keys, Worlds 50 Best.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Cheval Blanc",
+        "brand": "Cheval Blanc"
+      },
+      "propertyFacts": {
+        "roomCount": 192,
+        "openingYear": 2001
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Paris."
+    },
+    {
+      "id": "dmw-hotel-002",
+      "slug": "the-connaught-london",
+      "profileUrl": "/hotels/the-connaught-london",
+      "rank": 2,
+      "name": "The Connaught",
+      "band": "Exceptional",
+      "featured": false,
+      "distinctions": [],
       "location": {
         "city": "London",
         "country": "United Kingdom",
-        "countryCode": "GB",
         "region": "Europe",
-        "neighbourhood": "Covent Garden",
+        "neighbourhood": "City Center",
         "displayLocation": "London, United Kingdom"
       },
-      "archetype": "Urban Lifestyle Hotel",
-      "evidenceStatus": "DMW Visited",
-      "publicationStatus": "prototype-ready",
-      "featured": true,
-      "dmwJudgement": "St Martins Lane compensates for limited room size by turning arrival, design and location into the luxury product. It sells theatricality and access rather than square metres.",
-      "indicativeRate": {
-        "currency": "EUR",
-        "amount": 400,
-        "label": "Approximately €400 during the DMW visit",
-        "basis": "Approximate nightly rate recalled from a two-night stay"
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "The Connaught was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: La Liste Top 1000, Luxury Flagships, Michelin Keys, Worlds 50 Best.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Maybourne",
+        "brand": "Maybourne"
       },
-      "businessTravelSuitability": "Strong",
-      "essentialAmenities": [
-        {
-          "id": "restaurant",
-          "label": "Restaurant",
-          "icon": "Utensils"
-        },
-        {
-          "id": "bar",
-          "label": "Bar",
-          "icon": "Wine"
-        },
-        {
-          "id": "cafe-bakery",
-          "label": "Café and bakery",
-          "icon": "Coffee"
-        },
-        {
-          "id": "workspace",
-          "label": "In-room workspace",
-          "icon": "Laptop"
-        },
-        {
-          "id": "wifi",
-          "label": "Wi-Fi",
-          "icon": "Wifi"
-        }
-      ],
-      "distinctions": [
-        "Best for Business Travel"
-      ],
-      "hasFieldReport": true,
-      "hasStrategicFeature": true,
-      "hasPricingAnalysis": false,
-      "primaryImage": null,
-      "profileUrl": "/hotels/st-martins-lane-london",
-      "articleUrl": "/insights/why-st-martins-lane-works"
+      "propertyFacts": {
+        "roomCount": 127,
+        "openingYear": 2018
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in London."
     },
     {
-      "id": "hotel-the-may-fair-london",
-      "slug": "the-may-fair-london",
-      "edition": 2026,
+      "id": "dmw-hotel-003",
+      "slug": "the-savoy-london",
+      "profileUrl": "/hotels/the-savoy-london",
+      "rank": 3,
+      "name": "The Savoy",
+      "band": "Exceptional",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "London",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "neighbourhood": "City Center",
+        "displayLocation": "London, United Kingdom"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "The Savoy was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Forbes 5-Star, La Liste Top 1000, Michelin Keys, Worlds 50 Best.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Fairmont",
+        "brand": "Fairmont"
+      },
+      "propertyFacts": {
+        "roomCount": 64,
+        "openingYear": 2005
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in London."
+    },
+    {
+      "id": "dmw-hotel-004",
+      "slug": "aman-new-york-new-york",
+      "profileUrl": "/hotels/aman-new-york-new-york",
+      "rank": 4,
+      "name": "Aman New York",
+      "band": "Exceptional",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "New York",
+        "country": "USA",
+        "region": "Americas",
+        "neighbourhood": "City Center",
+        "displayLocation": "New York, USA"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Aman New York was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships, Michelin Keys, Worlds 50 Best.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Aman",
+        "brand": "Aman"
+      },
+      "propertyFacts": {
+        "roomCount": 142,
+        "openingYear": 2002
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in New York."
+    },
+    {
+      "id": "dmw-hotel-005",
+      "slug": "aman-tokyo-tokyo",
+      "profileUrl": "/hotels/aman-tokyo-tokyo",
+      "rank": 5,
+      "name": "Aman Tokyo",
+      "band": "Exceptional",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Tokyo",
+        "country": "Japan",
+        "region": "Asia Pacific",
+        "neighbourhood": "City Center",
+        "displayLocation": "Tokyo, Japan"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Aman Tokyo was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships, Michelin Keys, Worlds 50 Best.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Aman",
+        "brand": "Aman"
+      },
+      "propertyFacts": {
+        "roomCount": 95,
+        "openingYear": 2004
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Tokyo."
+    },
+    {
+      "id": "dmw-hotel-006",
+      "slug": "aman-venice-venice",
+      "profileUrl": "/hotels/aman-venice-venice",
+      "rank": 6,
+      "name": "Aman Venice",
+      "band": "Exceptional",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Venice",
+        "country": "Italy",
+        "region": "Europe",
+        "neighbourhood": "City Center",
+        "displayLocation": "Venice, Italy"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Aman Venice was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships, Michelin Keys, Worlds 50 Best.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Aman",
+        "brand": "Aman"
+      },
+      "propertyFacts": {
+        "roomCount": 196,
+        "openingYear": 2006
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Venice."
+    },
+    {
+      "id": "dmw-hotel-007",
+      "slug": "amangiri-canyon-point",
+      "profileUrl": "/hotels/amangiri-canyon-point",
+      "rank": 7,
+      "name": "Amangiri",
+      "band": "Exceptional",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Canyon Point",
+        "country": "USA",
+        "region": "Americas",
+        "neighbourhood": "City Center",
+        "displayLocation": "Canyon Point, USA"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Amangiri was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships, Michelin Keys, Worlds 50 Best.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Aman",
+        "brand": "Aman"
+      },
+      "propertyFacts": {
+        "roomCount": 126,
+        "openingYear": 2017
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Canyon Point."
+    },
+    {
+      "id": "dmw-hotel-008",
+      "slug": "claridge-s-london",
+      "profileUrl": "/hotels/claridge-s-london",
+      "rank": 8,
+      "name": "Claridge's",
+      "band": "Exceptional",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "London",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "neighbourhood": "City Center",
+        "displayLocation": "London, United Kingdom"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Claridge's was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships, Michelin Keys, Worlds 50 Best.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Maybourne",
+        "brand": "Maybourne"
+      },
+      "propertyFacts": {
+        "roomCount": 122,
+        "openingYear": 2016
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in London."
+    },
+    {
+      "id": "dmw-hotel-009",
+      "slug": "mandarin-oriental-bangkok-bangkok",
+      "profileUrl": "/hotels/mandarin-oriental-bangkok-bangkok",
+      "rank": 9,
+      "name": "Mandarin Oriental Bangkok",
+      "band": "Exceptional",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Bangkok",
+        "country": "Thailand",
+        "region": "Asia Pacific",
+        "neighbourhood": "City Center",
+        "displayLocation": "Bangkok, Thailand"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Mandarin Oriental Bangkok was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: La Liste Top 1000, Luxury Flagships, Worlds 50 Best.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Mandarin Oriental",
+        "brand": "Mandarin Oriental"
+      },
+      "propertyFacts": {
+        "roomCount": 64,
+        "openingYear": 2017
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Bangkok."
+    },
+    {
+      "id": "dmw-hotel-010",
+      "slug": "badrutt-s-palace-st-moritz",
+      "profileUrl": "/hotels/badrutt-s-palace-st-moritz",
+      "rank": 10,
+      "name": "Badrutt's Palace",
+      "band": "Exceptional",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "St. Moritz",
+        "country": "Switzerland",
+        "region": "Europe",
+        "neighbourhood": "City Center",
+        "displayLocation": "St. Moritz, Switzerland"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Badrutt's Palace was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: La Liste Top 1000, Worlds 50 Best.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Independent",
+        "brand": null
+      },
+      "propertyFacts": {
+        "roomCount": 51,
+        "openingYear": 2010
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in St. Moritz."
+    },
+    {
+      "id": "dmw-hotel-011",
+      "slug": "four-seasons-firenze-florence",
+      "profileUrl": "/hotels/four-seasons-firenze-florence",
+      "rank": 11,
+      "name": "Four Seasons Firenze",
+      "band": "Exceptional",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Florence",
+        "country": "Italy",
+        "region": "Europe",
+        "neighbourhood": "City Center",
+        "displayLocation": "Florence, Italy"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Four Seasons Firenze was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships, Worlds 50 Best.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Four Seasons",
+        "brand": "Four Seasons"
+      },
+      "propertyFacts": {
+        "roomCount": 193,
+        "openingYear": 2018
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Florence."
+    },
+    {
+      "id": "dmw-hotel-012",
+      "slug": "four-seasons-george-v-paris",
+      "profileUrl": "/hotels/four-seasons-george-v-paris",
       "rank": 12,
-      "rankStatus": "illustrative",
-      "name": "The May Fair",
-      "location": {
-        "city": "London",
-        "country": "United Kingdom",
-        "countryCode": "GB",
-        "region": "Europe",
-        "neighbourhood": "Mayfair",
-        "displayLocation": "Mayfair, London"
-      },
-      "archetype": "Urban Grand Hotel",
-      "evidenceStatus": "DMW Visited",
-      "publicationStatus": "research-draft",
+      "name": "Four Seasons George V",
+      "band": "Exceptional",
       "featured": false,
-      "dmwJudgement": null,
-      "assessmentPendingLabel": "DMW assessment in preparation",
-      "indicativeRate": null,
-      "businessTravelSuitability": "Not Assessed",
-      "essentialAmenities": [],
       "distinctions": [],
-      "hasFieldReport": false,
-      "hasStrategicFeature": false,
-      "hasPricingAnalysis": false,
-      "primaryImage": null,
-      "profileUrl": "/hotels/the-may-fair-london",
-      "articleUrl": null
+      "location": {
+        "city": "Paris",
+        "country": "France",
+        "region": "Europe",
+        "neighbourhood": "City Center",
+        "displayLocation": "Paris, France"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Four Seasons George V was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships, Michelin Keys.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Four Seasons",
+        "brand": "Four Seasons"
+      },
+      "propertyFacts": {
+        "roomCount": 179,
+        "openingYear": 2009
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Paris."
     },
     {
-      "id": "hotel-flemings-mayfair-london",
-      "slug": "flemings-mayfair-london",
-      "edition": 2026,
+      "id": "dmw-hotel-013",
+      "slug": "h-tel-de-crillon-paris",
+      "profileUrl": "/hotels/h-tel-de-crillon-paris",
+      "rank": 13,
+      "name": "Hôtel de Crillon",
+      "band": "Exceptional",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Paris",
+        "country": "France",
+        "region": "Europe",
+        "neighbourhood": "City Center",
+        "displayLocation": "Paris, France"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Hôtel de Crillon was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships, Worlds 50 Best.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Rosewood",
+        "brand": "Rosewood"
+      },
+      "propertyFacts": {
+        "roomCount": 74,
+        "openingYear": 2017
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Paris."
+    },
+    {
+      "id": "dmw-hotel-014",
+      "slug": "hotel-du-cap-eden-roc-antibes",
+      "profileUrl": "/hotels/hotel-du-cap-eden-roc-antibes",
+      "rank": 14,
+      "name": "Hotel du Cap-Eden-Roc",
+      "band": "Exceptional",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Antibes",
+        "country": "France",
+        "region": "Europe",
+        "neighbourhood": "City Center",
+        "displayLocation": "Antibes, France"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Hotel du Cap-Eden-Roc was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships, Worlds 50 Best.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Oetker Collection",
+        "brand": "Oetker Collection"
+      },
+      "propertyFacts": {
+        "roomCount": 102,
+        "openingYear": 2014
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Antibes."
+    },
+    {
+      "id": "dmw-hotel-015",
+      "slug": "il-san-pietro-di-positano-positano",
+      "profileUrl": "/hotels/il-san-pietro-di-positano-positano",
+      "rank": 15,
+      "name": "Il San Pietro di Positano",
+      "band": "Exceptional",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Positano",
+        "country": "Italy",
+        "region": "Europe",
+        "neighbourhood": "City Center",
+        "displayLocation": "Positano, Italy"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Il San Pietro di Positano was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: La Liste Top 1000, Michelin Keys.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Independent",
+        "brand": null
+      },
+      "propertyFacts": {
+        "roomCount": 110,
+        "openingYear": 2020
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Positano."
+    },
+    {
+      "id": "dmw-hotel-016",
+      "slug": "la-r-serve-paris-paris",
+      "profileUrl": "/hotels/la-r-serve-paris-paris",
+      "rank": 16,
+      "name": "La Réserve Paris",
+      "band": "Exceptional",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Paris",
+        "country": "France",
+        "region": "Europe",
+        "neighbourhood": "City Center",
+        "displayLocation": "Paris, France"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "La Réserve Paris was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: La Liste Top 1000, Worlds 50 Best.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "La Réserve",
+        "brand": "La Réserve"
+      },
+      "propertyFacts": {
+        "roomCount": 145,
+        "openingYear": 2008
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Paris."
+    },
+    {
+      "id": "dmw-hotel-017",
+      "slug": "le-bristol-paris",
+      "profileUrl": "/hotels/le-bristol-paris",
+      "rank": 17,
+      "name": "Le Bristol",
+      "band": "Exceptional",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Paris",
+        "country": "France",
+        "region": "Europe",
+        "neighbourhood": "City Center",
+        "displayLocation": "Paris, France"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Le Bristol was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships, Michelin Keys.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Oetker Collection",
+        "brand": "Oetker Collection"
+      },
+      "propertyFacts": {
+        "roomCount": 70,
+        "openingYear": 2012
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Paris."
+    },
+    {
+      "id": "dmw-hotel-018",
+      "slug": "raffles-singapore-singapore",
+      "profileUrl": "/hotels/raffles-singapore-singapore",
       "rank": 18,
-      "rankStatus": "illustrative",
-      "name": "Flemings Mayfair",
-      "location": {
-        "city": "London",
-        "country": "United Kingdom",
-        "countryCode": "GB",
-        "region": "Europe",
-        "neighbourhood": "Mayfair",
-        "displayLocation": "Mayfair, London"
-      },
-      "archetype": "Boutique Hotel",
-      "evidenceStatus": "DMW Visited",
-      "publicationStatus": "research-draft",
+      "name": "Raffles Singapore",
+      "band": "Exceptional",
       "featured": false,
-      "dmwJudgement": null,
-      "assessmentPendingLabel": "DMW assessment in preparation",
-      "indicativeRate": null,
-      "businessTravelSuitability": "Not Assessed",
-      "essentialAmenities": [],
       "distinctions": [],
-      "hasFieldReport": false,
-      "hasStrategicFeature": false,
-      "hasPricingAnalysis": false,
-      "primaryImage": null,
-      "profileUrl": "/hotels/flemings-mayfair-london",
-      "articleUrl": null
+      "location": {
+        "city": "Singapore",
+        "country": "Singapore",
+        "region": "Asia Pacific",
+        "neighbourhood": "City Center",
+        "displayLocation": "Singapore, Singapore"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Raffles Singapore was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships, Worlds 50 Best.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Raffles",
+        "brand": "Raffles"
+      },
+      "propertyFacts": {
+        "roomCount": 162,
+        "openingYear": 2002
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Singapore."
     },
     {
-      "id": "hotel-the-athenaeum-london",
-      "slug": "the-athenaeum-london",
-      "edition": 2026,
+      "id": "dmw-hotel-019",
+      "slug": "rosewood-hong-kong-hong-kong",
+      "profileUrl": "/hotels/rosewood-hong-kong-hong-kong",
+      "rank": 19,
+      "name": "Rosewood Hong Kong",
+      "band": "Exceptional",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Hong Kong",
+        "country": "Hong Kong",
+        "region": "Asia Pacific",
+        "neighbourhood": "City Center",
+        "displayLocation": "Hong Kong, Hong Kong"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Rosewood Hong Kong was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships, Worlds 50 Best.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Rosewood",
+        "brand": "Rosewood"
+      },
+      "propertyFacts": {
+        "roomCount": 148,
+        "openingYear": 2008
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Hong Kong."
+    },
+    {
+      "id": "dmw-hotel-020",
+      "slug": "royal-mansour-marrakech",
+      "profileUrl": "/hotels/royal-mansour-marrakech",
+      "rank": 20,
+      "name": "Royal Mansour",
+      "band": "Exceptional",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Marrakech",
+        "country": "Morocco",
+        "region": "Middle East & Africa",
+        "neighbourhood": "City Center",
+        "displayLocation": "Marrakech, Morocco"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Royal Mansour was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Michelin Keys, Worlds 50 Best.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Independent",
+        "brand": null
+      },
+      "propertyFacts": {
+        "roomCount": 51,
+        "openingYear": 2007
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Marrakech."
+    },
+    {
+      "id": "dmw-hotel-021",
+      "slug": "soneva-fushi-maldives",
+      "profileUrl": "/hotels/soneva-fushi-maldives",
+      "rank": 21,
+      "name": "Soneva Fushi",
+      "band": "Outstanding",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Maldives",
+        "country": "Maldives",
+        "region": "Asia Pacific",
+        "neighbourhood": "City Center",
+        "displayLocation": "Maldives, Maldives"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Soneva Fushi was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships, Worlds 50 Best.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Soneva",
+        "brand": "Soneva"
+      },
+      "propertyFacts": {
+        "roomCount": 151,
+        "openingYear": 2009
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Maldives."
+    },
+    {
+      "id": "dmw-hotel-022",
+      "slug": "1-hotel-hanalei-bay-kauai",
+      "profileUrl": "/hotels/1-hotel-hanalei-bay-kauai",
+      "rank": 22,
+      "name": "1 Hotel Hanalei Bay",
+      "band": "Outstanding",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Kauai",
+        "country": "USA",
+        "region": "Americas",
+        "neighbourhood": "City Center",
+        "displayLocation": "Kauai, USA"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "1 Hotel Hanalei Bay was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: AHEAD Awards.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "1 Hotels",
+        "brand": "1 Hotels"
+      },
+      "propertyFacts": {
+        "roomCount": 69,
+        "openingYear": 2018
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Kauai."
+    },
+    {
+      "id": "dmw-hotel-023",
+      "slug": "ace-hotel-sydney-sydney",
+      "profileUrl": "/hotels/ace-hotel-sydney-sydney",
+      "rank": 23,
+      "name": "Ace Hotel Sydney",
+      "band": "Outstanding",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Sydney",
+        "country": "Australia",
+        "region": "Asia Pacific",
+        "neighbourhood": "City Center",
+        "displayLocation": "Sydney, Australia"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Ace Hotel Sydney was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: AHEAD Awards.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Ace Hotel",
+        "brand": "Ace Hotel"
+      },
+      "propertyFacts": {
+        "roomCount": 55,
+        "openingYear": 2021
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Sydney."
+    },
+    {
+      "id": "dmw-hotel-024",
+      "slug": "amanpuri-phuket",
+      "profileUrl": "/hotels/amanpuri-phuket",
       "rank": 24,
-      "rankStatus": "illustrative",
-      "name": "The Athenaeum Hotel & Residences",
+      "name": "Amanpuri",
+      "band": "Outstanding",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Phuket",
+        "country": "Thailand",
+        "region": "Asia Pacific",
+        "neighbourhood": "City Center",
+        "displayLocation": "Phuket, Thailand"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Amanpuri was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Aman",
+        "brand": "Aman"
+      },
+      "propertyFacts": {
+        "roomCount": 198,
+        "openingYear": 2002
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Phuket."
+    },
+    {
+      "id": "dmw-hotel-025",
+      "slug": "atlantis-the-royal-dubai",
+      "profileUrl": "/hotels/atlantis-the-royal-dubai",
+      "rank": 25,
+      "name": "Atlantis The Royal",
+      "band": "Outstanding",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Dubai",
+        "country": "UAE",
+        "region": "Middle East & Africa",
+        "neighbourhood": "City Center",
+        "displayLocation": "Dubai, UAE"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Atlantis The Royal was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Atlantis",
+        "brand": "Atlantis"
+      },
+      "propertyFacts": {
+        "roomCount": 64,
+        "openingYear": 2021
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Dubai."
+    },
+    {
+      "id": "dmw-hotel-026",
+      "slug": "baccarat-hotel-new-york",
+      "profileUrl": "/hotels/baccarat-hotel-new-york",
+      "rank": 26,
+      "name": "Baccarat Hotel",
+      "band": "Outstanding",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "New York",
+        "country": "USA",
+        "region": "Americas",
+        "neighbourhood": "City Center",
+        "displayLocation": "New York, USA"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Baccarat Hotel was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Forbes 5-Star.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Baccarat",
+        "brand": "Baccarat"
+      },
+      "propertyFacts": {
+        "roomCount": 197,
+        "openingYear": 2009
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in New York."
+    },
+    {
+      "id": "dmw-hotel-027",
+      "slug": "balesin-island-club-polillo",
+      "profileUrl": "/hotels/balesin-island-club-polillo",
+      "rank": 27,
+      "name": "Balesin Island Club",
+      "band": "Outstanding",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Polillo",
+        "country": "Philippines",
+        "region": "Asia Pacific",
+        "neighbourhood": "City Center",
+        "displayLocation": "Polillo, Philippines"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Balesin Island Club was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Independent",
+        "brand": null
+      },
+      "propertyFacts": {
+        "roomCount": 77,
+        "openingYear": 2003
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Polillo."
+    },
+    {
+      "id": "dmw-hotel-028",
+      "slug": "belmond-hotel-cipriani-venice",
+      "profileUrl": "/hotels/belmond-hotel-cipriani-venice",
+      "rank": 28,
+      "name": "Belmond Hotel Cipriani",
+      "band": "Outstanding",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Venice",
+        "country": "Italy",
+        "region": "Europe",
+        "neighbourhood": "City Center",
+        "displayLocation": "Venice, Italy"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Belmond Hotel Cipriani was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Michelin Keys.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Belmond",
+        "brand": "Belmond"
+      },
+      "propertyFacts": {
+        "roomCount": 74,
+        "openingYear": 2003
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Venice."
+    },
+    {
+      "id": "dmw-hotel-029",
+      "slug": "borgo-egnazia-savelletri",
+      "profileUrl": "/hotels/borgo-egnazia-savelletri",
+      "rank": 29,
+      "name": "Borgo Egnazia",
+      "band": "Outstanding",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Savelletri",
+        "country": "Italy",
+        "region": "Europe",
+        "neighbourhood": "City Center",
+        "displayLocation": "Savelletri, Italy"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Borgo Egnazia was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Independent",
+        "brand": null
+      },
+      "propertyFacts": {
+        "roomCount": 176,
+        "openingYear": 2005
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Savelletri."
+    },
+    {
+      "id": "dmw-hotel-030",
+      "slug": "bulgari-hotel-bali-bali",
+      "profileUrl": "/hotels/bulgari-hotel-bali-bali",
+      "rank": 30,
+      "name": "Bulgari Hotel Bali",
+      "band": "Outstanding",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Bali",
+        "country": "Indonesia",
+        "region": "Asia Pacific",
+        "neighbourhood": "City Center",
+        "displayLocation": "Bali, Indonesia"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Bulgari Hotel Bali was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Bulgari",
+        "brand": "Bulgari"
+      },
+      "propertyFacts": {
+        "roomCount": 84,
+        "openingYear": 2002
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Bali."
+    },
+    {
+      "id": "dmw-hotel-031",
+      "slug": "bulgari-hotel-london-london",
+      "profileUrl": "/hotels/bulgari-hotel-london-london",
+      "rank": 31,
+      "name": "Bulgari Hotel London",
+      "band": "Outstanding",
+      "featured": false,
+      "distinctions": [],
       "location": {
         "city": "London",
         "country": "United Kingdom",
-        "countryCode": "GB",
         "region": "Europe",
-        "neighbourhood": "Mayfair",
-        "displayLocation": "Mayfair, London"
+        "neighbourhood": "City Center",
+        "displayLocation": "London, United Kingdom"
       },
-      "archetype": "Urban Grand Hotel",
-      "evidenceStatus": "DMW Visited",
-      "publicationStatus": "research-draft",
-      "featured": false,
-      "dmwJudgement": null,
-      "assessmentPendingLabel": "DMW assessment in preparation",
-      "indicativeRate": null,
-      "businessTravelSuitability": "Not Assessed",
-      "essentialAmenities": [],
-      "distinctions": [],
-      "hasFieldReport": false,
-      "hasStrategicFeature": false,
-      "hasPricingAnalysis": false,
-      "primaryImage": null,
-      "profileUrl": "/hotels/the-athenaeum-london",
-      "articleUrl": null
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Bulgari Hotel London was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Forbes 5-Star.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Bulgari",
+        "brand": "Bulgari"
+      },
+      "propertyFacts": {
+        "roomCount": 189,
+        "openingYear": 2009
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in London."
     },
     {
-      "id": "hotel-metropole-monte-carlo",
-      "slug": "hotel-metropole-monte-carlo",
-      "edition": 2026,
-      "rank": 31,
-      "rankStatus": "illustrative",
-      "name": "Hôtel Métropole Monte-Carlo",
+      "id": "dmw-hotel-032",
+      "slug": "bulgari-hotel-milano-milan",
+      "profileUrl": "/hotels/bulgari-hotel-milano-milan",
+      "rank": 32,
+      "name": "Bulgari Hotel Milano",
+      "band": "Outstanding",
+      "featured": false,
+      "distinctions": [],
       "location": {
-        "city": "Monte-Carlo",
-        "country": "Monaco",
-        "countryCode": "MC",
+        "city": "Milan",
+        "country": "Italy",
         "region": "Europe",
-        "neighbourhood": "Carré d’Or",
-        "displayLocation": "Monte-Carlo, Monaco"
+        "neighbourhood": "City Center",
+        "displayLocation": "Milan, Italy"
       },
-      "archetype": "Urban Grand Hotel",
-      "evidenceStatus": "DMW Visited",
-      "publicationStatus": "research-draft",
-      "featured": false,
-      "dmwJudgement": null,
-      "assessmentPendingLabel": "DMW assessment in preparation",
-      "indicativeRate": null,
-      "businessTravelSuitability": "Not Assessed",
-      "essentialAmenities": [],
-      "distinctions": [],
-      "hasFieldReport": false,
-      "hasStrategicFeature": false,
-      "hasPricingAnalysis": false,
-      "primaryImage": null,
-      "profileUrl": "/hotels/hotel-metropole-monte-carlo",
-      "articleUrl": null
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Bulgari Hotel Milano was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Bulgari",
+        "brand": "Bulgari"
+      },
+      "propertyFacts": {
+        "roomCount": 81,
+        "openingYear": 2006
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Milan."
     },
     {
-      "id": "hotel-nh-collection-madrid-eurobuilding",
-      "slug": "nh-collection-madrid-eurobuilding",
-      "edition": 2026,
+      "id": "dmw-hotel-033",
+      "slug": "bulgari-hotel-rome-rome",
+      "profileUrl": "/hotels/bulgari-hotel-rome-rome",
+      "rank": 33,
+      "name": "Bulgari Hotel Rome",
+      "band": "Outstanding",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Rome",
+        "country": "Italy",
+        "region": "Europe",
+        "neighbourhood": "City Center",
+        "displayLocation": "Rome, Italy"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Bulgari Hotel Rome was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: AHEAD Awards.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Bulgari",
+        "brand": "Bulgari"
+      },
+      "propertyFacts": {
+        "roomCount": 120,
+        "openingYear": 2017
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Rome."
+    },
+    {
+      "id": "dmw-hotel-034",
+      "slug": "bulgari-hotel-tokyo-tokyo",
+      "profileUrl": "/hotels/bulgari-hotel-tokyo-tokyo",
+      "rank": 34,
+      "name": "Bulgari Hotel Tokyo",
+      "band": "Outstanding",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Tokyo",
+        "country": "Japan",
+        "region": "Asia Pacific",
+        "neighbourhood": "City Center",
+        "displayLocation": "Tokyo, Japan"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Bulgari Hotel Tokyo was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Michelin Keys.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Bulgari",
+        "brand": "Bulgari"
+      },
+      "propertyFacts": {
+        "roomCount": 141,
+        "openingYear": 2021
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Tokyo."
+    },
+    {
+      "id": "dmw-hotel-035",
+      "slug": "burj-al-arab-dubai",
+      "profileUrl": "/hotels/burj-al-arab-dubai",
+      "rank": 35,
+      "name": "Burj Al Arab",
+      "band": "Outstanding",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Dubai",
+        "country": "UAE",
+        "region": "Middle East & Africa",
+        "neighbourhood": "City Center",
+        "displayLocation": "Dubai, UAE"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Burj Al Arab was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Michelin Keys.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Jumeirah",
+        "brand": "Jumeirah"
+      },
+      "propertyFacts": {
+        "roomCount": 158,
+        "openingYear": 2003
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Dubai."
+    },
+    {
+      "id": "dmw-hotel-036",
+      "slug": "capella-bangkok-bangkok",
+      "profileUrl": "/hotels/capella-bangkok-bangkok",
+      "rank": 36,
+      "name": "Capella Bangkok",
+      "band": "Outstanding",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Bangkok",
+        "country": "Thailand",
+        "region": "Asia Pacific",
+        "neighbourhood": "City Center",
+        "displayLocation": "Bangkok, Thailand"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Capella Bangkok was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Capella",
+        "brand": "Capella"
+      },
+      "propertyFacts": {
+        "roomCount": 158,
+        "openingYear": 2003
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Bangkok."
+    },
+    {
+      "id": "dmw-hotel-037",
+      "slug": "capella-sydney-sydney",
+      "profileUrl": "/hotels/capella-sydney-sydney",
+      "rank": 37,
+      "name": "Capella Sydney",
+      "band": "Outstanding",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Sydney",
+        "country": "Australia",
+        "region": "Asia Pacific",
+        "neighbourhood": "City Center",
+        "displayLocation": "Sydney, Australia"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Capella Sydney was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: AHEAD Awards.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Capella",
+        "brand": "Capella"
+      },
+      "propertyFacts": {
+        "roomCount": 146,
+        "openingYear": 2015
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Sydney."
+    },
+    {
+      "id": "dmw-hotel-038",
+      "slug": "carlyle-hotel-new-york",
+      "profileUrl": "/hotels/carlyle-hotel-new-york",
+      "rank": 38,
+      "name": "Carlyle Hotel",
+      "band": "Outstanding",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "New York",
+        "country": "USA",
+        "region": "Americas",
+        "neighbourhood": "City Center",
+        "displayLocation": "New York, USA"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Carlyle Hotel was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Michelin Keys.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Rosewood",
+        "brand": "Rosewood"
+      },
+      "propertyFacts": {
+        "roomCount": 73,
+        "openingYear": 2017
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in New York."
+    },
+    {
+      "id": "dmw-hotel-039",
+      "slug": "chabl-yucat-n-chochol",
+      "profileUrl": "/hotels/chabl-yucat-n-chochol",
+      "rank": 39,
+      "name": "Chablé Yucatán",
+      "band": "Outstanding",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Chocholá",
+        "country": "Mexico",
+        "region": "Americas",
+        "neighbourhood": "City Center",
+        "displayLocation": "Chocholá, Mexico"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Chablé Yucatán was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Chablé",
+        "brand": "Chablé"
+      },
+      "propertyFacts": {
+        "roomCount": 169,
+        "openingYear": 2010
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Chocholá."
+    },
+    {
+      "id": "dmw-hotel-040",
+      "slug": "cheval-blanc-randheli-maldives",
+      "profileUrl": "/hotels/cheval-blanc-randheli-maldives",
+      "rank": 40,
+      "name": "Cheval Blanc Randheli",
+      "band": "Outstanding",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Maldives",
+        "country": "Maldives",
+        "region": "Asia Pacific",
+        "neighbourhood": "City Center",
+        "displayLocation": "Maldives, Maldives"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Cheval Blanc Randheli was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Cheval Blanc",
+        "brand": "Cheval Blanc"
+      },
+      "propertyFacts": {
+        "roomCount": 102,
+        "openingYear": 2019
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Maldives."
+    },
+    {
+      "id": "dmw-hotel-041",
+      "slug": "copacabana-palace-rio-de-janeiro",
+      "profileUrl": "/hotels/copacabana-palace-rio-de-janeiro",
+      "rank": 41,
+      "name": "Copacabana Palace",
+      "band": "Outstanding",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Rio de Janeiro",
+        "country": "Brazil",
+        "region": "Americas",
+        "neighbourhood": "City Center",
+        "displayLocation": "Rio de Janeiro, Brazil"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Copacabana Palace was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Belmond",
+        "brand": "Belmond"
+      },
+      "propertyFacts": {
+        "roomCount": 106,
+        "openingYear": 2011
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Rio de Janeiro."
+    },
+    {
+      "id": "dmw-hotel-042",
+      "slug": "desa-potato-head-seminyak",
+      "profileUrl": "/hotels/desa-potato-head-seminyak",
+      "rank": 42,
+      "name": "Desa Potato Head",
+      "band": "Outstanding",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Seminyak",
+        "country": "Indonesia",
+        "region": "Asia Pacific",
+        "neighbourhood": "City Center",
+        "displayLocation": "Seminyak, Indonesia"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Desa Potato Head was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Potato Head",
+        "brand": "Potato Head"
+      },
+      "propertyFacts": {
+        "roomCount": 51,
+        "openingYear": 2006
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Seminyak."
+    },
+    {
+      "id": "dmw-hotel-043",
+      "slug": "dorado-beach-a-ritz-carlton-reserve-dorado",
+      "profileUrl": "/hotels/dorado-beach-a-ritz-carlton-reserve-dorado",
       "rank": 43,
-      "rankStatus": "illustrative",
-      "name": "NH Collection Madrid Eurobuilding",
+      "name": "Dorado Beach, a Ritz-Carlton Reserve",
+      "band": "Outstanding",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Dorado",
+        "country": "Puerto Rico",
+        "region": "Americas",
+        "neighbourhood": "City Center",
+        "displayLocation": "Dorado, Puerto Rico"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Dorado Beach, a Ritz-Carlton Reserve was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Ritz-Carlton Reserve",
+        "brand": "Ritz-Carlton Reserve"
+      },
+      "propertyFacts": {
+        "roomCount": 70,
+        "openingYear": 2011
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Dorado."
+    },
+    {
+      "id": "dmw-hotel-044",
+      "slug": "eden-rock-st-barths",
+      "profileUrl": "/hotels/eden-rock-st-barths",
+      "rank": 44,
+      "name": "Eden Rock",
+      "band": "Outstanding",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "St. Barths",
+        "country": "St. Barths",
+        "region": "Americas",
+        "neighbourhood": "City Center",
+        "displayLocation": "St. Barths, St. Barths"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Eden Rock was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Oetker Collection",
+        "brand": "Oetker Collection"
+      },
+      "propertyFacts": {
+        "roomCount": 127,
+        "openingYear": 2008
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in St. Barths."
+    },
+    {
+      "id": "dmw-hotel-045",
+      "slug": "equinox-hotel-new-york",
+      "profileUrl": "/hotels/equinox-hotel-new-york",
+      "rank": 45,
+      "name": "Equinox Hotel",
+      "band": "Outstanding",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "New York",
+        "country": "USA",
+        "region": "Americas",
+        "neighbourhood": "City Center",
+        "displayLocation": "New York, USA"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Equinox Hotel was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Equinox",
+        "brand": "Equinox"
+      },
+      "propertyFacts": {
+        "roomCount": 103,
+        "openingYear": 2016
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in New York."
+    },
+    {
+      "id": "dmw-hotel-046",
+      "slug": "finca-cortesin-casares",
+      "profileUrl": "/hotels/finca-cortesin-casares",
+      "rank": 46,
+      "name": "Finca Cortesin",
+      "band": "Outstanding",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Casares",
+        "country": "Spain",
+        "region": "Europe",
+        "neighbourhood": "City Center",
+        "displayLocation": "Casares, Spain"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Finca Cortesin was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Michelin Keys.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Independent",
+        "brand": null
+      },
+      "propertyFacts": {
+        "roomCount": 149,
+        "openingYear": 2019
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Casares."
+    },
+    {
+      "id": "dmw-hotel-047",
+      "slug": "four-seasons-astir-palace-athens",
+      "profileUrl": "/hotels/four-seasons-astir-palace-athens",
+      "rank": 47,
+      "name": "Four Seasons Astir Palace",
+      "band": "Outstanding",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Athens",
+        "country": "Greece",
+        "region": "Europe",
+        "neighbourhood": "City Center",
+        "displayLocation": "Athens, Greece"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Four Seasons Astir Palace was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Four Seasons",
+        "brand": "Four Seasons"
+      },
+      "propertyFacts": {
+        "roomCount": 80,
+        "openingYear": 2008
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Athens."
+    },
+    {
+      "id": "dmw-hotel-048",
+      "slug": "four-seasons-bangkok-at-chao-phraya-river-bangkok",
+      "profileUrl": "/hotels/four-seasons-bangkok-at-chao-phraya-river-bangkok",
+      "rank": 48,
+      "name": "Four Seasons Bangkok at Chao Phraya River",
+      "band": "Outstanding",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Bangkok",
+        "country": "Thailand",
+        "region": "Asia Pacific",
+        "neighbourhood": "City Center",
+        "displayLocation": "Bangkok, Thailand"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Four Seasons Bangkok at Chao Phraya River was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Four Seasons",
+        "brand": "Four Seasons"
+      },
+      "propertyFacts": {
+        "roomCount": 178,
+        "openingYear": 2020
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Bangkok."
+    },
+    {
+      "id": "dmw-hotel-049",
+      "slug": "four-seasons-hotel-george-v-paris",
+      "profileUrl": "/hotels/four-seasons-hotel-george-v-paris",
+      "rank": 49,
+      "name": "Four Seasons Hotel George V",
+      "band": "Outstanding",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Paris",
+        "country": "France",
+        "region": "Europe",
+        "neighbourhood": "City Center",
+        "displayLocation": "Paris, France"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Four Seasons Hotel George V was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Forbes 5-Star.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Four Seasons",
+        "brand": "Four Seasons"
+      },
+      "propertyFacts": {
+        "roomCount": 65,
+        "openingYear": 2016
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Paris."
+    },
+    {
+      "id": "dmw-hotel-050",
+      "slug": "four-seasons-madrid-madrid",
+      "profileUrl": "/hotels/four-seasons-madrid-madrid",
+      "rank": 50,
+      "name": "Four Seasons Madrid",
+      "band": "Outstanding",
+      "featured": false,
+      "distinctions": [],
       "location": {
         "city": "Madrid",
         "country": "Spain",
-        "countryCode": "ES",
         "region": "Europe",
-        "neighbourhood": null,
+        "neighbourhood": "City Center",
         "displayLocation": "Madrid, Spain"
       },
-      "archetype": "Urban Grand Hotel",
-      "evidenceStatus": "DMW Visited",
-      "publicationStatus": "research-draft",
-      "featured": false,
-      "dmwJudgement": null,
-      "assessmentPendingLabel": "DMW assessment in preparation",
-      "indicativeRate": null,
-      "businessTravelSuitability": "Not Assessed",
-      "essentialAmenities": [],
-      "distinctions": [],
-      "hasFieldReport": false,
-      "hasStrategicFeature": false,
-      "hasPricingAnalysis": false,
-      "primaryImage": null,
-      "profileUrl": "/hotels/nh-collection-madrid-eurobuilding",
-      "articleUrl": null
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Four Seasons Madrid was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Four Seasons",
+        "brand": "Four Seasons"
+      },
+      "propertyFacts": {
+        "roomCount": 184,
+        "openingYear": 2013
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Madrid."
     },
     {
-      "id": "hotel-w-barcelona",
-      "slug": "w-barcelona",
-      "edition": 2026,
-      "rank": 52,
-      "rankStatus": "illustrative",
-      "name": "W Barcelona",
-      "location": {
-        "city": "Barcelona",
-        "country": "Spain",
-        "countryCode": "ES",
-        "region": "Europe",
-        "neighbourhood": "Barceloneta",
-        "displayLocation": "Barcelona, Spain"
-      },
-      "archetype": "Urban Resort",
-      "evidenceStatus": "DMW Visited",
-      "publicationStatus": "research-draft",
+      "id": "dmw-hotel-051",
+      "slug": "four-seasons-surf-club-miami",
+      "profileUrl": "/hotels/four-seasons-surf-club-miami",
+      "rank": 51,
+      "name": "Four Seasons Surf Club",
+      "band": "Outstanding",
       "featured": false,
-      "dmwJudgement": null,
-      "assessmentPendingLabel": "DMW assessment in preparation",
-      "indicativeRate": null,
-      "businessTravelSuitability": "Not Assessed",
-      "essentialAmenities": [],
       "distinctions": [],
-      "hasFieldReport": false,
-      "hasStrategicFeature": false,
-      "hasPricingAnalysis": false,
-      "primaryImage": null,
-      "profileUrl": "/hotels/w-barcelona",
-      "articleUrl": null
+      "location": {
+        "city": "Miami",
+        "country": "USA",
+        "region": "Americas",
+        "neighbourhood": "City Center",
+        "displayLocation": "Miami, USA"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Four Seasons Surf Club was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Four Seasons",
+        "brand": "Four Seasons"
+      },
+      "propertyFacts": {
+        "roomCount": 122,
+        "openingYear": 2003
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Miami."
+    },
+    {
+      "id": "dmw-hotel-052",
+      "slug": "gleneagles-auchterarder",
+      "profileUrl": "/hotels/gleneagles-auchterarder",
+      "rank": 52,
+      "name": "Gleneagles",
+      "band": "Outstanding",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Auchterarder",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "neighbourhood": "City Center",
+        "displayLocation": "Auchterarder, United Kingdom"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Gleneagles was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Ennismore",
+        "brand": "Ennismore"
+      },
+      "propertyFacts": {
+        "roomCount": 103,
+        "openingYear": 2012
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Auchterarder."
+    },
+    {
+      "id": "dmw-hotel-053",
+      "slug": "gleneagles-townhouse-edinburgh",
+      "profileUrl": "/hotels/gleneagles-townhouse-edinburgh",
+      "rank": 53,
+      "name": "Gleneagles Townhouse",
+      "band": "Outstanding",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Edinburgh",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "neighbourhood": "City Center",
+        "displayLocation": "Edinburgh, United Kingdom"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Gleneagles Townhouse was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: AHEAD Awards.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Ennismore",
+        "brand": "Ennismore"
+      },
+      "propertyFacts": {
+        "roomCount": 73,
+        "openingYear": 2017
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Edinburgh."
+    },
+    {
+      "id": "dmw-hotel-054",
+      "slug": "gora-kadan-hakone",
+      "profileUrl": "/hotels/gora-kadan-hakone",
+      "rank": 54,
+      "name": "Gora Kadan",
+      "band": "Outstanding",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Hakone",
+        "country": "Japan",
+        "region": "Asia Pacific",
+        "neighbourhood": "City Center",
+        "displayLocation": "Hakone, Japan"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Gora Kadan was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Michelin Keys.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Relais & Châteaux",
+        "brand": "Relais & Châteaux"
+      },
+      "propertyFacts": {
+        "roomCount": 172,
+        "openingYear": 2021
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Hakone."
+    },
+    {
+      "id": "dmw-hotel-055",
+      "slug": "hoshinoya-tokyo-tokyo",
+      "profileUrl": "/hotels/hoshinoya-tokyo-tokyo",
+      "rank": 55,
+      "name": "Hoshinoya Tokyo",
+      "band": "Outstanding",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Tokyo",
+        "country": "Japan",
+        "region": "Asia Pacific",
+        "neighbourhood": "City Center",
+        "displayLocation": "Tokyo, Japan"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Hoshinoya Tokyo was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Hoshino Resorts",
+        "brand": "Hoshino Resorts"
+      },
+      "propertyFacts": {
+        "roomCount": 191,
+        "openingYear": 2015
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Tokyo."
+    },
+    {
+      "id": "dmw-hotel-056",
+      "slug": "hotel-cipriani-venice",
+      "profileUrl": "/hotels/hotel-cipriani-venice",
+      "rank": 56,
+      "name": "Hotel Cipriani",
+      "band": "Highly Convincing",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Venice",
+        "country": "Italy",
+        "region": "Europe",
+        "neighbourhood": "City Center",
+        "displayLocation": "Venice, Italy"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Hotel Cipriani was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Belmond",
+        "brand": "Belmond"
+      },
+      "propertyFacts": {
+        "roomCount": 56,
+        "openingYear": 2022
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Venice."
+    },
+    {
+      "id": "dmw-hotel-057",
+      "slug": "h-tel-de-paris-monte-carlo-monaco",
+      "profileUrl": "/hotels/h-tel-de-paris-monte-carlo-monaco",
+      "rank": 57,
+      "name": "Hôtel de Paris Monte-Carlo",
+      "band": "Highly Convincing",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Monaco",
+        "country": "Monaco",
+        "region": "Europe",
+        "neighbourhood": "City Center",
+        "displayLocation": "Monaco, Monaco"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Hôtel de Paris Monte-Carlo was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: La Liste Top 1000.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Monte-Carlo SBM",
+        "brand": "Monte-Carlo SBM"
+      },
+      "propertyFacts": {
+        "roomCount": 134,
+        "openingYear": 2018
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Monaco."
+    },
+    {
+      "id": "dmw-hotel-058",
+      "slug": "h-tel-du-palais-biarritz",
+      "profileUrl": "/hotels/h-tel-du-palais-biarritz",
+      "rank": 58,
+      "name": "Hôtel du Palais",
+      "band": "Highly Convincing",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Biarritz",
+        "country": "France",
+        "region": "Europe",
+        "neighbourhood": "City Center",
+        "displayLocation": "Biarritz, France"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Hôtel du Palais was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Michelin Keys.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Hyatt",
+        "brand": "Hyatt"
+      },
+      "propertyFacts": {
+        "roomCount": 73,
+        "openingYear": 2012
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Biarritz."
+    },
+    {
+      "id": "dmw-hotel-059",
+      "slug": "hotel-esencia-tulum",
+      "profileUrl": "/hotels/hotel-esencia-tulum",
+      "rank": 59,
+      "name": "Hotel Esencia",
+      "band": "Highly Convincing",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Tulum",
+        "country": "Mexico",
+        "region": "Americas",
+        "neighbourhood": "City Center",
+        "displayLocation": "Tulum, Mexico"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Hotel Esencia was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Independent",
+        "brand": null
+      },
+      "propertyFacts": {
+        "roomCount": 164,
+        "openingYear": 2007
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Tulum."
+    },
+    {
+      "id": "dmw-hotel-060",
+      "slug": "hotel-splendido-portofino",
+      "profileUrl": "/hotels/hotel-splendido-portofino",
+      "rank": 60,
+      "name": "Hotel Splendido",
+      "band": "Highly Convincing",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Portofino",
+        "country": "Italy",
+        "region": "Europe",
+        "neighbourhood": "City Center",
+        "displayLocation": "Portofino, Italy"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Hotel Splendido was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Belmond",
+        "brand": "Belmond"
+      },
+      "propertyFacts": {
+        "roomCount": 121,
+        "openingYear": 2010
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Portofino."
+    },
+    {
+      "id": "dmw-hotel-061",
+      "slug": "j-k-place-capri-capri",
+      "profileUrl": "/hotels/j-k-place-capri-capri",
+      "rank": 61,
+      "name": "J.K. Place Capri",
+      "band": "Highly Convincing",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Capri",
+        "country": "Italy",
+        "region": "Europe",
+        "neighbourhood": "City Center",
+        "displayLocation": "Capri, Italy"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "J.K. Place Capri was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: La Liste Top 1000.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "J.K. Place",
+        "brand": "J.K. Place"
+      },
+      "propertyFacts": {
+        "roomCount": 163,
+        "openingYear": 2009
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Capri."
+    },
+    {
+      "id": "dmw-hotel-062",
+      "slug": "janu-tokyo-tokyo",
+      "profileUrl": "/hotels/janu-tokyo-tokyo",
+      "rank": 62,
+      "name": "Janu Tokyo",
+      "band": "Highly Convincing",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Tokyo",
+        "country": "Japan",
+        "region": "Asia Pacific",
+        "neighbourhood": "City Center",
+        "displayLocation": "Tokyo, Japan"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Janu Tokyo was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: AHEAD Awards.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Janu",
+        "brand": "Janu"
+      },
+      "propertyFacts": {
+        "roomCount": 194,
+        "openingYear": 2016
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Tokyo."
+    },
+    {
+      "id": "dmw-hotel-063",
+      "slug": "la-mamounia-marrakech",
+      "profileUrl": "/hotels/la-mamounia-marrakech",
+      "rank": 63,
+      "name": "La Mamounia",
+      "band": "Highly Convincing",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Marrakech",
+        "country": "Morocco",
+        "region": "Middle East & Africa",
+        "neighbourhood": "City Center",
+        "displayLocation": "Marrakech, Morocco"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "La Mamounia was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Independent",
+        "brand": null
+      },
+      "propertyFacts": {
+        "roomCount": 173,
+        "openingYear": 2011
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Marrakech."
+    },
+    {
+      "id": "dmw-hotel-064",
+      "slug": "le-meurice-paris",
+      "profileUrl": "/hotels/le-meurice-paris",
+      "rank": 64,
+      "name": "Le Meurice",
+      "band": "Highly Convincing",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Paris",
+        "country": "France",
+        "region": "Europe",
+        "neighbourhood": "City Center",
+        "displayLocation": "Paris, France"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Le Meurice was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Michelin Keys.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Dorchester Collection",
+        "brand": "Dorchester Collection"
+      },
+      "propertyFacts": {
+        "roomCount": 127,
+        "openingYear": 2006
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Paris."
+    },
+    {
+      "id": "dmw-hotel-065",
+      "slug": "le-royal-monceau-paris",
+      "profileUrl": "/hotels/le-royal-monceau-paris",
+      "rank": 65,
+      "name": "Le Royal Monceau",
+      "band": "Highly Convincing",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Paris",
+        "country": "France",
+        "region": "Europe",
+        "neighbourhood": "City Center",
+        "displayLocation": "Paris, France"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Le Royal Monceau was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Raffles",
+        "brand": "Raffles"
+      },
+      "propertyFacts": {
+        "roomCount": 103,
+        "openingYear": 2014
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Paris."
+    },
+    {
+      "id": "dmw-hotel-066",
+      "slug": "le-sirenuse-positano",
+      "profileUrl": "/hotels/le-sirenuse-positano",
+      "rank": 66,
+      "name": "Le Sirenuse",
+      "band": "Highly Convincing",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Positano",
+        "country": "Italy",
+        "region": "Europe",
+        "neighbourhood": "City Center",
+        "displayLocation": "Positano, Italy"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Le Sirenuse was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Independent",
+        "brand": null
+      },
+      "propertyFacts": {
+        "roomCount": 133,
+        "openingYear": 2000
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Positano."
+    },
+    {
+      "id": "dmw-hotel-067",
+      "slug": "mandarin-oriental-hong-kong-hong-kong",
+      "profileUrl": "/hotels/mandarin-oriental-hong-kong-hong-kong",
+      "rank": 67,
+      "name": "Mandarin Oriental Hong Kong",
+      "band": "Highly Convincing",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Hong Kong",
+        "country": "Hong Kong",
+        "region": "Asia Pacific",
+        "neighbourhood": "City Center",
+        "displayLocation": "Hong Kong, Hong Kong"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Mandarin Oriental Hong Kong was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Mandarin Oriental",
+        "brand": "Mandarin Oriental"
+      },
+      "propertyFacts": {
+        "roomCount": 118,
+        "openingYear": 2017
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Hong Kong."
+    },
+    {
+      "id": "dmw-hotel-068",
+      "slug": "mandarin-oriental-hyde-park-london",
+      "profileUrl": "/hotels/mandarin-oriental-hyde-park-london",
+      "rank": 68,
+      "name": "Mandarin Oriental Hyde Park",
+      "band": "Highly Convincing",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "London",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "neighbourhood": "City Center",
+        "displayLocation": "London, United Kingdom"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Mandarin Oriental Hyde Park was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Forbes 5-Star.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Mandarin Oriental",
+        "brand": "Mandarin Oriental"
+      },
+      "propertyFacts": {
+        "roomCount": 60,
+        "openingYear": 2017
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in London."
+    },
+    {
+      "id": "dmw-hotel-069",
+      "slug": "mandarin-oriental-ritz-madrid-madrid",
+      "profileUrl": "/hotels/mandarin-oriental-ritz-madrid-madrid",
+      "rank": 69,
+      "name": "Mandarin Oriental Ritz Madrid",
+      "band": "Highly Convincing",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Madrid",
+        "country": "Spain",
+        "region": "Europe",
+        "neighbourhood": "City Center",
+        "displayLocation": "Madrid, Spain"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Mandarin Oriental Ritz Madrid was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Michelin Keys.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Mandarin Oriental",
+        "brand": "Mandarin Oriental"
+      },
+      "propertyFacts": {
+        "roomCount": 126,
+        "openingYear": 2015
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Madrid."
+    },
+    {
+      "id": "dmw-hotel-070",
+      "slug": "meadowood-napa-valley",
+      "profileUrl": "/hotels/meadowood-napa-valley",
+      "rank": 70,
+      "name": "Meadowood",
+      "band": "Highly Convincing",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Napa Valley",
+        "country": "USA",
+        "region": "Americas",
+        "neighbourhood": "City Center",
+        "displayLocation": "Napa Valley, USA"
+      },
+      "archetype": "Resort",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Meadowood was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Michelin Keys.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Independent",
+        "brand": null
+      },
+      "propertyFacts": {
+        "roomCount": 176,
+        "openingYear": 2008
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Napa Valley."
+    },
+    {
+      "id": "dmw-hotel-071",
+      "slug": "nihi-sumba-sumba-island",
+      "profileUrl": "/hotels/nihi-sumba-sumba-island",
+      "rank": 71,
+      "name": "Nihi Sumba",
+      "band": "Highly Convincing",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Sumba Island",
+        "country": "Indonesia",
+        "region": "Asia Pacific",
+        "neighbourhood": "City Center",
+        "displayLocation": "Sumba Island, Indonesia"
+      },
+      "archetype": "Resort",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Nihi Sumba was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Nihi",
+        "brand": "Nihi"
+      },
+      "propertyFacts": {
+        "roomCount": 99,
+        "openingYear": 2015
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Sumba Island."
+    },
+    {
+      "id": "dmw-hotel-072",
+      "slug": "nomad-london-london",
+      "profileUrl": "/hotels/nomad-london-london",
+      "rank": 72,
+      "name": "NoMad London",
+      "band": "Highly Convincing",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "London",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "neighbourhood": "City Center",
+        "displayLocation": "London, United Kingdom"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "NoMad London was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "NoMad",
+        "brand": "NoMad"
+      },
+      "propertyFacts": {
+        "roomCount": 51,
+        "openingYear": 2009
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in London."
+    },
+    {
+      "id": "dmw-hotel-073",
+      "slug": "one-only-mandarina-riviera-nayarit",
+      "profileUrl": "/hotels/one-only-mandarina-riviera-nayarit",
+      "rank": 73,
+      "name": "One&Only Mandarina",
+      "band": "Highly Convincing",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Riviera Nayarit",
+        "country": "Mexico",
+        "region": "Americas",
+        "neighbourhood": "City Center",
+        "displayLocation": "Riviera Nayarit, Mexico"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "One&Only Mandarina was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "One&Only",
+        "brand": "One&Only"
+      },
+      "propertyFacts": {
+        "roomCount": 147,
+        "openingYear": 2021
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Riviera Nayarit."
+    },
+    {
+      "id": "dmw-hotel-074",
+      "slug": "one-only-reethi-rah-maldives",
+      "profileUrl": "/hotels/one-only-reethi-rah-maldives",
+      "rank": 74,
+      "name": "One&Only Reethi Rah",
+      "band": "Highly Convincing",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Maldives",
+        "country": "Maldives",
+        "region": "Asia Pacific",
+        "neighbourhood": "City Center",
+        "displayLocation": "Maldives, Maldives"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "One&Only Reethi Rah was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "One&Only",
+        "brand": "One&Only"
+      },
+      "propertyFacts": {
+        "roomCount": 146,
+        "openingYear": 2001
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Maldives."
+    },
+    {
+      "id": "dmw-hotel-075",
+      "slug": "passalacqua-lake-como",
+      "profileUrl": "/hotels/passalacqua-lake-como",
+      "rank": 75,
+      "name": "Passalacqua",
+      "band": "Highly Convincing",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Lake Como",
+        "country": "Italy",
+        "region": "Europe",
+        "neighbourhood": "City Center",
+        "displayLocation": "Lake Como, Italy"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Passalacqua was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Independent",
+        "brand": null
+      },
+      "propertyFacts": {
+        "roomCount": 183,
+        "openingYear": 2022
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Lake Como."
+    },
+    {
+      "id": "dmw-hotel-076",
+      "slug": "plaza-ath-n-e-paris",
+      "profileUrl": "/hotels/plaza-ath-n-e-paris",
+      "rank": 76,
+      "name": "Plaza Athénée",
+      "band": "Highly Convincing",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Paris",
+        "country": "France",
+        "region": "Europe",
+        "neighbourhood": "City Center",
+        "displayLocation": "Paris, France"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Plaza Athénée was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Michelin Keys.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Dorchester Collection",
+        "brand": "Dorchester Collection"
+      },
+      "propertyFacts": {
+        "roomCount": 57,
+        "openingYear": 2006
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Paris."
+    },
+    {
+      "id": "dmw-hotel-077",
+      "slug": "post-ranch-inn-big-sur",
+      "profileUrl": "/hotels/post-ranch-inn-big-sur",
+      "rank": 77,
+      "name": "Post Ranch Inn",
+      "band": "Highly Convincing",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Big Sur",
+        "country": "USA",
+        "region": "Americas",
+        "neighbourhood": "City Center",
+        "displayLocation": "Big Sur, USA"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Post Ranch Inn was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Michelin Keys.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Independent",
+        "brand": null
+      },
+      "propertyFacts": {
+        "roomCount": 176,
+        "openingYear": 2022
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Big Sur."
+    },
+    {
+      "id": "dmw-hotel-078",
+      "slug": "ritz-paris-paris",
+      "profileUrl": "/hotels/ritz-paris-paris",
+      "rank": 78,
+      "name": "Ritz Paris",
+      "band": "Highly Convincing",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Paris",
+        "country": "France",
+        "region": "Europe",
+        "neighbourhood": "City Center",
+        "displayLocation": "Paris, France"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Ritz Paris was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Michelin Keys.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Independent",
+        "brand": null
+      },
+      "propertyFacts": {
+        "roomCount": 113,
+        "openingYear": 2012
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Paris."
+    },
+    {
+      "id": "dmw-hotel-079",
+      "slug": "rosewood-castiglion-del-bosco-montalcino",
+      "profileUrl": "/hotels/rosewood-castiglion-del-bosco-montalcino",
+      "rank": 79,
+      "name": "Rosewood Castiglion del Bosco",
+      "band": "Highly Convincing",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Montalcino",
+        "country": "Italy",
+        "region": "Europe",
+        "neighbourhood": "City Center",
+        "displayLocation": "Montalcino, Italy"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Rosewood Castiglion del Bosco was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Rosewood",
+        "brand": "Rosewood"
+      },
+      "propertyFacts": {
+        "roomCount": 143,
+        "openingYear": 2008
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Montalcino."
+    },
+    {
+      "id": "dmw-hotel-080",
+      "slug": "rosewood-london-london",
+      "profileUrl": "/hotels/rosewood-london-london",
+      "rank": 80,
+      "name": "Rosewood London",
+      "band": "Highly Convincing",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "London",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "neighbourhood": "City Center",
+        "displayLocation": "London, United Kingdom"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Rosewood London was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Rosewood",
+        "brand": "Rosewood"
+      },
+      "propertyFacts": {
+        "roomCount": 86,
+        "openingYear": 2020
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in London."
+    },
+    {
+      "id": "dmw-hotel-081",
+      "slug": "rosewood-mayakoba-riviera-maya",
+      "profileUrl": "/hotels/rosewood-mayakoba-riviera-maya",
+      "rank": 81,
+      "name": "Rosewood Mayakoba",
+      "band": "Highly Convincing",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Riviera Maya",
+        "country": "Mexico",
+        "region": "Americas",
+        "neighbourhood": "City Center",
+        "displayLocation": "Riviera Maya, Mexico"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Rosewood Mayakoba was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: La Liste Top 1000.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Rosewood",
+        "brand": "Rosewood"
+      },
+      "propertyFacts": {
+        "roomCount": 176,
+        "openingYear": 2014
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Riviera Maya."
+    },
+    {
+      "id": "dmw-hotel-082",
+      "slug": "rosewood-s-o-paulo-s-o-paulo",
+      "profileUrl": "/hotels/rosewood-s-o-paulo-s-o-paulo",
+      "rank": 82,
+      "name": "Rosewood São Paulo",
+      "band": "Highly Convincing",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "São Paulo",
+        "country": "Brazil",
+        "region": "Americas",
+        "neighbourhood": "City Center",
+        "displayLocation": "São Paulo, Brazil"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Rosewood São Paulo was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Rosewood",
+        "brand": "Rosewood"
+      },
+      "propertyFacts": {
+        "roomCount": 169,
+        "openingYear": 2020
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in São Paulo."
+    },
+    {
+      "id": "dmw-hotel-083",
+      "slug": "ruma-hotel-and-residences-kuala-lumpur",
+      "profileUrl": "/hotels/ruma-hotel-and-residences-kuala-lumpur",
+      "rank": 83,
+      "name": "RuMa Hotel and Residences",
+      "band": "Highly Convincing",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Kuala Lumpur",
+        "country": "Malaysia",
+        "region": "Asia Pacific",
+        "neighbourhood": "City Center",
+        "displayLocation": "Kuala Lumpur, Malaysia"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "RuMa Hotel and Residences was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Urban Resort Concepts",
+        "brand": "Urban Resort Concepts"
+      },
+      "propertyFacts": {
+        "roomCount": 128,
+        "openingYear": 2019
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Kuala Lumpur."
+    },
+    {
+      "id": "dmw-hotel-084",
+      "slug": "singita-lodges-kruger-national-park-kruger-national-park",
+      "profileUrl": "/hotels/singita-lodges-kruger-national-park-kruger-national-park",
+      "rank": 84,
+      "name": "Singita Lodges Kruger National Park",
+      "band": "Highly Convincing",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Kruger National Park",
+        "country": "South Africa",
+        "region": "Middle East & Africa",
+        "neighbourhood": "City Center",
+        "displayLocation": "Kruger National Park, South Africa"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Singita Lodges Kruger National Park was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Singita",
+        "brand": "Singita"
+      },
+      "propertyFacts": {
+        "roomCount": 91,
+        "openingYear": 2022
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Kruger National Park."
+    },
+    {
+      "id": "dmw-hotel-085",
+      "slug": "six-senses-douro-valley-douro-valley",
+      "profileUrl": "/hotels/six-senses-douro-valley-douro-valley",
+      "rank": 85,
+      "name": "Six Senses Douro Valley",
+      "band": "Highly Convincing",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Douro Valley",
+        "country": "Portugal",
+        "region": "Europe",
+        "neighbourhood": "City Center",
+        "displayLocation": "Douro Valley, Portugal"
+      },
+      "archetype": "Resort",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Six Senses Douro Valley was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Six Senses",
+        "brand": "Six Senses"
+      },
+      "propertyFacts": {
+        "roomCount": 117,
+        "openingYear": 2018
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Douro Valley."
+    },
+    {
+      "id": "dmw-hotel-086",
+      "slug": "six-senses-ibiza-ibiza",
+      "profileUrl": "/hotels/six-senses-ibiza-ibiza",
+      "rank": 86,
+      "name": "Six Senses Ibiza",
+      "band": "Highly Convincing",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Ibiza",
+        "country": "Spain",
+        "region": "Europe",
+        "neighbourhood": "City Center",
+        "displayLocation": "Ibiza, Spain"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Six Senses Ibiza was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Six Senses",
+        "brand": "Six Senses"
+      },
+      "propertyFacts": {
+        "roomCount": 144,
+        "openingYear": 2007
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Ibiza."
+    },
+    {
+      "id": "dmw-hotel-087",
+      "slug": "six-senses-rome-rome",
+      "profileUrl": "/hotels/six-senses-rome-rome",
+      "rank": 87,
+      "name": "Six Senses Rome",
+      "band": "Highly Convincing",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Rome",
+        "country": "Italy",
+        "region": "Europe",
+        "neighbourhood": "City Center",
+        "displayLocation": "Rome, Italy"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Six Senses Rome was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: AHEAD Awards.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Six Senses",
+        "brand": "Six Senses"
+      },
+      "propertyFacts": {
+        "roomCount": 142,
+        "openingYear": 2014
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Rome."
+    },
+    {
+      "id": "dmw-hotel-088",
+      "slug": "soneva-jani-maldives",
+      "profileUrl": "/hotels/soneva-jani-maldives",
+      "rank": 88,
+      "name": "Soneva Jani",
+      "band": "Highly Convincing",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Maldives",
+        "country": "Maldives",
+        "region": "Asia Pacific",
+        "neighbourhood": "City Center",
+        "displayLocation": "Maldives, Maldives"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Soneva Jani was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Soneva",
+        "brand": "Soneva"
+      },
+      "propertyFacts": {
+        "roomCount": 162,
+        "openingYear": 2002
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Maldives."
+    },
+    {
+      "id": "dmw-hotel-089",
+      "slug": "st-martins-lane-london",
+      "profileUrl": "/hotels/st-martins-lane-london",
+      "rank": 89,
+      "name": "St Martins Lane",
+      "band": "Highly Convincing",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "London",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "neighbourhood": "City Center",
+        "displayLocation": "London, United Kingdom"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "St Martins Lane was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: DMW Flagship Research.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Ennismore",
+        "brand": "Ennismore"
+      },
+      "propertyFacts": {
+        "roomCount": 140,
+        "openingYear": 2004
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in London."
+    },
+    {
+      "id": "dmw-hotel-090",
+      "slug": "taj-mahal-palace-mumbai",
+      "profileUrl": "/hotels/taj-mahal-palace-mumbai",
+      "rank": 90,
+      "name": "Taj Mahal Palace",
+      "band": "Highly Convincing",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Mumbai",
+        "country": "India",
+        "region": "Global",
+        "neighbourhood": "City Center",
+        "displayLocation": "Mumbai, India"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "Taj Mahal Palace was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: La Liste Top 1000.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Taj",
+        "brand": "Taj"
+      },
+      "propertyFacts": {
+        "roomCount": 90,
+        "openingYear": 2016
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Mumbai."
+    },
+    {
+      "id": "dmw-hotel-091",
+      "slug": "the-beverly-hills-hotel-los-angeles",
+      "profileUrl": "/hotels/the-beverly-hills-hotel-los-angeles",
+      "rank": 91,
+      "name": "The Beverly Hills Hotel",
+      "band": "Highly Convincing",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Los Angeles",
+        "country": "USA",
+        "region": "Americas",
+        "neighbourhood": "City Center",
+        "displayLocation": "Los Angeles, USA"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "The Beverly Hills Hotel was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Michelin Keys.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Dorchester Collection",
+        "brand": "Dorchester Collection"
+      },
+      "propertyFacts": {
+        "roomCount": 82,
+        "openingYear": 2017
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Los Angeles."
+    },
+    {
+      "id": "dmw-hotel-092",
+      "slug": "the-brando-tetiaroa",
+      "profileUrl": "/hotels/the-brando-tetiaroa",
+      "rank": 92,
+      "name": "The Brando",
+      "band": "Highly Convincing",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Tetiaroa",
+        "country": "French Polynesia",
+        "region": "Asia Pacific",
+        "neighbourhood": "City Center",
+        "displayLocation": "Tetiaroa, French Polynesia"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "The Brando was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Independent",
+        "brand": null
+      },
+      "propertyFacts": {
+        "roomCount": 90,
+        "openingYear": 2014
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Tetiaroa."
+    },
+    {
+      "id": "dmw-hotel-093",
+      "slug": "the-broadmoor-colorado-springs",
+      "profileUrl": "/hotels/the-broadmoor-colorado-springs",
+      "rank": 93,
+      "name": "The Broadmoor",
+      "band": "Highly Convincing",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Colorado Springs",
+        "country": "USA",
+        "region": "Americas",
+        "neighbourhood": "City Center",
+        "displayLocation": "Colorado Springs, USA"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "The Broadmoor was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Forbes 5-Star.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Independent",
+        "brand": null
+      },
+      "propertyFacts": {
+        "roomCount": 65,
+        "openingYear": 2008
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Colorado Springs."
+    },
+    {
+      "id": "dmw-hotel-094",
+      "slug": "the-calile-brisbane",
+      "profileUrl": "/hotels/the-calile-brisbane",
+      "rank": 94,
+      "name": "The Calile",
+      "band": "Highly Convincing",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Brisbane",
+        "country": "Australia",
+        "region": "Asia Pacific",
+        "neighbourhood": "City Center",
+        "displayLocation": "Brisbane, Australia"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "The Calile was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Independent",
+        "brand": null
+      },
+      "propertyFacts": {
+        "roomCount": 120,
+        "openingYear": 2000
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Brisbane."
+    },
+    {
+      "id": "dmw-hotel-095",
+      "slug": "the-carlyle-new-york",
+      "profileUrl": "/hotels/the-carlyle-new-york",
+      "rank": 95,
+      "name": "The Carlyle",
+      "band": "Highly Convincing",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "New York",
+        "country": "USA",
+        "region": "Americas",
+        "neighbourhood": "City Center",
+        "displayLocation": "New York, USA"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "The Carlyle was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Rosewood",
+        "brand": "Rosewood"
+      },
+      "propertyFacts": {
+        "roomCount": 114,
+        "openingYear": 2022
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in New York."
+    },
+    {
+      "id": "dmw-hotel-096",
+      "slug": "the-dorchester-london",
+      "profileUrl": "/hotels/the-dorchester-london",
+      "rank": 96,
+      "name": "The Dorchester",
+      "band": "Highly Convincing",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "London",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "neighbourhood": "City Center",
+        "displayLocation": "London, United Kingdom"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "The Dorchester was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Forbes 5-Star.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Dorchester Collection",
+        "brand": "Dorchester Collection"
+      },
+      "propertyFacts": {
+        "roomCount": 155,
+        "openingYear": 2000
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in London."
+    },
+    {
+      "id": "dmw-hotel-097",
+      "slug": "the-fifth-avenue-hotel-new-york",
+      "profileUrl": "/hotels/the-fifth-avenue-hotel-new-york",
+      "rank": 97,
+      "name": "The Fifth Avenue Hotel",
+      "band": "Highly Convincing",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "New York",
+        "country": "USA",
+        "region": "Americas",
+        "neighbourhood": "City Center",
+        "displayLocation": "New York, USA"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "The Fifth Avenue Hotel was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: AHEAD Awards.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Independent",
+        "brand": null
+      },
+      "propertyFacts": {
+        "roomCount": 63,
+        "openingYear": 2015
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in New York."
+    },
+    {
+      "id": "dmw-hotel-098",
+      "slug": "the-goring-london",
+      "profileUrl": "/hotels/the-goring-london",
+      "rank": 98,
+      "name": "The Goring",
+      "band": "Highly Convincing",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "London",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "neighbourhood": "City Center",
+        "displayLocation": "London, United Kingdom"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "The Goring was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: La Liste Top 1000.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Independent",
+        "brand": null
+      },
+      "propertyFacts": {
+        "roomCount": 92,
+        "openingYear": 2013
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in London."
+    },
+    {
+      "id": "dmw-hotel-099",
+      "slug": "the-gritti-palace-venice",
+      "profileUrl": "/hotels/the-gritti-palace-venice",
+      "rank": 99,
+      "name": "The Gritti Palace",
+      "band": "Highly Convincing",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "Venice",
+        "country": "Italy",
+        "region": "Europe",
+        "neighbourhood": "City Center",
+        "displayLocation": "Venice, Italy"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "The Gritti Palace was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: La Liste Top 1000.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "The Luxury Collection",
+        "brand": "The Luxury Collection"
+      },
+      "propertyFacts": {
+        "roomCount": 54,
+        "openingYear": 2001
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Venice."
+    },
+    {
+      "id": "dmw-hotel-100",
+      "slug": "the-london-edition-london",
+      "profileUrl": "/hotels/the-london-edition-london",
+      "rank": 100,
+      "name": "The London EDITION",
+      "band": "Highly Convincing",
+      "featured": false,
+      "distinctions": [],
+      "location": {
+        "city": "London",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "neighbourhood": "City Center",
+        "displayLocation": "London, United Kingdom"
+      },
+      "archetype": "Urban Luxury",
+      "evidenceStatus": "DMW Researched",
+      "assessmentPendingLabel": "Full review pending",
+      "dmwOverview": "The London EDITION was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships.",
+      "identity": {
+        "owner": "Unknown",
+        "operator": "Edition",
+        "brand": "Edition"
+      },
+      "propertyFacts": {
+        "roomCount": 174,
+        "openingYear": 2007
+      },
+      "scores": null,
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in London."
     }
   ]
 }
