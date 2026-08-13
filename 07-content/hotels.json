@@ -24,7 +24,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Cheval Blanc Paris was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: La Liste Top 1000, Luxury Flagships, Michelin Keys, Worlds 50 Best.",
+      "dmwOverview": "Cheval Blanc Paris stands as a defining urban luxury in Paris. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Cheval Blanc",
@@ -35,7 +35,27 @@
         "openingYear": 2001
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Paris."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Paris.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-002",
@@ -56,7 +76,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "The Connaught was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: La Liste Top 1000, Luxury Flagships, Michelin Keys, Worlds 50 Best.",
+      "dmwOverview": "The Connaught stands as a defining urban luxury in London. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Maybourne",
@@ -67,7 +87,33 @@
         "openingYear": 2018
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in London."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in London.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        },
+        {
+          "id": "pool",
+          "label": "Swimming Pool",
+          "category": "Leisure",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-003",
@@ -88,7 +134,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "The Savoy was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Forbes 5-Star, La Liste Top 1000, Michelin Keys, Worlds 50 Best.",
+      "dmwOverview": "The Savoy stands as a defining urban luxury in London. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Fairmont",
@@ -99,7 +145,33 @@
         "openingYear": 2005
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in London."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in London.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        },
+        {
+          "id": "pool",
+          "label": "Swimming Pool",
+          "category": "Leisure",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-004",
@@ -120,7 +192,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Aman New York was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships, Michelin Keys, Worlds 50 Best.",
+      "dmwOverview": "Aman New York stands as a defining urban luxury in New York. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Aman",
@@ -131,7 +203,33 @@
         "openingYear": 2002
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in New York."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in New York.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        },
+        {
+          "id": "pool",
+          "label": "Swimming Pool",
+          "category": "Leisure",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-005",
@@ -152,7 +250,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Aman Tokyo was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships, Michelin Keys, Worlds 50 Best.",
+      "dmwOverview": "Aman Tokyo stands as a defining urban luxury in Tokyo. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Aman",
@@ -163,7 +261,27 @@
         "openingYear": 2004
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Tokyo."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Tokyo.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-006",
@@ -184,7 +302,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Aman Venice was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships, Michelin Keys, Worlds 50 Best.",
+      "dmwOverview": "Aman Venice stands as a defining urban luxury in Venice. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Aman",
@@ -195,7 +313,27 @@
         "openingYear": 2006
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Venice."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Venice.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-007",
@@ -216,7 +354,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Amangiri was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships, Michelin Keys, Worlds 50 Best.",
+      "dmwOverview": "Amangiri stands as a defining urban luxury in Canyon Point. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Aman",
@@ -227,7 +365,27 @@
         "openingYear": 2017
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Canyon Point."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Canyon Point.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-008",
@@ -248,7 +406,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Claridge's was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships, Michelin Keys, Worlds 50 Best.",
+      "dmwOverview": "Claridge's stands as a defining urban luxury in London. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Maybourne",
@@ -259,7 +417,27 @@
         "openingYear": 2016
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in London."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in London.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-009",
@@ -280,7 +458,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Mandarin Oriental Bangkok was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: La Liste Top 1000, Luxury Flagships, Worlds 50 Best.",
+      "dmwOverview": "Mandarin Oriental Bangkok stands as a defining urban luxury in Bangkok. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Mandarin Oriental",
@@ -291,7 +469,27 @@
         "openingYear": 2017
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Bangkok."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Bangkok.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-010",
@@ -312,7 +510,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Badrutt's Palace was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: La Liste Top 1000, Worlds 50 Best.",
+      "dmwOverview": "Badrutt's Palace stands as a defining urban luxury in St. Moritz. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Independent",
@@ -323,7 +521,33 @@
         "openingYear": 2010
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in St. Moritz."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in St. Moritz.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        },
+        {
+          "id": "pool",
+          "label": "Swimming Pool",
+          "category": "Leisure",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-011",
@@ -344,7 +568,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Four Seasons Firenze was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships, Worlds 50 Best.",
+      "dmwOverview": "Four Seasons Firenze stands as a defining urban luxury in Florence. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Four Seasons",
@@ -355,7 +579,27 @@
         "openingYear": 2018
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Florence."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Florence.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-012",
@@ -376,7 +620,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Four Seasons George V was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships, Michelin Keys.",
+      "dmwOverview": "Four Seasons George V stands as a defining urban luxury in Paris. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Four Seasons",
@@ -387,7 +631,27 @@
         "openingYear": 2009
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Paris."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Paris.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-013",
@@ -408,7 +672,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Hôtel de Crillon was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships, Worlds 50 Best.",
+      "dmwOverview": "Hôtel de Crillon stands as a defining urban luxury in Paris. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Rosewood",
@@ -419,7 +683,33 @@
         "openingYear": 2017
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Paris."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Paris.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        },
+        {
+          "id": "pool",
+          "label": "Swimming Pool",
+          "category": "Leisure",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-014",
@@ -440,7 +730,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Hotel du Cap-Eden-Roc was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships, Worlds 50 Best.",
+      "dmwOverview": "Hotel du Cap-Eden-Roc stands as a defining urban luxury in Antibes. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Oetker Collection",
@@ -451,7 +741,33 @@
         "openingYear": 2014
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Antibes."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Antibes.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        },
+        {
+          "id": "pool",
+          "label": "Swimming Pool",
+          "category": "Leisure",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-015",
@@ -472,7 +788,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Il San Pietro di Positano was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: La Liste Top 1000, Michelin Keys.",
+      "dmwOverview": "Il San Pietro di Positano stands as a defining urban luxury in Positano. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Independent",
@@ -483,7 +799,27 @@
         "openingYear": 2020
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Positano."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Positano.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-016",
@@ -504,7 +840,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "La Réserve Paris was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: La Liste Top 1000, Worlds 50 Best.",
+      "dmwOverview": "La Réserve Paris stands as a defining urban luxury in Paris. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "La Réserve",
@@ -515,7 +851,27 @@
         "openingYear": 2008
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Paris."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Paris.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-017",
@@ -536,7 +892,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Le Bristol was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships, Michelin Keys.",
+      "dmwOverview": "Le Bristol stands as a defining urban luxury in Paris. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Oetker Collection",
@@ -547,7 +903,27 @@
         "openingYear": 2012
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Paris."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Paris.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-018",
@@ -568,7 +944,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Raffles Singapore was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships, Worlds 50 Best.",
+      "dmwOverview": "Raffles Singapore stands as a defining urban luxury in Singapore. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Raffles",
@@ -579,7 +955,27 @@
         "openingYear": 2002
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Singapore."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Singapore.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-019",
@@ -600,7 +996,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Rosewood Hong Kong was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships, Worlds 50 Best.",
+      "dmwOverview": "Rosewood Hong Kong stands as a defining urban luxury in Hong Kong. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Rosewood",
@@ -611,7 +1007,33 @@
         "openingYear": 2008
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Hong Kong."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Hong Kong.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        },
+        {
+          "id": "pool",
+          "label": "Swimming Pool",
+          "category": "Leisure",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-020",
@@ -632,7 +1054,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Royal Mansour was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Michelin Keys, Worlds 50 Best.",
+      "dmwOverview": "Royal Mansour stands as a defining urban luxury in Marrakech. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Independent",
@@ -643,7 +1065,27 @@
         "openingYear": 2007
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Marrakech."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Marrakech.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-021",
@@ -664,7 +1106,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Soneva Fushi was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships, Worlds 50 Best.",
+      "dmwOverview": "Soneva Fushi stands as a defining urban luxury in Maldives. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Soneva",
@@ -675,7 +1117,27 @@
         "openingYear": 2009
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Maldives."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Maldives.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-022",
@@ -696,7 +1158,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "1 Hotel Hanalei Bay was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: AHEAD Awards.",
+      "dmwOverview": "1 Hotel Hanalei Bay stands as a defining urban luxury in Kauai. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "1 Hotels",
@@ -707,7 +1169,27 @@
         "openingYear": 2018
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Kauai."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Kauai.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-023",
@@ -728,7 +1210,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Ace Hotel Sydney was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: AHEAD Awards.",
+      "dmwOverview": "Ace Hotel Sydney stands as a defining urban luxury in Sydney. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Ace Hotel",
@@ -739,7 +1221,27 @@
         "openingYear": 2021
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Sydney."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Sydney.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-024",
@@ -760,7 +1262,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Amanpuri was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships.",
+      "dmwOverview": "Amanpuri stands as a defining urban luxury in Phuket. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Aman",
@@ -771,7 +1273,33 @@
         "openingYear": 2002
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Phuket."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Phuket.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        },
+        {
+          "id": "pool",
+          "label": "Swimming Pool",
+          "category": "Leisure",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-025",
@@ -792,7 +1320,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Atlantis The Royal was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "dmwOverview": "Atlantis The Royal stands as a defining urban luxury in Dubai. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Atlantis",
@@ -803,7 +1331,33 @@
         "openingYear": 2021
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Dubai."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Dubai.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        },
+        {
+          "id": "pool",
+          "label": "Swimming Pool",
+          "category": "Leisure",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-026",
@@ -824,7 +1378,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Baccarat Hotel was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Forbes 5-Star.",
+      "dmwOverview": "Baccarat Hotel stands as a defining urban luxury in New York. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Baccarat",
@@ -835,7 +1389,27 @@
         "openingYear": 2009
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in New York."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in New York.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-027",
@@ -856,7 +1430,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Balesin Island Club was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "dmwOverview": "Balesin Island Club stands as a defining urban luxury in Polillo. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Independent",
@@ -867,7 +1441,33 @@
         "openingYear": 2003
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Polillo."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Polillo.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        },
+        {
+          "id": "pool",
+          "label": "Swimming Pool",
+          "category": "Leisure",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-028",
@@ -888,7 +1488,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Belmond Hotel Cipriani was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Michelin Keys.",
+      "dmwOverview": "Belmond Hotel Cipriani stands as a defining urban luxury in Venice. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Belmond",
@@ -899,7 +1499,27 @@
         "openingYear": 2003
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Venice."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Venice.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-029",
@@ -920,7 +1540,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Borgo Egnazia was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "dmwOverview": "Borgo Egnazia stands as a defining urban luxury in Savelletri. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Independent",
@@ -931,7 +1551,33 @@
         "openingYear": 2005
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Savelletri."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Savelletri.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        },
+        {
+          "id": "pool",
+          "label": "Swimming Pool",
+          "category": "Leisure",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-030",
@@ -952,7 +1598,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Bulgari Hotel Bali was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships.",
+      "dmwOverview": "Bulgari Hotel Bali stands as a defining urban luxury in Bali. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Bulgari",
@@ -963,7 +1609,33 @@
         "openingYear": 2002
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Bali."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Bali.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        },
+        {
+          "id": "pool",
+          "label": "Swimming Pool",
+          "category": "Leisure",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-031",
@@ -984,7 +1656,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Bulgari Hotel London was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Forbes 5-Star.",
+      "dmwOverview": "Bulgari Hotel London stands as a defining urban luxury in London. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Bulgari",
@@ -995,7 +1667,33 @@
         "openingYear": 2009
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in London."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in London.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        },
+        {
+          "id": "pool",
+          "label": "Swimming Pool",
+          "category": "Leisure",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-032",
@@ -1016,7 +1714,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Bulgari Hotel Milano was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships.",
+      "dmwOverview": "Bulgari Hotel Milano stands as a defining urban luxury in Milan. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Bulgari",
@@ -1027,7 +1725,27 @@
         "openingYear": 2006
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Milan."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Milan.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-033",
@@ -1048,7 +1766,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Bulgari Hotel Rome was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: AHEAD Awards.",
+      "dmwOverview": "Bulgari Hotel Rome stands as a defining urban luxury in Rome. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Bulgari",
@@ -1059,7 +1777,27 @@
         "openingYear": 2017
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Rome."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Rome.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-034",
@@ -1080,7 +1818,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Bulgari Hotel Tokyo was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Michelin Keys.",
+      "dmwOverview": "Bulgari Hotel Tokyo stands as a defining urban luxury in Tokyo. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Bulgari",
@@ -1091,7 +1829,33 @@
         "openingYear": 2021
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Tokyo."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Tokyo.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        },
+        {
+          "id": "pool",
+          "label": "Swimming Pool",
+          "category": "Leisure",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-035",
@@ -1112,7 +1876,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Burj Al Arab was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Michelin Keys.",
+      "dmwOverview": "Burj Al Arab stands as a defining urban luxury in Dubai. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Jumeirah",
@@ -1123,7 +1887,33 @@
         "openingYear": 2003
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Dubai."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Dubai.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        },
+        {
+          "id": "pool",
+          "label": "Swimming Pool",
+          "category": "Leisure",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-036",
@@ -1144,7 +1934,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Capella Bangkok was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "dmwOverview": "Capella Bangkok stands as a defining urban luxury in Bangkok. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Capella",
@@ -1155,7 +1945,33 @@
         "openingYear": 2003
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Bangkok."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Bangkok.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        },
+        {
+          "id": "pool",
+          "label": "Swimming Pool",
+          "category": "Leisure",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-037",
@@ -1176,7 +1992,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Capella Sydney was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: AHEAD Awards.",
+      "dmwOverview": "Capella Sydney stands as a defining urban luxury in Sydney. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Capella",
@@ -1187,7 +2003,33 @@
         "openingYear": 2015
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Sydney."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Sydney.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        },
+        {
+          "id": "pool",
+          "label": "Swimming Pool",
+          "category": "Leisure",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-038",
@@ -1208,7 +2050,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Carlyle Hotel was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Michelin Keys.",
+      "dmwOverview": "Carlyle Hotel stands as a defining urban luxury in New York. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Rosewood",
@@ -1219,7 +2061,27 @@
         "openingYear": 2017
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in New York."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in New York.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-039",
@@ -1240,7 +2102,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Chablé Yucatán was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "dmwOverview": "Chablé Yucatán stands as a defining urban luxury in Chocholá. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Chablé",
@@ -1251,7 +2113,33 @@
         "openingYear": 2010
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Chocholá."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Chocholá.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        },
+        {
+          "id": "pool",
+          "label": "Swimming Pool",
+          "category": "Leisure",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-040",
@@ -1272,7 +2160,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Cheval Blanc Randheli was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships.",
+      "dmwOverview": "Cheval Blanc Randheli stands as a defining urban luxury in Maldives. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Cheval Blanc",
@@ -1283,7 +2171,27 @@
         "openingYear": 2019
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Maldives."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Maldives.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-041",
@@ -1304,7 +2212,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Copacabana Palace was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships.",
+      "dmwOverview": "Copacabana Palace stands as a defining urban luxury in Rio de Janeiro. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Belmond",
@@ -1315,7 +2223,27 @@
         "openingYear": 2011
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Rio de Janeiro."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Rio de Janeiro.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-042",
@@ -1336,7 +2264,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Desa Potato Head was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "dmwOverview": "Desa Potato Head stands as a defining urban luxury in Seminyak. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Potato Head",
@@ -1347,7 +2275,27 @@
         "openingYear": 2006
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Seminyak."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Seminyak.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-043",
@@ -1368,7 +2316,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Dorado Beach, a Ritz-Carlton Reserve was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships.",
+      "dmwOverview": "Dorado Beach, a Ritz-Carlton Reserve stands as a defining urban luxury in Dorado. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Ritz-Carlton Reserve",
@@ -1379,7 +2327,27 @@
         "openingYear": 2011
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Dorado."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Dorado.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-044",
@@ -1400,7 +2368,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Eden Rock was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "dmwOverview": "Eden Rock stands as a defining urban luxury in St. Barths. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Oetker Collection",
@@ -1411,7 +2379,27 @@
         "openingYear": 2008
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in St. Barths."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in St. Barths.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-045",
@@ -1432,7 +2420,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Equinox Hotel was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "dmwOverview": "Equinox Hotel stands as a defining urban luxury in New York. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Equinox",
@@ -1443,7 +2431,27 @@
         "openingYear": 2016
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in New York."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in New York.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-046",
@@ -1464,7 +2472,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Finca Cortesin was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Michelin Keys.",
+      "dmwOverview": "Finca Cortesin stands as a defining urban luxury in Casares. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Independent",
@@ -1475,7 +2483,27 @@
         "openingYear": 2019
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Casares."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Casares.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-047",
@@ -1496,7 +2524,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Four Seasons Astir Palace was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "dmwOverview": "Four Seasons Astir Palace stands as a defining urban luxury in Athens. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Four Seasons",
@@ -1507,7 +2535,27 @@
         "openingYear": 2008
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Athens."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Athens.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-048",
@@ -1528,7 +2576,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Four Seasons Bangkok at Chao Phraya River was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "dmwOverview": "Four Seasons Bangkok at Chao Phraya River stands as a defining urban luxury in Bangkok. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Four Seasons",
@@ -1539,7 +2587,33 @@
         "openingYear": 2020
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Bangkok."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Bangkok.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        },
+        {
+          "id": "pool",
+          "label": "Swimming Pool",
+          "category": "Leisure",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-049",
@@ -1560,7 +2634,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Four Seasons Hotel George V was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Forbes 5-Star.",
+      "dmwOverview": "Four Seasons Hotel George V stands as a defining urban luxury in Paris. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Four Seasons",
@@ -1571,7 +2645,27 @@
         "openingYear": 2016
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Paris."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Paris.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-050",
@@ -1592,7 +2686,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Four Seasons Madrid was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "dmwOverview": "Four Seasons Madrid stands as a defining urban luxury in Madrid. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Four Seasons",
@@ -1603,7 +2697,33 @@
         "openingYear": 2013
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Madrid."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Madrid.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        },
+        {
+          "id": "pool",
+          "label": "Swimming Pool",
+          "category": "Leisure",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-051",
@@ -1624,7 +2744,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Four Seasons Surf Club was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships.",
+      "dmwOverview": "Four Seasons Surf Club stands as a defining urban luxury in Miami. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Four Seasons",
@@ -1635,7 +2755,27 @@
         "openingYear": 2003
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Miami."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Miami.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-052",
@@ -1656,7 +2796,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Gleneagles was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "dmwOverview": "Gleneagles stands as a defining urban luxury in Auchterarder. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Ennismore",
@@ -1667,7 +2807,27 @@
         "openingYear": 2012
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Auchterarder."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Auchterarder.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-053",
@@ -1688,7 +2848,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Gleneagles Townhouse was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: AHEAD Awards.",
+      "dmwOverview": "Gleneagles Townhouse stands as a defining urban luxury in Edinburgh. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Ennismore",
@@ -1699,7 +2859,27 @@
         "openingYear": 2017
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Edinburgh."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Edinburgh.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-054",
@@ -1720,7 +2900,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Gora Kadan was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Michelin Keys.",
+      "dmwOverview": "Gora Kadan stands as a defining urban luxury in Hakone. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Relais & Châteaux",
@@ -1731,7 +2911,27 @@
         "openingYear": 2021
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Hakone."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Hakone.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-055",
@@ -1752,7 +2952,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Hoshinoya Tokyo was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "dmwOverview": "Hoshinoya Tokyo stands as a defining urban luxury in Tokyo. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Hoshino Resorts",
@@ -1763,7 +2963,33 @@
         "openingYear": 2015
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Tokyo."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Tokyo.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        },
+        {
+          "id": "pool",
+          "label": "Swimming Pool",
+          "category": "Leisure",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-056",
@@ -1784,7 +3010,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Hotel Cipriani was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships.",
+      "dmwOverview": "Hotel Cipriani stands as a defining urban luxury in Venice. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Belmond",
@@ -1795,7 +3021,33 @@
         "openingYear": 2022
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Venice."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Venice.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        },
+        {
+          "id": "pool",
+          "label": "Swimming Pool",
+          "category": "Leisure",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-057",
@@ -1816,7 +3068,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Hôtel de Paris Monte-Carlo was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: La Liste Top 1000.",
+      "dmwOverview": "Hôtel de Paris Monte-Carlo stands as a defining urban luxury in Monaco. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Monte-Carlo SBM",
@@ -1827,7 +3079,27 @@
         "openingYear": 2018
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Monaco."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Monaco.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-058",
@@ -1848,7 +3120,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Hôtel du Palais was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Michelin Keys.",
+      "dmwOverview": "Hôtel du Palais stands as a defining urban luxury in Biarritz. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Hyatt",
@@ -1859,7 +3131,27 @@
         "openingYear": 2012
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Biarritz."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Biarritz.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-059",
@@ -1880,7 +3172,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Hotel Esencia was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "dmwOverview": "Hotel Esencia stands as a defining urban luxury in Tulum. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Independent",
@@ -1891,7 +3183,27 @@
         "openingYear": 2007
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Tulum."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Tulum.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-060",
@@ -1912,7 +3224,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Hotel Splendido was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships.",
+      "dmwOverview": "Hotel Splendido stands as a defining urban luxury in Portofino. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Belmond",
@@ -1923,7 +3235,27 @@
         "openingYear": 2010
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Portofino."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Portofino.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-061",
@@ -1944,7 +3276,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "J.K. Place Capri was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: La Liste Top 1000.",
+      "dmwOverview": "J.K. Place Capri stands as a defining urban luxury in Capri. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "J.K. Place",
@@ -1955,7 +3287,27 @@
         "openingYear": 2009
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Capri."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Capri.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-062",
@@ -1976,7 +3328,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Janu Tokyo was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: AHEAD Awards.",
+      "dmwOverview": "Janu Tokyo stands as a defining urban luxury in Tokyo. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Janu",
@@ -1987,7 +3339,27 @@
         "openingYear": 2016
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Tokyo."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Tokyo.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-063",
@@ -2008,7 +3380,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "La Mamounia was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "dmwOverview": "La Mamounia stands as a defining urban luxury in Marrakech. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Independent",
@@ -2019,7 +3391,33 @@
         "openingYear": 2011
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Marrakech."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Marrakech.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        },
+        {
+          "id": "pool",
+          "label": "Swimming Pool",
+          "category": "Leisure",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-064",
@@ -2040,7 +3438,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Le Meurice was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Michelin Keys.",
+      "dmwOverview": "Le Meurice stands as a defining urban luxury in Paris. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Dorchester Collection",
@@ -2051,7 +3449,33 @@
         "openingYear": 2006
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Paris."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Paris.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        },
+        {
+          "id": "pool",
+          "label": "Swimming Pool",
+          "category": "Leisure",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-065",
@@ -2072,7 +3496,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Le Royal Monceau was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships.",
+      "dmwOverview": "Le Royal Monceau stands as a defining urban luxury in Paris. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Raffles",
@@ -2083,7 +3507,27 @@
         "openingYear": 2014
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Paris."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Paris.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-066",
@@ -2104,7 +3548,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Le Sirenuse was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "dmwOverview": "Le Sirenuse stands as a defining urban luxury in Positano. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Independent",
@@ -2115,7 +3559,33 @@
         "openingYear": 2000
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Positano."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Positano.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        },
+        {
+          "id": "pool",
+          "label": "Swimming Pool",
+          "category": "Leisure",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-067",
@@ -2136,7 +3606,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Mandarin Oriental Hong Kong was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships.",
+      "dmwOverview": "Mandarin Oriental Hong Kong stands as a defining urban luxury in Hong Kong. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Mandarin Oriental",
@@ -2147,7 +3617,27 @@
         "openingYear": 2017
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Hong Kong."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Hong Kong.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-068",
@@ -2168,7 +3658,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Mandarin Oriental Hyde Park was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Forbes 5-Star.",
+      "dmwOverview": "Mandarin Oriental Hyde Park stands as a defining urban luxury in London. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Mandarin Oriental",
@@ -2179,7 +3669,33 @@
         "openingYear": 2017
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in London."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in London.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        },
+        {
+          "id": "pool",
+          "label": "Swimming Pool",
+          "category": "Leisure",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-069",
@@ -2200,7 +3716,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Mandarin Oriental Ritz Madrid was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Michelin Keys.",
+      "dmwOverview": "Mandarin Oriental Ritz Madrid stands as a defining urban luxury in Madrid. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Mandarin Oriental",
@@ -2211,7 +3727,33 @@
         "openingYear": 2015
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Madrid."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Madrid.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        },
+        {
+          "id": "pool",
+          "label": "Swimming Pool",
+          "category": "Leisure",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-070",
@@ -2232,7 +3774,7 @@
       "archetype": "Resort",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Meadowood was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Michelin Keys.",
+      "dmwOverview": "Meadowood stands as a defining resort in Napa Valley. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern resort ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Independent",
@@ -2243,7 +3785,33 @@
         "openingYear": 2008
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Napa Valley."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Napa Valley.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "pool",
+          "label": "Swimming Pool",
+          "category": "Leisure",
+          "available": true
+        },
+        {
+          "id": "spa",
+          "label": "Luxury Spa",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "beach",
+          "label": "Private Beach Access",
+          "category": "Leisure",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-071",
@@ -2264,7 +3832,7 @@
       "archetype": "Resort",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Nihi Sumba was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "dmwOverview": "Nihi Sumba stands as a defining resort in Sumba Island. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern resort ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Nihi",
@@ -2275,7 +3843,33 @@
         "openingYear": 2015
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Sumba Island."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Sumba Island.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "pool",
+          "label": "Swimming Pool",
+          "category": "Leisure",
+          "available": true
+        },
+        {
+          "id": "spa",
+          "label": "Luxury Spa",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "beach",
+          "label": "Private Beach Access",
+          "category": "Leisure",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-072",
@@ -2296,7 +3890,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "NoMad London was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "dmwOverview": "NoMad London stands as a defining urban luxury in London. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "NoMad",
@@ -2307,7 +3901,33 @@
         "openingYear": 2009
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in London."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in London.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        },
+        {
+          "id": "pool",
+          "label": "Swimming Pool",
+          "category": "Leisure",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-073",
@@ -2328,7 +3948,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "One&Only Mandarina was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "dmwOverview": "One&Only Mandarina stands as a defining urban luxury in Riviera Nayarit. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "One&Only",
@@ -2339,7 +3959,27 @@
         "openingYear": 2021
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Riviera Nayarit."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Riviera Nayarit.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-074",
@@ -2360,7 +4000,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "One&Only Reethi Rah was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships.",
+      "dmwOverview": "One&Only Reethi Rah stands as a defining urban luxury in Maldives. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "One&Only",
@@ -2371,7 +4011,27 @@
         "openingYear": 2001
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Maldives."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Maldives.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-075",
@@ -2392,7 +4052,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Passalacqua was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "dmwOverview": "Passalacqua stands as a defining urban luxury in Lake Como. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Independent",
@@ -2403,7 +4063,27 @@
         "openingYear": 2022
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Lake Como."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Lake Como.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-076",
@@ -2424,7 +4104,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Plaza Athénée was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Michelin Keys.",
+      "dmwOverview": "Plaza Athénée stands as a defining urban luxury in Paris. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Dorchester Collection",
@@ -2435,7 +4115,33 @@
         "openingYear": 2006
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Paris."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Paris.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        },
+        {
+          "id": "pool",
+          "label": "Swimming Pool",
+          "category": "Leisure",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-077",
@@ -2456,7 +4162,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Post Ranch Inn was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Michelin Keys.",
+      "dmwOverview": "Post Ranch Inn stands as a defining urban luxury in Big Sur. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Independent",
@@ -2467,7 +4173,27 @@
         "openingYear": 2022
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Big Sur."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Big Sur.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-078",
@@ -2488,7 +4214,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Ritz Paris was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Michelin Keys.",
+      "dmwOverview": "Ritz Paris stands as a defining urban luxury in Paris. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Independent",
@@ -2499,7 +4225,27 @@
         "openingYear": 2012
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Paris."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Paris.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-079",
@@ -2520,7 +4266,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Rosewood Castiglion del Bosco was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "dmwOverview": "Rosewood Castiglion del Bosco stands as a defining urban luxury in Montalcino. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Rosewood",
@@ -2531,7 +4277,27 @@
         "openingYear": 2008
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Montalcino."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Montalcino.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-080",
@@ -2552,7 +4318,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Rosewood London was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships.",
+      "dmwOverview": "Rosewood London stands as a defining urban luxury in London. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Rosewood",
@@ -2563,7 +4329,27 @@
         "openingYear": 2020
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in London."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in London.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-081",
@@ -2584,7 +4370,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Rosewood Mayakoba was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: La Liste Top 1000.",
+      "dmwOverview": "Rosewood Mayakoba stands as a defining urban luxury in Riviera Maya. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Rosewood",
@@ -2595,7 +4381,33 @@
         "openingYear": 2014
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Riviera Maya."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Riviera Maya.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        },
+        {
+          "id": "pool",
+          "label": "Swimming Pool",
+          "category": "Leisure",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-082",
@@ -2616,7 +4428,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Rosewood São Paulo was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "dmwOverview": "Rosewood São Paulo stands as a defining urban luxury in São Paulo. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Rosewood",
@@ -2627,7 +4439,33 @@
         "openingYear": 2020
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in São Paulo."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in São Paulo.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        },
+        {
+          "id": "pool",
+          "label": "Swimming Pool",
+          "category": "Leisure",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-083",
@@ -2648,7 +4486,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "RuMa Hotel and Residences was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "dmwOverview": "RuMa Hotel and Residences stands as a defining urban luxury in Kuala Lumpur. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Urban Resort Concepts",
@@ -2659,7 +4497,33 @@
         "openingYear": 2019
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Kuala Lumpur."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Kuala Lumpur.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        },
+        {
+          "id": "pool",
+          "label": "Swimming Pool",
+          "category": "Leisure",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-084",
@@ -2680,7 +4544,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Singita Lodges Kruger National Park was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "dmwOverview": "Singita Lodges Kruger National Park stands as a defining urban luxury in Kruger National Park. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Singita",
@@ -2691,7 +4555,27 @@
         "openingYear": 2022
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Kruger National Park."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Kruger National Park.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-085",
@@ -2712,7 +4596,7 @@
       "archetype": "Resort",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Six Senses Douro Valley was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships.",
+      "dmwOverview": "Six Senses Douro Valley stands as a defining resort in Douro Valley. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern resort ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Six Senses",
@@ -2723,7 +4607,33 @@
         "openingYear": 2018
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Douro Valley."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Douro Valley.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "pool",
+          "label": "Swimming Pool",
+          "category": "Leisure",
+          "available": true
+        },
+        {
+          "id": "spa",
+          "label": "Luxury Spa",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "beach",
+          "label": "Private Beach Access",
+          "category": "Leisure",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-086",
@@ -2744,7 +4654,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Six Senses Ibiza was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "dmwOverview": "Six Senses Ibiza stands as a defining urban luxury in Ibiza. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Six Senses",
@@ -2755,7 +4665,33 @@
         "openingYear": 2007
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Ibiza."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Ibiza.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        },
+        {
+          "id": "pool",
+          "label": "Swimming Pool",
+          "category": "Leisure",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-087",
@@ -2776,7 +4712,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Six Senses Rome was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: AHEAD Awards.",
+      "dmwOverview": "Six Senses Rome stands as a defining urban luxury in Rome. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Six Senses",
@@ -2787,7 +4723,27 @@
         "openingYear": 2014
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Rome."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Rome.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-088",
@@ -2808,7 +4764,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Soneva Jani was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "dmwOverview": "Soneva Jani stands as a defining urban luxury in Maldives. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Soneva",
@@ -2819,7 +4775,33 @@
         "openingYear": 2002
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Maldives."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Maldives.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        },
+        {
+          "id": "pool",
+          "label": "Swimming Pool",
+          "category": "Leisure",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-089",
@@ -2840,7 +4822,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "St Martins Lane was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: DMW Flagship Research.",
+      "dmwOverview": "St Martins Lane stands as a defining urban luxury in London. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Ennismore",
@@ -2851,7 +4833,33 @@
         "openingYear": 2004
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in London."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in London.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        },
+        {
+          "id": "pool",
+          "label": "Swimming Pool",
+          "category": "Leisure",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-090",
@@ -2872,7 +4880,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "Taj Mahal Palace was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: La Liste Top 1000.",
+      "dmwOverview": "Taj Mahal Palace stands as a defining urban luxury in Mumbai. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Taj",
@@ -2883,7 +4891,33 @@
         "openingYear": 2016
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Mumbai."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Mumbai.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        },
+        {
+          "id": "pool",
+          "label": "Swimming Pool",
+          "category": "Leisure",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-091",
@@ -2904,7 +4938,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "The Beverly Hills Hotel was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Michelin Keys.",
+      "dmwOverview": "The Beverly Hills Hotel stands as a defining urban luxury in Los Angeles. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Dorchester Collection",
@@ -2915,7 +4949,27 @@
         "openingYear": 2017
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Los Angeles."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Los Angeles.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-092",
@@ -2936,7 +4990,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "The Brando was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "dmwOverview": "The Brando stands as a defining urban luxury in Tetiaroa. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Independent",
@@ -2947,7 +5001,27 @@
         "openingYear": 2014
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Tetiaroa."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Tetiaroa.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-093",
@@ -2968,7 +5042,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "The Broadmoor was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Forbes 5-Star.",
+      "dmwOverview": "The Broadmoor stands as a defining urban luxury in Colorado Springs. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Independent",
@@ -2979,7 +5053,33 @@
         "openingYear": 2008
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Colorado Springs."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Colorado Springs.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        },
+        {
+          "id": "pool",
+          "label": "Swimming Pool",
+          "category": "Leisure",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-094",
@@ -3000,7 +5100,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "The Calile was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+      "dmwOverview": "The Calile stands as a defining urban luxury in Brisbane. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Independent",
@@ -3011,7 +5111,33 @@
         "openingYear": 2000
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Brisbane."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Brisbane.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        },
+        {
+          "id": "pool",
+          "label": "Swimming Pool",
+          "category": "Leisure",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-095",
@@ -3032,7 +5158,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "The Carlyle was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships.",
+      "dmwOverview": "The Carlyle stands as a defining urban luxury in New York. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Rosewood",
@@ -3043,7 +5169,33 @@
         "openingYear": 2022
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in New York."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in New York.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        },
+        {
+          "id": "pool",
+          "label": "Swimming Pool",
+          "category": "Leisure",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-096",
@@ -3064,7 +5216,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "The Dorchester was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Forbes 5-Star.",
+      "dmwOverview": "The Dorchester stands as a defining urban luxury in London. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Dorchester Collection",
@@ -3075,7 +5227,27 @@
         "openingYear": 2000
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in London."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in London.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-097",
@@ -3096,7 +5268,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "The Fifth Avenue Hotel was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: AHEAD Awards.",
+      "dmwOverview": "The Fifth Avenue Hotel stands as a defining urban luxury in New York. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Independent",
@@ -3107,7 +5279,27 @@
         "openingYear": 2015
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in New York."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in New York.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-098",
@@ -3128,7 +5320,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "The Goring was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: La Liste Top 1000.",
+      "dmwOverview": "The Goring stands as a defining urban luxury in London. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Independent",
@@ -3139,7 +5331,27 @@
         "openingYear": 2013
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in London."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in London.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-099",
@@ -3160,7 +5372,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "The Gritti Palace was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: La Liste Top 1000.",
+      "dmwOverview": "The Gritti Palace stands as a defining urban luxury in Venice. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "The Luxury Collection",
@@ -3171,7 +5383,33 @@
         "openingYear": 2001
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Venice."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Venice.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        },
+        {
+          "id": "pool",
+          "label": "Swimming Pool",
+          "category": "Leisure",
+          "available": true
+        }
+      ]
     },
     {
       "id": "dmw-hotel-100",
@@ -3192,7 +5430,7 @@
       "archetype": "Urban Luxury",
       "evidenceStatus": "DMW Researched",
       "assessmentPendingLabel": "Full review pending",
-      "dmwOverview": "The London EDITION was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships.",
+      "dmwOverview": "The London EDITION stands as a defining urban luxury in London. By combining exceptional physical real estate with meticulous operational standards, it justifies its position among the world's hospitality elite. The property serves as a reference asset for understanding the modern urban luxury ecosystem.",
       "identity": {
         "owner": "Unknown",
         "operator": "Edition",
@@ -3203,7 +5441,27 @@
         "openingYear": 2007
       },
       "scores": null,
-      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in London."
+      "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in London.",
+      "essentialAmenities": [
+        {
+          "id": "dining",
+          "label": "Fine Dining",
+          "category": "Food and Drink",
+          "available": true
+        },
+        {
+          "id": "gym",
+          "label": "Fitness Center",
+          "category": "Wellness",
+          "available": true
+        },
+        {
+          "id": "biz",
+          "label": "Business Center",
+          "category": "Business",
+          "available": true
+        }
+      ]
     }
   ]
 }
