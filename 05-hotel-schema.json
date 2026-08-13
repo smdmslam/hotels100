@@ -1,0 +1,1525 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DMW Hotels 100 — Hotel Record",
+  "description": "Canonical data structure for every hotel in the DMW Hotels 100 index.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "slug",
+    "edition",
+    "rank",
+    "name",
+    "location",
+    "archetype",
+    "evidenceStatus",
+    "dmwJudgement",
+    "publicationStatus"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Permanent internal identifier that must not change between editions."
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "description": "URL-safe hotel identifier."
+    },
+    "edition": {
+      "type": "integer",
+      "minimum": 2026
+    },
+    "rank": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 100
+    },
+    "previousRank": {
+      "type": ["integer", "null"],
+      "minimum": 1,
+      "maximum": 100
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "officialName": {
+      "type": ["string", "null"]
+    },
+    "location": {
+      "$ref": "#/$defs/location"
+    },
+    "coordinates": {
+      "$ref": "#/$defs/coordinates"
+    },
+    "archetype": {
+      "$ref": "#/$defs/archetype"
+    },
+    "secondaryArchetypes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/archetype"
+      },
+      "uniqueItems": true,
+      "default": []
+    },
+    "evidenceStatus": {
+      "$ref": "#/$defs/evidenceStatus"
+    },
+    "publicationStatus": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "review",
+        "published",
+        "archived"
+      ]
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false
+    },
+    "dmwJudgement": {
+      "type": "string",
+      "minLength": 20,
+      "maxLength": 400,
+      "description": "One- or two-sentence judgement used in the ranked list."
+    },
+    "dmwOverview": {
+      "type": ["string", "null"],
+      "maxLength": 2500,
+      "description": "Permanent profile introduction, normally 150–300 words."
+    },
+    "inclusionRationale": {
+      "type": ["string", "null"]
+    },
+    "centralStrength": {
+      "type": ["string", "null"]
+    },
+    "centralQuestion": {
+      "type": ["string", "null"]
+    },
+    "bestSuitedFor": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true,
+      "default": []
+    },
+    "distinctions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/distinction"
+      },
+      "uniqueItems": true,
+      "maxItems": 6,
+      "default": []
+    },
+    "identity": {
+      "$ref": "#/$defs/identity"
+    },
+    "propertyFacts": {
+      "$ref": "#/$defs/propertyFacts"
+    },
+    "rates": {
+      "$ref": "#/$defs/rates"
+    },
+    "amenities": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/amenity"
+      },
+      "default": []
+    },
+    "venues": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/venue"
+      },
+      "default": []
+    },
+    "analysis": {
+      "$ref": "#/$defs/analysis"
+    },
+    "businessTravel": {
+      "$ref": "#/$defs/businessTravel"
+    },
+    "rooms": {
+      "$ref": "#/$defs/rooms"
+    },
+    "pricingIntelligence": {
+      "$ref": "#/$defs/pricingIntelligence"
+    },
+    "competitiveSet": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/competitor"
+      },
+      "default": []
+    },
+    "rankingAssessment": {
+      "$ref": "#/$defs/rankingAssessment"
+    },
+    "fieldReports": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/fieldReport"
+      },
+      "default": []
+    },
+    "relatedArticleSlugs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      },
+      "uniqueItems": true,
+      "default": []
+    },
+    "images": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/image"
+      },
+      "default": []
+    },
+    "links": {
+      "$ref": "#/$defs/links"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/source"
+      },
+      "default": []
+    },
+    "disclosures": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/disclosure"
+      },
+      "default": []
+    },
+    "editorial": {
+      "$ref": "#/$defs/editorial"
+    }
+  },
+  "$defs": {
+    "location": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "city",
+        "country",
+        "region",
+        "displayLocation"
+      ],
+      "properties": {
+        "addressLine1": {
+          "type": ["string", "null"]
+        },
+        "addressLine2": {
+          "type": ["string", "null"]
+        },
+        "neighbourhood": {
+          "type": ["string", "null"]
+        },
+        "city": {
+          "type": "string"
+        },
+        "stateOrProvince": {
+          "type": ["string", "null"]
+        },
+        "postalCode": {
+          "type": ["string", "null"]
+        },
+        "country": {
+          "type": "string"
+        },
+        "countryCode": {
+          "type": ["string", "null"],
+          "pattern": "^[A-Z]{2}$"
+        },
+        "region": {
+          "type": "string",
+          "enum": [
+            "Europe",
+            "North America",
+            "Latin America and Caribbean",
+            "Middle East",
+            "Africa",
+            "Asia",
+            "Oceania"
+          ]
+        },
+        "displayLocation": {
+          "type": "string"
+        }
+      }
+    },
+    "coordinates": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": [
+        "latitude",
+        "longitude"
+      ],
+      "properties": {
+        "latitude": {
+          "type": "number",
+          "minimum": -90,
+          "maximum": 90
+        },
+        "longitude": {
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180
+        }
+      }
+    },
+    "archetype": {
+      "type": "string",
+      "enum": [
+        "Urban Grand Hotel",
+        "Urban Lifestyle Hotel",
+        "Urban Resort",
+        "Resort",
+        "Heritage Hotel",
+        "Boutique Hotel",
+        "Wellness Retreat",
+        "Wilderness Lodge",
+        "Private-Island Hotel",
+        "Members-Club Hybrid",
+        "Branded Residence Ecosystem"
+      ]
+    },
+    "evidenceStatus": {
+      "type": "string",
+      "enum": [
+        "DMW Researched",
+        "DMW Visited",
+        "DMW Revisited"
+      ]
+    },
+    "distinction": {
+      "type": "string",
+      "enum": [
+        "Best for Business Travel",
+        "Pricing Power",
+        "Hospitality Ecosystem",
+        "Independent Excellence",
+        "Urban Resort",
+        "Best Repositioning",
+        "Best New Hotel",
+        "Best Hotel Restaurant",
+        "Most Investable Hospitality Concept",
+        "DMW One to Watch"
+      ]
+    },
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "brand": {
+          "type": ["string", "null"]
+        },
+        "collection": {
+          "type": ["string", "null"]
+        },
+        "operator": {
+          "type": ["string", "null"]
+        },
+        "owner": {
+          "type": ["string", "null"]
+        },
+        "ownershipPubliclyConfirmed": {
+          "type": "boolean",
+          "default": false
+        },
+        "designer": {
+          "type": ["string", "null"]
+        },
+        "architect": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+    "propertyFacts": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "openingYear": {
+          "type": ["integer", "null"],
+          "minimum": 1000
+        },
+        "lastMajorRenovationYear": {
+          "type": ["integer", "null"],
+          "minimum": 1000
+        },
+        "roomCount": {
+          "type": ["integer", "null"],
+          "minimum": 1
+        },
+        "suiteCount": {
+          "type": ["integer", "null"],
+          "minimum": 0
+        },
+        "checkInTime": {
+          "type": ["string", "null"]
+        },
+        "checkOutTime": {
+          "type": ["string", "null"]
+        },
+        "propertyType": {
+          "type": ["string", "null"]
+        },
+        "seasonality": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+    "rates": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "currency": {
+          "type": ["string", "null"],
+          "pattern": "^[A-Z]{3}$"
+        },
+        "indicativeFrom": {
+          "type": ["number", "null"],
+          "minimum": 0
+        },
+        "indicativeTo": {
+          "type": ["number", "null"],
+          "minimum": 0
+        },
+        "typicalRate": {
+          "type": ["number", "null"],
+          "minimum": 0
+        },
+        "rateLabel": {
+          "type": ["string", "null"]
+        },
+        "taxesIncluded": {
+          "type": ["boolean", "null"]
+        },
+        "rateBasis": {
+          "type": ["string", "null"]
+        },
+        "rateObservedAt": {
+          "type": ["string", "null"],
+          "format": "date"
+        }
+      }
+    },
+    "amenity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "label",
+        "category",
+        "available"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "label": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string",
+          "enum": [
+            "Food and Drink",
+            "Wellness",
+            "Business",
+            "Transport",
+            "Rooms",
+            "Family",
+            "Accessibility",
+            "Leisure",
+            "Other"
+          ]
+        },
+        "available": {
+          "type": "boolean"
+        },
+        "detail": {
+          "type": ["string", "null"]
+        },
+        "venueName": {
+          "type": ["string", "null"]
+        },
+        "icon": {
+          "type": ["string", "null"],
+          "description": "Lucide icon component name."
+        },
+        "personallyVerified": {
+          "type": "boolean",
+          "default": false
+        }
+      }
+    },
+    "venue": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "type"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "Restaurant",
+            "Bar",
+            "Café",
+            "Bakery",
+            "Nightclub",
+            "Rooftop",
+            "Lounge",
+            "Private Dining",
+            "Other"
+          ]
+        },
+        "description": {
+          "type": ["string", "null"]
+        },
+        "strategicRole": {
+          "type": ["string", "null"]
+        },
+        "mealPeriods": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "Breakfast",
+              "Brunch",
+              "Lunch",
+              "Afternoon Tea",
+              "Dinner",
+              "Late Night"
+            ]
+          },
+          "uniqueItems": true,
+          "default": []
+        },
+        "attractsNonResidents": {
+          "type": ["boolean", "null"]
+        },
+        "recognition": {
+          "type": ["string", "null"]
+        },
+        "officialUrl": {
+          "type": ["string", "null"],
+          "format": "uri"
+        }
+      }
+    },
+    "analysis": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "hospitalityProposition": {
+          "type": ["string", "null"]
+        },
+        "atmosphere": {
+          "type": ["string", "null"]
+        },
+        "intendedClientele": {
+          "type": ["string", "null"]
+        },
+        "designLogic": {
+          "type": ["string", "null"]
+        },
+        "locationLogic": {
+          "type": ["string", "null"]
+        },
+        "hospitalityStrategy": {
+          "type": ["string", "null"]
+        },
+        "revenueStrategy": {
+          "type": ["string", "null"]
+        },
+        "pricingPowerThesis": {
+          "type": ["string", "null"]
+        },
+        "assetLogic": {
+          "type": ["string", "null"]
+        },
+        "competitiveMoat": {
+          "type": ["string", "null"]
+        },
+        "strategicOpportunity": {
+          "type": ["string", "null"]
+        },
+        "investorQuestion": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+    "businessTravel": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "summary": {
+          "type": ["string", "null"]
+        },
+        "suitability": {
+          "type": ["string", "null"],
+          "enum": [
+            "Exceptional",
+            "Strong",
+            "Good",
+            "Limited",
+            "Not Assessed",
+            null
+          ]
+        },
+        "locationEfficiency": {
+          "type": ["string", "null"]
+        },
+        "workspace": {
+          "type": ["string", "null"]
+        },
+        "connectivity": {
+          "type": ["string", "null"]
+        },
+        "meetingSuitability": {
+          "type": ["string", "null"]
+        },
+        "privacy": {
+          "type": ["string", "null"]
+        },
+        "sleepAndNoise": {
+          "type": ["string", "null"]
+        },
+        "serviceSpeed": {
+          "type": ["string", "null"]
+        },
+        "breakfastPracticality": {
+          "type": ["string", "null"]
+        },
+        "soloTravellerSuitability": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+    "rooms": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "summary": {
+          "type": ["string", "null"]
+        },
+        "minimumSizeSqm": {
+          "type": ["number", "null"],
+          "minimum": 0
+        },
+        "maximumStandardRoomSizeSqm": {
+          "type": ["number", "null"],
+          "minimum": 0
+        },
+        "categories": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": []
+        },
+        "workspace": {
+          "type": ["string", "null"]
+        },
+        "storage": {
+          "type": ["string", "null"]
+        },
+        "bathroom": {
+          "type": ["string", "null"]
+        },
+        "lighting": {
+          "type": ["string", "null"]
+        },
+        "technology": {
+          "type": ["string", "null"]
+        },
+        "views": {
+          "type": ["string", "null"]
+        },
+        "spatialStrength": {
+          "type": ["string", "null"]
+        },
+        "spatialCompromise": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+    "pricingIntelligence": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "not-started",
+            "collecting",
+            "complete"
+          ]
+        },
+        "currency": {
+          "type": ["string", "null"],
+          "pattern": "^[A-Z]{3}$"
+        },
+        "roomBasis": {
+          "type": ["string", "null"]
+        },
+        "occupancyBasis": {
+          "type": ["string", "null"]
+        },
+        "taxesIncluded": {
+          "type": ["boolean", "null"]
+        },
+        "observationStart": {
+          "type": ["string", "null"],
+          "format": "date"
+        },
+        "observationEnd": {
+          "type": ["string", "null"],
+          "format": "date"
+        },
+        "collectionDate": {
+          "type": ["string", "null"],
+          "format": "date"
+        },
+        "sourceMethod": {
+          "type": ["string", "null"]
+        },
+        "medianObservedRate": {
+          "type": ["number", "null"],
+          "minimum": 0
+        },
+        "lowestObservedRate": {
+          "type": ["number", "null"],
+          "minimum": 0
+        },
+        "highestObservedRate": {
+          "type": ["number", "null"],
+          "minimum": 0
+        },
+        "bestValuePeriod": {
+          "type": ["string", "null"]
+        },
+        "peakPeriod": {
+          "type": ["string", "null"]
+        },
+        "weekdayWeekendObservation": {
+          "type": ["string", "null"]
+        },
+        "dmwInterpretation": {
+          "type": ["string", "null"]
+        },
+        "dataPoints": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/pricePoint"
+          },
+          "default": []
+        },
+        "eventMarkers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/eventMarker"
+          },
+          "default": []
+        },
+        "limitations": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+    "pricePoint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "date",
+        "rate"
+      ],
+      "properties": {
+        "date": {
+          "type": "string",
+          "format": "date"
+        },
+        "rate": {
+          "type": "number",
+          "minimum": 0
+        },
+        "available": {
+          "type": ["boolean", "null"]
+        },
+        "roomCategory": {
+          "type": ["string", "null"]
+        },
+        "rateType": {
+          "type": ["string", "null"]
+        },
+        "notes": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+    "eventMarker": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "date",
+        "label"
+      ],
+      "properties": {
+        "date": {
+          "type": "string",
+          "format": "date"
+        },
+        "label": {
+          "type": "string"
+        },
+        "eventType": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+    "competitor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "hotelName",
+        "reasonIncluded"
+      ],
+      "properties": {
+        "hotelId": {
+          "type": ["string", "null"]
+        },
+        "hotelName": {
+          "type": "string"
+        },
+        "reasonIncluded": {
+          "type": "string"
+        },
+        "relativePricePosition": {
+          "type": ["string", "null"]
+        },
+        "positioningDifference": {
+          "type": ["string", "null"]
+        },
+        "amenityDifference": {
+          "type": ["string", "null"]
+        },
+        "locationDifference": {
+          "type": ["string", "null"]
+        },
+        "dmwInterpretation": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+    "rankingAssessment": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "methodologyVersion": {
+          "type": ["string", "null"]
+        },
+        "calculatedScore": {
+          "type": ["number", "null"],
+          "minimum": 0,
+          "maximum": 100
+        },
+        "editorialAdjustment": {
+          "type": ["number", "null"],
+          "minimum": -5,
+          "maximum": 5
+        },
+        "finalScore": {
+          "type": ["number", "null"],
+          "minimum": 0,
+          "maximum": 100
+        },
+        "confidence": {
+          "type": ["string", "null"],
+          "enum": [
+            "High",
+            "Medium",
+            "Developing",
+            null
+          ]
+        },
+        "dimensions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/rankingDimension"
+          },
+          "default": []
+        },
+        "editorialAdjustmentReason": {
+          "type": ["string", "null"]
+        },
+        "internalNotes": {
+          "type": ["string", "null"],
+          "description": "Must never be rendered publicly."
+        }
+      }
+    },
+    "rankingDimension": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "label",
+        "weight",
+        "score"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "label": {
+          "type": "string"
+        },
+        "weight": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "confidence": {
+          "type": "string",
+          "enum": [
+            "High",
+            "Medium",
+            "Developing"
+          ]
+        },
+        "evidenceNote": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+    "fieldReport": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "visitDateLabel",
+        "nights",
+        "travelPurpose",
+        "summary"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "visitDate": {
+          "type": ["string", "null"],
+          "format": "date"
+        },
+        "visitDateLabel": {
+          "type": "string",
+          "description": "May state an approximate month or season."
+        },
+        "dateIsApproximate": {
+          "type": "boolean",
+          "default": false
+        },
+        "nights": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "roomCategory": {
+          "type": ["string", "null"]
+        },
+        "approximatePaidRate": {
+          "type": ["number", "null"],
+          "minimum": 0
+        },
+        "currency": {
+          "type": ["string", "null"],
+          "pattern": "^[A-Z]{3}$"
+        },
+        "rateBasis": {
+          "type": ["string", "null"]
+        },
+        "travelPurpose": {
+          "type": "string"
+        },
+        "summary": {
+          "type": "string"
+        },
+        "arrival": {
+          "type": ["string", "null"]
+        },
+        "room": {
+          "type": ["string", "null"]
+        },
+        "service": {
+          "type": ["string", "null"]
+        },
+        "atmosphereAndClientele": {
+          "type": ["string", "null"]
+        },
+        "foodAndDrink": {
+          "type": ["string", "null"]
+        },
+        "amenitiesUsed": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": []
+        },
+        "strengths": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": []
+        },
+        "weaknesses": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": []
+        },
+        "returnIntention": {
+          "type": ["string", "null"]
+        },
+        "thesisConfirmation": {
+          "type": ["string", "null"]
+        },
+        "pullQuote": {
+          "type": ["string", "null"]
+        },
+        "publishedAt": {
+          "type": ["string", "null"],
+          "format": "date"
+        },
+        "updatedAt": {
+          "type": ["string", "null"],
+          "format": "date"
+        }
+      }
+    },
+    "image": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "category",
+        "src",
+        "alt",
+        "rightsStatus"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string",
+          "enum": [
+            "Exterior",
+            "Arrival",
+            "Lobby",
+            "Room",
+            "Suite",
+            "Restaurant",
+            "Bar",
+            "Spa",
+            "Gym",
+            "Pool",
+            "Landscape",
+            "Architectural Detail",
+            "Other"
+          ]
+        },
+        "src": {
+          "type": "string"
+        },
+        "alt": {
+          "type": "string"
+        },
+        "caption": {
+          "type": ["string", "null"]
+        },
+        "photographer": {
+          "type": ["string", "null"]
+        },
+        "copyrightHolder": {
+          "type": ["string", "null"]
+        },
+        "sourceUrl": {
+          "type": ["string", "null"],
+          "format": "uri"
+        },
+        "rightsStatus": {
+          "type": "string",
+          "enum": [
+            "licensed",
+            "hotel-supplied",
+            "dmw-owned",
+            "permission-pending",
+            "not-cleared"
+          ]
+        },
+        "licenceNotes": {
+          "type": ["string", "null"]
+        },
+        "creditRequired": {
+          "type": "boolean",
+          "default": true
+        },
+        "creditLine": {
+          "type": ["string", "null"]
+        },
+        "width": {
+          "type": ["integer", "null"],
+          "minimum": 1
+        },
+        "height": {
+          "type": ["integer", "null"],
+          "minimum": 1
+        },
+        "focalPoint": {
+          "type": ["string", "null"]
+        },
+        "heroEligible": {
+          "type": "boolean",
+          "default": false
+        },
+        "publishable": {
+          "type": "boolean",
+          "description": "Must be false unless rightsStatus permits publication."
+        }
+      }
+    },
+    "links": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "officialWebsite": {
+          "type": ["string", "null"],
+          "format": "uri"
+        },
+        "bookingUrl": {
+          "type": ["string", "null"],
+          "format": "uri"
+        },
+        "mapUrl": {
+          "type": ["string", "null"],
+          "format": "uri"
+        },
+        "instagramUrl": {
+          "type": ["string", "null"],
+          "format": "uri"
+        },
+        "bookingLinkIsAffiliate": {
+          "type": "boolean",
+          "default": false
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "type",
+        "url",
+        "accessedAt"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "Official Hotel",
+            "Operator",
+            "Owner",
+            "Press",
+            "Financial",
+            "Booking",
+            "Price Data",
+            "Map",
+            "Guest Feedback",
+            "Other"
+          ]
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "accessedAt": {
+          "type": "string",
+          "format": "date"
+        },
+        "supportsFields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": []
+        },
+        "notes": {
+          "type": ["string", "null"]
+        },
+        "publiclyDisplayed": {
+          "type": "boolean",
+          "default": true
+        }
+      }
+    },
+    "disclosure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type",
+        "text"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "Affiliate",
+            "Sponsored",
+            "Research Basis",
+            "Approximate Date",
+            "Unconfirmed Information",
+            "Other"
+          ]
+        },
+        "text": {
+          "type": "string"
+        }
+      }
+    },
+    "editorial": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "author": {
+          "type": ["string", "null"]
+        },
+        "reviewer": {
+          "type": ["string", "null"]
+        },
+        "createdAt": {
+          "type": ["string", "null"],
+          "format": "date"
+        },
+        "updatedAt": {
+          "type": ["string", "null"],
+          "format": "date"
+        },
+        "publishedAt": {
+          "type": ["string", "null"],
+          "format": "date"
+        },
+        "lastFactCheckAt": {
+          "type": ["string", "null"],
+          "format": "date"
+        },
+        "notes": {
+          "type": ["string", "null"],
+          "description": "Internal editorial notes; never render publicly."
+        }
+      }
+    }
+  },
+  "examples": [
+    {
+      "id": "hotel-st-martins-lane-london",
+      "slug": "st-martins-lane-london",
+      "edition": 2026,
+      "rank": 7,
+      "previousRank": null,
+      "name": "St Martins Lane",
+      "officialName": "St Martins Lane London",
+      "location": {
+        "addressLine1": "45 St Martin's Lane",
+        "addressLine2": null,
+        "neighbourhood": "Covent Garden",
+        "city": "London",
+        "stateOrProvince": null,
+        "postalCode": "WC2N 4HX",
+        "country": "United Kingdom",
+        "countryCode": "GB",
+        "region": "Europe",
+        "displayLocation": "London, United Kingdom"
+      },
+      "coordinates": null,
+      "archetype": "Urban Lifestyle Hotel",
+      "secondaryArchetypes": [
+        "Boutique Hotel"
+      ],
+      "evidenceStatus": "DMW Visited",
+      "publicationStatus": "draft",
+      "featured": true,
+      "dmwJudgement": "St Martins Lane compensates for limited room size by turning arrival, design and location into the luxury product. It sells theatricality and access rather than square metres.",
+      "dmwOverview": "St Martins Lane is a design-led London hotel whose strongest product begins before the room. Its coloured entrance portal, immediate doorman engagement and oversized classical lobby furniture create theatrical anticipation, while its discreet nightlife and food-and-beverage spaces give the building several distinct personalities. Compact rooms are planned intelligently enough to remain credible for business travel. The hotel’s central achievement is converting spatial constraint, cultural location and controlled visual surprise into an accessible-premium proposition.",
+      "inclusionRationale": "A coherent example of an urban lifestyle hotel using design, spatial efficiency and location to create a selective luxury proposition without relying on very large rooms.",
+      "centralStrength": "The hotel transforms arrival, design and location into perceived luxury.",
+      "centralQuestion": "Can the property preserve its distinctive design energy as its original aesthetic language matures?",
+      "bestSuitedFor": [
+        "Business travel",
+        "Theatre visits",
+        "Central London weekends",
+        "Solo travellers",
+        "Design-conscious travellers"
+      ],
+      "distinctions": [
+        "Best for Business Travel"
+      ],
+      "identity": {
+        "brand": null,
+        "collection": null,
+        "operator": null,
+        "owner": null,
+        "ownershipPubliclyConfirmed": false,
+        "designer": null,
+        "architect": null
+      },
+      "propertyFacts": {
+        "openingYear": null,
+        "lastMajorRenovationYear": null,
+        "roomCount": null,
+        "suiteCount": null,
+        "checkInTime": null,
+        "checkOutTime": null,
+        "propertyType": "Hotel",
+        "seasonality": "Year-round urban demand"
+      },
+      "rates": {
+        "currency": "EUR",
+        "indicativeFrom": null,
+        "indicativeTo": null,
+        "typicalRate": 400,
+        "rateLabel": "Approximately €400 during the DMW visit",
+        "taxesIncluded": null,
+        "rateBasis": "Approximate nightly rate recalled from a two-night stay",
+        "rateObservedAt": null
+      },
+      "amenities": [
+        {
+          "id": "restaurant",
+          "label": "Restaurant",
+          "category": "Food and Drink",
+          "available": true,
+          "detail": "A long restaurant space extending from the lobby toward the rear of the hotel.",
+          "venueName": null,
+          "icon": "Utensils",
+          "personallyVerified": true
+        },
+        {
+          "id": "bar",
+          "label": "Discreet bar",
+          "category": "Food and Drink",
+          "available": true,
+          "detail": "A nightlife-oriented bar concealed beside or behind a bookshelf.",
+          "venueName": null,
+          "icon": "Wine",
+          "personallyVerified": true
+        },
+        {
+          "id": "cafe-bakery",
+          "label": "Attached café and bakery",
+          "category": "Food and Drink",
+          "available": true,
+          "detail": "A street-facing alternative morning environment and independent revenue line.",
+          "venueName": null,
+          "icon": "Coffee",
+          "personallyVerified": true
+        },
+        {
+          "id": "workspace",
+          "label": "In-room workspace",
+          "category": "Business",
+          "available": true,
+          "detail": "A sizeable desk within an otherwise compact room.",
+          "venueName": null,
+          "icon": "Laptop",
+          "personallyVerified": true
+        },
+        {
+          "id": "wifi",
+          "label": "Wi-Fi",
+          "category": "Business",
+          "available": true,
+          "detail": null,
+          "venueName": null,
+          "icon": "Wifi",
+          "personallyVerified": false
+        }
+      ],
+      "venues": [],
+      "analysis": {
+        "hospitalityProposition": "A design-led central London stay combining theatrical arrival, efficient rooms and immediate access to theatre, restaurants and Covent Garden.",
+        "atmosphere": "Modern, playful and selective, with deliberate contrast between oversized classical lobby pieces and discreet nightlife spaces.",
+        "intendedClientele": "Affluent leisure guests, design-conscious travellers and business travellers prepared to pay above the general market average for location and atmosphere.",
+        "designLogic": "Oversized classical forms, coloured transparency, reflective blue light and concealed spaces create surprise while efficient room planning protects functionality.",
+        "locationLogic": "The theatre district and surrounding restaurants reduce the need for the hotel to reproduce an entire resort-style amenity ecosystem internally.",
+        "hospitalityStrategy": "Use arrival, visual theatre, multiple food-and-beverage identities and central location to create perceived value beyond bedroom size.",
+        "revenueStrategy": "Room revenue is supported by restaurant, bar and street-facing café or bakery activity capable of attracting different users at different times of day.",
+        "pricingPowerThesis": "The hotel appears positioned above the average room rate, creating a first level of clientele selectivity while remaining more accessible than Mayfair ultra-luxury hotels.",
+        "assetLogic": "A scarce central London cultural location supports year-round demand and allows design and operational efficiency to compensate for compact rooms.",
+        "competitiveMoat": "The combination of recognisable design, theatre-district access and several contrasting public-space experiences is more difficult to reproduce than décor alone.",
+        "strategicOpportunity": "To deepen the property’s business-travel proposition without diluting its lifestyle identity.",
+        "investorQuestion": "How much of the rate premium is sustained by the enduring strength of the location, and how much requires continued reinvestment in the hotel’s design identity?"
+      },
+      "businessTravel": {
+        "summary": "A strong central London business hotel for travellers who value location, fast service, a functional desk and atmosphere more than extensive room size.",
+        "suitability": "Strong",
+        "locationEfficiency": "Well positioned for central London business, dining, theatre and tourism.",
+        "workspace": "The compact room still provided a sizeable working desk.",
+        "connectivity": null,
+        "meetingSuitability": null,
+        "privacy": "A sliding internal door created at least a psychological barrier between the sleeping area and the entrance or corridor.",
+        "sleepAndNoise": "The bed was comfortable, with no notable noise or sleep failure reported.",
+        "serviceSpeed": "Service was fast and the front desk did not develop meaningful queues.",
+        "breakfastPracticality": "Late breakfast was quiet, with limited evidence from which to judge peak-hour execution.",
+        "soloTravellerSuitability": "Strong; the hotel worked well for a two-night solo business stay."
+      },
+      "rooms": {
+        "summary": "Rooms are compact but carefully organised, with the bathroom positioned behind the headboard wall to create a surprisingly generous shower and basin area.",
+        "minimumSizeSqm": null,
+        "maximumStandardRoomSizeSqm": null,
+        "categories": [],
+        "workspace": "Sizeable desk suitable for work.",
+        "storage": "Good closet space for the room size.",
+        "bathroom": "Located behind the bed wall, allowing substantial shower and basin space.",
+        "lighting": "Blue reflective light reinforces the hotel’s modern design language.",
+        "technology": null,
+        "views": null,
+        "spatialStrength": "The room includes a queen-size bed, fridge, work desk, useful closet space and a generous bathroom despite its compact footprint.",
+        "spatialCompromise": "Overall room size remains limited."
+      },
+      "pricingIntelligence": {
+        "status": "not-started",
+        "currency": "GBP",
+        "roomBasis": null,
+        "occupancyBasis": null,
+        "taxesIncluded": null,
+        "observationStart": null,
+        "observationEnd": null,
+        "collectionDate": null,
+        "sourceMethod": null,
+        "medianObservedRate": null,
+        "lowestObservedRate": null,
+        "highestObservedRate": null,
+        "bestValuePeriod": null,
+        "peakPeriod": null,
+        "weekdayWeekendObservation": null,
+        "dmwInterpretation": null,
+        "dataPoints": [],
+        "eventMarkers": [],
+        "limitations": "A representative annual pricing series has not yet been collected."
+      },
+      "competitiveSet": [],
+      "rankingAssessment": {
+        "methodologyVersion": null,
+        "calculatedScore": null,
+        "editorialAdjustment": null,
+        "finalScore": null,
+        "confidence": "Developing",
+        "dimensions": [],
+        "editorialAdjustmentReason": null,
+        "internalNotes": "Rank 7 is illustrative only and must not be presented as a final DMW ranking."
+      },
+      "fieldReports": [
+        {
+          "id": "st-martins-lane-march-2026",
+          "visitDate": null,
+          "visitDateLabel": "Approximately March 2026",
+          "dateIsApproximate": true,
+          "nights": 2,
+          "roomCategory": "Room with one queen-size bed; formal category not recorded",
+          "approximatePaidRate": 400,
+          "currency": "EUR",
+          "rateBasis": "Approximate nightly rate",
+          "travelPurpose": "Business",
+          "summary": "The stay confirmed that St Martins Lane’s design and location compensate effectively for compact room dimensions. Service was immediate, the room was highly functional and no material service failures occurred.",
+          "arrival": "The façade and coloured translucent entrance created suspense before entry. A doorman engaged immediately and helped identify a nearby restaurant still serving late in the evening.",
+          "room": "Compact but complete, with a comfortable queen-size bed, fridge, sizeable desk, good closet space and a generous bathroom arranged behind the bed wall. A sliding internal door created psychological separation from the corridor.",
+          "service": "Fast and responsive, with no meaningful reception queues and no reported failures.",
+          "atmosphereAndClientele": "Oversized classical lobby furniture created an Alice-in-Wonderland effect. Guests encountered in the elevators appeared well heeled, consistent with an accessible-premium rather than mass-market position.",
+          "foodAndDrink": "Breakfast was used very late, around 11:00 or 12:00, when the guest was effectively alone; this was insufficient to assess normal breakfast service.",
+          "amenitiesUsed": [
+            "Breakfast",
+            "In-room workspace"
+          ],
+          "strengths": [
+            "Memorable arrival",
+            "Immediate service",
+            "Efficient room planning",
+            "Strong working desk",
+            "Comfortable sleep",
+            "Excellent cultural and restaurant location"
+          ],
+          "weaknesses": [
+            "Compact room dimensions"
+          ],
+          "returnIntention": "Would return for a business trip and would also consider it well positioned for tourism.",
+          "thesisConfirmation": "The visit supports the thesis that the property sells theatricality, functional design and cultural access rather than bedroom scale.",
+          "pullQuote": "St Martins Lane turns arrival, design and location into the luxury product.",
+          "publishedAt": null,
+          "updatedAt": null
+        }
+      ],
+      "relatedArticleSlugs": [
+        "why-st-martins-lane-works"
+      ],
+      "images": [],
+      "links": {
+        "officialWebsite": null,
+        "bookingUrl": null,
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=St+Martins+Lane+45+St+Martin%27s+Ln+London+WC2N+4HX",
+        "instagramUrl": null,
+        "bookingLinkIsAffiliate": false
+      },
+      "sources": [],
+      "disclosures": [
+        {
+          "type": "Approximate Date",
+          "text": "The visit date and paid rate are recalled approximately."
+        },
+        {
+          "type": "Research Basis",
+          "text": "Firsthand observations are separated from property facts that still require independent verification."
+        }
+      ],
+      "editorial": {
+        "author": "DMW Finance Group",
+        "reviewer": null,
+        "createdAt": "2026-08-13",
+        "updatedAt": "2026-08-13",
+        "publishedAt": null,
+        "lastFactCheckAt": null,
+        "notes": "All unverified property facts remain null pending structured research."
+      }
+    }
+  ]
+}
