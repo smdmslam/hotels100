@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, MapPin } from 'lucide-react';
+import { ArrowLeft, MapPin, Quote } from 'lucide-react';
 import { Container, Badge, IconLabel, SectionHeader, Button } from '../components/shared';
 import { PriceCurveChart } from '../components/hotel/PriceCurveChart';
 import { Scorecard } from '../components/hotel/Scorecard';
@@ -42,17 +42,18 @@ export const HotelProfile: React.FC = () => {
             <p className={styles.location}>
               <MapPin size={18} /> {hotel.location.displayLocation}
             </p>
+            {hotel.inclusionRationale && (
+              <div className={styles.heroRationale}>
+                <Quote size={20} className={styles.rationaleIcon} strokeWidth={1.5} />
+                <p>{hotel.inclusionRationale}</p>
+              </div>
+            )}
           </div>
         </Container>
       </header>
 
       <Container variant="reading" className={styles.mainContent}>
-        {/* Core Thesis / Overview */}
-        <section className={styles.section}>
-          <p className={styles.overviewText}>{hotel.dmwOverview}</p>
-        </section>
-
-        {/* Fact Grid */}
+        {/* Fact Grid (Property Intelligence) moved before overview */}
         <section className={styles.section}>
           <SectionHeader title="Property Intelligence" />
           <div className={styles.factGrid}>
@@ -65,15 +66,12 @@ export const HotelProfile: React.FC = () => {
           </div>
         </section>
 
+        {/* Core Thesis / Overview moved after Property Intelligence */}
+        <section className={styles.section}>
+          <p className={styles.overviewText}>{hotel.dmwOverview}</p>
+        </section>
+
         {/* Editorial Sections */}
-        {hotel.inclusionRationale && (
-          <section className={styles.section}>
-            <SectionHeader title="DMW Rationale" />
-            <div className={styles.prose}>
-              <p>{hotel.inclusionRationale}</p>
-            </div>
-          </section>
-        )}
 
         {hotel.analysis && (
           <section className={styles.section}>
