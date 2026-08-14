@@ -20,11 +20,14 @@ export const Home: React.FC = () => {
               A global index of the hotels that best combine hospitality, brand, pricing power and enduring asset value.
             </p>
             <div className={styles.heroActions}>
-              <Link to="/the-100" className={styles.buttonLink}>
-                <Button variant="dark-primary">Explore the Index</Button>
+              <Link to="/collections/the-global-100" className={styles.buttonLink}>
+                <Button variant="dark-primary">The Global 100</Button>
               </Link>
-              <Link to="/methodology" className={styles.buttonLink}>
-                <Button variant="dark-secondary">Read the Methodology</Button>
+              <Link to="/collections/the-europe-50" className={styles.buttonLink}>
+                <Button variant="dark-secondary">The Europe 50</Button>
+              </Link>
+              <Link to="/collections/the-accessible-50" className={styles.buttonLink}>
+                <Button variant="dark-secondary">The Accessible 50</Button>
               </Link>
             </div>
             
