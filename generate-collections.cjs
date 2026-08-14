@@ -139,7 +139,26 @@ const paris25 = {
   hotels: top25Paris
 };
 
-const collections = [global100, accessible50, london50, newYork50, zurich25, londonAccessible, paris25];
+// 8. The Italian & Swiss Lakes 35
+const lakeLocations = ['Lake Como', 'Lake Garda', 'Lake Maggiore', 'Lake Orta', 'Franciacorta', 'Ascona', 'Lugano'];
+const lakesHotels = allHotels.filter(h => lakeLocations.includes(h.location.city));
+const sortedLakes = lakesHotels.sort((a, b) => {
+  const scoreA = a.scores ? a.scores.totalScore : 0;
+  const scoreB = b.scores ? b.scores.totalScore : 0;
+  return scoreB - scoreA;
+});
+const top35Lakes = sortedLakes.slice(0, 35).map((h, index) => {
+  return { ...h, rank: index + 1 };
+});
+const lakes35 = {
+  slug: 'the-italian-and-swiss-lakes-35',
+  title: "The Italian & Swiss Lakes 35",
+  edition: "2024–2025",
+  description: "The ultimate edit of the heritage palaces, intimate villas, and contemporary wellness resorts defining the alpine lake rivieras of Italy and Switzerland.",
+  hotels: top35Lakes
+};
+
+const collections = [global100, accessible50, london50, newYork50, zurich25, londonAccessible, paris25, lakes35];
 
 fs.writeFileSync(COLLECTIONS_FILE, JSON.stringify({ collections }, null, 2));
 
