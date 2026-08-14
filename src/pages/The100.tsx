@@ -55,6 +55,12 @@ export const The100: React.FC = () => {
           </div>
         </div>
 
+        <div className={styles.resultsCount}>
+          Showing {filteredHotels.length} {filteredHotels.length === 1 ? 'hotel' : 'hotels'}
+          {regionFilter !== 'All' && ` in ${regionFilter}`}
+          {search && ` matching "${search}"`}
+        </div>
+
         <div className={styles.list}>
           {filteredHotels.length > 0 ? (
             filteredHotels.map(hotel => (

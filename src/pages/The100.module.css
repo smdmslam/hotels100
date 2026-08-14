@@ -79,6 +79,15 @@
   flex-direction: column;
 }
 
+.resultsCount {
+  font-family: var(--font-sans);
+  font-size: var(--type-small);
+  color: var(--color-stone);
+  margin-bottom: var(--space-4);
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid rgba(18, 18, 18, 0.05);
+}
+
 .empty {
   padding: var(--space-8) 0;
   text-align: center;
