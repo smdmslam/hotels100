@@ -140,7 +140,7 @@ export const CollectionIndex: React.FC = () => {
                 <button 
                   key={region}
                   className={`${styles.filterBtn} ${regionFilter === region ? styles.active : ''}`}
-                  onClick={() => setRegionFilter(region)}
+                  onClick={() => setRegionFilter(regionFilter === region && region !== 'All' ? 'All' : region)}
                 >
                   {region}
                 </button>
@@ -152,7 +152,7 @@ export const CollectionIndex: React.FC = () => {
                 <button 
                   key={band.label}
                   className={`${styles.filterBtn} ${priceFilter === band.label ? styles.active : ''}`}
-                  onClick={() => setPriceFilter(band.label)}
+                  onClick={() => setPriceFilter(priceFilter === band.label && band.label !== 'All Prices' ? 'All Prices' : band.label)}
                 >
                   {band.label}
                 </button>
@@ -164,7 +164,7 @@ export const CollectionIndex: React.FC = () => {
                 <button 
                   key={lens as string}
                   className={`${styles.filterBtn} ${lensFilter === lens ? styles.active : ''}`}
-                  onClick={() => setLensFilter(lens as string)}
+                  onClick={() => setLensFilter(lensFilter === lens && lens !== 'All Lenses' ? 'All Lenses' : lens as string)}
                 >
                   {lens}
                 </button>
