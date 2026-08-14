@@ -59,7 +59,14 @@ const generateSlug = (name, location) => {
 const getStrategicLens = (name, brand) => {
   const n = name.toLowerCase();
   const b = brand.toLowerCase();
-  
+  // Paris-specific taxonomy overrides
+  if (n.includes('george v') || n.includes('ritz paris') || n === 'le bristol' || n.includes('peninsula paris') || n.includes('le bristol paris')) return 'Palace as luxury ecosystem';
+  if (n.includes('cheval blanc') || n.includes('plaza athénée') || n.includes('maison delano')) return 'Luxury-brand real-estate platform';
+  if (n.includes('réserve paris') || n.includes('j.k. place') || n.includes('saint james')) return 'Ultra-private mansion';
+  if (n.includes('shangri-la') || n.includes('meurice') || n.includes('crillon')) return 'View-led / location-scarce asset';
+  if (n.includes('madame r') || n.includes('so/ paris') || n.includes('hoxton, paris') || n.includes('costes') || n.includes('dame des arts')) return 'Design-led urban lifestyle hotel';
+  if (n.includes('bus palladium') || n.includes('raphaël') || n.includes('banke')) return 'Heritage conversion / reinvention';
+
   if (b.includes('aman') || b.includes('six senses') || b.includes('equinox') || n.includes('wellness')) return 'Wellness-led mixed use';
   if (b.includes('soho house') || n.includes('ned') || n.includes('twenty two')) return 'Members-club adjacency';
   if (b.includes('edition') || b.includes('standard') || b.includes('public') || n.includes('nomad') || n.includes('hoxton') || b.includes('firmdale')) return 'Lifestyle and cultural hotel';

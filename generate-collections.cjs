@@ -121,7 +121,25 @@ const londonAccessible = {
   hotels: topLondonAccessible
 };
 
-const collections = [global100, accessible50, london50, newYork50, zurich25, londonAccessible];
+// 7. The Paris 25
+const parisHotels = allHotels.filter(h => h.location.city === 'Paris');
+const sortedParis = parisHotels.sort((a, b) => {
+  const scoreA = a.scores ? a.scores.totalScore : 0;
+  const scoreB = b.scores ? b.scores.totalScore : 0;
+  return scoreB - scoreA;
+});
+const top25Paris = sortedParis.slice(0, 25).map((h, index) => {
+  return { ...h, rank: index + 1 };
+});
+const paris25 = {
+  slug: 'the-paris-25',
+  title: "The Paris 25",
+  edition: "2024–2025",
+  description: "Paris is the global reference market for converting culture, architecture, fashion authority, and address scarcity into hotel pricing power. The question is not whether an asset is prestigious; it is whether its hotel operation turns prestige into a coherent and commercially durable guest proposition.",
+  hotels: top25Paris
+};
+
+const collections = [global100, accessible50, london50, newYork50, zurich25, londonAccessible, paris25];
 
 fs.writeFileSync(COLLECTIONS_FILE, JSON.stringify({ collections }, null, 2));
 
