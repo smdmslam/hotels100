@@ -49,11 +49,6 @@ export const Scorecard: React.FC<ScorecardProps> = ({ scores }) => {
           </div>
         ))}
       </div>
-      
-      <div className={styles.footer}>
-        <span className={styles.confidenceLabel}>Evidence Confidence:</span>
-        <span className={styles.confidenceValue}>{scores.confidence}</span>
-      </div>
     </div>
   );
 };

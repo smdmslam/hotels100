@@ -58,10 +58,8 @@ export const RankedHotelItem: React.FC<RankedHotelItemProps> = ({ hotel }) => {
           )}
         </div>
 
-        {hotel.dmwJudgement ? (
+        {hotel.dmwJudgement && (
           <p className={styles.judgement}>{hotel.dmwJudgement}</p>
-        ) : (
-          <p className={styles.pending}>{hotel.assessmentPendingLabel}</p>
         )}
 
         <div className={styles.distinctions}>
@@ -93,13 +91,11 @@ export const RankedHotelItem: React.FC<RankedHotelItemProps> = ({ hotel }) => {
 
       {/* New Score Column */}
       <div className={styles.scoreColumn}>
-        {hotel.scores ? (
+        {hotel.scores && (
           <div className={styles.scoreDisplay}>
             <span className={styles.scoreValue}>{hotel.scores.totalScore.toFixed(1)}</span>
             <span className={styles.scoreMax}>/ 100</span>
           </div>
-        ) : (
-          <span className={styles.noScore}>Pending</span>
         )}
       </div>
 

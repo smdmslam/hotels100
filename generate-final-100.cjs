@@ -104,8 +104,8 @@ const indexData = {
         displayLocation: `${hotel.location}, ${hotel.country}`
       },
       archetype: hotel.location.includes('Island') || hotel.location.includes('Valley') ? 'Resort' : 'Urban Luxury',
-      evidenceStatus: "DMW Researched",
-      assessmentPendingLabel: "Full review pending",
+      dmwJudgement: hotel.dmwJudgement || null,
+      assessmentPendingLabel: null,
       dmwOverview: `${hotel.name} was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: ${hotel.sources}.`,
       identity: {
         owner: "Unknown",
