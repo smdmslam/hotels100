@@ -79,6 +79,7 @@ export interface HotelSummary {
   archetype: Archetype;
   publicationStatus: 'draft' | 'review' | 'published' | 'archived' | 'prototype-ready' | 'research-draft';
   featured: boolean;
+  strategicLens?: string;
   dmwJudgement?: string | null;
   assessmentPendingLabel?: string | null;
   indicativeRate?: {

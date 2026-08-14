@@ -55,6 +55,9 @@
     "archetype": {
       "$ref": "#/$defs/archetype"
     },
+    "strategicLens": {
+      "$ref": "#/$defs/strategicLens"
+    },
     "secondaryArchetypes": {
       "type": "array",
       "items": {
@@ -289,6 +292,19 @@
         "Private-Island Hotel",
         "Members-Club Hybrid",
         "Branded Residence Ecosystem"
+      ]
+    },
+    "strategicLens": {
+      "type": "string",
+      "enum": [
+        "Trophy heritage asset",
+        "Ultra-luxury urban ecosystem",
+        "Members-club adjacency",
+        "Lifestyle and cultural hotel",
+        "Adaptive reuse / conversion",
+        "Wellness-led mixed use",
+        "Neighbourhood destination",
+        "Business-travel flagship"
       ]
     },
     "distinction": {

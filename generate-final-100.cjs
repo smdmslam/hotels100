@@ -56,6 +56,21 @@ const generateSlug = (name, location) => {
   return str.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 };
 
+const getStrategicLens = (name, brand) => {
+  const n = name.toLowerCase();
+  const b = brand.toLowerCase();
+  
+  if (b.includes('aman') || b.includes('six senses') || b.includes('equinox') || n.includes('wellness')) return 'Wellness-led mixed use';
+  if (b.includes('soho house') || n.includes('ned') || n.includes('twenty two')) return 'Members-club adjacency';
+  if (b.includes('edition') || b.includes('standard') || b.includes('public') || n.includes('nomad') || n.includes('hoxton') || b.includes('firmdale')) return 'Lifestyle and cultural hotel';
+  if (n.includes('plaza') || n.includes('ritz') || n.includes('savoy') || n.includes('claridge') || n.includes('carlyle') || n.includes('dorchester') || n.includes('waldorf')) return 'Trophy heritage asset';
+  if (b.includes('four seasons') || b.includes('mandarin') || b.includes('st. regis') || b.includes('peninsula') || b.includes('rosewood')) return 'Business-travel flagship';
+  if (n.includes('factory') || n.includes('post office') || n.includes('bank') || n.includes('owo')) return 'Adaptive reuse / conversion';
+  if (n.includes('bulgari') || n.includes('baccarat') || b.includes('cheval blanc') || n.includes('cipriani')) return 'Ultra-luxury urban ecosystem';
+  
+  return 'Neighbourhood destination';
+};
+
 // Map to our HotelProfile schema
 const indexData = {
   edition: "2024–2025",
@@ -79,6 +94,7 @@ const indexData = {
       name: hotel.name,
       band: band,
       featured: false,
+      strategicLens: getStrategicLens(hotel.name, hotel.brand),
       distinctions: [],
       location: {
         city: hotel.location,

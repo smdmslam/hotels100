@@ -57,6 +57,7 @@ export const HotelProfile: React.FC = () => {
         <section className={styles.section}>
           <SectionHeader title="Property Intelligence" />
           <div className={styles.factGrid}>
+            <IconLabel iconName="Target" label="Strategic Lens" value={hotel.strategicLens} />
             <IconLabel iconName="Building" label="Archetype" value={hotel.archetype} />
             <IconLabel iconName="Calendar" label="Opened" value={hotel.propertyFacts.openingYear?.toString()} />
             <IconLabel iconName="BedDouble" label="Rooms" value={hotel.propertyFacts.roomCount?.toString()} />

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import type { HotelSummary, DimensionScore } from '../../data/types';
 import { Badge } from '../shared/Badge';
-import { MapPin, Building, ArrowRight, Tag } from 'lucide-react';
+import { MapPin, Building, ArrowRight, Tag, Target } from 'lucide-react';
 import styles from './RankedHotelItem.module.css';
 
 interface RankedHotelItemProps {
@@ -48,6 +48,12 @@ export const RankedHotelItem: React.FC<RankedHotelItemProps> = ({ hotel }) => {
             <span className={styles.metaItem}>
               <Tag size={14} />
               ~${hotel.indicativeRate.amount} / nt
+            </span>
+          )}
+          {hotel.strategicLens && (
+            <span className={styles.metaItem}>
+              <Target size={14} />
+              {hotel.strategicLens}
             </span>
           )}
         </div>
