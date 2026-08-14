@@ -49,6 +49,7 @@
   background-color: var(--color-ink);
   color: var(--color-ivory);
   padding: var(--space-6) 0 var(--space-8);
+  margin-bottom: var(--space-8);
 }
 
 .backLink {
