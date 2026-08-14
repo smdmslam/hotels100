@@ -15,14 +15,50 @@ export const CollectionIndex: React.FC = () => {
   const [priceFilter, setPriceFilter] = useState('All Prices');
   const [lensFilter, setLensFilter] = useState('All Lenses');
   const [amenityFilters, setAmenityFilters] = useState<string[]>([]);
+  const [savedPresetActive, setSavedPresetActive] = useState(false);
 
   useEffect(() => {
+    try {
+      const saved = localStorage.getItem('dmw_saved_filters');
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (parsed.slug === slug) {
+          setSearch(parsed.search || '');
+          setRegionFilter(parsed.regionFilter || 'All');
+          setPriceFilter(parsed.priceFilter || 'All Prices');
+          setLensFilter(parsed.lensFilter || 'All Lenses');
+          setAmenityFilters(parsed.amenityFilters || []);
+          setSavedPresetActive(true);
+          return;
+        }
+      }
+    } catch (e) {}
+    
+    // Reset if no preset
     setSearch('');
     setRegionFilter('All');
     setPriceFilter('All Prices');
     setLensFilter('All Lenses');
     setAmenityFilters([]);
+    setSavedPresetActive(false);
   }, [slug]);
+
+  const savePreset = () => {
+    localStorage.setItem('dmw_saved_filters', JSON.stringify({
+      slug, search, regionFilter, priceFilter, lensFilter, amenityFilters
+    }));
+    setSavedPresetActive(true);
+  };
+
+  const clearPreset = () => {
+    localStorage.removeItem('dmw_saved_filters');
+    setSearch('');
+    setRegionFilter('All');
+    setPriceFilter('All Prices');
+    setLensFilter('All Lenses');
+    setAmenityFilters([]);
+    setSavedPresetActive(false);
+  };
 
   if (!collection) {
     return <Navigate to="/collections/the-global-100" replace />;
@@ -145,6 +181,18 @@ export const CollectionIndex: React.FC = () => {
                   {opt.label}
                 </button>
               ))}
+            </div>
+            
+            <div className={styles.filters} style={{ marginLeft: 'auto' }}>
+              {!savedPresetActive ? (
+                <button onClick={savePreset} style={{ fontSize: '0.875rem', textDecoration: 'underline', color: 'var(--text-secondary)', background: 'none', border: 'none', cursor: 'pointer' }}>
+                  Save Preset
+                </button>
+              ) : (
+                <button onClick={clearPreset} style={{ fontSize: '0.875rem', textDecoration: 'underline', color: 'var(--accent)', background: 'none', border: 'none', cursor: 'pointer' }}>
+                  Clear Preset
+                </button>
+              )}
             </div>
           </div>
         </div>

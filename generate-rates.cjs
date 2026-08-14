@@ -55,6 +55,14 @@ const generateRate = (hotel) => {
   // Ensure minimums
   if (finalRate < 250) finalRate = 250;
 
+  // Force some accessible rates for the prototype collections
+  if (hotel.strategicLens === 'Lifestyle and cultural hotel' || hotel.strategicLens === 'Neighbourhood destination' || hotel.strategicLens === 'Adaptive reuse / conversion') {
+    // 60% chance to be 'accessible' (<$500) for these lenses
+    if (Math.random() < 0.6) {
+      finalRate = Math.floor(Math.random() * 150) + 300; // 300 to 450
+    }
+  }
+
   return {
     currency: 'USD',
     amount: finalRate,

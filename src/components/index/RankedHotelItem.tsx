@@ -99,7 +99,15 @@ export const RankedHotelItem: React.FC<RankedHotelItemProps> = ({ hotel }) => {
         )}
       </div>
 
-      <div className={styles.actionColumn}>
+      <div className={styles.actionColumn} style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '1rem' }}>
+        <a 
+          href="#" 
+          style={{ fontSize: '0.875rem', textDecoration: 'underline', color: 'var(--text-secondary)' }}
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+          Check Dates
+        </a>
         <Link to={hotel.profileUrl} className={styles.actionLink} aria-label={`View profile for ${hotel.name}`}>
           <ArrowRight size={24} strokeWidth={1} />
         </Link>
