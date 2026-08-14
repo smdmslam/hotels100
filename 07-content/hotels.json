@@ -120,7 +120,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 1530,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-002",
@@ -243,7 +249,13 @@
           "category": "Leisure",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 1360,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-003",
@@ -366,7 +378,13 @@
           "category": "Leisure",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 1240,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-004",
@@ -489,7 +507,13 @@
           "category": "Leisure",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 1310,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-005",
@@ -606,7 +630,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 920,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-006",
@@ -723,7 +753,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 850,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-007",
@@ -840,7 +876,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 880,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-008",
@@ -957,7 +999,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 1430,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-009",
@@ -1074,7 +1122,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 370,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-010",
@@ -1197,7 +1251,13 @@
           "category": "Leisure",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 950,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-011",
@@ -1314,7 +1374,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 830,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-012",
@@ -1431,7 +1497,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 1360,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-013",
@@ -1554,7 +1626,13 @@
           "category": "Leisure",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 1380,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-014",
@@ -1677,7 +1755,13 @@
           "category": "Leisure",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 860,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-015",
@@ -1794,7 +1878,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 920,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-016",
@@ -1911,7 +2001,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 1270,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-017",
@@ -2028,7 +2124,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 1410,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-018",
@@ -2145,7 +2247,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 660,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-019",
@@ -2268,7 +2376,13 @@
           "category": "Leisure",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 700,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-020",
@@ -2385,7 +2499,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 460,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-021",
@@ -2502,7 +2622,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 710,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-022",
@@ -2619,7 +2745,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 1010,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-023",
@@ -2736,7 +2868,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 640,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-024",
@@ -2859,7 +2997,13 @@
           "category": "Leisure",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 690,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-025",
@@ -2982,7 +3126,13 @@
           "category": "Leisure",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 750,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-026",
@@ -3099,7 +3249,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 1210,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-027",
@@ -3222,7 +3378,13 @@
           "category": "Leisure",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 710,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-028",
@@ -3339,7 +3501,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 1050,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-029",
@@ -3462,7 +3630,13 @@
           "category": "Leisure",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 1000,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-030",
@@ -3585,7 +3759,13 @@
           "category": "Leisure",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 440,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-031",
@@ -3708,7 +3888,13 @@
           "category": "Leisure",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 1470,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-032",
@@ -3825,7 +4011,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 1020,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-033",
@@ -3942,7 +4134,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 1020,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-034",
@@ -4065,7 +4263,13 @@
           "category": "Leisure",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 1030,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-035",
@@ -4188,7 +4392,13 @@
           "category": "Leisure",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 770,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-036",
@@ -4311,7 +4521,13 @@
           "category": "Leisure",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 340,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-037",
@@ -4434,7 +4650,13 @@
           "category": "Leisure",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 690,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-038",
@@ -4551,7 +4773,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 1350,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-039",
@@ -4674,7 +4902,13 @@
           "category": "Leisure",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 940,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-040",
@@ -4791,7 +5025,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 560,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-041",
@@ -4908,7 +5148,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 920,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-042",
@@ -5025,7 +5271,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 650,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-043",
@@ -5142,7 +5394,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 1010,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-044",
@@ -5259,7 +5517,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 1000,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-045",
@@ -5376,7 +5640,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 1180,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-046",
@@ -5493,7 +5763,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 930,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-047",
@@ -5610,7 +5886,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 850,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-048",
@@ -5733,7 +6015,13 @@
           "category": "Leisure",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 340,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-049",
@@ -5850,7 +6138,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 1390,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-050",
@@ -5973,7 +6267,13 @@
           "category": "Leisure",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 900,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-051",
@@ -6090,7 +6390,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 930,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-052",
@@ -6207,7 +6513,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 1090,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-053",
@@ -6324,7 +6636,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 950,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-054",
@@ -6441,7 +6759,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 720,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-055",
@@ -6564,7 +6888,13 @@
           "category": "Leisure",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 980,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-056",
@@ -6687,7 +7017,13 @@
           "category": "Leisure",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 1030,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-057",
@@ -6804,7 +7140,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 920,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-058",
@@ -6921,7 +7263,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 1050,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-059",
@@ -7038,7 +7386,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 890,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-060",
@@ -7155,7 +7509,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 950,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-061",
@@ -7272,7 +7632,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 880,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-062",
@@ -7389,7 +7755,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 1080,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-063",
@@ -7512,7 +7884,13 @@
           "category": "Leisure",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 440,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-064",
@@ -7635,7 +8013,13 @@
           "category": "Leisure",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 1580,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-065",
@@ -7752,7 +8136,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 1520,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-066",
@@ -7875,7 +8265,13 @@
           "category": "Leisure",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 840,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-067",
@@ -7992,7 +8388,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 560,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-068",
@@ -8115,7 +8517,13 @@
           "category": "Leisure",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 1470,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-069",
@@ -8238,7 +8646,13 @@
           "category": "Leisure",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 870,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-070",
@@ -8361,7 +8775,13 @@
           "category": "Leisure",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 1650,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-071",
@@ -8484,7 +8904,13 @@
           "category": "Leisure",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 1310,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-072",
@@ -8607,7 +9033,13 @@
           "category": "Leisure",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 1500,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-073",
@@ -8724,7 +9156,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 810,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-074",
@@ -8841,7 +9279,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 590,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-075",
@@ -8958,7 +9402,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 1000,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-076",
@@ -9081,7 +9531,13 @@
           "category": "Leisure",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 1580,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-077",
@@ -9198,7 +9654,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 780,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-078",
@@ -9315,7 +9777,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 1300,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-079",
@@ -9432,7 +9900,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 980,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-080",
@@ -9549,7 +10023,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 1330,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-081",
@@ -9672,7 +10152,13 @@
           "category": "Leisure",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 980,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-082",
@@ -9795,7 +10281,13 @@
           "category": "Leisure",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 900,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-083",
@@ -9918,7 +10410,13 @@
           "category": "Leisure",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 550,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-084",
@@ -10035,7 +10533,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 910,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-085",
@@ -10158,7 +10662,13 @@
           "category": "Leisure",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 1930,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-086",
@@ -10281,7 +10791,13 @@
           "category": "Leisure",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 830,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-087",
@@ -10398,7 +10914,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 1050,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-088",
@@ -10521,7 +11043,13 @@
           "category": "Leisure",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 590,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-089",
@@ -10644,7 +11172,13 @@
           "category": "Leisure",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 1410,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-090",
@@ -10767,7 +11301,13 @@
           "category": "Leisure",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 840,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-091",
@@ -10884,7 +11424,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 990,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-092",
@@ -11001,7 +11547,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 700,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-093",
@@ -11124,7 +11676,13 @@
           "category": "Leisure",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 1000,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-094",
@@ -11247,7 +11805,13 @@
           "category": "Leisure",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 660,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-095",
@@ -11370,7 +11934,13 @@
           "category": "Leisure",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 1120,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-096",
@@ -11487,7 +12057,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 1400,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-097",
@@ -11604,7 +12180,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 1510,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-098",
@@ -11721,7 +12303,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 1370,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-099",
@@ -11844,7 +12432,13 @@
           "category": "Leisure",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 990,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     },
     {
       "id": "dmw-hotel-100",
@@ -11961,7 +12555,13 @@
           "category": "Business",
           "available": true
         }
-      ]
+      ],
+      "indicativeRate": {
+        "currency": "USD",
+        "amount": 1230,
+        "label": "Estimated Starting Rate",
+        "basis": "per night"
+      }
     }
   ]
 }

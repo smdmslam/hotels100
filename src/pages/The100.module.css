@@ -47,10 +47,18 @@
   border-color: var(--color-ink);
 }
 
+.filtersContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  align-items: flex-end;
+}
+
 .filters {
   display: flex;
   gap: var(--space-2);
   flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .filterBtn {
