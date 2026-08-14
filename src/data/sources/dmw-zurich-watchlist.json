@@ -1,0 +1,21 @@
+[
+  { "name": "The Dolder Grand", "location": "Zurich", "country": "Switzerland", "brand": "Independent", "source": "DMW Zurich Watchlist" },
+  { "name": "Baur au Lac", "location": "Zurich", "country": "Switzerland", "brand": "Independent", "source": "DMW Zurich Watchlist" },
+  { "name": "Mandarin Oriental Savoy, Zurich", "location": "Zurich", "country": "Switzerland", "brand": "Mandarin Oriental", "source": "DMW Zurich Watchlist" },
+  { "name": "La Réserve Eden au Lac Zurich", "location": "Zurich", "country": "Switzerland", "brand": "La Réserve", "source": "DMW Zurich Watchlist" },
+  { "name": "Widder Hotel", "location": "Zurich", "country": "Switzerland", "brand": "The Living Circle", "source": "DMW Zurich Watchlist" },
+  { "name": "Park Hyatt Zurich", "location": "Zurich", "country": "Switzerland", "brand": "Park Hyatt", "source": "DMW Zurich Watchlist" },
+  { "name": "The Chedi Andermatt", "location": "Andermatt", "country": "Switzerland", "brand": "GHM", "source": "DMW Zurich Watchlist" },
+  { "name": "Storchen Zürich", "location": "Zurich", "country": "Switzerland", "brand": "The Living Circle", "source": "DMW Zurich Watchlist" },
+  { "name": "Alex Lake Zürich", "location": "Zurich", "country": "Switzerland", "brand": "The Living Circle", "source": "DMW Zurich Watchlist" },
+  { "name": "Hotel Schweizerhof Zürich", "location": "Zurich", "country": "Switzerland", "brand": "Independent", "source": "DMW Zurich Watchlist" },
+  { "name": "Hotel B2 & Spa Zürich", "location": "Zurich", "country": "Switzerland", "brand": "Independent", "source": "DMW Zurich Watchlist" },
+  { "name": "Hotel Helvetia Zürich", "location": "Zurich", "country": "Switzerland", "brand": "Independent", "source": "DMW Zurich Watchlist" },
+  { "name": "Kameha Grand Zürich", "location": "Zurich", "country": "Switzerland", "brand": "Autograph Collection", "source": "DMW Zurich Watchlist" },
+  { "name": "The Home Hotel Zürich", "location": "Zurich", "country": "Switzerland", "brand": "Design Hotels", "source": "DMW Zurich Watchlist" },
+  { "name": "Hotel AMERON Zürich Bellerive au Lac", "location": "Zurich", "country": "Switzerland", "brand": "AMERON", "source": "DMW Zurich Watchlist" },
+  { "name": "Hotel Glockenhof Zürich", "location": "Zurich", "country": "Switzerland", "brand": "Independent", "source": "DMW Zurich Watchlist" },
+  { "name": "Hotel St. Gotthard", "location": "Zurich", "country": "Switzerland", "brand": "Independent", "source": "DMW Zurich Watchlist" },
+  { "name": "Ruby Mimi Hotel Zurich", "location": "Zurich", "country": "Switzerland", "brand": "Ruby Hotels", "source": "DMW Zurich Watchlist" },
+  { "name": "Villa Florhof by Lalique", "location": "Zurich", "country": "Switzerland", "brand": "Lalique", "source": "DMW Zurich Watchlist" }
+]

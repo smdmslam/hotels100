@@ -49,34 +49,61 @@ const accessible50 = {
   hotels: top50Affordable
 };
 
-// 3. The Europe 50
-// Filter hotels strictly in Europe
-const europeHotels = allHotels.filter(h => h.location.region === 'Europe');
-
-// Sort them by their original totalScore to find the best ones
-const sortedEurope = europeHotels.sort((a, b) => {
+// 3. The London 50
+const londonHotels = allHotels.filter(h => h.location.city === 'London');
+const sortedLondon = londonHotels.sort((a, b) => {
   const scoreA = a.scores ? a.scores.totalScore : 0;
   const scoreB = b.scores ? b.scores.totalScore : 0;
   return scoreB - scoreA;
 });
-
-// Take top 50, re-rank them 1 to 50
-const top50Europe = sortedEurope.slice(0, 50).map((h, index) => {
-  return {
-    ...h,
-    rank: index + 1 // Re-rank for this specific list
-  };
+const top50London = sortedLondon.slice(0, 50).map((h, index) => {
+  return { ...h, rank: index + 1 };
 });
-
-const europe50 = {
-  slug: 'the-europe-50',
-  title: "The Europe 50",
+const london50 = {
+  slug: 'the-london-50',
+  title: "The London 50",
   edition: "2024–2025",
-  description: "The definitive ranking of Europe's most exceptional hospitality experiences, from historic grand dames in Paris to secluded Mediterranean retreats.",
-  hotels: top50Europe
+  description: "The definitive ranking of London's most exceptional hospitality experiences, diving deep into the properties that define the city.",
+  hotels: top50London
 };
 
-const collections = [global100, accessible50, europe50];
+// 4. The New York 50
+const nyHotels = allHotels.filter(h => h.location.city === 'New York');
+const sortedNy = nyHotels.sort((a, b) => {
+  const scoreA = a.scores ? a.scores.totalScore : 0;
+  const scoreB = b.scores ? b.scores.totalScore : 0;
+  return scoreB - scoreA;
+});
+const top50Ny = sortedNy.slice(0, 50).map((h, index) => {
+  return { ...h, rank: index + 1 };
+});
+const newYork50 = {
+  slug: 'the-new-york-50',
+  title: "The New York 50",
+  edition: "2024–2025",
+  description: "The definitive ranking of New York's most exceptional hospitality experiences, diving deep into the properties that define the city.",
+  hotels: top50Ny
+};
+
+// 5. The Zurich 25
+const zurichHotels = allHotels.filter(h => h.location.city === 'Zurich' || h.location.city === 'Andermatt');
+const sortedZurich = zurichHotels.sort((a, b) => {
+  const scoreA = a.scores ? a.scores.totalScore : 0;
+  const scoreB = b.scores ? b.scores.totalScore : 0;
+  return scoreB - scoreA;
+});
+const top25Zurich = sortedZurich.slice(0, 25).map((h, index) => {
+  return { ...h, rank: index + 1 };
+});
+const zurich25 = {
+  slug: 'the-zurich-25',
+  title: "The Zurich 25",
+  edition: "2024–2025",
+  description: "Zurich's luxury-hospitality market is not defined by spectacle. Its strongest hotels monetise discretion, institutional trust, lake and landscape access, and unusually demanding business-travel expectations.",
+  hotels: top25Zurich
+};
+
+const collections = [global100, accessible50, london50, newYork50, zurich25];
 
 fs.writeFileSync(COLLECTIONS_FILE, JSON.stringify({ collections }, null, 2));
 

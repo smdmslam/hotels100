@@ -23,7 +23,9 @@ export const SiteHeader: React.FC<SiteHeaderProps> = ({ variant = 'light' }) => 
 
   const navItems = [
     { label: 'The Global 100', path: '/collections/the-global-100' },
-    { label: 'The Europe 50', path: '/collections/the-europe-50' },
+    { label: 'The London 50', path: '/collections/the-london-50' },
+    { label: 'The New York 50', path: '/collections/the-new-york-50' },
+    { label: 'The Zurich 25', path: '/collections/the-zurich-25' },
     { label: 'The Accessible 50', path: '/collections/the-accessible-50' },
     { label: 'Insights', path: '/insights' },
     { label: 'Methodology', path: '/methodology' },

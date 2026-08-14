@@ -23,8 +23,14 @@ export const Home: React.FC = () => {
               <Link to="/collections/the-global-100" className={styles.buttonLink}>
                 <Button variant="dark-primary">The Global 100</Button>
               </Link>
-              <Link to="/collections/the-europe-50" className={styles.buttonLink}>
-                <Button variant="dark-secondary">The Europe 50</Button>
+              <Link to="/collections/the-london-50" className={styles.buttonLink}>
+                <Button variant="dark-secondary">The London 50</Button>
+              </Link>
+              <Link to="/collections/the-new-york-50" className={styles.buttonLink}>
+                <Button variant="dark-secondary">The New York 50</Button>
+              </Link>
+              <Link to="/collections/the-zurich-25" className={styles.buttonLink}>
+                <Button variant="dark-secondary">The Zurich 25</Button>
               </Link>
               <Link to="/collections/the-accessible-50" className={styles.buttonLink}>
                 <Button variant="dark-secondary">The Accessible 50</Button>
