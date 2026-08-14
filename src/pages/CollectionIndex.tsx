@@ -1,17 +1,30 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
+import { useParams, Navigate } from 'react-router-dom';
 import { Container } from '../components/shared';
 import { RankedHotelItem } from '../components/index/RankedHotelItem';
-import { getAllHotels, getIndexData } from '../data/api';
-import styles from './The100.module.css';
+import { getCollection } from '../data/api';
+import styles from './CollectionIndex.module.css';
 
-export const The100: React.FC = () => {
-  const allHotels = getAllHotels();
-  const indexData = getIndexData();
+export const CollectionIndex: React.FC = () => {
+  const { slug } = useParams<{ slug: string }>();
+  const collection = getCollection(slug || '');
   
-  // Basic state for filtering/sorting
+  // Reset filters when changing collections
   const [search, setSearch] = useState('');
   const [regionFilter, setRegionFilter] = useState('All');
   const [priceFilter, setPriceFilter] = useState('All Prices');
+
+  useEffect(() => {
+    setSearch('');
+    setRegionFilter('All');
+    setPriceFilter('All Prices');
+  }, [slug]);
+
+  if (!collection) {
+    return <Navigate to="/collections/the-global-100" replace />;
+  }
+
+  const allHotels = collection.hotels;
   
   const regions = ['All', ...Array.from(new Set(allHotels.map(h => h.location.region)))];
   
@@ -46,11 +59,8 @@ export const The100: React.FC = () => {
     <div className={styles.page}>
       <Container variant="standard">
         <div className={styles.masthead}>
-          <h1 className={styles.title}>{indexData.title}</h1>
-          <p className={styles.subtitle}>
-            The provisional {indexData.edition} ranking, assessed through hospitality strategy,
-            amenities, pricing power, brand position and enduring asset value.
-          </p>
+          <h1 className={styles.title}>{collection.title}</h1>
+          <p className={styles.subtitle}>{collection.description}</p>
         </div>
 
         <div className={styles.controls}>

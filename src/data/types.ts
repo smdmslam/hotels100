@@ -291,3 +291,11 @@ export interface IndexData {
   prototypeNotice: string;
   hotels: HotelSummary[];
 }
+
+export interface Collection {
+  slug: string;
+  title: string;
+  edition: string;
+  description: string;
+  hotels: HotelSummary[];
+}
