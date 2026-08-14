@@ -34,8 +34,8 @@ candidates.sort((a, b) => {
   return a.name.localeCompare(b.name);
 });
 
-// Take the Top 100
-const top100 = candidates.slice(0, 100);
+// Keep all candidates for the master database
+const allCandidates = candidates;
 
 // Determine regional mapping
 const getRegion = (country) => {
@@ -63,7 +63,7 @@ const indexData = {
   lastUpdated: new Date().toISOString().split('T')[0],
   methodologyVersion: "1.0",
   prototypeNotice: "This index is a live prototype. Constituent properties have been programmatically selected from a consolidated master universe of 118 verified luxury properties. Full DMW scoring and editorial reviews are in progress.",
-  hotels: top100.map((hotel, index) => {
+  hotels: allCandidates.map((hotel, index) => {
     const rank = index + 1;
     let band = "Watchlist";
     if (rank <= 20) band = "Exceptional";

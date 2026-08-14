@@ -11,12 +11,15 @@ const data = JSON.parse(jsonData);
 const allHotels = data.hotels;
 
 // 1. The Global 100
+// Take the top 100 hotels from the master list (already sorted by consensus)
+const global100Hotels = allHotels.slice(0, 100);
+
 const global100 = {
   slug: 'the-global-100',
   title: "The World's 100 Most Exceptional Hotels",
   edition: "2024–2025",
   description: "The provisional 2024-2025 ranking, assessed through hospitality strategy, amenities, pricing power, brand position and enduring asset value.",
-  hotels: allHotels // Already sorted 1 to 100
+  hotels: global100Hotels
 };
 
 // 2. The Accessible 50 (Under $500)
