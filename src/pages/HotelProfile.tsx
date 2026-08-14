@@ -1,15 +1,27 @@
 import React from 'react';
-import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, MapPin, Quote } from 'lucide-react';
+import { useParams, Link, useLocation } from 'react-router-dom';
+import { ArrowLeft, MapPin, Quote, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Container, Badge, IconLabel, SectionHeader, Button } from '../components/shared';
 import { PriceCurveChart } from '../components/hotel/PriceCurveChart';
 import { Scorecard } from '../components/hotel/Scorecard';
-import { getHotelProfile } from '../data/api';
+import { getHotelProfile, getCollection } from '../data/api';
 import styles from './HotelProfile.module.css';
 
 export const HotelProfile: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
+  const location = useLocation();
+  const collectionSlug = location.state?.collectionSlug || 'the-global-100';
+  
   const hotel = getHotelProfile(slug || '');
+  const collection = getCollection(collectionSlug);
+
+  let prevHotel = null;
+  let nextHotel = null;
+  if (collection && hotel) {
+    const currentIndex = collection.hotels.findIndex(h => h.id === hotel.id);
+    if (currentIndex > 0) prevHotel = collection.hotels[currentIndex - 1];
+    if (currentIndex < collection.hotels.length - 1) nextHotel = collection.hotels[currentIndex + 1];
+  }
 
   if (!hotel) {
     return (
@@ -17,8 +29,8 @@ export const HotelProfile: React.FC = () => {
         <div className={styles.notFoundContent}>
           <h2>Profile in Preparation</h2>
           <p>The comprehensive DMW assessment for this property is currently being compiled.</p>
-          <Link to="/the-100" className={styles.backLink}>
-            <ArrowLeft size={16} /> Back to Index
+          <Link to={`/collections/${collectionSlug}`} className={styles.backLink}>
+            <ArrowLeft size={16} /> Back to {collection ? collection.title : 'Index'}
           </Link>
         </div>
       </Container>
@@ -30,9 +42,32 @@ export const HotelProfile: React.FC = () => {
       {/* Hero Section */}
       <header className={styles.hero}>
         <Container variant="standard">
-          <Link to="/the-100" className={styles.backLink}>
-            <ArrowLeft size={16} /> Back to Index
-          </Link>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
+            <Link to={`/collections/${collectionSlug}`} className={styles.backLink} style={{ margin: 0 }}>
+              <ArrowLeft size={16} /> Back to {collection ? collection.title : 'Index'}
+            </Link>
+            
+            <div style={{ display: 'flex', gap: '1rem' }}>
+              {prevHotel && (
+                <Link 
+                  to={prevHotel.profileUrl} 
+                  state={{ collectionSlug }} 
+                  style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.875rem', color: 'var(--text-secondary)' }}
+                >
+                  <ChevronLeft size={16} /> Previous
+                </Link>
+              )}
+              {nextHotel && (
+                <Link 
+                  to={nextHotel.profileUrl} 
+                  state={{ collectionSlug }} 
+                  style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.875rem', color: 'var(--text-secondary)' }}
+                >
+                  Next <ChevronRight size={16} />
+                </Link>
+              )}
+            </div>
+          </div>
           
           <div className={styles.heroContent}>
             <div className={styles.heroMeta}>

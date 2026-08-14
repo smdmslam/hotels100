@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import type { HotelSummary, DimensionScore } from '../../data/types';
 import { Badge } from '../shared/Badge';
 import { MapPin, Building, ArrowRight, Tag, Target } from 'lucide-react';
@@ -10,6 +10,8 @@ interface RankedHotelItemProps {
 }
 
 export const RankedHotelItem: React.FC<RankedHotelItemProps> = ({ hotel }) => {
+  const { slug } = useParams<{ slug: string }>();
+  
   // Get top 3 dimensions to highlight
   let topDimensions: DimensionScore[] = [];
   if (hotel.scores?.dimensions) {
@@ -28,7 +30,7 @@ export const RankedHotelItem: React.FC<RankedHotelItemProps> = ({ hotel }) => {
       <div className={styles.mainColumn}>
         <div className={styles.headerRow}>
           <h3 className={styles.name}>
-            <Link to={hotel.profileUrl} className={styles.link}>
+            <Link to={hotel.profileUrl} state={{ collectionSlug: slug }} className={styles.link}>
               {hotel.name}
             </Link>
           </h3>
@@ -100,7 +102,15 @@ export const RankedHotelItem: React.FC<RankedHotelItemProps> = ({ hotel }) => {
       </div>
 
       <div className={styles.actionColumn} style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '1rem' }}>
-        <Link to={hotel.profileUrl} className={styles.actionLink} aria-label={`View profile for ${hotel.name}`}>
+        <a 
+          href="#" 
+          style={{ fontSize: '0.875rem', textDecoration: 'underline', color: 'var(--text-secondary)' }}
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+          Check Dates
+        </a>
+        <Link to={hotel.profileUrl} state={{ collectionSlug: slug }} className={styles.actionLink} aria-label={`View profile for ${hotel.name}`}>
           <ArrowRight size={24} strokeWidth={1} />
         </Link>
       </div>
