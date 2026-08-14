@@ -13,11 +13,15 @@ export const CollectionIndex: React.FC = () => {
   const [search, setSearch] = useState('');
   const [regionFilter, setRegionFilter] = useState('All');
   const [priceFilter, setPriceFilter] = useState('All Prices');
+  const [lensFilter, setLensFilter] = useState('All Lenses');
+  const [amenityFilters, setAmenityFilters] = useState<string[]>([]);
 
   useEffect(() => {
     setSearch('');
     setRegionFilter('All');
     setPriceFilter('All Prices');
+    setLensFilter('All Lenses');
+    setAmenityFilters([]);
   }, [slug]);
 
   if (!collection) {
@@ -36,6 +40,20 @@ export const CollectionIndex: React.FC = () => {
     { label: '$1,500+', min: 1500, max: Infinity }
   ];
 
+  const strategicLenses = ['All Lenses', ...Array.from(new Set(allHotels.map(h => h.strategicLens).filter(Boolean)))];
+  
+  const amenityOptions = [
+    { id: 'gym', label: 'Gym' },
+    { id: 'parking', label: 'Parking' },
+    { id: 'restaurant', label: 'Restaurant' }
+  ];
+
+  const toggleAmenity = (id: string) => {
+    setAmenityFilters(prev => 
+      prev.includes(id) ? prev.filter(a => a !== id) : [...prev, id]
+    );
+  };
+
   const filteredHotels = useMemo(() => {
     return allHotels.filter(hotel => {
       const matchesSearch = hotel.name.toLowerCase().includes(search.toLowerCase()) || 
@@ -51,7 +69,14 @@ export const CollectionIndex: React.FC = () => {
         }
       }
 
-      return matchesSearch && matchesRegion && matchesPrice;
+      const matchesLens = lensFilter === 'All Lenses' || hotel.strategicLens === lensFilter;
+      
+      const matchesAmenities = amenityFilters.every(amenityId => {
+        const amenity = hotel.essentialAmenities?.find(a => a.id === amenityId);
+        return amenity && amenity.available === true;
+      });
+
+      return matchesSearch && matchesRegion && matchesPrice && matchesLens && matchesAmenities;
     });
   }, [allHotels, search, regionFilter, priceFilter]);
 
@@ -93,6 +118,31 @@ export const CollectionIndex: React.FC = () => {
                   onClick={() => setPriceFilter(band.label)}
                 >
                   {band.label}
+                </button>
+              ))}
+            </div>
+            
+            <div className={styles.filters}>
+              {strategicLenses.map(lens => (
+                <button 
+                  key={lens as string}
+                  className={`${styles.filterBtn} ${lensFilter === lens ? styles.active : ''}`}
+                  onClick={() => setLensFilter(lens as string)}
+                >
+                  {lens}
+                </button>
+              ))}
+            </div>
+
+            <div className={styles.filters}>
+              <span className={styles.filterLabel} style={{marginRight: '0.5rem', fontSize: '0.875rem', color: 'var(--text-secondary)'}}>Amenities:</span>
+              {amenityOptions.map(opt => (
+                <button 
+                  key={opt.id}
+                  className={`${styles.filterBtn} ${amenityFilters.includes(opt.id) ? styles.active : ''}`}
+                  onClick={() => toggleAmenity(opt.id)}
+                >
+                  {opt.label}
                 </button>
               ))}
             </div>

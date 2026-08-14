@@ -116,6 +116,12 @@ const indexData = {
         roomCount: Math.floor(Math.random() * 150) + 50, // rough placeholder
         openingYear: 2000 + Math.floor(Math.random() * 23)
       },
+      essentialAmenities: [
+        { id: 'gym', label: 'Gym', category: 'Wellness', available: true },
+        { id: 'parking', label: 'Parking', category: 'Transport', available: Math.random() > 0.3 },
+        { id: 'restaurant', label: 'Restaurant', category: 'Food and Drink', available: true },
+        { id: 'star-rating', label: (Math.random() > 0.5 ? '5-Star' : '4-Star'), category: 'Other', available: true }
+      ],
       scores: null,
       inclusionRationale: `A high-consensus asset representing the pinnacle of hospitality in ${hotel.location}.`
     };
