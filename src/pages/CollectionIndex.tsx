@@ -32,7 +32,8 @@ export const CollectionIndex: React.FC = () => {
           return;
         }
       }
-    } catch (e) {}
+    } catch {
+    }
     
     // Reset if no preset
     setSearch('');
@@ -114,7 +115,7 @@ export const CollectionIndex: React.FC = () => {
 
       return matchesSearch && matchesRegion && matchesPrice && matchesLens && matchesAmenities;
     });
-  }, [allHotels, search, regionFilter, priceFilter]);
+  }, [allHotels, search, regionFilter, priceFilter, lensFilter, amenityFilters]);
 
   return (
     <div className={styles.page}>

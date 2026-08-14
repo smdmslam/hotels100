@@ -9,7 +9,7 @@ const collectionsData = collectionsDataRaw as unknown as { collections: Collecti
  * Returns the index data containing the ranking of 100 hotels (prototype).
  */
 export function getIndexData(): Omit<IndexData, 'hotels'> {
-  const { hotels, ...meta } = indexData;
+  const { hotels: _hotels, ...meta } = indexData;
   return meta;
 }
 
