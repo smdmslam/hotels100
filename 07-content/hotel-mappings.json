@@ -1,0 +1,94 @@
+{
+  "mappings": [
+    {
+      "dmwHotelId": "dmw-hotel-001",
+      "name": "The Connaught",
+      "makcorpsId": "mk_l7naixnh4",
+      "amadeusId": "am_kyqxgqw4z"
+    },
+    {
+      "dmwHotelId": "dmw-hotel-002",
+      "name": "The Savoy",
+      "makcorpsId": "mk_488m5lzxb",
+      "amadeusId": "am_9b2u5g8hz"
+    },
+    {
+      "dmwHotelId": "dmw-hotel-003",
+      "name": "Aman New York",
+      "makcorpsId": "mk_qye3trwe3",
+      "amadeusId": "am_rj0q91iup"
+    },
+    {
+      "dmwHotelId": "dmw-hotel-004",
+      "name": "Cheval Blanc Paris",
+      "makcorpsId": "mk_emlpytalq",
+      "amadeusId": "am_ysj6c248g"
+    },
+    {
+      "dmwHotelId": "dmw-hotel-005",
+      "name": "Claridge's",
+      "makcorpsId": "mk_8e07dn8nb",
+      "amadeusId": "am_7pukqhh52"
+    },
+    {
+      "dmwHotelId": "dmw-hotel-006",
+      "name": "Aman Tokyo",
+      "makcorpsId": "mk_bk6zu5k9n",
+      "amadeusId": "am_7l9jaw0ci"
+    },
+    {
+      "dmwHotelId": "dmw-hotel-007",
+      "name": "Aman Venice",
+      "makcorpsId": "mk_3a3uxfh6x",
+      "amadeusId": "am_71n5rqux3"
+    },
+    {
+      "dmwHotelId": "dmw-hotel-008",
+      "name": "Amangiri",
+      "makcorpsId": "mk_4c42n3hm1",
+      "amadeusId": "am_d27x7zate"
+    },
+    {
+      "dmwHotelId": "dmw-hotel-009",
+      "name": "Mandarin Oriental Bangkok",
+      "makcorpsId": "mk_1cj0zt1vz",
+      "amadeusId": "am_rmv3j916u"
+    },
+    {
+      "dmwHotelId": "dmw-hotel-010",
+      "name": "Badrutt's Palace",
+      "makcorpsId": "mk_9c0v35vne",
+      "amadeusId": "am_bmv1tuk9l"
+    },
+    {
+      "dmwHotelId": "dmw-hotel-011",
+      "name": "Four Seasons Firenze",
+      "makcorpsId": "mk_flf859ub2",
+      "amadeusId": "am_8x2q4lvuc"
+    },
+    {
+      "dmwHotelId": "dmw-hotel-012",
+      "name": "Four Seasons George V",
+      "makcorpsId": "mk_rmyqonts2",
+      "amadeusId": "am_z43vl0st2"
+    },
+    {
+      "dmwHotelId": "dmw-hotel-013",
+      "name": "Hôtel de Crillon",
+      "makcorpsId": "mk_uqxclu9og",
+      "amadeusId": "am_ochp3qgvp"
+    },
+    {
+      "dmwHotelId": "dmw-hotel-014",
+      "name": "Hotel du Cap-Eden-Roc",
+      "makcorpsId": "mk_9tkc96wwk",
+      "amadeusId": "am_pyok442o1"
+    },
+    {
+      "dmwHotelId": "dmw-hotel-015",
+      "name": "Il San Pietro di Positano",
+      "makcorpsId": "mk_7cm4r2qx9",
+      "amadeusId": "am_jg3pys6vk"
+    }
+  ]
+}

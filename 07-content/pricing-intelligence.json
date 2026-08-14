@@ -1,0 +1,1502 @@
+{
+  "dmw-hotel-001": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "Makcorps API Pilot",
+    "lowestObservedRate": 506,
+    "medianObservedRate": 610,
+    "highestObservedRate": 805,
+    "dataPoints": [
+      {
+        "date": "2026-08-29",
+        "rate": 793,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-09-16",
+        "rate": 506,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-10-03",
+        "rate": 587,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-10-14",
+        "rate": 529,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-11-14",
+        "rate": 805,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-12-09",
+        "rate": 621,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-01-16",
+        "rate": 736,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-02-10",
+        "rate": 518,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-03-13",
+        "rate": 587,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-04-14",
+        "rate": 610,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-05-15",
+        "rate": 644,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-06-09",
+        "rate": 552,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Static 12-date pilot matrix."
+  },
+  "dmw-hotel-002": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "Makcorps API Pilot",
+    "lowestObservedRate": 529,
+    "medianObservedRate": 633,
+    "highestObservedRate": 793,
+    "dataPoints": [
+      {
+        "date": "2026-08-29",
+        "rate": 759,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-09-16",
+        "rate": 587,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-10-03",
+        "rate": 564,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-10-14",
+        "rate": 541,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-11-14",
+        "rate": 713,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-12-09",
+        "rate": 529,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-01-16",
+        "rate": 575,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-02-10",
+        "rate": 610,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-03-13",
+        "rate": 793,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-04-14",
+        "rate": 633,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-05-15",
+        "rate": 747,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-06-09",
+        "rate": 644,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Static 12-date pilot matrix."
+  },
+  "dmw-hotel-003": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "Makcorps API Pilot",
+    "lowestObservedRate": 518,
+    "medianObservedRate": 656,
+    "highestObservedRate": 793,
+    "dataPoints": [
+      {
+        "date": "2026-08-29",
+        "rate": 598,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-09-16",
+        "rate": 598,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-10-03",
+        "rate": 656,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-10-14",
+        "rate": 518,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-11-14",
+        "rate": 793,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-12-09",
+        "rate": 690,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-01-16",
+        "rate": 770,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-02-10",
+        "rate": 587,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-03-13",
+        "rate": 747,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-04-14",
+        "rate": 587,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-05-15",
+        "rate": 759,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-06-09",
+        "rate": 656,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Static 12-date pilot matrix."
+  },
+  "dmw-hotel-004": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "Makcorps API Pilot",
+    "lowestObservedRate": 518,
+    "medianObservedRate": 679,
+    "highestObservedRate": 816,
+    "dataPoints": [
+      {
+        "date": "2026-08-29",
+        "rate": 816,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-09-16",
+        "rate": 518,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-10-03",
+        "rate": 702,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-10-14",
+        "rate": 587,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-11-14",
+        "rate": 793,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-12-09",
+        "rate": 564,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-01-16",
+        "rate": 816,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-02-10",
+        "rate": 679,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-03-13",
+        "rate": 621,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-04-14",
+        "rate": 679,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-05-15",
+        "rate": 713,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-06-09",
+        "rate": 518,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Static 12-date pilot matrix."
+  },
+  "dmw-hotel-005": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "Makcorps API Pilot",
+    "lowestObservedRate": 494,
+    "medianObservedRate": 656,
+    "highestObservedRate": 839,
+    "dataPoints": [
+      {
+        "date": "2026-08-29",
+        "rate": 644,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-09-16",
+        "rate": 690,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-10-03",
+        "rate": 759,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-10-14",
+        "rate": 494,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-11-14",
+        "rate": 587,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-12-09",
+        "rate": 656,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-01-16",
+        "rate": 644,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-02-10",
+        "rate": 575,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-03-13",
+        "rate": 839,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-04-14",
+        "rate": 690,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-05-15",
+        "rate": 644,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-06-09",
+        "rate": 690,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Static 12-date pilot matrix."
+  },
+  "dmw-hotel-006": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "Makcorps API Pilot",
+    "lowestObservedRate": 598,
+    "medianObservedRate": 690,
+    "highestObservedRate": 874,
+    "dataPoints": [
+      {
+        "date": "2026-08-29",
+        "rate": 874,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-09-16",
+        "rate": 610,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-10-03",
+        "rate": 828,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-10-14",
+        "rate": 598,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-11-14",
+        "rate": 782,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-12-09",
+        "rate": 679,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-01-16",
+        "rate": 759,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-02-10",
+        "rate": 725,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-03-13",
+        "rate": 690,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-04-14",
+        "rate": 656,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-05-15",
+        "rate": 598,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-06-09",
+        "rate": 644,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Static 12-date pilot matrix."
+  },
+  "dmw-hotel-007": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "Makcorps API Pilot",
+    "lowestObservedRate": 529,
+    "medianObservedRate": 736,
+    "highestObservedRate": 851,
+    "dataPoints": [
+      {
+        "date": "2026-08-29",
+        "rate": 736,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-09-16",
+        "rate": 736,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-10-03",
+        "rate": 793,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-10-14",
+        "rate": 552,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-11-14",
+        "rate": 656,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-12-09",
+        "rate": 725,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-01-16",
+        "rate": 793,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-02-10",
+        "rate": 529,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-03-13",
+        "rate": 851,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-04-14",
+        "rate": 575,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-05-15",
+        "rate": 851,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-06-09",
+        "rate": 690,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Static 12-date pilot matrix."
+  },
+  "dmw-hotel-008": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "Makcorps API Pilot",
+    "lowestObservedRate": 518,
+    "medianObservedRate": 713,
+    "highestObservedRate": 920,
+    "dataPoints": [
+      {
+        "date": "2026-08-29",
+        "rate": 759,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-09-16",
+        "rate": 598,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-10-03",
+        "rate": 690,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-10-14",
+        "rate": 564,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-11-14",
+        "rate": 851,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-12-09",
+        "rate": 552,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-01-16",
+        "rate": 908,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-02-10",
+        "rate": 644,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-03-13",
+        "rate": 713,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-04-14",
+        "rate": 759,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-05-15",
+        "rate": 920,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-06-09",
+        "rate": 518,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Static 12-date pilot matrix."
+  },
+  "dmw-hotel-009": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "Makcorps API Pilot",
+    "lowestObservedRate": 564,
+    "medianObservedRate": 747,
+    "highestObservedRate": 897,
+    "dataPoints": [
+      {
+        "date": "2026-08-29",
+        "rate": 793,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-09-16",
+        "rate": 679,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-10-03",
+        "rate": 839,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-10-14",
+        "rate": 656,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-11-14",
+        "rate": 885,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-12-09",
+        "rate": 690,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-01-16",
+        "rate": 667,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-02-10",
+        "rate": 564,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-03-13",
+        "rate": 897,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-04-14",
+        "rate": 587,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-05-15",
+        "rate": 747,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-06-09",
+        "rate": 759,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Static 12-date pilot matrix."
+  },
+  "dmw-hotel-010": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "Makcorps API Pilot",
+    "lowestObservedRate": 460,
+    "medianObservedRate": 610,
+    "highestObservedRate": 782,
+    "dataPoints": [
+      {
+        "date": "2026-08-29",
+        "rate": 610,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-09-16",
+        "rate": 471,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-10-03",
+        "rate": 690,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-10-14",
+        "rate": 460,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-11-14",
+        "rate": 575,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-12-09",
+        "rate": 633,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-01-16",
+        "rate": 667,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-02-10",
+        "rate": 564,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-03-13",
+        "rate": 782,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-04-14",
+        "rate": 552,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-05-15",
+        "rate": 621,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-06-09",
+        "rate": 564,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Static 12-date pilot matrix."
+  },
+  "dmw-hotel-011": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "Makcorps API Pilot",
+    "lowestObservedRate": 494,
+    "medianObservedRate": 633,
+    "highestObservedRate": 770,
+    "dataPoints": [
+      {
+        "date": "2026-08-29",
+        "rate": 541,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-09-16",
+        "rate": 633,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-10-03",
+        "rate": 587,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-10-14",
+        "rate": 494,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-11-14",
+        "rate": 644,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-12-09",
+        "rate": 644,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-01-16",
+        "rate": 702,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-02-10",
+        "rate": 667,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-03-13",
+        "rate": 770,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-04-14",
+        "rate": 587,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-05-15",
+        "rate": 598,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-06-09",
+        "rate": 518,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Static 12-date pilot matrix."
+  },
+  "dmw-hotel-012": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "Makcorps API Pilot",
+    "lowestObservedRate": 541,
+    "medianObservedRate": 656,
+    "highestObservedRate": 816,
+    "dataPoints": [
+      {
+        "date": "2026-08-29",
+        "rate": 816,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-09-16",
+        "rate": 656,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-10-03",
+        "rate": 713,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-10-14",
+        "rate": 541,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-11-14",
+        "rate": 633,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-12-09",
+        "rate": 552,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-01-16",
+        "rate": 793,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-02-10",
+        "rate": 552,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-03-13",
+        "rate": 679,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-04-14",
+        "rate": 552,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-05-15",
+        "rate": 793,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-06-09",
+        "rate": 587,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Static 12-date pilot matrix."
+  },
+  "dmw-hotel-013": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "Makcorps API Pilot",
+    "lowestObservedRate": 483,
+    "medianObservedRate": 644,
+    "highestObservedRate": 793,
+    "dataPoints": [
+      {
+        "date": "2026-08-29",
+        "rate": 644,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-09-16",
+        "rate": 633,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-10-03",
+        "rate": 782,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-10-14",
+        "rate": 667,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-11-14",
+        "rate": 587,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-12-09",
+        "rate": 483,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-01-16",
+        "rate": 736,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-02-10",
+        "rate": 587,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-03-13",
+        "rate": 667,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-04-14",
+        "rate": 575,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-05-15",
+        "rate": 793,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-06-09",
+        "rate": 564,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Static 12-date pilot matrix."
+  },
+  "dmw-hotel-014": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "Makcorps API Pilot",
+    "lowestObservedRate": 529,
+    "medianObservedRate": 690,
+    "highestObservedRate": 851,
+    "dataPoints": [
+      {
+        "date": "2026-08-29",
+        "rate": 816,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-09-16",
+        "rate": 529,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-10-03",
+        "rate": 828,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-10-14",
+        "rate": 679,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-11-14",
+        "rate": 690,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-12-09",
+        "rate": 644,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-01-16",
+        "rate": 713,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-02-10",
+        "rate": 564,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-03-13",
+        "rate": 690,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-04-14",
+        "rate": 587,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-05-15",
+        "rate": 851,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-06-09",
+        "rate": 713,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Static 12-date pilot matrix."
+  },
+  "dmw-hotel-015": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "Makcorps API Pilot",
+    "lowestObservedRate": 506,
+    "medianObservedRate": 656,
+    "highestObservedRate": 862,
+    "dataPoints": [
+      {
+        "date": "2026-08-29",
+        "rate": 862,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-09-16",
+        "rate": 564,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-10-03",
+        "rate": 656,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-10-14",
+        "rate": 621,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-11-14",
+        "rate": 633,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2026-12-09",
+        "rate": 598,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-01-16",
+        "rate": 759,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-02-10",
+        "rate": 667,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-03-13",
+        "rate": 690,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-04-14",
+        "rate": 610,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-05-15",
+        "rate": 782,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      },
+      {
+        "date": "2027-06-09",
+        "rate": 506,
+        "available": true,
+        "roomCategory": "Standard Double Room",
+        "rateType": "flexible"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Static 12-date pilot matrix."
+  }
+}

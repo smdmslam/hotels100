@@ -1,0 +1,20 @@
+{
+  "dmwHotelId": "dmw-hotel-011",
+  "provider": "makcorps_mock",
+  "providerHotelId": "mk_flf859ub2",
+  "collectedAt": "2026-08-14T13:16:55.752Z",
+  "checkIn": "2027-02-10",
+  "checkOut": "2027-02-11",
+  "adults": 2,
+  "roomBasis": "lowest qualifying standard room",
+  "refundability": "flexible",
+  "board": "room only",
+  "vendor": "Booking.com",
+  "roomNameRaw": "Standard Double Room",
+  "currency": "USD",
+  "rateBase": 580,
+  "taxesAndFees": 87,
+  "rateTotal": 667,
+  "taxesIncluded": true,
+  "available": true
+}

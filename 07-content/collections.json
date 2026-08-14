@@ -131,9 +131,109 @@
           "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in London.",
           "indicativeRate": {
             "currency": "USD",
-            "amount": 318,
-            "label": "Estimated Starting Rate",
+            "amount": 610,
+            "label": "Observed Typical Rate",
             "basis": "per night"
+          },
+          "pricingIntelligence": {
+            "status": "complete",
+            "currency": "USD",
+            "roomBasis": "Lowest standard room",
+            "occupancyBasis": "2 Adults",
+            "taxesIncluded": true,
+            "collectionDate": "2026-08-14",
+            "sourceMethod": "Makcorps API Pilot",
+            "lowestObservedRate": 506,
+            "medianObservedRate": 610,
+            "highestObservedRate": 805,
+            "dataPoints": [
+              {
+                "date": "2026-08-29",
+                "rate": 793,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-09-16",
+                "rate": 506,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-10-03",
+                "rate": 587,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-10-14",
+                "rate": 529,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-11-14",
+                "rate": 805,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-12-09",
+                "rate": 621,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-01-16",
+                "rate": 736,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-02-10",
+                "rate": 518,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-03-13",
+                "rate": 587,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-04-14",
+                "rate": 610,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-05-15",
+                "rate": 644,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-06-09",
+                "rate": 552,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              }
+            ],
+            "eventMarkers": [],
+            "limitations": "Static 12-date pilot matrix."
           }
         },
         {
@@ -261,9 +361,109 @@
           "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in London.",
           "indicativeRate": {
             "currency": "USD",
-            "amount": 1620,
-            "label": "Estimated Starting Rate",
+            "amount": 633,
+            "label": "Observed Typical Rate",
             "basis": "per night"
+          },
+          "pricingIntelligence": {
+            "status": "complete",
+            "currency": "USD",
+            "roomBasis": "Lowest standard room",
+            "occupancyBasis": "2 Adults",
+            "taxesIncluded": true,
+            "collectionDate": "2026-08-14",
+            "sourceMethod": "Makcorps API Pilot",
+            "lowestObservedRate": 529,
+            "medianObservedRate": 633,
+            "highestObservedRate": 793,
+            "dataPoints": [
+              {
+                "date": "2026-08-29",
+                "rate": 759,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-09-16",
+                "rate": 587,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-10-03",
+                "rate": 564,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-10-14",
+                "rate": 541,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-11-14",
+                "rate": 713,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-12-09",
+                "rate": 529,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-01-16",
+                "rate": 575,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-02-10",
+                "rate": 610,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-03-13",
+                "rate": 793,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-04-14",
+                "rate": 633,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-05-15",
+                "rate": 747,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-06-09",
+                "rate": 644,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              }
+            ],
+            "eventMarkers": [],
+            "limitations": "Static 12-date pilot matrix."
           }
         },
         {
@@ -391,9 +591,109 @@
           "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in New York.",
           "indicativeRate": {
             "currency": "USD",
-            "amount": 1180,
-            "label": "Estimated Starting Rate",
+            "amount": 656,
+            "label": "Observed Typical Rate",
             "basis": "per night"
+          },
+          "pricingIntelligence": {
+            "status": "complete",
+            "currency": "USD",
+            "roomBasis": "Lowest standard room",
+            "occupancyBasis": "2 Adults",
+            "taxesIncluded": true,
+            "collectionDate": "2026-08-14",
+            "sourceMethod": "Makcorps API Pilot",
+            "lowestObservedRate": 518,
+            "medianObservedRate": 656,
+            "highestObservedRate": 793,
+            "dataPoints": [
+              {
+                "date": "2026-08-29",
+                "rate": 598,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-09-16",
+                "rate": 598,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-10-03",
+                "rate": 656,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-10-14",
+                "rate": 518,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-11-14",
+                "rate": 793,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-12-09",
+                "rate": 690,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-01-16",
+                "rate": 770,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-02-10",
+                "rate": 587,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-03-13",
+                "rate": 747,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-04-14",
+                "rate": 587,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-05-15",
+                "rate": 759,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-06-09",
+                "rate": 656,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              }
+            ],
+            "eventMarkers": [],
+            "limitations": "Static 12-date pilot matrix."
           }
         },
         {
@@ -521,9 +821,109 @@
           "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Paris.",
           "indicativeRate": {
             "currency": "USD",
-            "amount": 1560,
-            "label": "Estimated Starting Rate",
+            "amount": 679,
+            "label": "Observed Typical Rate",
             "basis": "per night"
+          },
+          "pricingIntelligence": {
+            "status": "complete",
+            "currency": "USD",
+            "roomBasis": "Lowest standard room",
+            "occupancyBasis": "2 Adults",
+            "taxesIncluded": true,
+            "collectionDate": "2026-08-14",
+            "sourceMethod": "Makcorps API Pilot",
+            "lowestObservedRate": 518,
+            "medianObservedRate": 679,
+            "highestObservedRate": 816,
+            "dataPoints": [
+              {
+                "date": "2026-08-29",
+                "rate": 816,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-09-16",
+                "rate": 518,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-10-03",
+                "rate": 702,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-10-14",
+                "rate": 587,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-11-14",
+                "rate": 793,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-12-09",
+                "rate": 564,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-01-16",
+                "rate": 816,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-02-10",
+                "rate": 679,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-03-13",
+                "rate": 621,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-04-14",
+                "rate": 679,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-05-15",
+                "rate": 713,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-06-09",
+                "rate": 518,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              }
+            ],
+            "eventMarkers": [],
+            "limitations": "Static 12-date pilot matrix."
           }
         },
         {
@@ -651,9 +1051,109 @@
           "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in London.",
           "indicativeRate": {
             "currency": "USD",
-            "amount": 1620,
-            "label": "Estimated Starting Rate",
+            "amount": 656,
+            "label": "Observed Typical Rate",
             "basis": "per night"
+          },
+          "pricingIntelligence": {
+            "status": "complete",
+            "currency": "USD",
+            "roomBasis": "Lowest standard room",
+            "occupancyBasis": "2 Adults",
+            "taxesIncluded": true,
+            "collectionDate": "2026-08-14",
+            "sourceMethod": "Makcorps API Pilot",
+            "lowestObservedRate": 494,
+            "medianObservedRate": 656,
+            "highestObservedRate": 839,
+            "dataPoints": [
+              {
+                "date": "2026-08-29",
+                "rate": 644,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-09-16",
+                "rate": 690,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-10-03",
+                "rate": 759,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-10-14",
+                "rate": 494,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-11-14",
+                "rate": 587,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-12-09",
+                "rate": 656,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-01-16",
+                "rate": 644,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-02-10",
+                "rate": 575,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-03-13",
+                "rate": 839,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-04-14",
+                "rate": 690,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-05-15",
+                "rate": 644,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-06-09",
+                "rate": 690,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              }
+            ],
+            "eventMarkers": [],
+            "limitations": "Static 12-date pilot matrix."
           }
         },
         {
@@ -781,9 +1281,109 @@
           "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Tokyo.",
           "indicativeRate": {
             "currency": "USD",
-            "amount": 1080,
-            "label": "Estimated Starting Rate",
+            "amount": 690,
+            "label": "Observed Typical Rate",
             "basis": "per night"
+          },
+          "pricingIntelligence": {
+            "status": "complete",
+            "currency": "USD",
+            "roomBasis": "Lowest standard room",
+            "occupancyBasis": "2 Adults",
+            "taxesIncluded": true,
+            "collectionDate": "2026-08-14",
+            "sourceMethod": "Makcorps API Pilot",
+            "lowestObservedRate": 598,
+            "medianObservedRate": 690,
+            "highestObservedRate": 874,
+            "dataPoints": [
+              {
+                "date": "2026-08-29",
+                "rate": 874,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-09-16",
+                "rate": 610,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-10-03",
+                "rate": 828,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-10-14",
+                "rate": 598,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-11-14",
+                "rate": 782,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-12-09",
+                "rate": 679,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-01-16",
+                "rate": 759,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-02-10",
+                "rate": 725,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-03-13",
+                "rate": 690,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-04-14",
+                "rate": 656,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-05-15",
+                "rate": 598,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-06-09",
+                "rate": 644,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              }
+            ],
+            "eventMarkers": [],
+            "limitations": "Static 12-date pilot matrix."
           }
         },
         {
@@ -911,9 +1511,109 @@
           "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Venice.",
           "indicativeRate": {
             "currency": "USD",
-            "amount": 1050,
-            "label": "Estimated Starting Rate",
+            "amount": 736,
+            "label": "Observed Typical Rate",
             "basis": "per night"
+          },
+          "pricingIntelligence": {
+            "status": "complete",
+            "currency": "USD",
+            "roomBasis": "Lowest standard room",
+            "occupancyBasis": "2 Adults",
+            "taxesIncluded": true,
+            "collectionDate": "2026-08-14",
+            "sourceMethod": "Makcorps API Pilot",
+            "lowestObservedRate": 529,
+            "medianObservedRate": 736,
+            "highestObservedRate": 851,
+            "dataPoints": [
+              {
+                "date": "2026-08-29",
+                "rate": 736,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-09-16",
+                "rate": 736,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-10-03",
+                "rate": 793,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-10-14",
+                "rate": 552,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-11-14",
+                "rate": 656,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-12-09",
+                "rate": 725,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-01-16",
+                "rate": 793,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-02-10",
+                "rate": 529,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-03-13",
+                "rate": 851,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-04-14",
+                "rate": 575,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-05-15",
+                "rate": 851,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-06-09",
+                "rate": 690,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              }
+            ],
+            "eventMarkers": [],
+            "limitations": "Static 12-date pilot matrix."
           }
         },
         {
@@ -1041,9 +1741,109 @@
           "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Canyon Point.",
           "indicativeRate": {
             "currency": "USD",
-            "amount": 970,
-            "label": "Estimated Starting Rate",
+            "amount": 713,
+            "label": "Observed Typical Rate",
             "basis": "per night"
+          },
+          "pricingIntelligence": {
+            "status": "complete",
+            "currency": "USD",
+            "roomBasis": "Lowest standard room",
+            "occupancyBasis": "2 Adults",
+            "taxesIncluded": true,
+            "collectionDate": "2026-08-14",
+            "sourceMethod": "Makcorps API Pilot",
+            "lowestObservedRate": 518,
+            "medianObservedRate": 713,
+            "highestObservedRate": 920,
+            "dataPoints": [
+              {
+                "date": "2026-08-29",
+                "rate": 759,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-09-16",
+                "rate": 598,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-10-03",
+                "rate": 690,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-10-14",
+                "rate": 564,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-11-14",
+                "rate": 851,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-12-09",
+                "rate": 552,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-01-16",
+                "rate": 908,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-02-10",
+                "rate": 644,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-03-13",
+                "rate": 713,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-04-14",
+                "rate": 759,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-05-15",
+                "rate": 920,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-06-09",
+                "rate": 518,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              }
+            ],
+            "eventMarkers": [],
+            "limitations": "Static 12-date pilot matrix."
           }
         },
         {
@@ -1171,9 +1971,109 @@
           "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Bangkok.",
           "indicativeRate": {
             "currency": "USD",
-            "amount": 350,
-            "label": "Estimated Starting Rate",
+            "amount": 747,
+            "label": "Observed Typical Rate",
             "basis": "per night"
+          },
+          "pricingIntelligence": {
+            "status": "complete",
+            "currency": "USD",
+            "roomBasis": "Lowest standard room",
+            "occupancyBasis": "2 Adults",
+            "taxesIncluded": true,
+            "collectionDate": "2026-08-14",
+            "sourceMethod": "Makcorps API Pilot",
+            "lowestObservedRate": 564,
+            "medianObservedRate": 747,
+            "highestObservedRate": 897,
+            "dataPoints": [
+              {
+                "date": "2026-08-29",
+                "rate": 793,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-09-16",
+                "rate": 679,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-10-03",
+                "rate": 839,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-10-14",
+                "rate": 656,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-11-14",
+                "rate": 885,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-12-09",
+                "rate": 690,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-01-16",
+                "rate": 667,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-02-10",
+                "rate": 564,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-03-13",
+                "rate": 897,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-04-14",
+                "rate": 587,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-05-15",
+                "rate": 747,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-06-09",
+                "rate": 759,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              }
+            ],
+            "eventMarkers": [],
+            "limitations": "Static 12-date pilot matrix."
           }
         },
         {
@@ -1301,9 +2201,109 @@
           "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in St. Moritz.",
           "indicativeRate": {
             "currency": "USD",
-            "amount": 338,
-            "label": "Estimated Starting Rate",
+            "amount": 610,
+            "label": "Observed Typical Rate",
             "basis": "per night"
+          },
+          "pricingIntelligence": {
+            "status": "complete",
+            "currency": "USD",
+            "roomBasis": "Lowest standard room",
+            "occupancyBasis": "2 Adults",
+            "taxesIncluded": true,
+            "collectionDate": "2026-08-14",
+            "sourceMethod": "Makcorps API Pilot",
+            "lowestObservedRate": 460,
+            "medianObservedRate": 610,
+            "highestObservedRate": 782,
+            "dataPoints": [
+              {
+                "date": "2026-08-29",
+                "rate": 610,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-09-16",
+                "rate": 471,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-10-03",
+                "rate": 690,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-10-14",
+                "rate": 460,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-11-14",
+                "rate": 575,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-12-09",
+                "rate": 633,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-01-16",
+                "rate": 667,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-02-10",
+                "rate": 564,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-03-13",
+                "rate": 782,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-04-14",
+                "rate": 552,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-05-15",
+                "rate": 621,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-06-09",
+                "rate": 564,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              }
+            ],
+            "eventMarkers": [],
+            "limitations": "Static 12-date pilot matrix."
           }
         },
         {
@@ -1431,9 +2431,109 @@
           "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Florence.",
           "indicativeRate": {
             "currency": "USD",
-            "amount": 990,
-            "label": "Estimated Starting Rate",
+            "amount": 633,
+            "label": "Observed Typical Rate",
             "basis": "per night"
+          },
+          "pricingIntelligence": {
+            "status": "complete",
+            "currency": "USD",
+            "roomBasis": "Lowest standard room",
+            "occupancyBasis": "2 Adults",
+            "taxesIncluded": true,
+            "collectionDate": "2026-08-14",
+            "sourceMethod": "Makcorps API Pilot",
+            "lowestObservedRate": 494,
+            "medianObservedRate": 633,
+            "highestObservedRate": 770,
+            "dataPoints": [
+              {
+                "date": "2026-08-29",
+                "rate": 541,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-09-16",
+                "rate": 633,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-10-03",
+                "rate": 587,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-10-14",
+                "rate": 494,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-11-14",
+                "rate": 644,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-12-09",
+                "rate": 644,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-01-16",
+                "rate": 702,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-02-10",
+                "rate": 667,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-03-13",
+                "rate": 770,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-04-14",
+                "rate": 587,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-05-15",
+                "rate": 598,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-06-09",
+                "rate": 518,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              }
+            ],
+            "eventMarkers": [],
+            "limitations": "Static 12-date pilot matrix."
           }
         },
         {
@@ -1561,9 +2661,109 @@
           "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Paris.",
           "indicativeRate": {
             "currency": "USD",
-            "amount": 1350,
-            "label": "Estimated Starting Rate",
+            "amount": 656,
+            "label": "Observed Typical Rate",
             "basis": "per night"
+          },
+          "pricingIntelligence": {
+            "status": "complete",
+            "currency": "USD",
+            "roomBasis": "Lowest standard room",
+            "occupancyBasis": "2 Adults",
+            "taxesIncluded": true,
+            "collectionDate": "2026-08-14",
+            "sourceMethod": "Makcorps API Pilot",
+            "lowestObservedRate": 541,
+            "medianObservedRate": 656,
+            "highestObservedRate": 816,
+            "dataPoints": [
+              {
+                "date": "2026-08-29",
+                "rate": 816,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-09-16",
+                "rate": 656,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-10-03",
+                "rate": 713,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-10-14",
+                "rate": 541,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-11-14",
+                "rate": 633,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-12-09",
+                "rate": 552,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-01-16",
+                "rate": 793,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-02-10",
+                "rate": 552,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-03-13",
+                "rate": 679,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-04-14",
+                "rate": 552,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-05-15",
+                "rate": 793,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-06-09",
+                "rate": 587,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              }
+            ],
+            "eventMarkers": [],
+            "limitations": "Static 12-date pilot matrix."
           }
         },
         {
@@ -1691,9 +2891,109 @@
           "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Paris.",
           "indicativeRate": {
             "currency": "USD",
-            "amount": 1310,
-            "label": "Estimated Starting Rate",
+            "amount": 644,
+            "label": "Observed Typical Rate",
             "basis": "per night"
+          },
+          "pricingIntelligence": {
+            "status": "complete",
+            "currency": "USD",
+            "roomBasis": "Lowest standard room",
+            "occupancyBasis": "2 Adults",
+            "taxesIncluded": true,
+            "collectionDate": "2026-08-14",
+            "sourceMethod": "Makcorps API Pilot",
+            "lowestObservedRate": 483,
+            "medianObservedRate": 644,
+            "highestObservedRate": 793,
+            "dataPoints": [
+              {
+                "date": "2026-08-29",
+                "rate": 644,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-09-16",
+                "rate": 633,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-10-03",
+                "rate": 782,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-10-14",
+                "rate": 667,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-11-14",
+                "rate": 587,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-12-09",
+                "rate": 483,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-01-16",
+                "rate": 736,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-02-10",
+                "rate": 587,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-03-13",
+                "rate": 667,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-04-14",
+                "rate": 575,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-05-15",
+                "rate": 793,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-06-09",
+                "rate": 564,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              }
+            ],
+            "eventMarkers": [],
+            "limitations": "Static 12-date pilot matrix."
           }
         },
         {
@@ -1821,9 +3121,109 @@
           "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Antibes.",
           "indicativeRate": {
             "currency": "USD",
-            "amount": 385,
-            "label": "Estimated Starting Rate",
+            "amount": 690,
+            "label": "Observed Typical Rate",
             "basis": "per night"
+          },
+          "pricingIntelligence": {
+            "status": "complete",
+            "currency": "USD",
+            "roomBasis": "Lowest standard room",
+            "occupancyBasis": "2 Adults",
+            "taxesIncluded": true,
+            "collectionDate": "2026-08-14",
+            "sourceMethod": "Makcorps API Pilot",
+            "lowestObservedRate": 529,
+            "medianObservedRate": 690,
+            "highestObservedRate": 851,
+            "dataPoints": [
+              {
+                "date": "2026-08-29",
+                "rate": 816,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-09-16",
+                "rate": 529,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-10-03",
+                "rate": 828,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-10-14",
+                "rate": 679,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-11-14",
+                "rate": 690,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-12-09",
+                "rate": 644,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-01-16",
+                "rate": 713,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-02-10",
+                "rate": 564,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-03-13",
+                "rate": 690,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-04-14",
+                "rate": 587,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-05-15",
+                "rate": 851,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-06-09",
+                "rate": 713,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              }
+            ],
+            "eventMarkers": [],
+            "limitations": "Static 12-date pilot matrix."
           }
         },
         {
@@ -1951,9 +3351,109 @@
           "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Positano.",
           "indicativeRate": {
             "currency": "USD",
-            "amount": 427,
-            "label": "Estimated Starting Rate",
+            "amount": 656,
+            "label": "Observed Typical Rate",
             "basis": "per night"
+          },
+          "pricingIntelligence": {
+            "status": "complete",
+            "currency": "USD",
+            "roomBasis": "Lowest standard room",
+            "occupancyBasis": "2 Adults",
+            "taxesIncluded": true,
+            "collectionDate": "2026-08-14",
+            "sourceMethod": "Makcorps API Pilot",
+            "lowestObservedRate": 506,
+            "medianObservedRate": 656,
+            "highestObservedRate": 862,
+            "dataPoints": [
+              {
+                "date": "2026-08-29",
+                "rate": 862,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-09-16",
+                "rate": 564,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-10-03",
+                "rate": 656,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-10-14",
+                "rate": 621,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-11-14",
+                "rate": 633,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-12-09",
+                "rate": 598,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-01-16",
+                "rate": 759,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-02-10",
+                "rate": 667,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-03-13",
+                "rate": 690,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-04-14",
+                "rate": 610,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-05-15",
+                "rate": 782,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-06-09",
+                "rate": 506,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              }
+            ],
+            "eventMarkers": [],
+            "limitations": "Static 12-date pilot matrix."
           }
         },
         {
@@ -13015,530 +14515,10 @@
       "description": "The ultimate guide to the world's most exceptional hotels delivering unparalleled value. Every property on this list offers a starting rate under $500 per night.",
       "hotels": [
         {
-          "id": "dmw-hotel-001",
-          "slug": "the-connaught-london",
-          "profileUrl": "/hotels/the-connaught-london",
-          "rank": 1,
-          "name": "The Connaught",
-          "band": "Exceptional",
-          "featured": false,
-          "strategicLens": "Neighbourhood destination",
-          "distinctions": [],
-          "location": {
-            "city": "London",
-            "country": "United Kingdom",
-            "region": "Europe",
-            "neighbourhood": "City Center",
-            "displayLocation": "London, United Kingdom"
-          },
-          "archetype": "Urban Luxury",
-          "dmwJudgement": null,
-          "assessmentPendingLabel": null,
-          "dmwOverview": "The Connaught was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: DMW London Watchlist, La Liste Top 1000, Luxury Flagships, Michelin Keys, Worlds 50 Best.",
-          "identity": {
-            "owner": "Unknown",
-            "operator": "Maybourne",
-            "brand": "Maybourne"
-          },
-          "propertyFacts": {
-            "roomCount": 195,
-            "openingYear": 2019
-          },
-          "essentialAmenities": [
-            {
-              "id": "gym",
-              "label": "Gym",
-              "category": "Wellness",
-              "available": true
-            },
-            {
-              "id": "parking",
-              "label": "Parking",
-              "category": "Transport",
-              "available": false
-            },
-            {
-              "id": "restaurant",
-              "label": "Restaurant",
-              "category": "Food and Drink",
-              "available": true
-            },
-            {
-              "id": "star-rating",
-              "label": "4-Star",
-              "category": "Other",
-              "available": true
-            }
-          ],
-          "scores": {
-            "totalScore": 98,
-            "dimensions": [
-              {
-                "label": "Proposition and Strategic Coherence",
-                "score": 14.5,
-                "maxScore": 15,
-                "weight": 15
-              },
-              {
-                "label": "Service and Operating Execution",
-                "score": 11.7,
-                "maxScore": 12,
-                "weight": 12
-              },
-              {
-                "label": "Distinctiveness and Emotional Resonance",
-                "score": 12,
-                "maxScore": 12,
-                "weight": 12
-              },
-              {
-                "label": "Rooms and Spatial Logic",
-                "score": 9.5,
-                "maxScore": 10,
-                "weight": 10
-              },
-              {
-                "label": "Asset Scarcity and Physical Context",
-                "score": 9.7,
-                "maxScore": 10,
-                "weight": 10
-              },
-              {
-                "label": "Pricing Power and Revenue Strategy",
-                "score": 10,
-                "maxScore": 10,
-                "weight": 10
-              },
-              {
-                "label": "Amenities and Hospitality Ecosystem",
-                "score": 9.9,
-                "maxScore": 10,
-                "weight": 10
-              },
-              {
-                "label": "Brand and Clientele Coherence",
-                "score": 7.8,
-                "maxScore": 8,
-                "weight": 8
-              },
-              {
-                "label": "Business-Travel Effectiveness",
-                "score": 7,
-                "maxScore": 7,
-                "weight": 7
-              },
-              {
-                "label": "Long-Term Resilience",
-                "score": 5.9,
-                "maxScore": 6,
-                "weight": 6
-              }
-            ],
-            "confidence": "DMW Visited"
-          },
-          "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in London.",
-          "indicativeRate": {
-            "currency": "USD",
-            "amount": 318,
-            "label": "Estimated Starting Rate",
-            "basis": "per night"
-          }
-        },
-        {
-          "id": "dmw-hotel-009",
-          "slug": "mandarin-oriental-bangkok-bangkok",
-          "profileUrl": "/hotels/mandarin-oriental-bangkok-bangkok",
-          "rank": 2,
-          "name": "Mandarin Oriental Bangkok",
-          "band": "Exceptional",
-          "featured": false,
-          "strategicLens": "Business-travel flagship",
-          "distinctions": [],
-          "location": {
-            "city": "Bangkok",
-            "country": "Thailand",
-            "region": "Asia Pacific",
-            "neighbourhood": "City Center",
-            "displayLocation": "Bangkok, Thailand"
-          },
-          "archetype": "Urban Luxury",
-          "dmwJudgement": null,
-          "assessmentPendingLabel": null,
-          "dmwOverview": "Mandarin Oriental Bangkok was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: La Liste Top 1000, Luxury Flagships, Worlds 50 Best.",
-          "identity": {
-            "owner": "Unknown",
-            "operator": "Mandarin Oriental",
-            "brand": "Mandarin Oriental"
-          },
-          "propertyFacts": {
-            "roomCount": 105,
-            "openingYear": 2009
-          },
-          "essentialAmenities": [
-            {
-              "id": "gym",
-              "label": "Gym",
-              "category": "Wellness",
-              "available": true
-            },
-            {
-              "id": "parking",
-              "label": "Parking",
-              "category": "Transport",
-              "available": true
-            },
-            {
-              "id": "restaurant",
-              "label": "Restaurant",
-              "category": "Food and Drink",
-              "available": true
-            },
-            {
-              "id": "star-rating",
-              "label": "4-Star",
-              "category": "Other",
-              "available": true
-            }
-          ],
-          "scores": {
-            "totalScore": 90.1,
-            "dimensions": [
-              {
-                "label": "Proposition and Strategic Coherence",
-                "score": 14,
-                "maxScore": 15,
-                "weight": 15
-              },
-              {
-                "label": "Service and Operating Execution",
-                "score": 10.4,
-                "maxScore": 12,
-                "weight": 12
-              },
-              {
-                "label": "Distinctiveness and Emotional Resonance",
-                "score": 11.1,
-                "maxScore": 12,
-                "weight": 12
-              },
-              {
-                "label": "Rooms and Spatial Logic",
-                "score": 9.4,
-                "maxScore": 10,
-                "weight": 10
-              },
-              {
-                "label": "Asset Scarcity and Physical Context",
-                "score": 9.4,
-                "maxScore": 10,
-                "weight": 10
-              },
-              {
-                "label": "Pricing Power and Revenue Strategy",
-                "score": 8.5,
-                "maxScore": 10,
-                "weight": 10
-              },
-              {
-                "label": "Amenities and Hospitality Ecosystem",
-                "score": 8.7,
-                "maxScore": 10,
-                "weight": 10
-              },
-              {
-                "label": "Brand and Clientele Coherence",
-                "score": 7.2,
-                "maxScore": 8,
-                "weight": 8
-              },
-              {
-                "label": "Business-Travel Effectiveness",
-                "score": 6.3,
-                "maxScore": 7,
-                "weight": 7
-              },
-              {
-                "label": "Long-Term Resilience",
-                "score": 5.1,
-                "maxScore": 6,
-                "weight": 6
-              }
-            ],
-            "confidence": "DMW Visited"
-          },
-          "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Bangkok.",
-          "indicativeRate": {
-            "currency": "USD",
-            "amount": 350,
-            "label": "Estimated Starting Rate",
-            "basis": "per night"
-          }
-        },
-        {
-          "id": "dmw-hotel-010",
-          "slug": "badrutt-s-palace-st-moritz",
-          "profileUrl": "/hotels/badrutt-s-palace-st-moritz",
-          "rank": 3,
-          "name": "Badrutt's Palace",
-          "band": "Exceptional",
-          "featured": false,
-          "strategicLens": "Neighbourhood destination",
-          "distinctions": [],
-          "location": {
-            "city": "St. Moritz",
-            "country": "Switzerland",
-            "region": "Europe",
-            "neighbourhood": "City Center",
-            "displayLocation": "St. Moritz, Switzerland"
-          },
-          "archetype": "Urban Luxury",
-          "dmwJudgement": null,
-          "assessmentPendingLabel": null,
-          "dmwOverview": "Badrutt's Palace was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: La Liste Top 1000, Worlds 50 Best.",
-          "identity": {
-            "owner": "Unknown",
-            "operator": "Independent",
-            "brand": null
-          },
-          "propertyFacts": {
-            "roomCount": 176,
-            "openingYear": 2018
-          },
-          "essentialAmenities": [
-            {
-              "id": "gym",
-              "label": "Gym",
-              "category": "Wellness",
-              "available": true
-            },
-            {
-              "id": "parking",
-              "label": "Parking",
-              "category": "Transport",
-              "available": true
-            },
-            {
-              "id": "restaurant",
-              "label": "Restaurant",
-              "category": "Food and Drink",
-              "available": true
-            },
-            {
-              "id": "star-rating",
-              "label": "4-Star",
-              "category": "Other",
-              "available": true
-            }
-          ],
-          "scores": {
-            "totalScore": 89.4,
-            "dimensions": [
-              {
-                "label": "Proposition and Strategic Coherence",
-                "score": 13.4,
-                "maxScore": 15,
-                "weight": 15
-              },
-              {
-                "label": "Service and Operating Execution",
-                "score": 10.4,
-                "maxScore": 12,
-                "weight": 12
-              },
-              {
-                "label": "Distinctiveness and Emotional Resonance",
-                "score": 10.8,
-                "maxScore": 12,
-                "weight": 12
-              },
-              {
-                "label": "Rooms and Spatial Logic",
-                "score": 9.2,
-                "maxScore": 10,
-                "weight": 10
-              },
-              {
-                "label": "Asset Scarcity and Physical Context",
-                "score": 9.1,
-                "maxScore": 10,
-                "weight": 10
-              },
-              {
-                "label": "Pricing Power and Revenue Strategy",
-                "score": 9,
-                "maxScore": 10,
-                "weight": 10
-              },
-              {
-                "label": "Amenities and Hospitality Ecosystem",
-                "score": 9,
-                "maxScore": 10,
-                "weight": 10
-              },
-              {
-                "label": "Brand and Clientele Coherence",
-                "score": 7.4,
-                "maxScore": 8,
-                "weight": 8
-              },
-              {
-                "label": "Business-Travel Effectiveness",
-                "score": 5.9,
-                "maxScore": 7,
-                "weight": 7
-              },
-              {
-                "label": "Long-Term Resilience",
-                "score": 5.2,
-                "maxScore": 6,
-                "weight": 6
-              }
-            ],
-            "confidence": "DMW Visited"
-          },
-          "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in St. Moritz.",
-          "indicativeRate": {
-            "currency": "USD",
-            "amount": 338,
-            "label": "Estimated Starting Rate",
-            "basis": "per night"
-          }
-        },
-        {
-          "id": "dmw-hotel-015",
-          "slug": "il-san-pietro-di-positano-positano",
-          "profileUrl": "/hotels/il-san-pietro-di-positano-positano",
-          "rank": 4,
-          "name": "Il San Pietro di Positano",
-          "band": "Exceptional",
-          "featured": false,
-          "strategicLens": "Neighbourhood destination",
-          "distinctions": [],
-          "location": {
-            "city": "Positano",
-            "country": "Italy",
-            "region": "Europe",
-            "neighbourhood": "City Center",
-            "displayLocation": "Positano, Italy"
-          },
-          "archetype": "Urban Luxury",
-          "dmwJudgement": null,
-          "assessmentPendingLabel": null,
-          "dmwOverview": "Il San Pietro di Positano was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: La Liste Top 1000, Michelin Keys.",
-          "identity": {
-            "owner": "Unknown",
-            "operator": "Independent",
-            "brand": null
-          },
-          "propertyFacts": {
-            "roomCount": 192,
-            "openingYear": 2008
-          },
-          "essentialAmenities": [
-            {
-              "id": "gym",
-              "label": "Gym",
-              "category": "Wellness",
-              "available": true
-            },
-            {
-              "id": "parking",
-              "label": "Parking",
-              "category": "Transport",
-              "available": false
-            },
-            {
-              "id": "restaurant",
-              "label": "Restaurant",
-              "category": "Food and Drink",
-              "available": true
-            },
-            {
-              "id": "star-rating",
-              "label": "5-Star",
-              "category": "Other",
-              "available": true
-            }
-          ],
-          "scores": {
-            "totalScore": 88.7,
-            "dimensions": [
-              {
-                "label": "Proposition and Strategic Coherence",
-                "score": 13.7,
-                "maxScore": 15,
-                "weight": 15
-              },
-              {
-                "label": "Service and Operating Execution",
-                "score": 10.9,
-                "maxScore": 12,
-                "weight": 12
-              },
-              {
-                "label": "Distinctiveness and Emotional Resonance",
-                "score": 11,
-                "maxScore": 12,
-                "weight": 12
-              },
-              {
-                "label": "Rooms and Spatial Logic",
-                "score": 9.1,
-                "maxScore": 10,
-                "weight": 10
-              },
-              {
-                "label": "Asset Scarcity and Physical Context",
-                "score": 8.3,
-                "maxScore": 10,
-                "weight": 10
-              },
-              {
-                "label": "Pricing Power and Revenue Strategy",
-                "score": 8.8,
-                "maxScore": 10,
-                "weight": 10
-              },
-              {
-                "label": "Amenities and Hospitality Ecosystem",
-                "score": 8.4,
-                "maxScore": 10,
-                "weight": 10
-              },
-              {
-                "label": "Brand and Clientele Coherence",
-                "score": 7.2,
-                "maxScore": 8,
-                "weight": 8
-              },
-              {
-                "label": "Business-Travel Effectiveness",
-                "score": 6.1,
-                "maxScore": 7,
-                "weight": 7
-              },
-              {
-                "label": "Long-Term Resilience",
-                "score": 5.2,
-                "maxScore": 6,
-                "weight": 6
-              }
-            ],
-            "confidence": "DMW Visited"
-          },
-          "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Positano.",
-          "indicativeRate": {
-            "currency": "USD",
-            "amount": 427,
-            "label": "Estimated Starting Rate",
-            "basis": "per night"
-          }
-        },
-        {
           "id": "dmw-hotel-017",
           "slug": "le-bristol-paris",
           "profileUrl": "/hotels/le-bristol-paris",
-          "rank": 5,
+          "rank": 1,
           "name": "Le Bristol",
           "band": "Exceptional",
           "featured": false,
@@ -13665,140 +14645,10 @@
           }
         },
         {
-          "id": "dmw-hotel-014",
-          "slug": "hotel-du-cap-eden-roc-antibes",
-          "profileUrl": "/hotels/hotel-du-cap-eden-roc-antibes",
-          "rank": 6,
-          "name": "Hotel du Cap-Eden-Roc",
-          "band": "Exceptional",
-          "featured": false,
-          "strategicLens": "Neighbourhood destination",
-          "distinctions": [],
-          "location": {
-            "city": "Antibes",
-            "country": "France",
-            "region": "Europe",
-            "neighbourhood": "City Center",
-            "displayLocation": "Antibes, France"
-          },
-          "archetype": "Urban Luxury",
-          "dmwJudgement": null,
-          "assessmentPendingLabel": null,
-          "dmwOverview": "Hotel du Cap-Eden-Roc was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Luxury Flagships, Worlds 50 Best.",
-          "identity": {
-            "owner": "Unknown",
-            "operator": "Oetker Collection",
-            "brand": "Oetker Collection"
-          },
-          "propertyFacts": {
-            "roomCount": 162,
-            "openingYear": 2010
-          },
-          "essentialAmenities": [
-            {
-              "id": "gym",
-              "label": "Gym",
-              "category": "Wellness",
-              "available": true
-            },
-            {
-              "id": "parking",
-              "label": "Parking",
-              "category": "Transport",
-              "available": true
-            },
-            {
-              "id": "restaurant",
-              "label": "Restaurant",
-              "category": "Food and Drink",
-              "available": true
-            },
-            {
-              "id": "star-rating",
-              "label": "4-Star",
-              "category": "Other",
-              "available": true
-            }
-          ],
-          "scores": {
-            "totalScore": 87.7,
-            "dimensions": [
-              {
-                "label": "Proposition and Strategic Coherence",
-                "score": 12.8,
-                "maxScore": 15,
-                "weight": 15
-              },
-              {
-                "label": "Service and Operating Execution",
-                "score": 10.6,
-                "maxScore": 12,
-                "weight": 12
-              },
-              {
-                "label": "Distinctiveness and Emotional Resonance",
-                "score": 10.8,
-                "maxScore": 12,
-                "weight": 12
-              },
-              {
-                "label": "Rooms and Spatial Logic",
-                "score": 8.8,
-                "maxScore": 10,
-                "weight": 10
-              },
-              {
-                "label": "Asset Scarcity and Physical Context",
-                "score": 8.8,
-                "maxScore": 10,
-                "weight": 10
-              },
-              {
-                "label": "Pricing Power and Revenue Strategy",
-                "score": 9,
-                "maxScore": 10,
-                "weight": 10
-              },
-              {
-                "label": "Amenities and Hospitality Ecosystem",
-                "score": 8.6,
-                "maxScore": 10,
-                "weight": 10
-              },
-              {
-                "label": "Brand and Clientele Coherence",
-                "score": 7.2,
-                "maxScore": 8,
-                "weight": 8
-              },
-              {
-                "label": "Business-Travel Effectiveness",
-                "score": 5.9,
-                "maxScore": 7,
-                "weight": 7
-              },
-              {
-                "label": "Long-Term Resilience",
-                "score": 5.2,
-                "maxScore": 6,
-                "weight": 6
-              }
-            ],
-            "confidence": "DMW Researched"
-          },
-          "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Antibes.",
-          "indicativeRate": {
-            "currency": "USD",
-            "amount": 385,
-            "label": "Estimated Starting Rate",
-            "basis": "per night"
-          }
-        },
-        {
           "id": "dmw-hotel-019",
           "slug": "raffles-singapore-singapore",
           "profileUrl": "/hotels/raffles-singapore-singapore",
-          "rank": 7,
+          "rank": 2,
           "name": "Raffles Singapore",
           "band": "Exceptional",
           "featured": false,
@@ -13928,7 +14778,7 @@
           "id": "dmw-hotel-026",
           "slug": "the-fifth-avenue-hotel-new-york",
           "profileUrl": "/hotels/the-fifth-avenue-hotel-new-york",
-          "rank": 8,
+          "rank": 3,
           "name": "The Fifth Avenue Hotel",
           "band": "Outstanding",
           "featured": false,
@@ -14058,7 +14908,7 @@
           "id": "dmw-hotel-022",
           "slug": "royal-mansour-marrakech",
           "profileUrl": "/hotels/royal-mansour-marrakech",
-          "rank": 9,
+          "rank": 4,
           "name": "Royal Mansour",
           "band": "Outstanding",
           "featured": false,
@@ -14188,7 +15038,7 @@
           "id": "dmw-hotel-041",
           "slug": "baur-au-lac-zurich",
           "profileUrl": "/hotels/baur-au-lac-zurich",
-          "rank": 10,
+          "rank": 5,
           "name": "Baur au Lac",
           "band": "Outstanding",
           "featured": false,
@@ -14318,7 +15168,7 @@
           "id": "dmw-hotel-033",
           "slug": "11-howard-new-york",
           "profileUrl": "/hotels/11-howard-new-york",
-          "rank": 11,
+          "rank": 6,
           "name": "11 Howard",
           "band": "Outstanding",
           "featured": false,
@@ -14448,7 +15298,7 @@
           "id": "dmw-hotel-044",
           "slug": "broadwick-soho-london",
           "profileUrl": "/hotels/broadwick-soho-london",
-          "rank": 12,
+          "rank": 7,
           "name": "Broadwick Soho",
           "band": "Outstanding",
           "featured": false,
@@ -14578,7 +15428,7 @@
           "id": "dmw-hotel-030",
           "slug": "1-hotel-central-park-new-york",
           "profileUrl": "/hotels/1-hotel-central-park-new-york",
-          "rank": 13,
+          "rank": 8,
           "name": "1 Hotel Central Park",
           "band": "Outstanding",
           "featured": false,
@@ -14708,7 +15558,7 @@
           "id": "dmw-hotel-046",
           "slug": "bulgari-hotel-bali-bali",
           "profileUrl": "/hotels/bulgari-hotel-bali-bali",
-          "rank": 14,
+          "rank": 9,
           "name": "Bulgari Hotel Bali",
           "band": "Outstanding",
           "featured": false,
@@ -14838,7 +15688,7 @@
           "id": "dmw-hotel-023",
           "slug": "soneva-fushi-maldives",
           "profileUrl": "/hotels/soneva-fushi-maldives",
-          "rank": 15,
+          "rank": 10,
           "name": "Soneva Fushi",
           "band": "Outstanding",
           "featured": false,
@@ -14968,7 +15818,7 @@
           "id": "dmw-hotel-032",
           "slug": "1-hotel-mayfair-london",
           "profileUrl": "/hotels/1-hotel-mayfair-london",
-          "rank": 16,
+          "rank": 11,
           "name": "1 Hotel Mayfair",
           "band": "Outstanding",
           "featured": false,
@@ -15098,7 +15948,7 @@
           "id": "dmw-hotel-043",
           "slug": "borgo-egnazia-savelletri",
           "profileUrl": "/hotels/borgo-egnazia-savelletri",
-          "rank": 17,
+          "rank": 12,
           "name": "Borgo Egnazia",
           "band": "Outstanding",
           "featured": false,
@@ -15228,7 +16078,7 @@
           "id": "dmw-hotel-060",
           "slug": "crosby-street-hotel-new-york",
           "profileUrl": "/hotels/crosby-street-hotel-new-york",
-          "rank": 18,
+          "rank": 13,
           "name": "Crosby Street Hotel",
           "band": "Highly Convincing",
           "featured": false,
@@ -15358,7 +16208,7 @@
           "id": "dmw-hotel-031",
           "slug": "1-hotel-hanalei-bay-kauai",
           "profileUrl": "/hotels/1-hotel-hanalei-bay-kauai",
-          "rank": 19,
+          "rank": 14,
           "name": "1 Hotel Hanalei Bay",
           "band": "Outstanding",
           "featured": false,
@@ -15488,7 +16338,7 @@
           "id": "dmw-hotel-054",
           "slug": "capella-sydney-sydney",
           "profileUrl": "/hotels/capella-sydney-sydney",
-          "rank": 20,
+          "rank": 15,
           "name": "Capella Sydney",
           "band": "Outstanding",
           "featured": false,
@@ -15618,7 +16468,7 @@
           "id": "dmw-hotel-066",
           "slug": "faena-new-york-new-york",
           "profileUrl": "/hotels/faena-new-york-new-york",
-          "rank": 21,
+          "rank": 16,
           "name": "Faena New York",
           "band": "Highly Convincing",
           "featured": false,
@@ -15748,7 +16598,7 @@
           "id": "dmw-hotel-040",
           "slug": "balesin-island-club-polillo",
           "profileUrl": "/hotels/balesin-island-club-polillo",
-          "rank": 22,
+          "rank": 17,
           "name": "Balesin Island Club",
           "band": "Outstanding",
           "featured": false,
@@ -15878,7 +16728,7 @@
           "id": "dmw-hotel-045",
           "slug": "brown-s-hotel-london",
           "profileUrl": "/hotels/brown-s-hotel-london",
-          "rank": 23,
+          "rank": 18,
           "name": "Brown's Hotel",
           "band": "Outstanding",
           "featured": false,
@@ -16008,7 +16858,7 @@
           "id": "dmw-hotel-052",
           "slug": "bvlgari-hotel-london-london",
           "profileUrl": "/hotels/bvlgari-hotel-london-london",
-          "rank": 24,
+          "rank": 19,
           "name": "Bvlgari Hotel London",
           "band": "Outstanding",
           "featured": false,
@@ -16138,7 +16988,7 @@
           "id": "dmw-hotel-053",
           "slug": "capella-bangkok-bangkok",
           "profileUrl": "/hotels/capella-bangkok-bangkok",
-          "rank": 25,
+          "rank": 20,
           "name": "Capella Bangkok",
           "band": "Outstanding",
           "featured": false,
@@ -16268,7 +17118,7 @@
           "id": "dmw-hotel-035",
           "slug": "alex-lake-z-rich-zurich",
           "profileUrl": "/hotels/alex-lake-z-rich-zurich",
-          "rank": 26,
+          "rank": 21,
           "name": "Alex Lake Zürich",
           "band": "Outstanding",
           "featured": false,
@@ -16398,7 +17248,7 @@
           "id": "dmw-hotel-063",
           "slug": "eden-rock-st-barths",
           "profileUrl": "/hotels/eden-rock-st-barths",
-          "rank": 27,
+          "rank": 22,
           "name": "Eden Rock",
           "band": "Highly Convincing",
           "featured": false,
@@ -16528,7 +17378,7 @@
           "id": "dmw-hotel-034",
           "slug": "ace-hotel-sydney-sydney",
           "profileUrl": "/hotels/ace-hotel-sydney-sydney",
-          "rank": 28,
+          "rank": 23,
           "name": "Ace Hotel Sydney",
           "band": "Outstanding",
           "featured": false,
@@ -16658,7 +17508,7 @@
           "id": "dmw-hotel-079",
           "slug": "hoshinoya-tokyo-tokyo",
           "profileUrl": "/hotels/hoshinoya-tokyo-tokyo",
-          "rank": 29,
+          "rank": 24,
           "name": "Hoshinoya Tokyo",
           "band": "Highly Convincing",
           "featured": false,
@@ -16788,7 +17638,7 @@
           "id": "dmw-hotel-082",
           "slug": "hotel-barri-re-fouquet-s-new-york-new-york",
           "profileUrl": "/hotels/hotel-barri-re-fouquet-s-new-york-new-york",
-          "rank": 30,
+          "rank": 25,
           "name": "Hotel Barrière Fouquet’s New York",
           "band": "Highly Convincing",
           "featured": false,
@@ -16918,7 +17768,7 @@
           "id": "dmw-hotel-068",
           "slug": "flemings-mayfair-london",
           "profileUrl": "/hotels/flemings-mayfair-london",
-          "rank": 31,
+          "rank": 26,
           "name": "Flemings Mayfair",
           "band": "Highly Convincing",
           "featured": false,
@@ -17048,7 +17898,7 @@
           "id": "dmw-hotel-051",
           "slug": "burj-al-arab-dubai",
           "profileUrl": "/hotels/burj-al-arab-dubai",
-          "rank": 32,
+          "rank": 27,
           "name": "Burj Al Arab",
           "band": "Outstanding",
           "featured": false,
@@ -17178,7 +18028,7 @@
           "id": "dmw-hotel-059",
           "slug": "copacabana-palace-rio-de-janeiro",
           "profileUrl": "/hotels/copacabana-palace-rio-de-janeiro",
-          "rank": 33,
+          "rank": 28,
           "name": "Copacabana Palace",
           "band": "Highly Convincing",
           "featured": false,
@@ -17308,7 +18158,7 @@
           "id": "dmw-hotel-077",
           "slug": "gleneagles-townhouse-edinburgh",
           "profileUrl": "/hotels/gleneagles-townhouse-edinburgh",
-          "rank": 34,
+          "rank": 29,
           "name": "Gleneagles Townhouse",
           "band": "Highly Convincing",
           "featured": false,
@@ -17438,7 +18288,7 @@
           "id": "dmw-hotel-078",
           "slug": "gora-kadan-hakone",
           "profileUrl": "/hotels/gora-kadan-hakone",
-          "rank": 35,
+          "rank": 30,
           "name": "Gora Kadan",
           "band": "Highly Convincing",
           "featured": false,
@@ -17568,7 +18418,7 @@
           "id": "dmw-hotel-061",
           "slug": "desa-potato-head-seminyak",
           "profileUrl": "/hotels/desa-potato-head-seminyak",
-          "rank": 36,
+          "rank": 31,
           "name": "Desa Potato Head",
           "band": "Highly Convincing",
           "featured": false,
@@ -17698,7 +18548,7 @@
           "id": "dmw-hotel-080",
           "slug": "hotel-ameron-z-rich-bellerive-au-lac-zurich",
           "profileUrl": "/hotels/hotel-ameron-z-rich-bellerive-au-lac-zurich",
-          "rank": 37,
+          "rank": 32,
           "name": "Hotel AMERON Zürich Bellerive au Lac",
           "band": "Highly Convincing",
           "featured": false,
@@ -17828,7 +18678,7 @@
           "id": "dmw-hotel-085",
           "slug": "h-tel-du-palais-biarritz",
           "profileUrl": "/hotels/h-tel-du-palais-biarritz",
-          "rank": 38,
+          "rank": 33,
           "name": "Hôtel du Palais",
           "band": "Highly Convincing",
           "featured": false,
@@ -17958,7 +18808,7 @@
           "id": "dmw-hotel-096",
           "slug": "la-r-serve-eden-au-lac-zurich-zurich",
           "profileUrl": "/hotels/la-r-serve-eden-au-lac-zurich-zurich",
-          "rank": 39,
+          "rank": 34,
           "name": "La Réserve Eden au Lac Zurich",
           "band": "Highly Convincing",
           "featured": false,
@@ -18088,7 +18938,7 @@
           "id": "dmw-hotel-110",
           "slug": "one-only-mandarina-riviera-nayarit",
           "profileUrl": "/hotels/one-only-mandarina-riviera-nayarit",
-          "rank": 40,
+          "rank": 35,
           "name": "One&Only Mandarina",
           "band": "Watchlist",
           "featured": false,
@@ -18218,7 +19068,7 @@
           "id": "dmw-hotel-138",
           "slug": "the-brando-tetiaroa",
           "profileUrl": "/hotels/the-brando-tetiaroa",
-          "rank": 41,
+          "rank": 36,
           "name": "The Brando",
           "band": "Watchlist",
           "featured": false,
@@ -18348,7 +19198,7 @@
           "id": "dmw-hotel-070",
           "slug": "four-seasons-bangkok-at-chao-phraya-river-bangkok",
           "profileUrl": "/hotels/four-seasons-bangkok-at-chao-phraya-river-bangkok",
-          "rank": 42,
+          "rank": 37,
           "name": "Four Seasons Bangkok at Chao Phraya River",
           "band": "Highly Convincing",
           "featured": false,
@@ -18478,7 +19328,7 @@
           "id": "dmw-hotel-095",
           "slug": "la-mamounia-marrakech",
           "profileUrl": "/hotels/la-mamounia-marrakech",
-          "rank": 43,
+          "rank": 38,
           "name": "La Mamounia",
           "band": "Highly Convincing",
           "featured": false,
@@ -18608,7 +19458,7 @@
           "id": "dmw-hotel-099",
           "slug": "le-sirenuse-positano",
           "profileUrl": "/hotels/le-sirenuse-positano",
-          "rank": 44,
+          "rank": 39,
           "name": "Le Sirenuse",
           "band": "Highly Convincing",
           "featured": false,
@@ -18738,7 +19588,7 @@
           "id": "dmw-hotel-122",
           "slug": "ruby-mimi-hotel-zurich-zurich",
           "profileUrl": "/hotels/ruby-mimi-hotel-zurich-zurich",
-          "rank": 45,
+          "rank": 40,
           "name": "Ruby Mimi Hotel Zurich",
           "band": "Watchlist",
           "featured": false,
@@ -18868,7 +19718,7 @@
           "id": "dmw-hotel-084",
           "slug": "h-tel-de-paris-monte-carlo-monaco",
           "profileUrl": "/hotels/h-tel-de-paris-monte-carlo-monaco",
-          "rank": 46,
+          "rank": 41,
           "name": "Hôtel de Paris Monte-Carlo",
           "band": "Highly Convincing",
           "featured": false,
@@ -18998,7 +19848,7 @@
           "id": "dmw-hotel-088",
           "slug": "hotel-helvetia-z-rich-zurich",
           "profileUrl": "/hotels/hotel-helvetia-z-rich-zurich",
-          "rank": 47,
+          "rank": 42,
           "name": "Hotel Helvetia Zürich",
           "band": "Highly Convincing",
           "featured": false,
@@ -19128,7 +19978,7 @@
           "id": "dmw-hotel-111",
           "slug": "one-only-reethi-rah-maldives",
           "profileUrl": "/hotels/one-only-reethi-rah-maldives",
-          "rank": 48,
+          "rank": 43,
           "name": "One&Only Reethi Rah",
           "band": "Watchlist",
           "featured": false,
@@ -19258,7 +20108,7 @@
           "id": "dmw-hotel-093",
           "slug": "janu-tokyo-tokyo",
           "profileUrl": "/hotels/janu-tokyo-tokyo",
-          "rank": 49,
+          "rank": 44,
           "name": "Janu Tokyo",
           "band": "Highly Convincing",
           "featured": false,
@@ -19388,7 +20238,7 @@
           "id": "dmw-hotel-091",
           "slug": "hotel-st-gotthard-zurich",
           "profileUrl": "/hotels/hotel-st-gotthard-zurich",
-          "rank": 50,
+          "rank": 45,
           "name": "Hotel St. Gotthard",
           "band": "Highly Convincing",
           "featured": false,
@@ -19510,6 +20360,656 @@
           "indicativeRate": {
             "currency": "USD",
             "amount": 337,
+            "label": "Estimated Starting Rate",
+            "basis": "per night"
+          }
+        },
+        {
+          "id": "dmw-hotel-112",
+          "slug": "park-hyatt-zurich-zurich",
+          "profileUrl": "/hotels/park-hyatt-zurich-zurich",
+          "rank": 46,
+          "name": "Park Hyatt Zurich",
+          "band": "Watchlist",
+          "featured": false,
+          "strategicLens": "Neighbourhood destination",
+          "distinctions": [],
+          "location": {
+            "city": "Zurich",
+            "country": "Switzerland",
+            "region": "Europe",
+            "neighbourhood": "City Center",
+            "displayLocation": "Zurich, Switzerland"
+          },
+          "archetype": "Urban Luxury",
+          "dmwJudgement": null,
+          "assessmentPendingLabel": null,
+          "dmwOverview": "Park Hyatt Zurich was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: DMW Zurich Watchlist.",
+          "identity": {
+            "owner": "Unknown",
+            "operator": "Park Hyatt",
+            "brand": "Park Hyatt"
+          },
+          "propertyFacts": {
+            "roomCount": 55,
+            "openingYear": 2010
+          },
+          "essentialAmenities": [
+            {
+              "id": "gym",
+              "label": "Gym",
+              "category": "Wellness",
+              "available": true
+            },
+            {
+              "id": "parking",
+              "label": "Parking",
+              "category": "Transport",
+              "available": true
+            },
+            {
+              "id": "restaurant",
+              "label": "Restaurant",
+              "category": "Food and Drink",
+              "available": true
+            },
+            {
+              "id": "star-rating",
+              "label": "4-Star",
+              "category": "Other",
+              "available": true
+            }
+          ],
+          "scores": {
+            "totalScore": 79.7,
+            "dimensions": [
+              {
+                "label": "Proposition and Strategic Coherence",
+                "score": 11.7,
+                "maxScore": 15,
+                "weight": 15
+              },
+              {
+                "label": "Service and Operating Execution",
+                "score": 10,
+                "maxScore": 12,
+                "weight": 12
+              },
+              {
+                "label": "Distinctiveness and Emotional Resonance",
+                "score": 9.5,
+                "maxScore": 12,
+                "weight": 12
+              },
+              {
+                "label": "Rooms and Spatial Logic",
+                "score": 8.2,
+                "maxScore": 10,
+                "weight": 10
+              },
+              {
+                "label": "Asset Scarcity and Physical Context",
+                "score": 8,
+                "maxScore": 10,
+                "weight": 10
+              },
+              {
+                "label": "Pricing Power and Revenue Strategy",
+                "score": 7.9,
+                "maxScore": 10,
+                "weight": 10
+              },
+              {
+                "label": "Amenities and Hospitality Ecosystem",
+                "score": 8,
+                "maxScore": 10,
+                "weight": 10
+              },
+              {
+                "label": "Brand and Clientele Coherence",
+                "score": 6,
+                "maxScore": 8,
+                "weight": 8
+              },
+              {
+                "label": "Business-Travel Effectiveness",
+                "score": 5.6,
+                "maxScore": 7,
+                "weight": 7
+              },
+              {
+                "label": "Long-Term Resilience",
+                "score": 4.8,
+                "maxScore": 6,
+                "weight": 6
+              }
+            ],
+            "confidence": "DMW Visited"
+          },
+          "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Zurich.",
+          "indicativeRate": {
+            "currency": "USD",
+            "amount": 445,
+            "label": "Estimated Starting Rate",
+            "basis": "per night"
+          }
+        },
+        {
+          "id": "dmw-hotel-108",
+          "slug": "nine-orchard-new-york",
+          "profileUrl": "/hotels/nine-orchard-new-york",
+          "rank": 47,
+          "name": "Nine Orchard",
+          "band": "Watchlist",
+          "featured": false,
+          "strategicLens": "Neighbourhood destination",
+          "distinctions": [],
+          "location": {
+            "city": "New York",
+            "country": "USA",
+            "region": "Americas",
+            "neighbourhood": "City Center",
+            "displayLocation": "New York, USA"
+          },
+          "archetype": "Urban Luxury",
+          "dmwJudgement": null,
+          "assessmentPendingLabel": null,
+          "dmwOverview": "Nine Orchard was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: DMW New York Watchlist.",
+          "identity": {
+            "owner": "Unknown",
+            "operator": "Independent",
+            "brand": null
+          },
+          "propertyFacts": {
+            "roomCount": 112,
+            "openingYear": 2017
+          },
+          "essentialAmenities": [
+            {
+              "id": "gym",
+              "label": "Gym",
+              "category": "Wellness",
+              "available": true
+            },
+            {
+              "id": "parking",
+              "label": "Parking",
+              "category": "Transport",
+              "available": true
+            },
+            {
+              "id": "restaurant",
+              "label": "Restaurant",
+              "category": "Food and Drink",
+              "available": true
+            },
+            {
+              "id": "star-rating",
+              "label": "5-Star",
+              "category": "Other",
+              "available": true
+            }
+          ],
+          "scores": {
+            "totalScore": 79.6,
+            "dimensions": [
+              {
+                "label": "Proposition and Strategic Coherence",
+                "score": 12.5,
+                "maxScore": 15,
+                "weight": 15
+              },
+              {
+                "label": "Service and Operating Execution",
+                "score": 9.7,
+                "maxScore": 12,
+                "weight": 12
+              },
+              {
+                "label": "Distinctiveness and Emotional Resonance",
+                "score": 9.7,
+                "maxScore": 12,
+                "weight": 12
+              },
+              {
+                "label": "Rooms and Spatial Logic",
+                "score": 7.9,
+                "maxScore": 10,
+                "weight": 10
+              },
+              {
+                "label": "Asset Scarcity and Physical Context",
+                "score": 7.6,
+                "maxScore": 10,
+                "weight": 10
+              },
+              {
+                "label": "Pricing Power and Revenue Strategy",
+                "score": 8.2,
+                "maxScore": 10,
+                "weight": 10
+              },
+              {
+                "label": "Amenities and Hospitality Ecosystem",
+                "score": 7.6,
+                "maxScore": 10,
+                "weight": 10
+              },
+              {
+                "label": "Brand and Clientele Coherence",
+                "score": 6.6,
+                "maxScore": 8,
+                "weight": 8
+              },
+              {
+                "label": "Business-Travel Effectiveness",
+                "score": 5.3,
+                "maxScore": 7,
+                "weight": 7
+              },
+              {
+                "label": "Long-Term Resilience",
+                "score": 4.5,
+                "maxScore": 6,
+                "weight": 6
+              }
+            ],
+            "confidence": "DMW Revisited"
+          },
+          "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in New York.",
+          "indicativeRate": {
+            "currency": "USD",
+            "amount": 330,
+            "label": "Estimated Starting Rate",
+            "basis": "per night"
+          }
+        },
+        {
+          "id": "dmw-hotel-092",
+          "slug": "j-k-place-capri-capri",
+          "profileUrl": "/hotels/j-k-place-capri-capri",
+          "rank": 48,
+          "name": "J.K. Place Capri",
+          "band": "Highly Convincing",
+          "featured": false,
+          "strategicLens": "Neighbourhood destination",
+          "distinctions": [],
+          "location": {
+            "city": "Capri",
+            "country": "Italy",
+            "region": "Europe",
+            "neighbourhood": "City Center",
+            "displayLocation": "Capri, Italy"
+          },
+          "archetype": "Urban Luxury",
+          "dmwJudgement": null,
+          "assessmentPendingLabel": null,
+          "dmwOverview": "J.K. Place Capri was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: La Liste Top 1000.",
+          "identity": {
+            "owner": "Unknown",
+            "operator": "J.K. Place",
+            "brand": "J.K. Place"
+          },
+          "propertyFacts": {
+            "roomCount": 141,
+            "openingYear": 2009
+          },
+          "essentialAmenities": [
+            {
+              "id": "gym",
+              "label": "Gym",
+              "category": "Wellness",
+              "available": true
+            },
+            {
+              "id": "parking",
+              "label": "Parking",
+              "category": "Transport",
+              "available": true
+            },
+            {
+              "id": "restaurant",
+              "label": "Restaurant",
+              "category": "Food and Drink",
+              "available": true
+            },
+            {
+              "id": "star-rating",
+              "label": "5-Star",
+              "category": "Other",
+              "available": true
+            }
+          ],
+          "scores": {
+            "totalScore": 79.5,
+            "dimensions": [
+              {
+                "label": "Proposition and Strategic Coherence",
+                "score": 11.9,
+                "maxScore": 15,
+                "weight": 15
+              },
+              {
+                "label": "Service and Operating Execution",
+                "score": 9.7,
+                "maxScore": 12,
+                "weight": 12
+              },
+              {
+                "label": "Distinctiveness and Emotional Resonance",
+                "score": 9.3,
+                "maxScore": 12,
+                "weight": 12
+              },
+              {
+                "label": "Rooms and Spatial Logic",
+                "score": 8.3,
+                "maxScore": 10,
+                "weight": 10
+              },
+              {
+                "label": "Asset Scarcity and Physical Context",
+                "score": 8.2,
+                "maxScore": 10,
+                "weight": 10
+              },
+              {
+                "label": "Pricing Power and Revenue Strategy",
+                "score": 8.2,
+                "maxScore": 10,
+                "weight": 10
+              },
+              {
+                "label": "Amenities and Hospitality Ecosystem",
+                "score": 7.6,
+                "maxScore": 10,
+                "weight": 10
+              },
+              {
+                "label": "Brand and Clientele Coherence",
+                "score": 6.1,
+                "maxScore": 8,
+                "weight": 8
+              },
+              {
+                "label": "Business-Travel Effectiveness",
+                "score": 5.3,
+                "maxScore": 7,
+                "weight": 7
+              },
+              {
+                "label": "Long-Term Resilience",
+                "score": 4.9,
+                "maxScore": 6,
+                "weight": 6
+              }
+            ],
+            "confidence": "DMW Researched"
+          },
+          "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Capri.",
+          "indicativeRate": {
+            "currency": "USD",
+            "amount": 304,
+            "label": "Estimated Starting Rate",
+            "basis": "per night"
+          }
+        },
+        {
+          "id": "dmw-hotel-124",
+          "slug": "singita-lodges-kruger-national-park-kruger-national-park",
+          "profileUrl": "/hotels/singita-lodges-kruger-national-park-kruger-national-park",
+          "rank": 49,
+          "name": "Singita Lodges Kruger National Park",
+          "band": "Watchlist",
+          "featured": false,
+          "strategicLens": "Neighbourhood destination",
+          "distinctions": [],
+          "location": {
+            "city": "Kruger National Park",
+            "country": "South Africa",
+            "region": "Middle East & Africa",
+            "neighbourhood": "City Center",
+            "displayLocation": "Kruger National Park, South Africa"
+          },
+          "archetype": "Urban Luxury",
+          "dmwJudgement": null,
+          "assessmentPendingLabel": null,
+          "dmwOverview": "Singita Lodges Kruger National Park was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: Worlds 50 Best.",
+          "identity": {
+            "owner": "Unknown",
+            "operator": "Singita",
+            "brand": "Singita"
+          },
+          "propertyFacts": {
+            "roomCount": 151,
+            "openingYear": 2005
+          },
+          "essentialAmenities": [
+            {
+              "id": "gym",
+              "label": "Gym",
+              "category": "Wellness",
+              "available": true
+            },
+            {
+              "id": "parking",
+              "label": "Parking",
+              "category": "Transport",
+              "available": true
+            },
+            {
+              "id": "restaurant",
+              "label": "Restaurant",
+              "category": "Food and Drink",
+              "available": true
+            },
+            {
+              "id": "star-rating",
+              "label": "4-Star",
+              "category": "Other",
+              "available": true
+            }
+          ],
+          "scores": {
+            "totalScore": 79.5,
+            "dimensions": [
+              {
+                "label": "Proposition and Strategic Coherence",
+                "score": 12.1,
+                "maxScore": 15,
+                "weight": 15
+              },
+              {
+                "label": "Service and Operating Execution",
+                "score": 9.4,
+                "maxScore": 12,
+                "weight": 12
+              },
+              {
+                "label": "Distinctiveness and Emotional Resonance",
+                "score": 9.8,
+                "maxScore": 12,
+                "weight": 12
+              },
+              {
+                "label": "Rooms and Spatial Logic",
+                "score": 7.9,
+                "maxScore": 10,
+                "weight": 10
+              },
+              {
+                "label": "Asset Scarcity and Physical Context",
+                "score": 8.4,
+                "maxScore": 10,
+                "weight": 10
+              },
+              {
+                "label": "Pricing Power and Revenue Strategy",
+                "score": 7.5,
+                "maxScore": 10,
+                "weight": 10
+              },
+              {
+                "label": "Amenities and Hospitality Ecosystem",
+                "score": 8,
+                "maxScore": 10,
+                "weight": 10
+              },
+              {
+                "label": "Brand and Clientele Coherence",
+                "score": 6.2,
+                "maxScore": 8,
+                "weight": 8
+              },
+              {
+                "label": "Business-Travel Effectiveness",
+                "score": 5.7,
+                "maxScore": 7,
+                "weight": 7
+              },
+              {
+                "label": "Long-Term Resilience",
+                "score": 4.5,
+                "maxScore": 6,
+                "weight": 6
+              }
+            ],
+            "confidence": "DMW Revisited"
+          },
+          "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Kruger National Park.",
+          "indicativeRate": {
+            "currency": "USD",
+            "amount": 397,
+            "label": "Estimated Starting Rate",
+            "basis": "per night"
+          }
+        },
+        {
+          "id": "dmw-hotel-129",
+          "slug": "storchen-z-rich-zurich",
+          "profileUrl": "/hotels/storchen-z-rich-zurich",
+          "rank": 50,
+          "name": "Storchen Zürich",
+          "band": "Watchlist",
+          "featured": false,
+          "strategicLens": "Neighbourhood destination",
+          "distinctions": [],
+          "location": {
+            "city": "Zurich",
+            "country": "Switzerland",
+            "region": "Europe",
+            "neighbourhood": "City Center",
+            "displayLocation": "Zurich, Switzerland"
+          },
+          "archetype": "Urban Luxury",
+          "dmwJudgement": null,
+          "assessmentPendingLabel": null,
+          "dmwOverview": "Storchen Zürich was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: DMW Zurich Watchlist.",
+          "identity": {
+            "owner": "Unknown",
+            "operator": "The Living Circle",
+            "brand": "The Living Circle"
+          },
+          "propertyFacts": {
+            "roomCount": 100,
+            "openingYear": 2004
+          },
+          "essentialAmenities": [
+            {
+              "id": "gym",
+              "label": "Gym",
+              "category": "Wellness",
+              "available": true
+            },
+            {
+              "id": "parking",
+              "label": "Parking",
+              "category": "Transport",
+              "available": true
+            },
+            {
+              "id": "restaurant",
+              "label": "Restaurant",
+              "category": "Food and Drink",
+              "available": true
+            },
+            {
+              "id": "star-rating",
+              "label": "4-Star",
+              "category": "Other",
+              "available": true
+            }
+          ],
+          "scores": {
+            "totalScore": 79.5,
+            "dimensions": [
+              {
+                "label": "Proposition and Strategic Coherence",
+                "score": 12.2,
+                "maxScore": 15,
+                "weight": 15
+              },
+              {
+                "label": "Service and Operating Execution",
+                "score": 9.5,
+                "maxScore": 12,
+                "weight": 12
+              },
+              {
+                "label": "Distinctiveness and Emotional Resonance",
+                "score": 9.7,
+                "maxScore": 12,
+                "weight": 12
+              },
+              {
+                "label": "Rooms and Spatial Logic",
+                "score": 7.8,
+                "maxScore": 10,
+                "weight": 10
+              },
+              {
+                "label": "Asset Scarcity and Physical Context",
+                "score": 7.6,
+                "maxScore": 10,
+                "weight": 10
+              },
+              {
+                "label": "Pricing Power and Revenue Strategy",
+                "score": 8.2,
+                "maxScore": 10,
+                "weight": 10
+              },
+              {
+                "label": "Amenities and Hospitality Ecosystem",
+                "score": 7.7,
+                "maxScore": 10,
+                "weight": 10
+              },
+              {
+                "label": "Brand and Clientele Coherence",
+                "score": 6.3,
+                "maxScore": 8,
+                "weight": 8
+              },
+              {
+                "label": "Business-Travel Effectiveness",
+                "score": 5.8,
+                "maxScore": 7,
+                "weight": 7
+              },
+              {
+                "label": "Long-Term Resilience",
+                "score": 4.7,
+                "maxScore": 6,
+                "weight": 6
+              }
+            ],
+            "confidence": "DMW Researched"
+          },
+          "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in Zurich.",
+          "indicativeRate": {
+            "currency": "USD",
+            "amount": 421,
             "label": "Estimated Starting Rate",
             "basis": "per night"
           }
@@ -19647,9 +21147,109 @@
           "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in London.",
           "indicativeRate": {
             "currency": "USD",
-            "amount": 318,
-            "label": "Estimated Starting Rate",
+            "amount": 610,
+            "label": "Observed Typical Rate",
             "basis": "per night"
+          },
+          "pricingIntelligence": {
+            "status": "complete",
+            "currency": "USD",
+            "roomBasis": "Lowest standard room",
+            "occupancyBasis": "2 Adults",
+            "taxesIncluded": true,
+            "collectionDate": "2026-08-14",
+            "sourceMethod": "Makcorps API Pilot",
+            "lowestObservedRate": 506,
+            "medianObservedRate": 610,
+            "highestObservedRate": 805,
+            "dataPoints": [
+              {
+                "date": "2026-08-29",
+                "rate": 793,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-09-16",
+                "rate": 506,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-10-03",
+                "rate": 587,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-10-14",
+                "rate": 529,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-11-14",
+                "rate": 805,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-12-09",
+                "rate": 621,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-01-16",
+                "rate": 736,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-02-10",
+                "rate": 518,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-03-13",
+                "rate": 587,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-04-14",
+                "rate": 610,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-05-15",
+                "rate": 644,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-06-09",
+                "rate": 552,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              }
+            ],
+            "eventMarkers": [],
+            "limitations": "Static 12-date pilot matrix."
           }
         },
         {
@@ -19777,9 +21377,109 @@
           "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in London.",
           "indicativeRate": {
             "currency": "USD",
-            "amount": 1620,
-            "label": "Estimated Starting Rate",
+            "amount": 633,
+            "label": "Observed Typical Rate",
             "basis": "per night"
+          },
+          "pricingIntelligence": {
+            "status": "complete",
+            "currency": "USD",
+            "roomBasis": "Lowest standard room",
+            "occupancyBasis": "2 Adults",
+            "taxesIncluded": true,
+            "collectionDate": "2026-08-14",
+            "sourceMethod": "Makcorps API Pilot",
+            "lowestObservedRate": 529,
+            "medianObservedRate": 633,
+            "highestObservedRate": 793,
+            "dataPoints": [
+              {
+                "date": "2026-08-29",
+                "rate": 759,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-09-16",
+                "rate": 587,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-10-03",
+                "rate": 564,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-10-14",
+                "rate": 541,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-11-14",
+                "rate": 713,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-12-09",
+                "rate": 529,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-01-16",
+                "rate": 575,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-02-10",
+                "rate": 610,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-03-13",
+                "rate": 793,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-04-14",
+                "rate": 633,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-05-15",
+                "rate": 747,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-06-09",
+                "rate": 644,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              }
+            ],
+            "eventMarkers": [],
+            "limitations": "Static 12-date pilot matrix."
           }
         },
         {
@@ -19907,9 +21607,109 @@
           "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in London.",
           "indicativeRate": {
             "currency": "USD",
-            "amount": 1620,
-            "label": "Estimated Starting Rate",
+            "amount": 656,
+            "label": "Observed Typical Rate",
             "basis": "per night"
+          },
+          "pricingIntelligence": {
+            "status": "complete",
+            "currency": "USD",
+            "roomBasis": "Lowest standard room",
+            "occupancyBasis": "2 Adults",
+            "taxesIncluded": true,
+            "collectionDate": "2026-08-14",
+            "sourceMethod": "Makcorps API Pilot",
+            "lowestObservedRate": 494,
+            "medianObservedRate": 656,
+            "highestObservedRate": 839,
+            "dataPoints": [
+              {
+                "date": "2026-08-29",
+                "rate": 644,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-09-16",
+                "rate": 690,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-10-03",
+                "rate": 759,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-10-14",
+                "rate": 494,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-11-14",
+                "rate": 587,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-12-09",
+                "rate": 656,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-01-16",
+                "rate": 644,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-02-10",
+                "rate": 575,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-03-13",
+                "rate": 839,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-04-14",
+                "rate": 690,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-05-15",
+                "rate": 644,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-06-09",
+                "rate": 690,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              }
+            ],
+            "eventMarkers": [],
+            "limitations": "Static 12-date pilot matrix."
           }
         },
         {
@@ -25635,9 +27435,109 @@
           "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in New York.",
           "indicativeRate": {
             "currency": "USD",
-            "amount": 1180,
-            "label": "Estimated Starting Rate",
+            "amount": 656,
+            "label": "Observed Typical Rate",
             "basis": "per night"
+          },
+          "pricingIntelligence": {
+            "status": "complete",
+            "currency": "USD",
+            "roomBasis": "Lowest standard room",
+            "occupancyBasis": "2 Adults",
+            "taxesIncluded": true,
+            "collectionDate": "2026-08-14",
+            "sourceMethod": "Makcorps API Pilot",
+            "lowestObservedRate": 518,
+            "medianObservedRate": 656,
+            "highestObservedRate": 793,
+            "dataPoints": [
+              {
+                "date": "2026-08-29",
+                "rate": 598,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-09-16",
+                "rate": 598,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-10-03",
+                "rate": 656,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-10-14",
+                "rate": 518,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-11-14",
+                "rate": 793,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2026-12-09",
+                "rate": 690,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-01-16",
+                "rate": 770,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-02-10",
+                "rate": 587,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-03-13",
+                "rate": 747,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-04-14",
+                "rate": 587,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-05-15",
+                "rate": 759,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              },
+              {
+                "date": "2027-06-09",
+                "rate": 656,
+                "available": true,
+                "roomCategory": "Standard Double Room",
+                "rateType": "flexible"
+              }
+            ],
+            "eventMarkers": [],
+            "limitations": "Static 12-date pilot matrix."
           }
         },
         {
@@ -34497,140 +36397,10 @@
       "description": "The definitive ranking of London's most exceptional hospitality experiences available for under $500 per night. Curated for the frequent luxury business traveler.",
       "hotels": [
         {
-          "id": "dmw-hotel-001",
-          "slug": "the-connaught-london",
-          "profileUrl": "/hotels/the-connaught-london",
-          "rank": 1,
-          "name": "The Connaught",
-          "band": "Exceptional",
-          "featured": false,
-          "strategicLens": "Neighbourhood destination",
-          "distinctions": [],
-          "location": {
-            "city": "London",
-            "country": "United Kingdom",
-            "region": "Europe",
-            "neighbourhood": "City Center",
-            "displayLocation": "London, United Kingdom"
-          },
-          "archetype": "Urban Luxury",
-          "dmwJudgement": null,
-          "assessmentPendingLabel": null,
-          "dmwOverview": "The Connaught was selected for the DMW Hotels 100 based on its strong global consensus, appearing across multiple distinguished intelligence sources including: DMW London Watchlist, La Liste Top 1000, Luxury Flagships, Michelin Keys, Worlds 50 Best.",
-          "identity": {
-            "owner": "Unknown",
-            "operator": "Maybourne",
-            "brand": "Maybourne"
-          },
-          "propertyFacts": {
-            "roomCount": 195,
-            "openingYear": 2019
-          },
-          "essentialAmenities": [
-            {
-              "id": "gym",
-              "label": "Gym",
-              "category": "Wellness",
-              "available": true
-            },
-            {
-              "id": "parking",
-              "label": "Parking",
-              "category": "Transport",
-              "available": false
-            },
-            {
-              "id": "restaurant",
-              "label": "Restaurant",
-              "category": "Food and Drink",
-              "available": true
-            },
-            {
-              "id": "star-rating",
-              "label": "4-Star",
-              "category": "Other",
-              "available": true
-            }
-          ],
-          "scores": {
-            "totalScore": 98,
-            "dimensions": [
-              {
-                "label": "Proposition and Strategic Coherence",
-                "score": 14.5,
-                "maxScore": 15,
-                "weight": 15
-              },
-              {
-                "label": "Service and Operating Execution",
-                "score": 11.7,
-                "maxScore": 12,
-                "weight": 12
-              },
-              {
-                "label": "Distinctiveness and Emotional Resonance",
-                "score": 12,
-                "maxScore": 12,
-                "weight": 12
-              },
-              {
-                "label": "Rooms and Spatial Logic",
-                "score": 9.5,
-                "maxScore": 10,
-                "weight": 10
-              },
-              {
-                "label": "Asset Scarcity and Physical Context",
-                "score": 9.7,
-                "maxScore": 10,
-                "weight": 10
-              },
-              {
-                "label": "Pricing Power and Revenue Strategy",
-                "score": 10,
-                "maxScore": 10,
-                "weight": 10
-              },
-              {
-                "label": "Amenities and Hospitality Ecosystem",
-                "score": 9.9,
-                "maxScore": 10,
-                "weight": 10
-              },
-              {
-                "label": "Brand and Clientele Coherence",
-                "score": 7.8,
-                "maxScore": 8,
-                "weight": 8
-              },
-              {
-                "label": "Business-Travel Effectiveness",
-                "score": 7,
-                "maxScore": 7,
-                "weight": 7
-              },
-              {
-                "label": "Long-Term Resilience",
-                "score": 5.9,
-                "maxScore": 6,
-                "weight": 6
-              }
-            ],
-            "confidence": "DMW Visited"
-          },
-          "inclusionRationale": "A high-consensus asset representing the pinnacle of hospitality in London.",
-          "indicativeRate": {
-            "currency": "USD",
-            "amount": 318,
-            "label": "Estimated Starting Rate",
-            "basis": "per night"
-          }
-        },
-        {
           "id": "dmw-hotel-044",
           "slug": "broadwick-soho-london",
           "profileUrl": "/hotels/broadwick-soho-london",
-          "rank": 2,
+          "rank": 1,
           "name": "Broadwick Soho",
           "band": "Outstanding",
           "featured": false,
@@ -34760,7 +36530,7 @@
           "id": "dmw-hotel-032",
           "slug": "1-hotel-mayfair-london",
           "profileUrl": "/hotels/1-hotel-mayfair-london",
-          "rank": 3,
+          "rank": 2,
           "name": "1 Hotel Mayfair",
           "band": "Outstanding",
           "featured": false,
@@ -34890,7 +36660,7 @@
           "id": "dmw-hotel-045",
           "slug": "brown-s-hotel-london",
           "profileUrl": "/hotels/brown-s-hotel-london",
-          "rank": 4,
+          "rank": 3,
           "name": "Brown's Hotel",
           "band": "Outstanding",
           "featured": false,
@@ -35020,7 +36790,7 @@
           "id": "dmw-hotel-052",
           "slug": "bvlgari-hotel-london-london",
           "profileUrl": "/hotels/bvlgari-hotel-london-london",
-          "rank": 5,
+          "rank": 4,
           "name": "Bvlgari Hotel London",
           "band": "Outstanding",
           "featured": false,
@@ -35150,7 +36920,7 @@
           "id": "dmw-hotel-068",
           "slug": "flemings-mayfair-london",
           "profileUrl": "/hotels/flemings-mayfair-london",
-          "rank": 6,
+          "rank": 5,
           "name": "Flemings Mayfair",
           "band": "Highly Convincing",
           "featured": false,
@@ -35280,7 +37050,7 @@
           "id": "dmw-hotel-168",
           "slug": "the-mandrake-london",
           "profileUrl": "/hotels/the-mandrake-london",
-          "rank": 7,
+          "rank": 6,
           "name": "The Mandrake",
           "band": "Watchlist",
           "featured": false,
@@ -35410,7 +37180,7 @@
           "id": "dmw-hotel-136",
           "slug": "the-botree-london",
           "profileUrl": "/hotels/the-botree-london",
-          "rank": 8,
+          "rank": 7,
           "name": "The BoTree",
           "band": "Watchlist",
           "featured": false,
@@ -35540,7 +37310,7 @@
           "id": "dmw-hotel-165",
           "slug": "the-londoner-london",
           "profileUrl": "/hotels/the-londoner-london",
-          "rank": 9,
+          "rank": 8,
           "name": "The Londoner",
           "band": "Watchlist",
           "featured": false,
@@ -35670,7 +37440,7 @@
           "id": "dmw-hotel-147",
           "slug": "the-corinthia-london-london",
           "profileUrl": "/hotels/the-corinthia-london-london",
-          "rank": 10,
+          "rank": 9,
           "name": "The Corinthia London",
           "band": "Watchlist",
           "featured": false,
@@ -35800,7 +37570,7 @@
           "id": "dmw-hotel-155",
           "slug": "the-henrietta-hotel-london",
           "profileUrl": "/hotels/the-henrietta-hotel-london",
-          "rank": 11,
+          "rank": 10,
           "name": "The Henrietta Hotel",
           "band": "Watchlist",
           "featured": false,
@@ -35930,7 +37700,7 @@
           "id": "dmw-hotel-132",
           "slug": "the-beaumont-london",
           "profileUrl": "/hotels/the-beaumont-london",
-          "rank": 12,
+          "rank": 11,
           "name": "The Beaumont",
           "band": "Watchlist",
           "featured": false,
@@ -36060,7 +37830,7 @@
           "id": "dmw-hotel-161",
           "slug": "the-lanesborough-london",
           "profileUrl": "/hotels/the-lanesborough-london",
-          "rank": 13,
+          "rank": 12,
           "name": "The Lanesborough",
           "band": "Watchlist",
           "featured": false,
@@ -36190,7 +37960,7 @@
           "id": "dmw-hotel-150",
           "slug": "the-emory-london",
           "profileUrl": "/hotels/the-emory-london",
-          "rank": 14,
+          "rank": 13,
           "name": "The Emory",
           "band": "Watchlist",
           "featured": false,
@@ -36320,7 +38090,7 @@
           "id": "dmw-hotel-158",
           "slug": "the-hoxton-holborn-london",
           "profileUrl": "/hotels/the-hoxton-holborn-london",
-          "rank": 15,
+          "rank": 14,
           "name": "The Hoxton, Holborn",
           "band": "Watchlist",
           "featured": false,
@@ -36450,7 +38220,7 @@
           "id": "dmw-hotel-162",
           "slug": "the-langham-london-london",
           "profileUrl": "/hotels/the-langham-london-london",
-          "rank": 16,
+          "rank": 15,
           "name": "The Langham, London",
           "band": "Watchlist",
           "featured": false,
@@ -36580,7 +38350,7 @@
           "id": "dmw-hotel-134",
           "slug": "the-berkeley-london",
           "profileUrl": "/hotels/the-berkeley-london",
-          "rank": 17,
+          "rank": 16,
           "name": "The Berkeley",
           "band": "Watchlist",
           "featured": false,
@@ -36710,7 +38480,7 @@
           "id": "dmw-hotel-172",
           "slug": "the-may-fair-a-radisson-collection-hotel-london",
           "profileUrl": "/hotels/the-may-fair-a-radisson-collection-hotel-london",
-          "rank": 18,
+          "rank": 17,
           "name": "The May Fair, A Radisson Collection Hotel",
           "band": "Watchlist",
           "featured": false,
@@ -36840,7 +38610,7 @@
           "id": "dmw-hotel-154",
           "slug": "the-hari-london",
           "profileUrl": "/hotels/the-hari-london",
-          "rank": 19,
+          "rank": 18,
           "name": "The Hari",
           "band": "Watchlist",
           "featured": false,
@@ -36970,7 +38740,7 @@
           "id": "dmw-hotel-180",
           "slug": "the-owo-residences-by-raffles-london",
           "profileUrl": "/hotels/the-owo-residences-by-raffles-london",
-          "rank": 20,
+          "rank": 19,
           "name": "The OWO Residences by Raffles",
           "band": "Watchlist",
           "featured": false,
@@ -37100,7 +38870,7 @@
           "id": "dmw-hotel-203",
           "slug": "the-standard-london-london",
           "profileUrl": "/hotels/the-standard-london-london",
-          "rank": 21,
+          "rank": 20,
           "name": "The Standard, London",
           "band": "Watchlist",
           "featured": false,
