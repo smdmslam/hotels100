@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import type { HotelSummary } from '../../data/types';
+import type { HotelSummary, DimensionScore } from '../../data/types';
 import { Badge } from '../shared/Badge';
 import { MapPin, Building, ArrowRight } from 'lucide-react';
 import styles from './RankedHotelItem.module.css';
@@ -10,6 +10,15 @@ interface RankedHotelItemProps {
 }
 
 export const RankedHotelItem: React.FC<RankedHotelItemProps> = ({ hotel }) => {
+  // Get top 3 dimensions to highlight
+  let topDimensions: DimensionScore[] = [];
+  if (hotel.scores?.dimensions) {
+    // Sort by raw score or percentage of max score? Percentage makes more sense for highlighting strengths.
+    topDimensions = [...hotel.scores.dimensions]
+      .sort((a, b) => (b.score / b.maxScore) - (a.score / a.maxScore))
+      .slice(0, 3);
+  }
+
   return (
     <article className={styles.item}>
       <div className={styles.rankColumn}>
@@ -48,6 +57,38 @@ export const RankedHotelItem: React.FC<RankedHotelItemProps> = ({ hotel }) => {
             <Badge key={dist} label={dist} type="distinction" />
           ))}
         </div>
+      </div>
+
+      {/* New Dimension Highlights Column */}
+      <div className={styles.highlightsColumn}>
+        {topDimensions.length > 0 && (
+          <div className={styles.highlights}>
+            <span className={styles.highlightsLabel}>Key Strengths</span>
+            {topDimensions.map((dim, i) => (
+              <div key={i} className={styles.highlightItem}>
+                <span className={styles.highlightName}>{dim.label}</span>
+                <div className={styles.highlightBar}>
+                  <div 
+                    className={styles.highlightFill} 
+                    style={{ width: `${(dim.score / dim.maxScore) * 100}%` }}
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+
+      {/* New Score Column */}
+      <div className={styles.scoreColumn}>
+        {hotel.scores ? (
+          <div className={styles.scoreDisplay}>
+            <span className={styles.scoreValue}>{hotel.scores.totalScore.toFixed(1)}</span>
+            <span className={styles.scoreMax}>/ 100</span>
+          </div>
+        ) : (
+          <span className={styles.noScore}>Pending</span>
+        )}
       </div>
 
       <div className={styles.actionColumn}>

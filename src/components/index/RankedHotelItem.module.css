@@ -1,8 +1,9 @@
 .item {
   display: flex;
-  gap: var(--space-5);
   padding: var(--space-6) 0;
   border-bottom: 1px solid rgba(18, 18, 18, 0.1);
+  gap: var(--space-6);
+  align-items: flex-start;
   transition: background-color 0.2s ease;
 }
 
@@ -11,37 +12,36 @@
 }
 
 .rankColumn {
-  flex: 0 0 80px;
-  display: flex;
-  justify-content: flex-start;
+  flex: 0 0 60px;
 }
 
 .rankNumber {
   font-family: var(--font-serif);
-  font-size: var(--type-h2);
+  font-size: var(--type-display-md);
   color: var(--color-ink);
   line-height: 1;
 }
 
 .mainColumn {
-  flex: 1;
+  flex: 1 1 auto;
   display: flex;
   flex-direction: column;
   gap: var(--space-3);
+  min-width: 0;
 }
 
 .headerRow {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: var(--space-4);
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
 }
 
 .name {
   font-family: var(--font-serif);
   font-size: var(--type-h3);
   margin: 0;
-  line-height: 1.1;
+  line-height: 1.2;
 }
 
 .link {
@@ -54,21 +54,15 @@
   text-underline-offset: 4px;
 }
 
-.badges {
-  display: flex;
-  gap: var(--space-2);
-  flex-wrap: wrap;
-  justify-content: flex-end;
-}
-
 .metaRow {
   display: flex;
+  align-items: center;
   gap: var(--space-4);
   flex-wrap: wrap;
 }
 
 .metaItem {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: var(--space-1);
   font-family: var(--font-sans);
@@ -80,69 +74,149 @@
   font-family: var(--font-sans);
   font-size: var(--type-body);
   color: var(--color-charcoal);
-  max-width: 700px;
+  margin: 0;
+  line-height: 1.5;
 }
 
 .pending {
   font-family: var(--font-sans);
   font-size: var(--type-small);
-  color: var(--color-stone);
   font-style: italic;
+  color: var(--color-stone);
+  margin: 0;
 }
 
 .distinctions {
   display: flex;
   gap: var(--space-2);
   flex-wrap: wrap;
-  margin-top: var(--space-1);
+}
+
+/* New Highlight Column */
+.highlightsColumn {
+  flex: 0 0 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.highlights {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.highlightsLabel {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-stone);
+  margin-bottom: var(--space-1);
+}
+
+.highlightItem {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.highlightName {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  color: var(--color-charcoal);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.highlightBar {
+  height: 4px;
+  background-color: rgba(18, 18, 18, 0.05);
+  border-radius: 2px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.highlightFill {
+  height: 100%;
+  background-color: var(--color-antique-gold);
+  border-radius: 2px;
+}
+
+/* New Score Column */
+.scoreColumn {
+  flex: 0 0 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.scoreDisplay {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+  background-color: var(--color-ivory);
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid rgba(18, 18, 18, 0.1);
+}
+
+.scoreValue {
+  font-family: var(--font-serif);
+  font-size: var(--type-h3);
+  color: var(--color-ink);
+  line-height: 1;
+}
+
+.scoreMax {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  color: var(--color-stone);
+}
+
+.noScore {
+  font-family: var(--font-sans);
+  font-size: var(--type-small);
+  color: var(--color-stone);
 }
 
 .actionColumn {
-  flex: 0 0 60px;
+  flex: 0 0 auto;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .actionLink {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   color: var(--color-ink);
-  transition: all 0.2s ease;
+  opacity: 0.3;
+  transition: opacity 0.2s ease;
 }
 
-.actionLink:hover {
-  background-color: var(--color-ink);
-  color: var(--color-ivory);
+.item:hover .actionLink {
+  opacity: 1;
+}
+
+@media (max-width: 900px) {
+  .highlightsColumn {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
   .item {
-    flex-direction: column;
-    gap: var(--space-4);
-    position: relative;
+    flex-wrap: wrap;
   }
-
+  
   .rankColumn {
-    flex: none;
+    flex: 0 0 100%;
+    margin-bottom: var(--space-2);
   }
-
-  .headerRow {
-    flex-direction: column;
-    gap: var(--space-2);
-  }
-
-  .badges {
-    justify-content: flex-start;
-  }
-
-  .actionColumn {
-    position: absolute;
-    top: var(--space-6);
-    right: 0;
+  
+  .scoreColumn {
+    display: none;
   }
 }

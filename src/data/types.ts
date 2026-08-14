@@ -55,6 +55,19 @@ export interface Image {
   isHero?: boolean;
 }
 
+export interface DimensionScore {
+  label: string;
+  score: number;
+  maxScore: number;
+  weight: number; // percentage (e.g., 15)
+}
+
+export interface Scorecard {
+  totalScore: number;
+  dimensions: DimensionScore[];
+  confidence: 'DMW Researched' | 'DMW Visited' | 'DMW Revisited';
+}
+
 export interface HotelSummary {
   id: string;
   slug: string;
@@ -75,6 +88,7 @@ export interface HotelSummary {
     basis: string;
   } | null;
   businessTravelSuitability?: string;
+  scores?: Scorecard | null;
   essentialAmenities: Amenity[];
   distinctions: Distinction[];
   hasFieldReport?: boolean;

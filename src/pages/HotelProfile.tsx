@@ -1,9 +1,10 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { getHotelProfile } from '../data/api';
+import { ArrowLeft, MapPin } from 'lucide-react';
 import { Container, Badge, IconLabel, SectionHeader, Button } from '../components/shared';
 import { PriceCurveChart } from '../components/hotel/PriceCurveChart';
-import { ArrowLeft, MapPin } from 'lucide-react';
+import { Scorecard } from '../components/hotel/Scorecard';
+import { getHotelProfile } from '../data/api';
 import styles from './HotelProfile.module.css';
 
 export const HotelProfile: React.FC = () => {
@@ -91,6 +92,13 @@ export const HotelProfile: React.FC = () => {
                 </>
               )}
             </div>
+          </section>
+        )}
+
+        {/* Scorecard */}
+        {hotel.scores && (
+          <section className={styles.section}>
+            <Scorecard scores={hotel.scores} />
           </section>
         )}
 
