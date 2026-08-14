@@ -35,6 +35,9 @@ export const Home: React.FC = () => {
               <Link to="/collections/the-accessible-50" className={styles.buttonLink}>
                 <Button variant="dark-secondary">The Accessible 50</Button>
               </Link>
+              <Link to="/collections/the-london-accessible" className={styles.buttonLink}>
+                <Button variant="dark-secondary">The London Accessible (Under $500)</Button>
+              </Link>
             </div>
             
             <div className={styles.prototypeNotice}>

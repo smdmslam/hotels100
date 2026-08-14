@@ -103,7 +103,25 @@ const zurich25 = {
   hotels: top25Zurich
 };
 
-const collections = [global100, accessible50, london50, newYork50, zurich25];
+// 6. The London Accessible Edit
+const londonAccessibleHotels = londonHotels.filter(h => h.indicativeRate && h.indicativeRate.amount <= 500);
+const sortedLondonAccessible = londonAccessibleHotels.sort((a, b) => {
+  const scoreA = a.scores ? a.scores.totalScore : 0;
+  const scoreB = b.scores ? b.scores.totalScore : 0;
+  return scoreB - scoreA;
+});
+const topLondonAccessible = sortedLondonAccessible.map((h, index) => {
+  return { ...h, rank: index + 1 };
+});
+const londonAccessible = {
+  slug: 'the-london-accessible',
+  title: "The London Accessible Edit",
+  edition: "2024–2025",
+  description: "The definitive ranking of London's most exceptional hospitality experiences available for under $500 per night. Curated for the frequent luxury business traveler.",
+  hotels: topLondonAccessible
+};
+
+const collections = [global100, accessible50, london50, newYork50, zurich25, londonAccessible];
 
 fs.writeFileSync(COLLECTIONS_FILE, JSON.stringify({ collections }, null, 2));
 
