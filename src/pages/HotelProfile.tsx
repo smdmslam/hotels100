@@ -6,6 +6,7 @@ import { PriceCurveChart } from '../components/hotel/PriceCurveChart';
 import { Scorecard } from '../components/hotel/Scorecard';
 import { BlackbookActions } from '../components/hotel/BlackbookActions';
 import { SpecialPackages } from '../components/hotel/SpecialPackages';
+import { InsiderReport } from '../components/hotel/InsiderReport';
 import { getHotelProfile, getCollection } from '../data/api';
 import styles from './HotelProfile.module.css';
 
@@ -201,6 +202,10 @@ export const HotelProfile: React.FC = () => {
 
         {hotel.specialPackages && hotel.specialPackages.length > 0 && (
           <SpecialPackages packages={hotel.specialPackages} />
+        )}
+
+        {hotel.insiderReport && (
+          <InsiderReport report={hotel.insiderReport} />
         )}
 
         {/* Action */}

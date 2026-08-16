@@ -168,6 +168,14 @@ export interface SpecialPackage {
   linkUrl?: string | null;
 }
 
+export interface InsiderReport {
+  unGoogleableHistory?: string | null;
+  operationalQuirks?: string | null;
+  famousGuests?: string | null;
+  theTrueBestRoom?: string | null;
+  powerDynamics?: string | null;
+}
+
 // Full profile, combining summary fields + schema requirements for the profile page
 export interface HotelProfile extends Omit<HotelSummary, 'essentialAmenities'> {
   dmwOverview?: string | null;
@@ -266,6 +274,7 @@ export interface HotelProfile extends Omit<HotelSummary, 'essentialAmenities'> {
   };
 
   pricingIntelligence?: PricingIntelligence | null;
+  insiderReport?: InsiderReport | null;
   
   competitiveSet: Array<{
     hotelId?: string | null;
