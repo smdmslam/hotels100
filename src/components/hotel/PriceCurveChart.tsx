@@ -6,8 +6,7 @@ import {
   YAxis, 
   CartesianGrid, 
   Tooltip, 
-  ResponsiveContainer,
-  ReferenceDot
+  ResponsiveContainer
 } from 'recharts';
 import type { PricingIntelligence } from '../../data/types';
 import styles from './PriceCurveChart.module.css';
@@ -26,10 +25,10 @@ export const PriceCurveChart: React.FC<PriceCurveChartProps> = ({ pricing }) => 
     );
   }
 
-  // Format date for display
+  // Format date for display in tooltip
   const formatDate = (dateStr: string) => {
     const date = new Date(dateStr);
-    return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+    return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
   };
 
   const CustomTooltip = ({ active, payload }: any) => {
@@ -37,7 +36,7 @@ export const PriceCurveChart: React.FC<PriceCurveChartProps> = ({ pricing }) => 
       const point = payload[0].payload;
       return (
         <div className={styles.tooltip}>
-          <p className={styles.tooltipDate}>{formatDate(point.date)}</p>
+          <p className={styles.tooltipDate}>{point.tenor ? `${point.tenor} (${formatDate(point.date)})` : formatDate(point.date)}</p>
           <p className={styles.tooltipRate}>
             {pricing.currency} {point.rate}
           </p>
@@ -47,6 +46,14 @@ export const PriceCurveChart: React.FC<PriceCurveChartProps> = ({ pricing }) => 
     }
     return null;
   };
+
+  const formatXAxis = (tickItem: any) => {
+    const date = new Date(tickItem);
+    return date.toLocaleDateString('en-US', { month: 'short' }); // e.g., 'Sep', 'Nov'
+  };
+
+  // We should sort the data points chronologically to ensure they draw left-to-right
+  const sortedData = [...pricing.dataPoints].sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
 
   return (
     <div className={styles.container}>
@@ -67,11 +74,11 @@ export const PriceCurveChart: React.FC<PriceCurveChartProps> = ({ pricing }) => 
       
       <div className={styles.chartWrapper}>
         <ResponsiveContainer width="100%" height={300}>
-          <LineChart data={pricing.dataPoints} margin={{ top: 20, right: 30, left: 20, bottom: 20 }}>
+          <LineChart data={sortedData} margin={{ top: 20, right: 30, left: 20, bottom: 20 }}>
             <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="rgba(18, 18, 18, 0.1)" />
             <XAxis 
               dataKey="date" 
-              tickFormatter={formatDate} 
+              tickFormatter={formatXAxis} 
               axisLine={false} 
               tickLine={false} 
               tick={{ fontFamily: 'Inter', fontSize: 12, fill: '#777C70' }}
@@ -88,28 +95,12 @@ export const PriceCurveChart: React.FC<PriceCurveChartProps> = ({ pricing }) => 
             <Line 
               type="monotone" 
               dataKey="rate" 
-              stroke="#B39A62" 
+              stroke="#121212" 
               strokeWidth={2}
-              dot={{ r: 4, fill: '#B39A62', strokeWidth: 0 }}
-              activeDot={{ r: 6, fill: '#121212' }}
+              connectNulls={true}
+              dot={{ r: 4, fill: '#121212', strokeWidth: 0 }}
+              activeDot={{ r: 6, fill: '#B39A62' }}
             />
-            {/* Map event markers if they exist */}
-            {pricing.eventMarkers && pricing.eventMarkers.map((marker, idx) => {
-              const point = pricing.dataPoints.find(p => p.date === marker.date);
-              if (point) {
-                return (
-                  <ReferenceDot 
-                    key={idx} 
-                    x={marker.date} 
-                    y={point.rate} 
-                    r={6} 
-                    fill="#6D292F" 
-                    stroke="none"
-                  />
-                );
-              }
-              return null;
-            })}
           </LineChart>
         </ResponsiveContainer>
       </div>

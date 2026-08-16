@@ -5,99 +5,63 @@
     "roomBasis": "Lowest standard room",
     "occupancyBasis": "2 Adults",
     "taxesIncluded": true,
-    "collectionDate": "2026-08-14",
-    "sourceMethod": "Makcorps API Pilot",
-    "lowestObservedRate": 506,
-    "medianObservedRate": 610,
-    "highestObservedRate": 805,
+    "collectionDate": "2026-08-16",
+    "sourceMethod": "SerpApi Google Hotels",
+    "lowestObservedRate": 1070,
+    "medianObservedRate": 1258,
+    "highestObservedRate": 3409,
     "dataPoints": [
       {
-        "date": "2026-08-29",
-        "rate": 793,
+        "date": "2026-09-15",
+        "rate": 1553,
         "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
+        "roomCategory": "Standard",
+        "rateType": "direct",
+        "tenor": "Sep"
       },
       {
-        "date": "2026-09-16",
-        "rate": 506,
+        "date": "2026-11-15",
+        "rate": 1173,
         "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
+        "roomCategory": "Standard",
+        "rateType": "direct",
+        "tenor": "Nov"
       },
       {
-        "date": "2026-10-03",
-        "rate": 587,
+        "date": "2027-01-15",
+        "rate": 1070,
         "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
+        "roomCategory": "Standard",
+        "rateType": "direct",
+        "tenor": "Jan"
       },
       {
-        "date": "2026-10-14",
-        "rate": 529,
+        "date": "2027-03-15",
+        "rate": 1070,
         "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-11-14",
-        "rate": 805,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-12-09",
-        "rate": 621,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-01-16",
-        "rate": 736,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-02-10",
-        "rate": 518,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-03-13",
-        "rate": 587,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-04-14",
-        "rate": 610,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
+        "roomCategory": "Standard",
+        "rateType": "direct",
+        "tenor": "Mar"
       },
       {
         "date": "2027-05-15",
-        "rate": 644,
+        "rate": 1258,
         "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
+        "roomCategory": "Standard",
+        "rateType": "direct",
+        "tenor": "May"
       },
       {
-        "date": "2027-06-09",
-        "rate": 552,
+        "date": "2027-07-15",
+        "rate": 3409,
         "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
+        "roomCategory": "Standard",
+        "rateType": "direct",
+        "tenor": "Jul"
       }
     ],
     "eventMarkers": [],
-    "limitations": "Static 12-date pilot matrix."
+    "limitations": "5-point institutional forward curve."
   },
   "dmw-hotel-002": {
     "status": "complete",
@@ -105,99 +69,63 @@
     "roomBasis": "Lowest standard room",
     "occupancyBasis": "2 Adults",
     "taxesIncluded": true,
-    "collectionDate": "2026-08-14",
-    "sourceMethod": "Makcorps API Pilot",
-    "lowestObservedRate": 529,
-    "medianObservedRate": 633,
-    "highestObservedRate": 793,
+    "collectionDate": "2026-08-16",
+    "sourceMethod": "SerpApi Google Hotels",
+    "lowestObservedRate": 825,
+    "medianObservedRate": 1285,
+    "highestObservedRate": 1671,
     "dataPoints": [
       {
-        "date": "2026-08-29",
-        "rate": 759,
+        "date": "2026-09-15",
+        "rate": 1414,
         "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
+        "roomCategory": "Standard",
+        "rateType": "direct",
+        "tenor": "Sep"
       },
       {
-        "date": "2026-09-16",
-        "rate": 587,
+        "date": "2026-11-15",
+        "rate": 1671,
         "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
+        "roomCategory": "Standard",
+        "rateType": "direct",
+        "tenor": "Nov"
       },
       {
-        "date": "2026-10-03",
-        "rate": 564,
+        "date": "2027-01-15",
+        "rate": 900,
         "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
+        "roomCategory": "Standard",
+        "rateType": "direct",
+        "tenor": "Jan"
       },
       {
-        "date": "2026-10-14",
-        "rate": 541,
+        "date": "2027-03-15",
+        "rate": 1221,
         "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-11-14",
-        "rate": 713,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-12-09",
-        "rate": 529,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-01-16",
-        "rate": 575,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-02-10",
-        "rate": 610,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-03-13",
-        "rate": 793,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-04-14",
-        "rate": 633,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
+        "roomCategory": "Standard",
+        "rateType": "direct",
+        "tenor": "Mar"
       },
       {
         "date": "2027-05-15",
-        "rate": 747,
+        "rate": 1285,
         "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
+        "roomCategory": "Standard",
+        "rateType": "direct",
+        "tenor": "May"
       },
       {
-        "date": "2027-06-09",
-        "rate": 644,
+        "date": "2027-07-15",
+        "rate": 825,
         "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
+        "roomCategory": "Standard",
+        "rateType": "direct",
+        "tenor": "Jul"
       }
     ],
     "eventMarkers": [],
-    "limitations": "Static 12-date pilot matrix."
+    "limitations": "5-point institutional forward curve."
   },
   "dmw-hotel-003": {
     "status": "complete",
@@ -205,99 +133,47 @@
     "roomBasis": "Lowest standard room",
     "occupancyBasis": "2 Adults",
     "taxesIncluded": true,
-    "collectionDate": "2026-08-14",
-    "sourceMethod": "Makcorps API Pilot",
-    "lowestObservedRate": 518,
-    "medianObservedRate": 656,
-    "highestObservedRate": 793,
+    "collectionDate": "2026-08-16",
+    "sourceMethod": "SerpApi Google Hotels",
+    "lowestObservedRate": 2707,
+    "medianObservedRate": 4142,
+    "highestObservedRate": 4314,
     "dataPoints": [
       {
-        "date": "2026-08-29",
-        "rate": 598,
+        "date": "2026-09-15",
+        "rate": 4142,
         "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
+        "roomCategory": "Standard",
+        "rateType": "direct",
+        "tenor": "Sep"
       },
       {
-        "date": "2026-09-16",
-        "rate": 598,
+        "date": "2027-01-15",
+        "rate": 3224,
         "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-10-03",
-        "rate": 656,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-10-14",
-        "rate": 518,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-11-14",
-        "rate": 793,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-12-09",
-        "rate": 690,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-01-16",
-        "rate": 770,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-02-10",
-        "rate": 587,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-03-13",
-        "rate": 747,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-04-14",
-        "rate": 587,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
+        "roomCategory": "Standard",
+        "rateType": "direct",
+        "tenor": "Jan"
       },
       {
         "date": "2027-05-15",
-        "rate": 759,
+        "rate": 4314,
         "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
+        "roomCategory": "Standard",
+        "rateType": "flexible",
+        "tenor": "May"
       },
       {
-        "date": "2027-06-09",
-        "rate": 656,
+        "date": "2027-07-15",
+        "rate": 2707,
         "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
+        "roomCategory": "Standard",
+        "rateType": "direct",
+        "tenor": "Jul"
       }
     ],
     "eventMarkers": [],
-    "limitations": "Static 12-date pilot matrix."
+    "limitations": "5-point institutional forward curve."
   },
   "dmw-hotel-004": {
     "status": "complete",
@@ -305,99 +181,63 @@
     "roomBasis": "Lowest standard room",
     "occupancyBasis": "2 Adults",
     "taxesIncluded": true,
-    "collectionDate": "2026-08-14",
-    "sourceMethod": "Makcorps API Pilot",
-    "lowestObservedRate": 518,
-    "medianObservedRate": 679,
-    "highestObservedRate": 816,
+    "collectionDate": "2026-08-16",
+    "sourceMethod": "SerpApi Google Hotels",
+    "lowestObservedRate": 2337,
+    "medianObservedRate": 2429,
+    "highestObservedRate": 2661,
     "dataPoints": [
       {
-        "date": "2026-08-29",
-        "rate": 816,
+        "date": "2026-09-15",
+        "rate": 2661,
         "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
+        "roomCategory": "Standard",
+        "rateType": "flexible",
+        "tenor": "Sep"
       },
       {
-        "date": "2026-09-16",
-        "rate": 518,
+        "date": "2026-11-15",
+        "rate": 2393,
         "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
+        "roomCategory": "Standard",
+        "rateType": "flexible",
+        "tenor": "Nov"
       },
       {
-        "date": "2026-10-03",
-        "rate": 702,
+        "date": "2027-01-15",
+        "rate": 2337,
         "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
+        "roomCategory": "Standard",
+        "rateType": "flexible",
+        "tenor": "Jan"
       },
       {
-        "date": "2026-10-14",
-        "rate": 587,
+        "date": "2027-03-15",
+        "rate": 2409,
         "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-11-14",
-        "rate": 793,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-12-09",
-        "rate": 564,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-01-16",
-        "rate": 816,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-02-10",
-        "rate": 679,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-03-13",
-        "rate": 621,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-04-14",
-        "rate": 679,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
+        "roomCategory": "Standard",
+        "rateType": "flexible",
+        "tenor": "Mar"
       },
       {
         "date": "2027-05-15",
-        "rate": 713,
+        "rate": 2524,
         "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
+        "roomCategory": "Standard",
+        "rateType": "flexible",
+        "tenor": "May"
       },
       {
-        "date": "2027-06-09",
-        "rate": 518,
+        "date": "2027-07-15",
+        "rate": 2429,
         "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
+        "roomCategory": "Standard",
+        "rateType": "flexible",
+        "tenor": "Jul"
       }
     ],
     "eventMarkers": [],
-    "limitations": "Static 12-date pilot matrix."
+    "limitations": "5-point institutional forward curve."
   },
   "dmw-hotel-005": {
     "status": "complete",
@@ -405,99 +245,63 @@
     "roomBasis": "Lowest standard room",
     "occupancyBasis": "2 Adults",
     "taxesIncluded": true,
-    "collectionDate": "2026-08-14",
-    "sourceMethod": "Makcorps API Pilot",
-    "lowestObservedRate": 494,
-    "medianObservedRate": 656,
-    "highestObservedRate": 839,
+    "collectionDate": "2026-08-16",
+    "sourceMethod": "SerpApi Google Hotels",
+    "lowestObservedRate": 1173,
+    "medianObservedRate": 1173,
+    "highestObservedRate": 1277,
     "dataPoints": [
       {
-        "date": "2026-08-29",
-        "rate": 644,
+        "date": "2026-09-15",
+        "rate": 1173,
         "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
+        "roomCategory": "Standard",
+        "rateType": "direct",
+        "tenor": "Sep"
       },
       {
-        "date": "2026-09-16",
-        "rate": 690,
+        "date": "2026-11-15",
+        "rate": 1173,
         "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
+        "roomCategory": "Standard",
+        "rateType": "direct",
+        "tenor": "Nov"
       },
       {
-        "date": "2026-10-03",
-        "rate": 759,
+        "date": "2027-01-15",
+        "rate": 1173,
         "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
+        "roomCategory": "Standard",
+        "rateType": "direct",
+        "tenor": "Jan"
       },
       {
-        "date": "2026-10-14",
-        "rate": 494,
+        "date": "2027-03-15",
+        "rate": 1173,
         "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-11-14",
-        "rate": 587,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-12-09",
-        "rate": 656,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-01-16",
-        "rate": 644,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-02-10",
-        "rate": 575,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-03-13",
-        "rate": 839,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-04-14",
-        "rate": 690,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
+        "roomCategory": "Standard",
+        "rateType": "direct",
+        "tenor": "Mar"
       },
       {
         "date": "2027-05-15",
-        "rate": 644,
+        "rate": 1173,
         "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
+        "roomCategory": "Standard",
+        "rateType": "direct",
+        "tenor": "May"
       },
       {
-        "date": "2027-06-09",
-        "rate": 690,
+        "date": "2027-07-15",
+        "rate": 1277,
         "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
+        "roomCategory": "Standard",
+        "rateType": "direct",
+        "tenor": "Jul"
       }
     ],
     "eventMarkers": [],
-    "limitations": "Static 12-date pilot matrix."
+    "limitations": "5-point institutional forward curve."
   },
   "dmw-hotel-006": {
     "status": "complete",
@@ -506,98 +310,21 @@
     "occupancyBasis": "2 Adults",
     "taxesIncluded": true,
     "collectionDate": "2026-08-14",
-    "sourceMethod": "Makcorps API Pilot",
-    "lowestObservedRate": 598,
-    "medianObservedRate": 690,
-    "highestObservedRate": 874,
+    "sourceMethod": "SerpApi Google Hotels (Official Site)",
+    "lowestObservedRate": 2404,
+    "medianObservedRate": 2404,
+    "highestObservedRate": 2404,
     "dataPoints": [
       {
-        "date": "2026-08-29",
-        "rate": 874,
+        "date": "2026-09-11",
+        "rate": 2404,
         "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-09-16",
-        "rate": 610,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-10-03",
-        "rate": 828,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-10-14",
-        "rate": 598,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-11-14",
-        "rate": 782,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-12-09",
-        "rate": 679,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-01-16",
-        "rate": 759,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-02-10",
-        "rate": 725,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-03-13",
-        "rate": 690,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-04-14",
-        "rate": 656,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-05-15",
-        "rate": 598,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-06-09",
-        "rate": 644,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
+        "roomCategory": "Standard",
+        "rateType": "direct"
       }
     ],
     "eventMarkers": [],
-    "limitations": "Static 12-date pilot matrix."
+    "limitations": "Single date snapshot."
   },
   "dmw-hotel-007": {
     "status": "complete",
@@ -606,98 +333,21 @@
     "occupancyBasis": "2 Adults",
     "taxesIncluded": true,
     "collectionDate": "2026-08-14",
-    "sourceMethod": "Makcorps API Pilot",
-    "lowestObservedRate": 529,
-    "medianObservedRate": 736,
-    "highestObservedRate": 851,
+    "sourceMethod": "SerpApi Google Hotels (OTA / Market Lowest)",
+    "lowestObservedRate": 3574,
+    "medianObservedRate": 3574,
+    "highestObservedRate": 3574,
     "dataPoints": [
       {
-        "date": "2026-08-29",
-        "rate": 736,
+        "date": "2026-09-11",
+        "rate": 3574,
         "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-09-16",
-        "rate": 736,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-10-03",
-        "rate": 793,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-10-14",
-        "rate": 552,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-11-14",
-        "rate": 656,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-12-09",
-        "rate": 725,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-01-16",
-        "rate": 793,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-02-10",
-        "rate": 529,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-03-13",
-        "rate": 851,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-04-14",
-        "rate": 575,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-05-15",
-        "rate": 851,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-06-09",
-        "rate": 690,
-        "available": true,
-        "roomCategory": "Standard Double Room",
+        "roomCategory": "Standard",
         "rateType": "flexible"
       }
     ],
     "eventMarkers": [],
-    "limitations": "Static 12-date pilot matrix."
+    "limitations": "Single date snapshot."
   },
   "dmw-hotel-008": {
     "status": "complete",
@@ -706,98 +356,21 @@
     "occupancyBasis": "2 Adults",
     "taxesIncluded": true,
     "collectionDate": "2026-08-14",
-    "sourceMethod": "Makcorps API Pilot",
-    "lowestObservedRate": 518,
-    "medianObservedRate": 713,
-    "highestObservedRate": 920,
+    "sourceMethod": "SerpApi Google Hotels (Official Site)",
+    "lowestObservedRate": 5714,
+    "medianObservedRate": 5714,
+    "highestObservedRate": 5714,
     "dataPoints": [
       {
-        "date": "2026-08-29",
-        "rate": 759,
+        "date": "2026-09-11",
+        "rate": 5714,
         "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-09-16",
-        "rate": 598,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-10-03",
-        "rate": 690,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-10-14",
-        "rate": 564,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-11-14",
-        "rate": 851,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-12-09",
-        "rate": 552,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-01-16",
-        "rate": 908,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-02-10",
-        "rate": 644,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-03-13",
-        "rate": 713,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-04-14",
-        "rate": 759,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-05-15",
-        "rate": 920,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-06-09",
-        "rate": 518,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
+        "roomCategory": "Standard",
+        "rateType": "direct"
       }
     ],
     "eventMarkers": [],
-    "limitations": "Static 12-date pilot matrix."
+    "limitations": "Single date snapshot."
   },
   "dmw-hotel-009": {
     "status": "complete",
@@ -1006,98 +579,21 @@
     "occupancyBasis": "2 Adults",
     "taxesIncluded": true,
     "collectionDate": "2026-08-14",
-    "sourceMethod": "Makcorps API Pilot",
-    "lowestObservedRate": 494,
-    "medianObservedRate": 633,
-    "highestObservedRate": 770,
+    "sourceMethod": "SerpApi Google Hotels (Official Site)",
+    "lowestObservedRate": 2843,
+    "medianObservedRate": 2843,
+    "highestObservedRate": 2843,
     "dataPoints": [
       {
-        "date": "2026-08-29",
-        "rate": 541,
+        "date": "2026-09-11",
+        "rate": 2843,
         "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-09-16",
-        "rate": 633,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-10-03",
-        "rate": 587,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-10-14",
-        "rate": 494,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-11-14",
-        "rate": 644,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-12-09",
-        "rate": 644,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-01-16",
-        "rate": 702,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-02-10",
-        "rate": 667,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-03-13",
-        "rate": 770,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-04-14",
-        "rate": 587,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-05-15",
-        "rate": 598,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-06-09",
-        "rate": 518,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
+        "roomCategory": "Standard",
+        "rateType": "direct"
       }
     ],
     "eventMarkers": [],
-    "limitations": "Static 12-date pilot matrix."
+    "limitations": "Single date snapshot."
   },
   "dmw-hotel-012": {
     "status": "complete",
@@ -1106,98 +602,21 @@
     "occupancyBasis": "2 Adults",
     "taxesIncluded": true,
     "collectionDate": "2026-08-14",
-    "sourceMethod": "Makcorps API Pilot",
-    "lowestObservedRate": 541,
-    "medianObservedRate": 656,
-    "highestObservedRate": 816,
+    "sourceMethod": "SerpApi Google Hotels (Official Site)",
+    "lowestObservedRate": 3888,
+    "medianObservedRate": 3888,
+    "highestObservedRate": 3888,
     "dataPoints": [
       {
-        "date": "2026-08-29",
-        "rate": 816,
+        "date": "2026-09-11",
+        "rate": 3888,
         "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-09-16",
-        "rate": 656,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-10-03",
-        "rate": 713,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-10-14",
-        "rate": 541,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-11-14",
-        "rate": 633,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-12-09",
-        "rate": 552,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-01-16",
-        "rate": 793,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-02-10",
-        "rate": 552,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-03-13",
-        "rate": 679,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-04-14",
-        "rate": 552,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-05-15",
-        "rate": 793,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-06-09",
-        "rate": 587,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
+        "roomCategory": "Standard",
+        "rateType": "direct"
       }
     ],
     "eventMarkers": [],
-    "limitations": "Static 12-date pilot matrix."
+    "limitations": "Single date snapshot."
   },
   "dmw-hotel-013": {
     "status": "complete",
@@ -1206,98 +625,21 @@
     "occupancyBasis": "2 Adults",
     "taxesIncluded": true,
     "collectionDate": "2026-08-14",
-    "sourceMethod": "Makcorps API Pilot",
-    "lowestObservedRate": 483,
-    "medianObservedRate": 644,
-    "highestObservedRate": 793,
+    "sourceMethod": "SerpApi Google Hotels (OTA / Market Lowest)",
+    "lowestObservedRate": 2853,
+    "medianObservedRate": 2853,
+    "highestObservedRate": 2853,
     "dataPoints": [
       {
-        "date": "2026-08-29",
-        "rate": 644,
+        "date": "2026-09-11",
+        "rate": 2853,
         "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-09-16",
-        "rate": 633,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-10-03",
-        "rate": 782,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-10-14",
-        "rate": 667,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-11-14",
-        "rate": 587,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-12-09",
-        "rate": 483,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-01-16",
-        "rate": 736,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-02-10",
-        "rate": 587,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-03-13",
-        "rate": 667,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-04-14",
-        "rate": 575,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-05-15",
-        "rate": 793,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-06-09",
-        "rate": 564,
-        "available": true,
-        "roomCategory": "Standard Double Room",
+        "roomCategory": "Standard",
         "rateType": "flexible"
       }
     ],
     "eventMarkers": [],
-    "limitations": "Static 12-date pilot matrix."
+    "limitations": "Single date snapshot."
   },
   "dmw-hotel-014": {
     "status": "complete",
@@ -1406,97 +748,1492 @@
     "occupancyBasis": "2 Adults",
     "taxesIncluded": true,
     "collectionDate": "2026-08-14",
-    "sourceMethod": "Makcorps API Pilot",
-    "lowestObservedRate": 506,
-    "medianObservedRate": 656,
-    "highestObservedRate": 862,
+    "sourceMethod": "SerpApi Google Hotels (OTA / Market Lowest)",
+    "lowestObservedRate": 8905,
+    "medianObservedRate": 8905,
+    "highestObservedRate": 8905,
     "dataPoints": [
       {
-        "date": "2026-08-29",
-        "rate": 862,
+        "date": "2026-09-11",
+        "rate": 8905,
         "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-09-16",
-        "rate": 564,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-10-03",
-        "rate": 656,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-10-14",
-        "rate": 621,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-11-14",
-        "rate": 633,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2026-12-09",
-        "rate": 598,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-01-16",
-        "rate": 759,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-02-10",
-        "rate": 667,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-03-13",
-        "rate": 690,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-04-14",
-        "rate": 610,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-05-15",
-        "rate": 782,
-        "available": true,
-        "roomCategory": "Standard Double Room",
-        "rateType": "flexible"
-      },
-      {
-        "date": "2027-06-09",
-        "rate": 506,
-        "available": true,
-        "roomCategory": "Standard Double Room",
+        "roomCategory": "Standard",
         "rateType": "flexible"
       }
     ],
     "eventMarkers": [],
-    "limitations": "Static 12-date pilot matrix."
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-017": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (Official Site)",
+    "lowestObservedRate": 2949,
+    "medianObservedRate": 2949,
+    "highestObservedRate": 2949,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 2949,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "direct"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-018": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (Official Site)",
+    "lowestObservedRate": 756,
+    "medianObservedRate": 756,
+    "highestObservedRate": 756,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 756,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "direct"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-019": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (Official Site)",
+    "lowestObservedRate": 2351,
+    "medianObservedRate": 2351,
+    "highestObservedRate": 2351,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 2351,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "direct"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-020": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (Official Site)",
+    "lowestObservedRate": 950,
+    "medianObservedRate": 950,
+    "highestObservedRate": 950,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 950,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "direct"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-021": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (Official Site)",
+    "lowestObservedRate": 1262,
+    "medianObservedRate": 1262,
+    "highestObservedRate": 1262,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 1262,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "direct"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-022": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (Official Site)",
+    "lowestObservedRate": 2231,
+    "medianObservedRate": 2231,
+    "highestObservedRate": 2231,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 2231,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "direct"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-023": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (OTA / Market Lowest)",
+    "lowestObservedRate": 2832,
+    "medianObservedRate": 2832,
+    "highestObservedRate": 2832,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 2832,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "flexible"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-024": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (Official Site)",
+    "lowestObservedRate": 528,
+    "medianObservedRate": 528,
+    "highestObservedRate": 528,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 528,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "direct"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-025": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (Official Site)",
+    "lowestObservedRate": 2165,
+    "medianObservedRate": 2165,
+    "highestObservedRate": 2165,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 2165,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "direct"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-026": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (Official Site)",
+    "lowestObservedRate": 1834,
+    "medianObservedRate": 1834,
+    "highestObservedRate": 1834,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 1834,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "direct"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-027": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (Official Site)",
+    "lowestObservedRate": 1001,
+    "medianObservedRate": 1001,
+    "highestObservedRate": 1001,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 1001,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "direct"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-028": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (Official Site)",
+    "lowestObservedRate": 715,
+    "medianObservedRate": 715,
+    "highestObservedRate": 715,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 715,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "direct"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-029": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (OTA / Market Lowest)",
+    "lowestObservedRate": 1269,
+    "medianObservedRate": 1269,
+    "highestObservedRate": 1269,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 1269,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "flexible"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-030": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (OTA / Market Lowest)",
+    "lowestObservedRate": 1314,
+    "medianObservedRate": 1314,
+    "highestObservedRate": 1314,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 1314,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "flexible"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-031": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (Official Site)",
+    "lowestObservedRate": 1990,
+    "medianObservedRate": 1990,
+    "highestObservedRate": 1990,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 1990,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "direct"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-032": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (Official Site)",
+    "lowestObservedRate": 816,
+    "medianObservedRate": 816,
+    "highestObservedRate": 816,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 816,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "direct"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-033": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (OTA / Market Lowest)",
+    "lowestObservedRate": 704,
+    "medianObservedRate": 704,
+    "highestObservedRate": 704,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 704,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "flexible"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-037": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (Official Site)",
+    "lowestObservedRate": 1521,
+    "medianObservedRate": 1521,
+    "highestObservedRate": 1521,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 1521,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "direct"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-038": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (Official Site)",
+    "lowestObservedRate": 2941,
+    "medianObservedRate": 2941,
+    "highestObservedRate": 2941,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 2941,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "direct"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-039": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (Official Site)",
+    "lowestObservedRate": 2941,
+    "medianObservedRate": 2941,
+    "highestObservedRate": 2941,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 2941,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "direct"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-041": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (Official Site)",
+    "lowestObservedRate": 1761,
+    "medianObservedRate": 1761,
+    "highestObservedRate": 1761,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 1761,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "direct"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-042": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (OTA / Market Lowest)",
+    "lowestObservedRate": 3291,
+    "medianObservedRate": 3291,
+    "highestObservedRate": 3291,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 3291,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "flexible"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-043": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (OTA / Market Lowest)",
+    "lowestObservedRate": 2240,
+    "medianObservedRate": 2240,
+    "highestObservedRate": 2240,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 2240,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "flexible"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-044": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (Official Site)",
+    "lowestObservedRate": 920,
+    "medianObservedRate": 920,
+    "highestObservedRate": 920,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 920,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "direct"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-045": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (Official Site)",
+    "lowestObservedRate": 1340,
+    "medianObservedRate": 1340,
+    "highestObservedRate": 1340,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 1340,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "direct"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-047": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (OTA / Market Lowest)",
+    "lowestObservedRate": 1380,
+    "medianObservedRate": 1380,
+    "highestObservedRate": 1380,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 1380,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "flexible"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-048": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (Official Site)",
+    "lowestObservedRate": 2572,
+    "medianObservedRate": 2572,
+    "highestObservedRate": 2572,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 2572,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "direct"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-049": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (OTA / Market Lowest)",
+    "lowestObservedRate": 249,
+    "medianObservedRate": 249,
+    "highestObservedRate": 249,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 249,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "flexible"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-050": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (OTA / Market Lowest)",
+    "lowestObservedRate": 1661,
+    "medianObservedRate": 1661,
+    "highestObservedRate": 1661,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 1661,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "flexible"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-052": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (OTA / Market Lowest)",
+    "lowestObservedRate": 590,
+    "medianObservedRate": 590,
+    "highestObservedRate": 590,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 590,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "flexible"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-053": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (Official Site)",
+    "lowestObservedRate": 1396,
+    "medianObservedRate": 1396,
+    "highestObservedRate": 1396,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 1396,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "direct"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-055": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (Official Site)",
+    "lowestObservedRate": 919,
+    "medianObservedRate": 919,
+    "highestObservedRate": 919,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 919,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "direct"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-056": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (Official Site)",
+    "lowestObservedRate": 772,
+    "medianObservedRate": 772,
+    "highestObservedRate": 772,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 772,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "direct"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-057": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (Official Site)",
+    "lowestObservedRate": 2184,
+    "medianObservedRate": 2184,
+    "highestObservedRate": 2184,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 2184,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "direct"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-060": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (OTA / Market Lowest)",
+    "lowestObservedRate": 974,
+    "medianObservedRate": 974,
+    "highestObservedRate": 974,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 974,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "flexible"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-061": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (OTA / Market Lowest)",
+    "lowestObservedRate": 1036,
+    "medianObservedRate": 1036,
+    "highestObservedRate": 1036,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 1036,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "flexible"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-062": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (OTA / Market Lowest)",
+    "lowestObservedRate": 3267,
+    "medianObservedRate": 3267,
+    "highestObservedRate": 3267,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 3267,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "flexible"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-063": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (OTA / Market Lowest)",
+    "lowestObservedRate": 1261,
+    "medianObservedRate": 1261,
+    "highestObservedRate": 1261,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 1261,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "flexible"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-064": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (Official Site)",
+    "lowestObservedRate": 2408,
+    "medianObservedRate": 2408,
+    "highestObservedRate": 2408,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 2408,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "direct"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-065": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (Official Site)",
+    "lowestObservedRate": 394,
+    "medianObservedRate": 394,
+    "highestObservedRate": 394,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 394,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "direct"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-066": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (Official Site)",
+    "lowestObservedRate": 1637,
+    "medianObservedRate": 1637,
+    "highestObservedRate": 1637,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 1637,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "direct"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-068": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (OTA / Market Lowest)",
+    "lowestObservedRate": 883,
+    "medianObservedRate": 883,
+    "highestObservedRate": 883,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 883,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "flexible"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-070": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (Official Site)",
+    "lowestObservedRate": 1547,
+    "medianObservedRate": 1547,
+    "highestObservedRate": 1547,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 1547,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "direct"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-071": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (Official Site)",
+    "lowestObservedRate": 1547,
+    "medianObservedRate": 1547,
+    "highestObservedRate": 1547,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 1547,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "direct"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-074": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (OTA / Market Lowest)",
+    "lowestObservedRate": 556,
+    "medianObservedRate": 556,
+    "highestObservedRate": 556,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 556,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "flexible"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-075": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (Official Site)",
+    "lowestObservedRate": 2585,
+    "medianObservedRate": 2585,
+    "highestObservedRate": 2585,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 2585,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "direct"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-076": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (Official Site)",
+    "lowestObservedRate": 1198,
+    "medianObservedRate": 1198,
+    "highestObservedRate": 1198,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 1198,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "direct"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-077": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (Official Site)",
+    "lowestObservedRate": 3888,
+    "medianObservedRate": 3888,
+    "highestObservedRate": 3888,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 3888,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "direct"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-078": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (Official Site)",
+    "lowestObservedRate": 1733,
+    "medianObservedRate": 1733,
+    "highestObservedRate": 1733,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 1733,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "direct"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-079": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (OTA / Market Lowest)",
+    "lowestObservedRate": 1524,
+    "medianObservedRate": 1524,
+    "highestObservedRate": 1524,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 1524,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "flexible"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-081": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (Official Site)",
+    "lowestObservedRate": 1360,
+    "medianObservedRate": 1360,
+    "highestObservedRate": 1360,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 1360,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "direct"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-082": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (Official Site)",
+    "lowestObservedRate": 1319,
+    "medianObservedRate": 1319,
+    "highestObservedRate": 1319,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 1319,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "direct"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-083": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (OTA / Market Lowest)",
+    "lowestObservedRate": 1953,
+    "medianObservedRate": 1953,
+    "highestObservedRate": 1953,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 1953,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "flexible"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-084": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (OTA / Market Lowest)",
+    "lowestObservedRate": 879,
+    "medianObservedRate": 879,
+    "highestObservedRate": 879,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 879,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "flexible"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-085": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (OTA / Market Lowest)",
+    "lowestObservedRate": 128,
+    "medianObservedRate": 128,
+    "highestObservedRate": 128,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 128,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "flexible"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-086": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (OTA / Market Lowest)",
+    "lowestObservedRate": 2884,
+    "medianObservedRate": 2884,
+    "highestObservedRate": 2884,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 2884,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "flexible"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-088": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (OTA / Market Lowest)",
+    "lowestObservedRate": 4580,
+    "medianObservedRate": 4580,
+    "highestObservedRate": 4580,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 4580,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "flexible"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-089": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (OTA / Market Lowest)",
+    "lowestObservedRate": 2091,
+    "medianObservedRate": 2091,
+    "highestObservedRate": 2091,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 2091,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "flexible"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-092": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (OTA / Market Lowest)",
+    "lowestObservedRate": 843,
+    "medianObservedRate": 843,
+    "highestObservedRate": 843,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 843,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "flexible"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-093": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (OTA / Market Lowest)",
+    "lowestObservedRate": 530,
+    "medianObservedRate": 530,
+    "highestObservedRate": 530,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 530,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "flexible"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-094": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (OTA / Market Lowest)",
+    "lowestObservedRate": 451,
+    "medianObservedRate": 451,
+    "highestObservedRate": 451,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 451,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "flexible"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-096": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (OTA / Market Lowest)",
+    "lowestObservedRate": 1735,
+    "medianObservedRate": 1735,
+    "highestObservedRate": 1735,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 1735,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "flexible"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-098": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (OTA / Market Lowest)",
+    "lowestObservedRate": 3291,
+    "medianObservedRate": 3291,
+    "highestObservedRate": 3291,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 3291,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "flexible"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
+  },
+  "dmw-hotel-100": {
+    "status": "complete",
+    "currency": "USD",
+    "roomBasis": "Lowest standard room",
+    "occupancyBasis": "2 Adults",
+    "taxesIncluded": true,
+    "collectionDate": "2026-08-14",
+    "sourceMethod": "SerpApi Google Hotels (OTA / Market Lowest)",
+    "lowestObservedRate": 1012,
+    "medianObservedRate": 1012,
+    "highestObservedRate": 1012,
+    "dataPoints": [
+      {
+        "date": "2026-09-11",
+        "rate": 1012,
+        "available": true,
+        "roomCategory": "Standard",
+        "rateType": "flexible"
+      }
+    ],
+    "eventMarkers": [],
+    "limitations": "Single date snapshot."
   }
 }

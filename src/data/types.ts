@@ -126,6 +126,7 @@ export interface PricePoint {
   roomCategory?: string | null;
   rateType?: string | null;
   notes?: string | null;
+  tenor?: string | null;
 }
 
 export interface EventMarker {
