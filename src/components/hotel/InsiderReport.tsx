@@ -15,12 +15,7 @@ export const InsiderReport: React.FC<InsiderReportProps> = ({ report }) => {
       <div className={styles.header}>
         <Eye className={styles.headerIcon} />
         <h3 className={styles.title}>The Insider Report</h3>
-        <span className={styles.badge}>Confidential</span>
       </div>
-      
-      <p className={styles.subtitle}>
-        Information asymmetry curated by the DMW Intelligence team.
-      </p>
 
       <div className={styles.grid}>
         {report.unGoogleableHistory && (
