@@ -48076,6 +48076,644 @@
           }
         }
       ]
+    },
+    {
+      "slug": "the-monaco-and-eastern-riviera-30",
+      "title": "INTERNAL RESEARCH: Monaco & Eastern Riviera 30",
+      "edition": "Research Draft",
+      "description": "Working list of 30 properties across Monaco, Nice, Èze, Menton, and the surrounding Eastern Riviera.",
+      "hotels": [
+        {
+          "id": "research-101",
+          "slug": "h-tel-de-paris-monte-carlo",
+          "edition": 2024,
+          "rank": 101,
+          "name": "Hôtel de Paris Monte-Carlo",
+          "location": {
+            "city": "Monaco",
+            "country": "Monaco",
+            "region": "Europe",
+            "displayLocation": "Monaco, Monaco"
+          },
+          "archetype": "Resort",
+          "publicationStatus": "research-draft",
+          "featured": false,
+          "hasStrategicFeature": false,
+          "hasPricingAnalysis": false,
+          "essentialAmenities": [],
+          "distinctions": [],
+          "profileUrl": "/hotels/h-tel-de-paris-monte-carlo"
+        },
+        {
+          "id": "research-102",
+          "slug": "h-tel-hermitage-monte-carlo",
+          "edition": 2024,
+          "rank": 102,
+          "name": "Hôtel Hermitage Monte-Carlo",
+          "location": {
+            "city": "Monaco",
+            "country": "Monaco",
+            "region": "Europe",
+            "displayLocation": "Monaco, Monaco"
+          },
+          "archetype": "Resort",
+          "publicationStatus": "research-draft",
+          "featured": false,
+          "hasStrategicFeature": false,
+          "hasPricingAnalysis": false,
+          "essentialAmenities": [],
+          "distinctions": [],
+          "profileUrl": "/hotels/h-tel-hermitage-monte-carlo"
+        },
+        {
+          "id": "research-103",
+          "slug": "h-tel-m-tropole-monte-carlo",
+          "edition": 2024,
+          "rank": 103,
+          "name": "Hôtel Métropole Monte-Carlo",
+          "location": {
+            "city": "Monaco",
+            "country": "Monaco",
+            "region": "Europe",
+            "displayLocation": "Monaco, Monaco"
+          },
+          "archetype": "Resort",
+          "publicationStatus": "research-draft",
+          "featured": false,
+          "hasStrategicFeature": false,
+          "hasPricingAnalysis": false,
+          "essentialAmenities": [],
+          "distinctions": [],
+          "profileUrl": "/hotels/h-tel-m-tropole-monte-carlo"
+        },
+        {
+          "id": "research-104",
+          "slug": "monte-carlo-bay-hotel-resort",
+          "edition": 2024,
+          "rank": 104,
+          "name": "Monte-Carlo Bay Hotel & Resort",
+          "location": {
+            "city": "Monaco",
+            "country": "Monaco",
+            "region": "Europe",
+            "displayLocation": "Monaco, Monaco"
+          },
+          "archetype": "Resort",
+          "publicationStatus": "research-draft",
+          "featured": false,
+          "hasStrategicFeature": false,
+          "hasPricingAnalysis": false,
+          "essentialAmenities": [],
+          "distinctions": [],
+          "profileUrl": "/hotels/monte-carlo-bay-hotel-resort"
+        },
+        {
+          "id": "research-105",
+          "slug": "monte-carlo-beach",
+          "edition": 2024,
+          "rank": 105,
+          "name": "Monte-Carlo Beach",
+          "location": {
+            "city": "Monaco",
+            "country": "Monaco",
+            "region": "Europe",
+            "displayLocation": "Monaco, Monaco"
+          },
+          "archetype": "Resort",
+          "publicationStatus": "research-draft",
+          "featured": false,
+          "hasStrategicFeature": false,
+          "hasPricingAnalysis": false,
+          "essentialAmenities": [],
+          "distinctions": [],
+          "profileUrl": "/hotels/monte-carlo-beach"
+        },
+        {
+          "id": "research-106",
+          "slug": "grand-h-tel-du-cap-ferrat-a-four-seasons-hotel",
+          "edition": 2024,
+          "rank": 106,
+          "name": "Grand-Hôtel du Cap-Ferrat, A Four Seasons Hotel",
+          "location": {
+            "city": "Saint-Jean-Cap-Ferrat",
+            "country": "France",
+            "region": "Europe",
+            "displayLocation": "Saint-Jean-Cap-Ferrat, France"
+          },
+          "archetype": "Resort",
+          "publicationStatus": "research-draft",
+          "featured": false,
+          "hasStrategicFeature": false,
+          "hasPricingAnalysis": false,
+          "essentialAmenities": [],
+          "distinctions": [],
+          "profileUrl": "/hotels/grand-h-tel-du-cap-ferrat-a-four-seasons-hotel"
+        },
+        {
+          "id": "research-107",
+          "slug": "the-maybourne-riviera",
+          "edition": 2024,
+          "rank": 107,
+          "name": "The Maybourne Riviera",
+          "location": {
+            "city": "Monaco / Riviera",
+            "country": "France",
+            "region": "Europe",
+            "displayLocation": "Monaco / Riviera, France"
+          },
+          "archetype": "Resort",
+          "publicationStatus": "research-draft",
+          "featured": false,
+          "hasStrategicFeature": false,
+          "hasPricingAnalysis": false,
+          "essentialAmenities": [],
+          "distinctions": [],
+          "profileUrl": "/hotels/the-maybourne-riviera"
+        },
+        {
+          "id": "research-108",
+          "slug": "cap-estel",
+          "edition": 2024,
+          "rank": 108,
+          "name": "Cap Estel",
+          "location": {
+            "city": "Monaco / Riviera",
+            "country": "France",
+            "region": "Europe",
+            "displayLocation": "Monaco / Riviera, France"
+          },
+          "archetype": "Resort",
+          "publicationStatus": "research-draft",
+          "featured": false,
+          "hasStrategicFeature": false,
+          "hasPricingAnalysis": false,
+          "essentialAmenities": [],
+          "distinctions": [],
+          "profileUrl": "/hotels/cap-estel"
+        },
+        {
+          "id": "research-109",
+          "slug": "ch-teau-de-la-ch-vre-d-or",
+          "edition": 2024,
+          "rank": 109,
+          "name": "Château de la Chèvre d’Or",
+          "location": {
+            "city": "Èze",
+            "country": "France",
+            "region": "Europe",
+            "displayLocation": "Èze, France"
+          },
+          "archetype": "Resort",
+          "publicationStatus": "research-draft",
+          "featured": false,
+          "hasStrategicFeature": false,
+          "hasPricingAnalysis": false,
+          "essentialAmenities": [],
+          "distinctions": [],
+          "profileUrl": "/hotels/ch-teau-de-la-ch-vre-d-or"
+        },
+        {
+          "id": "research-110",
+          "slug": "ch-teau-eza",
+          "edition": 2024,
+          "rank": 110,
+          "name": "Château Eza",
+          "location": {
+            "city": "Èze",
+            "country": "France",
+            "region": "Europe",
+            "displayLocation": "Èze, France"
+          },
+          "archetype": "Resort",
+          "publicationStatus": "research-draft",
+          "featured": false,
+          "hasStrategicFeature": false,
+          "hasPricingAnalysis": false,
+          "essentialAmenities": [],
+          "distinctions": [],
+          "profileUrl": "/hotels/ch-teau-eza"
+        },
+        {
+          "id": "research-111",
+          "slug": "la-r-serve-de-beaulieu",
+          "edition": 2024,
+          "rank": 111,
+          "name": "La Réserve de Beaulieu",
+          "location": {
+            "city": "Beaulieu-sur-Mer",
+            "country": "France",
+            "region": "Europe",
+            "displayLocation": "Beaulieu-sur-Mer, France"
+          },
+          "archetype": "Resort",
+          "publicationStatus": "research-draft",
+          "featured": false,
+          "hasStrategicFeature": false,
+          "hasPricingAnalysis": false,
+          "essentialAmenities": [],
+          "distinctions": [],
+          "profileUrl": "/hotels/la-r-serve-de-beaulieu"
+        },
+        {
+          "id": "research-112",
+          "slug": "h-tel-royal-riviera",
+          "edition": 2024,
+          "rank": 112,
+          "name": "Hôtel Royal-Riviera",
+          "location": {
+            "city": "Monaco / Riviera",
+            "country": "France",
+            "region": "Europe",
+            "displayLocation": "Monaco / Riviera, France"
+          },
+          "archetype": "Resort",
+          "publicationStatus": "research-draft",
+          "featured": false,
+          "hasStrategicFeature": false,
+          "hasPricingAnalysis": false,
+          "essentialAmenities": [],
+          "distinctions": [],
+          "profileUrl": "/hotels/h-tel-royal-riviera"
+        },
+        {
+          "id": "research-113",
+          "slug": "h-tel-negresco",
+          "edition": 2024,
+          "rank": 113,
+          "name": "Hôtel Negresco",
+          "location": {
+            "city": "Monaco / Riviera",
+            "country": "France",
+            "region": "Europe",
+            "displayLocation": "Monaco / Riviera, France"
+          },
+          "archetype": "Resort",
+          "publicationStatus": "research-draft",
+          "featured": false,
+          "hasStrategicFeature": false,
+          "hasPricingAnalysis": false,
+          "essentialAmenities": [],
+          "distinctions": [],
+          "profileUrl": "/hotels/h-tel-negresco"
+        },
+        {
+          "id": "research-114",
+          "slug": "anantara-plaza-nice-hotel",
+          "edition": 2024,
+          "rank": 114,
+          "name": "Anantara Plaza Nice Hotel",
+          "location": {
+            "city": "Nice",
+            "country": "France",
+            "region": "Europe",
+            "displayLocation": "Nice, France"
+          },
+          "archetype": "Resort",
+          "publicationStatus": "research-draft",
+          "featured": false,
+          "hasStrategicFeature": false,
+          "hasPricingAnalysis": false,
+          "essentialAmenities": [],
+          "distinctions": [],
+          "profileUrl": "/hotels/anantara-plaza-nice-hotel"
+        },
+        {
+          "id": "research-115",
+          "slug": "hyatt-regency-nice-palais-de-la-m-diterran-e",
+          "edition": 2024,
+          "rank": 115,
+          "name": "Hyatt Regency Nice Palais de la Méditerranée",
+          "location": {
+            "city": "Nice",
+            "country": "France",
+            "region": "Europe",
+            "displayLocation": "Nice, France"
+          },
+          "archetype": "Resort",
+          "publicationStatus": "research-draft",
+          "featured": false,
+          "hasStrategicFeature": false,
+          "hasPricingAnalysis": false,
+          "essentialAmenities": [],
+          "distinctions": [],
+          "profileUrl": "/hotels/hyatt-regency-nice-palais-de-la-m-diterran-e"
+        },
+        {
+          "id": "research-116",
+          "slug": "boscolo-nice-hotel-spa",
+          "edition": 2024,
+          "rank": 116,
+          "name": "Boscolo Nice Hotel & Spa",
+          "location": {
+            "city": "Nice",
+            "country": "France",
+            "region": "Europe",
+            "displayLocation": "Nice, France"
+          },
+          "archetype": "Resort",
+          "publicationStatus": "research-draft",
+          "featured": false,
+          "hasStrategicFeature": false,
+          "hasPricingAnalysis": false,
+          "essentialAmenities": [],
+          "distinctions": [],
+          "profileUrl": "/hotels/boscolo-nice-hotel-spa"
+        },
+        {
+          "id": "research-117",
+          "slug": "h-tel-la-p-rouse-nice",
+          "edition": 2024,
+          "rank": 117,
+          "name": "Hôtel La Pérouse Nice",
+          "location": {
+            "city": "Nice",
+            "country": "France",
+            "region": "Europe",
+            "displayLocation": "Nice, France"
+          },
+          "archetype": "Resort",
+          "publicationStatus": "research-draft",
+          "featured": false,
+          "hasStrategicFeature": false,
+          "hasPricingAnalysis": false,
+          "essentialAmenities": [],
+          "distinctions": [],
+          "profileUrl": "/hotels/h-tel-la-p-rouse-nice"
+        },
+        {
+          "id": "research-118",
+          "slug": "le-m-ridien-nice",
+          "edition": 2024,
+          "rank": 118,
+          "name": "Le Méridien Nice",
+          "location": {
+            "city": "Nice",
+            "country": "France",
+            "region": "Europe",
+            "displayLocation": "Nice, France"
+          },
+          "archetype": "Resort",
+          "publicationStatus": "research-draft",
+          "featured": false,
+          "hasStrategicFeature": false,
+          "hasPricingAnalysis": false,
+          "essentialAmenities": [],
+          "distinctions": [],
+          "profileUrl": "/hotels/le-m-ridien-nice"
+        },
+        {
+          "id": "research-119",
+          "slug": "h-tel-amour-nice",
+          "edition": 2024,
+          "rank": 119,
+          "name": "Hôtel Amour Nice",
+          "location": {
+            "city": "Nice",
+            "country": "France",
+            "region": "Europe",
+            "displayLocation": "Nice, France"
+          },
+          "archetype": "Resort",
+          "publicationStatus": "research-draft",
+          "featured": false,
+          "hasStrategicFeature": false,
+          "hasPricingAnalysis": false,
+          "essentialAmenities": [],
+          "distinctions": [],
+          "profileUrl": "/hotels/h-tel-amour-nice"
+        },
+        {
+          "id": "research-120",
+          "slug": "hotel-le-saint-paul-nice",
+          "edition": 2024,
+          "rank": 120,
+          "name": "Hotel Le Saint-Paul, Nice",
+          "location": {
+            "city": "Nice",
+            "country": "France",
+            "region": "Europe",
+            "displayLocation": "Nice, France"
+          },
+          "archetype": "Resort",
+          "publicationStatus": "research-draft",
+          "featured": false,
+          "hasStrategicFeature": false,
+          "hasPricingAnalysis": false,
+          "essentialAmenities": [],
+          "distinctions": [],
+          "profileUrl": "/hotels/hotel-le-saint-paul-nice"
+        },
+        {
+          "id": "research-121",
+          "slug": "fairmont-monte-carlo",
+          "edition": 2024,
+          "rank": 121,
+          "name": "Fairmont Monte Carlo",
+          "location": {
+            "city": "Monaco / Riviera",
+            "country": "France",
+            "region": "Europe",
+            "displayLocation": "Monaco / Riviera, France"
+          },
+          "archetype": "Resort",
+          "publicationStatus": "research-draft",
+          "featured": false,
+          "hasStrategicFeature": false,
+          "hasPricingAnalysis": false,
+          "essentialAmenities": [],
+          "distinctions": [],
+          "profileUrl": "/hotels/fairmont-monte-carlo"
+        },
+        {
+          "id": "research-122",
+          "slug": "le-m-ridien-beach-plaza",
+          "edition": 2024,
+          "rank": 122,
+          "name": "Le Méridien Beach Plaza",
+          "location": {
+            "city": "Monaco / Riviera",
+            "country": "France",
+            "region": "Europe",
+            "displayLocation": "Monaco / Riviera, France"
+          },
+          "archetype": "Resort",
+          "publicationStatus": "research-draft",
+          "featured": false,
+          "hasStrategicFeature": false,
+          "hasPricingAnalysis": false,
+          "essentialAmenities": [],
+          "distinctions": [],
+          "profileUrl": "/hotels/le-m-ridien-beach-plaza"
+        },
+        {
+          "id": "research-123",
+          "slug": "columbus-hotel-monte-carlo",
+          "edition": 2024,
+          "rank": 123,
+          "name": "Columbus Hotel Monte-Carlo",
+          "location": {
+            "city": "Monaco",
+            "country": "Monaco",
+            "region": "Europe",
+            "displayLocation": "Monaco, Monaco"
+          },
+          "archetype": "Resort",
+          "publicationStatus": "research-draft",
+          "featured": false,
+          "hasStrategicFeature": false,
+          "hasPricingAnalysis": false,
+          "essentialAmenities": [],
+          "distinctions": [],
+          "profileUrl": "/hotels/columbus-hotel-monte-carlo"
+        },
+        {
+          "id": "research-124",
+          "slug": "port-palace-hotel",
+          "edition": 2024,
+          "rank": 124,
+          "name": "Port Palace Hotel",
+          "location": {
+            "city": "Monaco / Riviera",
+            "country": "France",
+            "region": "Europe",
+            "displayLocation": "Monaco / Riviera, France"
+          },
+          "archetype": "Resort",
+          "publicationStatus": "research-draft",
+          "featured": false,
+          "hasStrategicFeature": false,
+          "hasPricingAnalysis": false,
+          "essentialAmenities": [],
+          "distinctions": [],
+          "profileUrl": "/hotels/port-palace-hotel"
+        },
+        {
+          "id": "research-125",
+          "slug": "welcome-hotel-villefranche-sur-mer",
+          "edition": 2024,
+          "rank": 125,
+          "name": "Welcome Hotel, Villefranche-sur-Mer",
+          "location": {
+            "city": "Villefranche-sur-Mer",
+            "country": "France",
+            "region": "Europe",
+            "displayLocation": "Villefranche-sur-Mer, France"
+          },
+          "archetype": "Resort",
+          "publicationStatus": "research-draft",
+          "featured": false,
+          "hasStrategicFeature": false,
+          "hasPricingAnalysis": false,
+          "essentialAmenities": [],
+          "distinctions": [],
+          "profileUrl": "/hotels/welcome-hotel-villefranche-sur-mer"
+        },
+        {
+          "id": "research-126",
+          "slug": "villa-genesis-menton",
+          "edition": 2024,
+          "rank": 126,
+          "name": "Villa Genesis, Menton",
+          "location": {
+            "city": "Menton",
+            "country": "France",
+            "region": "Europe",
+            "displayLocation": "Menton, France"
+          },
+          "archetype": "Resort",
+          "publicationStatus": "research-draft",
+          "featured": false,
+          "hasStrategicFeature": false,
+          "hasPricingAnalysis": false,
+          "essentialAmenities": [],
+          "distinctions": [],
+          "profileUrl": "/hotels/villa-genesis-menton"
+        },
+        {
+          "id": "research-127",
+          "slug": "h-tel-napoleon-menton",
+          "edition": 2024,
+          "rank": 127,
+          "name": "Hôtel Napoleon, Menton",
+          "location": {
+            "city": "Menton",
+            "country": "France",
+            "region": "Europe",
+            "displayLocation": "Menton, France"
+          },
+          "archetype": "Resort",
+          "publicationStatus": "research-draft",
+          "featured": false,
+          "hasStrategicFeature": false,
+          "hasPricingAnalysis": false,
+          "essentialAmenities": [],
+          "distinctions": [],
+          "profileUrl": "/hotels/h-tel-napoleon-menton"
+        },
+        {
+          "id": "research-128",
+          "slug": "le-mas-candille-mougins",
+          "edition": 2024,
+          "rank": 128,
+          "name": "Le Mas Candille, Mougins",
+          "location": {
+            "city": "Mougins",
+            "country": "France",
+            "region": "Europe",
+            "displayLocation": "Mougins, France"
+          },
+          "archetype": "Resort",
+          "publicationStatus": "research-draft",
+          "featured": false,
+          "hasStrategicFeature": false,
+          "hasPricingAnalysis": false,
+          "essentialAmenities": [],
+          "distinctions": [],
+          "profileUrl": "/hotels/le-mas-candille-mougins"
+        },
+        {
+          "id": "research-129",
+          "slug": "moulin-de-mougins",
+          "edition": 2024,
+          "rank": 129,
+          "name": "Moulin de Mougins",
+          "location": {
+            "city": "Mougins",
+            "country": "France",
+            "region": "Europe",
+            "displayLocation": "Mougins, France"
+          },
+          "archetype": "Resort",
+          "publicationStatus": "research-draft",
+          "featured": false,
+          "hasStrategicFeature": false,
+          "hasPricingAnalysis": false,
+          "essentialAmenities": [],
+          "distinctions": [],
+          "profileUrl": "/hotels/moulin-de-mougins"
+        },
+        {
+          "id": "research-130",
+          "slug": "ch-teau-de-la-b-gude",
+          "edition": 2024,
+          "rank": 130,
+          "name": "Château de la Bégude",
+          "location": {
+            "city": "Monaco / Riviera",
+            "country": "France",
+            "region": "Europe",
+            "displayLocation": "Monaco / Riviera, France"
+          },
+          "archetype": "Resort",
+          "publicationStatus": "research-draft",
+          "featured": false,
+          "hasStrategicFeature": false,
+          "hasPricingAnalysis": false,
+          "essentialAmenities": [],
+          "distinctions": [],
+          "profileUrl": "/hotels/ch-teau-de-la-b-gude"
+        }
+      ]
     }
   ]
 }
