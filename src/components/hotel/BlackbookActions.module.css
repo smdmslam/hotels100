@@ -1,0 +1,93 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.saveButton, .tagButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border: 1px solid rgba(18, 18, 18, 0.2);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.saveButton:hover, .tagButton:hover {
+  background-color: rgba(18, 18, 18, 0.05);
+}
+
+.saveButton.saved {
+  background-color: var(--primary);
+  color: var(--background);
+  border-color: var(--primary);
+}
+
+.tagWrapper {
+  position: relative;
+}
+
+.tagMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 0.5rem;
+  background-color: var(--background);
+  border: 1px solid rgba(18, 18, 18, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  z-index: 10;
+  padding: 0.5rem 0;
+}
+
+.tagMenuHeader {
+  padding: 0.5rem 1rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+  border-bottom: 1px solid rgba(18, 18, 18, 0.1);
+  margin-bottom: 0.5rem;
+}
+
+.tagOption {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 1rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+}
+
+.tagOption:hover {
+  background-color: rgba(18, 18, 18, 0.03);
+}
+
+.tagOption input {
+  accent-color: var(--primary);
+}
+
+.activeTags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tagBadge {
+  background-color: rgba(18, 18, 18, 0.05);
+  color: var(--text-secondary);
+  padding: 0.25rem 0.75rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  border: 1px solid rgba(18, 18, 18, 0.1);
+}

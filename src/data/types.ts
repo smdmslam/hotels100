@@ -157,6 +157,17 @@ export interface PricingIntelligence {
   limitations?: string | null;
 }
 
+export interface SpecialPackage {
+  id: string;
+  title: string;
+  description: string;
+  price?: number | null;
+  currency?: string | null;
+  validity?: string | null;
+  imageUrl?: string | null;
+  linkUrl?: string | null;
+}
+
 // Full profile, combining summary fields + schema requirements for the profile page
 export interface HotelProfile extends Omit<HotelSummary, 'essentialAmenities'> {
   dmwOverview?: string | null;
@@ -269,6 +280,7 @@ export interface HotelProfile extends Omit<HotelSummary, 'essentialAmenities'> {
 
   fieldReports: FieldReport[];
   images: Image[];
+  specialPackages?: SpecialPackage[] | null;
   
   links: {
     officialWebsite?: string | null;

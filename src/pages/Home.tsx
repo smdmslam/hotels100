@@ -20,79 +20,81 @@ export const Home: React.FC = () => {
             <p className={styles.heroSubtitle}>
               A global index of the hotels that best combine hospitality, brand, pricing power and enduring asset value.
             </p>
-            <div className={styles.tabToggle} style={{ display: 'flex', gap: '1rem', marginBottom: '1.5rem', justifyContent: 'center' }}>
-              <button 
-                onClick={() => setViewMode('published')} 
-                style={{ 
-                  background: 'none', 
-                  border: 'none', 
-                  padding: '0.5rem 1rem', 
-                  cursor: 'pointer',
-                  borderBottom: viewMode === 'published' ? '2px solid var(--accent)' : '2px solid transparent',
-                  color: viewMode === 'published' ? 'var(--text-primary)' : 'var(--text-secondary)',
-                  fontFamily: 'Inter',
-                  fontSize: '0.875rem'
-                }}
-              >
-                Published Editions
-              </button>
-              <button 
-                onClick={() => setViewMode('internal')} 
-                style={{ 
-                  background: 'none', 
-                  border: 'none', 
-                  padding: '0.5rem 1rem', 
-                  cursor: 'pointer',
-                  borderBottom: viewMode === 'internal' ? '2px solid var(--accent)' : '2px solid transparent',
-                  color: viewMode === 'internal' ? 'var(--text-primary)' : 'var(--text-secondary)',
-                  fontFamily: 'Inter',
-                  fontSize: '0.875rem'
-                }}
-              >
-                Internal Research
-              </button>
-            </div>
+          </div>
+        </Container>
+      </section>
 
-            <div className={styles.heroActions}>
-              {viewMode === 'published' ? (
-                <>
-                  <Link to="/collections/the-global-100" className={styles.buttonLink}>
-                    <Button variant="dark-primary">The Global 100</Button>
-                  </Link>
-                  <Link to="/collections/the-london-50" className={styles.buttonLink}>
-                    <Button variant="dark-secondary">The London 50</Button>
-                  </Link>
-                  <Link to="/collections/the-new-york-50" className={styles.buttonLink}>
-                    <Button variant="dark-secondary">The New York 50</Button>
-                  </Link>
-                  <Link to="/collections/the-zurich-25" className={styles.buttonLink}>
-                    <Button variant="dark-secondary">The Zurich 25</Button>
-                  </Link>
-                  <Link to="/collections/the-accessible-50" className={styles.buttonLink}>
-                    <Button variant="dark-secondary">The Accessible 50</Button>
-                  </Link>
-                  <Link to="/collections/the-london-accessible" className={styles.buttonLink}>
-                    <Button variant="dark-secondary">The London Accessible (Under $500)</Button>
-                  </Link>
-                  <Link to="/collections/the-paris-25" className={styles.buttonLink}>
-                    <Button variant="dark-secondary">The Paris 25</Button>
-                  </Link>
-                  <Link to="/collections/the-italian-and-swiss-lakes-35" className={styles.buttonLink}>
-                    <Button variant="dark-secondary">The Italian & Swiss Lakes 35</Button>
-                  </Link>
-                </>
-              ) : (
-                <>
-                  <Link to="/collections/the-monaco-and-eastern-riviera-30" className={styles.buttonLink}>
-                    <Button variant="dark-primary">Monaco & Eastern Riviera 30</Button>
-                  </Link>
-                </>
-              )}
-            </div>
-            
-            <div className={styles.prototypeNotice}>
-              <p>{indexData.prototypeNotice}</p>
-            </div>
+      {/* Collections Section */}
+      <section className={styles.section} style={{ paddingTop: '2rem' }}>
+        <Container variant="wide">
+          <div className={styles.tabToggle} style={{ display: 'flex', gap: '1rem', marginBottom: '1.5rem', justifyContent: 'center' }}>
+            <button 
+              onClick={() => setViewMode('published')} 
+              style={{ 
+                background: 'none', 
+                border: 'none', 
+                padding: '0.5rem 1rem', 
+                cursor: 'pointer',
+                borderBottom: viewMode === 'published' ? '2px solid var(--accent)' : '2px solid transparent',
+                color: viewMode === 'published' ? 'var(--text-primary)' : 'var(--text-secondary)',
+                fontFamily: 'Inter',
+                fontSize: '0.875rem'
+              }}
+            >
+              Published Editions
+            </button>
+            <button 
+              onClick={() => setViewMode('internal')} 
+              style={{ 
+                background: 'none', 
+                border: 'none', 
+                padding: '0.5rem 1rem', 
+                cursor: 'pointer',
+                borderBottom: viewMode === 'internal' ? '2px solid var(--accent)' : '2px solid transparent',
+                color: viewMode === 'internal' ? 'var(--text-primary)' : 'var(--text-secondary)',
+                fontFamily: 'Inter',
+                fontSize: '0.875rem'
+              }}
+            >
+              Internal Research
+            </button>
+          </div>
+
+          <div className={styles.heroActions}>
+            {viewMode === 'published' ? (
+              <>
+                <Link to="/collections/the-global-100" className={styles.buttonLink}>
+                  <Button variant="dark-primary">The Global 100</Button>
+                </Link>
+                <Link to="/collections/the-london-50" className={styles.buttonLink}>
+                  <Button variant="dark-secondary">The London 50</Button>
+                </Link>
+                <Link to="/collections/the-new-york-50" className={styles.buttonLink}>
+                  <Button variant="dark-secondary">The New York 50</Button>
+                </Link>
+                <Link to="/collections/the-zurich-25" className={styles.buttonLink}>
+                  <Button variant="dark-secondary">The Zurich 25</Button>
+                </Link>
+                <Link to="/collections/the-accessible-50" className={styles.buttonLink}>
+                  <Button variant="dark-secondary">The Accessible 50</Button>
+                </Link>
+                <Link to="/collections/the-london-accessible" className={styles.buttonLink}>
+                  <Button variant="dark-secondary">The London Accessible (Under $500)</Button>
+                </Link>
+                <Link to="/collections/the-paris-25" className={styles.buttonLink}>
+                  <Button variant="dark-secondary">The Paris 25</Button>
+                </Link>
+                <Link to="/collections/the-italian-and-swiss-lakes-35" className={styles.buttonLink}>
+                  <Button variant="dark-secondary">The Italian & Swiss Lakes 35</Button>
+                </Link>
+              </>
+            ) : (
+              <>
+                <Link to="/collections/the-monaco-and-eastern-riviera-30" className={styles.buttonLink}>
+                  <Button variant="dark-primary">Monaco & Eastern Riviera 30</Button>
+                </Link>
+              </>
+            )}
           </div>
         </Container>
       </section>

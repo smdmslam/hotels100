@@ -4,6 +4,8 @@ import { ArrowLeft, MapPin, Quote, ChevronLeft, ChevronRight } from 'lucide-reac
 import { Container, Badge, IconLabel, SectionHeader, Button } from '../components/shared';
 import { PriceCurveChart } from '../components/hotel/PriceCurveChart';
 import { Scorecard } from '../components/hotel/Scorecard';
+import { BlackbookActions } from '../components/hotel/BlackbookActions';
+import { SpecialPackages } from '../components/hotel/SpecialPackages';
 import { getHotelProfile, getCollection } from '../data/api';
 import styles from './HotelProfile.module.css';
 
@@ -70,10 +72,11 @@ export const HotelProfile: React.FC = () => {
           </div>
           
           <div className={styles.heroContent}>
-            <div className={styles.heroMeta}>
-              <Badge label={`Rank ${hotel.rank}`} type="edition" />
-            </div>
+            <span className={styles.rankBadge}>DMW 100 • No. {hotel.rank}</span>
             <h1 className={styles.title}>{hotel.name}</h1>
+            
+            <BlackbookActions hotelId={hotel.id} />
+            
             <p className={styles.location}>
               <MapPin size={18} /> {hotel.location.displayLocation}
             </p>
@@ -194,6 +197,10 @@ export const HotelProfile: React.FC = () => {
               </div>
             ))}
           </section>
+        )}
+
+        {hotel.specialPackages && hotel.specialPackages.length > 0 && (
+          <SpecialPackages packages={hotel.specialPackages} />
         )}
 
         {/* Action */}

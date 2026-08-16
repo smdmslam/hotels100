@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Search, Menu, X } from 'lucide-react';
+import { Search, Menu, X, User } from 'lucide-react';
+import { useAuth } from '../../context/AuthContext';
+import { auth } from '../../lib/firebase';
 import { Container } from './Container';
 import styles from './SiteHeader.module.css';
 
@@ -11,6 +13,7 @@ interface SiteHeaderProps {
 export const SiteHeader: React.FC<SiteHeaderProps> = ({ variant = 'light' }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const { user } = useAuth();
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -48,6 +51,19 @@ export const SiteHeader: React.FC<SiteHeaderProps> = ({ variant = 'light' }) => 
           </nav>
 
           <div className={styles.actions}>
+            {user ? (
+              <button 
+                className={styles.iconButton} 
+                title="Sign Out"
+                onClick={() => auth.signOut()}
+              >
+                <User size={20} strokeWidth={1.5} style={{ color: 'var(--accent)' }} />
+              </button>
+            ) : (
+              <Link to="/login" className={styles.iconButton} title="Sign In">
+                <User size={20} strokeWidth={1.5} />
+              </Link>
+            )}
             <button className={styles.iconButton} aria-label="Search">
               <Search size={20} strokeWidth={1.5} />
             </button>

@@ -1,0 +1,128 @@
+.container {
+  margin-top: 4rem;
+  border-top: 1px solid rgba(18, 18, 18, 0.1);
+  padding-top: 3rem;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-family: 'Times New Roman', serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--text-primary);
+  margin: 0 0 0.5rem 0;
+}
+
+.subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.card {
+  border: 1px solid rgba(18, 18, 18, 0.08);
+  background-color: #FAFAFA;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+}
+
+.imageContainer {
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(18, 18, 18, 0.08);
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.packageTitle {
+  font-family: 'Times New Roman', serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0 0 1rem 0;
+  color: var(--text-primary);
+}
+
+.packageDescription {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin: 0 0 1.5rem 0;
+  flex-grow: 1;
+}
+
+.metaRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(18, 18, 18, 0.1);
+  padding-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.price {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.validity {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  color: #777C70;
+}
+
+.actionButton {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  background-color: var(--primary);
+  color: var(--background);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  text-decoration: none;
+  border: 1px solid var(--primary);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.actionButton:hover {
+  background-color: var(--background);
+  color: var(--primary);
+}
