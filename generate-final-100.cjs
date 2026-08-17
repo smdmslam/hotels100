@@ -80,7 +80,7 @@ const getStrategicLens = (name, brand) => {
 
 // Map to our HotelProfile schema
 const indexData = {
-  edition: "2024–2025",
+  edition: "2026",
   title: "The World's 100 Most Exceptional Hotels",
   lastUpdated: new Date().toISOString().split('T')[0],
   methodologyVersion: "1.0",

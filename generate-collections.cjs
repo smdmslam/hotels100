@@ -21,8 +21,8 @@ const global100Hotels = publicHotels.slice(0, 100);
 const global100 = {
   slug: 'the-global-100',
   title: "The World's 100 Most Exceptional Hotels",
-  edition: "2024–2025",
-  description: "The 2024-2025 ranking, assessed through hospitality strategy, amenities, pricing power, brand position and enduring asset value.",
+  edition: "2026",
+  description: "The 2026 ranking, assessed through hospitality strategy, amenities, pricing power, brand position and enduring asset value.",
   hotels: global100Hotels
 };
 
@@ -48,7 +48,7 @@ const top50Affordable = sortedAffordable.slice(0, 50).map((h, index) => {
 const accessible50 = {
   slug: 'the-accessible-50',
   title: "The Accessible 50: Best Under $500",
-  edition: "2024–2025",
+  edition: "2026",
   description: "The ultimate guide to the world's most exceptional hotels delivering unparalleled value. Every property on this list offers a starting rate under $500 per night.",
   hotels: top50Affordable
 };
@@ -66,7 +66,7 @@ const top50London = sortedLondon.slice(0, 50).map((h, index) => {
 const london50 = {
   slug: 'the-london-50',
   title: "The London 50",
-  edition: "2024–2025",
+  edition: "2026",
   description: "The definitive ranking of London's most exceptional hospitality experiences, diving deep into the properties that define the city.",
   hotels: top50London
 };
@@ -84,7 +84,7 @@ const top50Ny = sortedNy.slice(0, 50).map((h, index) => {
 const newYork50 = {
   slug: 'the-new-york-50',
   title: "The New York 50",
-  edition: "2024–2025",
+  edition: "2026",
   description: "The definitive ranking of New York's most exceptional hospitality experiences, diving deep into the properties that define the city.",
   hotels: top50Ny
 };
@@ -102,7 +102,7 @@ const top25Zurich = sortedZurich.slice(0, 25).map((h, index) => {
 const zurich25 = {
   slug: 'the-zurich-25',
   title: "The Zurich 25",
-  edition: "2024–2025",
+  edition: "2026",
   description: "Zurich's luxury-hospitality market is not defined by spectacle. Its strongest hotels monetise discretion, institutional trust, lake and landscape access, and unusually demanding business-travel expectations.",
   hotels: top25Zurich
 };
@@ -120,7 +120,7 @@ const topLondonAccessible = sortedLondonAccessible.map((h, index) => {
 const londonAccessible = {
   slug: 'the-london-accessible',
   title: "The London Accessible Edit",
-  edition: "2024–2025",
+  edition: "2026",
   description: "The definitive ranking of London's most exceptional hospitality experiences available for under $500 per night. Curated for the frequent luxury business traveler.",
   hotels: topLondonAccessible
 };
@@ -138,7 +138,7 @@ const top25Paris = sortedParis.slice(0, 25).map((h, index) => {
 const paris25 = {
   slug: 'the-paris-25',
   title: "The Paris 25",
-  edition: "2024–2025",
+  edition: "2026",
   description: "Paris is the global reference market for converting culture, architecture, fashion authority, and address scarcity into hotel pricing power. The question is not whether an asset is prestigious; it is whether its hotel operation turns prestige into a coherent and commercially durable guest proposition.",
   hotels: top25Paris
 };
@@ -157,7 +157,7 @@ const top35Lakes = sortedLakes.slice(0, 35).map((h, index) => {
 const lakes35 = {
   slug: 'the-italian-and-swiss-lakes-35',
   title: "The Italian & Swiss Lakes 35",
-  edition: "2024–2025",
+  edition: "2026",
   description: "The ultimate edit of the heritage palaces, intimate villas, and contemporary wellness resorts defining the alpine lake rivieras of Italy and Switzerland.",
   hotels: top35Lakes
 };

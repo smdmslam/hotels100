@@ -63,7 +63,7 @@ const newHotels = hotelNames.map((name, index) => {
   return {
     id: `research-${100 + index + 1}`,
     slug: generateSlug(name),
-    edition: 2024,
+    edition: 2026,
     rank: currentRank++,
     name: name,
     location: {
