@@ -107,7 +107,7 @@ const zurich25 = {
   hotels: top25Zurich
 };
 
-// 6. The London Accessible Edit
+// 6. The London Accessible
 const londonAccessibleHotels = londonHotels.filter(h => h.indicativeRate && h.indicativeRate.amount <= 500);
 const sortedLondonAccessible = londonAccessibleHotels.sort((a, b) => {
   const scoreA = a.scores ? a.scores.totalScore : 0;
@@ -119,7 +119,7 @@ const topLondonAccessible = sortedLondonAccessible.map((h, index) => {
 });
 const londonAccessible = {
   slug: 'the-london-accessible',
-  title: "The London Accessible Edit",
+  title: "The London Accessible",
   edition: "2026",
   description: "The definitive ranking of London's most exceptional hospitality experiences available for under $500 per night. Curated for the frequent luxury business traveler.",
   hotels: topLondonAccessible

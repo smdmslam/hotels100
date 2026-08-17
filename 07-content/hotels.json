@@ -25,7 +25,11 @@
       "archetype": "Urban Luxury",
       "dmwJudgement": null,
       "assessmentPendingLabel": null,
-      "dmwOverview": null,
+      "dmwOverview": "The Connaught is a rare Mayfair institution that balances old-world British heritage with contemporary luxury execution. Occupying a commanding corner on Carlos Place, the property functions as both a private residence for ultra-high-net-worth travellers and a major social anchor for international finance, diplomacy, and culture.",
+      "analysis": {
+        "hospitalityProposition": "The proposition rests on understated discretion and residential warmth rather than grand lobby spectacle. Service protocols are intensely personalized, featuring dedicated butler service, private arrival access, and an atmosphere designed for quiet authority. The food and beverage program—anchored by three-Michelin-starred Hélène Darroze and the world-renowned Connaught Bar—creates a powerful competitive moat that draws both global elites and London's discerning locals.",
+        "revenueStrategy": "The Connaught commands exceptional pricing power, consistently achieving median rates exceeding $1,250 per night with strong peak seasonal compression. Supported by Constellation Hotels ownership and Maybourne management, the hotel maintains premium RevPAR without discounting, leveraging suite-heavy inventory and high repeat stay loyalty."
+      },
       "identity": {
         "owner": "Constellation Hotels / Qatar Holding",
         "operator": "Maybourne",

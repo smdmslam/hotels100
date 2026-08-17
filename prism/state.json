@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "recent_files": [],
+  "layout": {
+    "sidebar_width": 289,
+    "problems_width": 360,
+    "preview_height": 340,
+    "agent_pane_width": 706,
+    "preview_visible": false,
+    "terminal_visible": false,
+    "agent_visible": true,
+    "sidebar_tab": "files"
+  }
+}
