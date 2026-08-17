@@ -111,8 +111,10 @@ const indexData = {
         displayLocation: `${hotel.location}, ${hotel.country}`
       },
       archetype: hotel.location.includes('Island') || hotel.location.includes('Valley') ? 'Resort' : 'Urban Luxury',
-      dmwJudgement: hotel.dmwJudgement || null,
-      assessmentPendingLabel: null,
+      dmwJudgement: hotel.name.toLowerCase().includes('chiltern firehouse')
+        ? 'Globally recognised lifestyle trophy asset; operations temporarily paused following a fire.'
+        : (hotel.dmwJudgement || null),
+      assessmentPendingLabel: hotel.name.toLowerCase().includes('chiltern firehouse') ? 'Temporarily Closed' : null,
       dmwOverview: null,
       identity: {
         owner: "Unknown",
