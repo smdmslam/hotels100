@@ -1,117 +1,67 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
-import type { HotelSummary, DimensionScore } from '../../data/types';
-import { Badge } from '../shared/Badge';
-import { MapPin, Building, ArrowRight, Tag, Target } from 'lucide-react';
+import type { DimensionScore, HotelSummary } from '../../data/types';
 import styles from './RankedHotelItem.module.css';
 
-interface RankedHotelItemProps {
-  hotel: HotelSummary;
-}
+interface RankedHotelItemProps { hotel: HotelSummary; }
 
 export const RankedHotelItem: React.FC<RankedHotelItemProps> = ({ hotel }) => {
   const { slug } = useParams<{ slug: string }>();
-  
-  // Get top 3 dimensions to highlight
   let topDimensions: DimensionScore[] = [];
+
   if (hotel.scores?.dimensions) {
-    // Sort by raw score or percentage of max score? Percentage makes more sense for highlighting strengths.
     topDimensions = [...hotel.scores.dimensions]
-      .sort((a, b) => (b.score / b.maxScore) - (a.score / a.maxScore))
+      .sort((a, b) => b.score / b.maxScore - a.score / a.maxScore)
       .slice(0, 3);
   }
 
   return (
     <article className={styles.item}>
-      <div className={styles.rankColumn}>
-        <span className={styles.rankNumber}>{hotel.rank}</span>
-      </div>
-      
-      <div className={styles.mainColumn}>
-        <div className={styles.headerRow}>
-          <h3 className={styles.name}>
-            <Link to={hotel.profileUrl} state={{ collectionSlug: slug }} className={styles.link}>
-              {hotel.name}
-            </Link>
-          </h3>
-          {hotel.featured && <Badge label="Featured Analysis" type="category" />}
-        </div>
-
-        <div className={styles.metaRow}>
-          <span className={styles.metaItem}>
-            <MapPin size={14} />
-            {hotel.location.displayLocation}
-          </span>
-          <span className={styles.metaItem}>
-            <Building size={14} />
-            {hotel.archetype}
-          </span>
-          {hotel.indicativeRate && (
-            <span className={styles.metaItem}>
-              <Tag size={14} />
-              ~${hotel.indicativeRate.amount} / nt
-            </span>
-          )}
-          {hotel.strategicLens && (
-            <span className={styles.metaItem}>
-              <Target size={14} />
-              {hotel.strategicLens}
-            </span>
-          )}
-        </div>
-
-        {hotel.dmwJudgement && (
-          <p className={styles.judgement}>{hotel.dmwJudgement}</p>
-        )}
-
-        <div className={styles.distinctions}>
-          {hotel.distinctions.map((dist) => (
-            <Badge key={dist} label={dist} type="distinction" />
-          ))}
-        </div>
+      <div className={styles.rankBlock} aria-label={`Rank ${hotel.rank}`}>
+        <span className={styles.rankLabel}>Rank</span>
+        <span className={styles.rankNumber}>{String(hotel.rank).padStart(2, '0')}</span>
       </div>
 
-      {/* New Dimension Highlights Column */}
-      <div className={styles.highlightsColumn}>
-        {topDimensions.length > 0 && (
-          <div className={styles.highlights}>
-            <span className={styles.highlightsLabel}>Key Strengths</span>
-            {topDimensions.map((dim, i) => (
-              <div key={i} className={styles.highlightItem}>
-                <span className={styles.highlightName}>{dim.label}</span>
-                <div className={styles.highlightBar}>
-                  <div 
-                    className={styles.highlightFill} 
-                    style={{ width: `${(dim.score / dim.maxScore) * 100}%` }}
-                  />
-                </div>
+      <div className={styles.identity}>
+        <h2 className={styles.name}>
+          <Link to={hotel.profileUrl} state={{ collectionSlug: slug }}>{hotel.name}</Link>
+        </h2>
+        <div className={styles.meta}>
+          <span>{hotel.location.displayLocation}</span>
+          <span>{hotel.archetype}</span>
+          {hotel.indicativeRate && <span>~${hotel.indicativeRate.amount} / night</span>}
+        </div>
+        {hotel.strategicLens && <p className={styles.lens}>{hotel.strategicLens}</p>}
+        {hotel.dmwJudgement && <p className={styles.judgement}>{hotel.dmwJudgement}</p>}
+      </div>
+
+      <div className={styles.strengths}>
+        <span className={styles.columnLabel}>Key strengths</span>
+        {topDimensions.length > 0 ? topDimensions.map((dimension) => {
+          const percentage = Math.round((dimension.score / dimension.maxScore) * 100);
+          return (
+            <div className={styles.gauge} key={dimension.label}>
+              <div className={styles.gaugeHeader}>
+                <span>{dimension.label}</span>
+                <span>{percentage}%</span>
               </div>
-            ))}
-          </div>
-        )}
+              <div className={styles.gaugeTrack} aria-label={`${dimension.label}: ${percentage}%`}>
+                <div className={styles.gaugeFill} style={{ width: `${percentage}%` }} />
+              </div>
+            </div>
+          );
+        }) : <span className={styles.pending}>Assessment in preparation</span>}
       </div>
 
-      {/* New Score Column */}
-      <div className={styles.scoreColumn}>
+      <div className={styles.scoreAndAction}>
         {hotel.scores && (
-          <div className={styles.scoreDisplay}>
-            <span className={styles.scoreValue}>{hotel.scores.totalScore.toFixed(1)}</span>
-            <span className={styles.scoreMax}>/ 100</span>
+          <div className={styles.score}>
+            <span className={styles.scoreLabel}>DMW score</span>
+            <div><strong>{hotel.scores.totalScore.toFixed(1)}</strong><span>/100</span></div>
           </div>
         )}
-      </div>
-
-      <div className={styles.actionColumn} style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '1rem' }}>
-        <a 
-          href="#" 
-          style={{ fontSize: '0.875rem', textDecoration: 'underline', color: 'var(--text-secondary)' }}
-          target="_blank" 
-          rel="noopener noreferrer"
-        >
-          Check Dates
-        </a>
-        <Link to={hotel.profileUrl} state={{ collectionSlug: slug }} className={styles.actionLink} aria-label={`View profile for ${hotel.name}`}>
-          <ArrowRight size={24} strokeWidth={1} />
+        <Link to={hotel.profileUrl} state={{ collectionSlug: slug }} className={styles.profileLink}>
+          View profile <span aria-hidden="true">→</span>
         </Link>
       </div>
     </article>
