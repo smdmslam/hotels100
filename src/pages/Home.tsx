@@ -1,109 +1,204 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Container, Button } from '../components/shared';
-import { getIndexData, getCollection } from '../data/api';
-import collectionsData from '../../07-content/collections.json';
+import { Container } from '../components/shared';
+import { getCollection, getIndexData } from '../data/api';
 import styles from './Home.module.css';
+
+const PUBLIC_COLLECTIONS = [
+  { title: 'The Global 100', slug: 'the-global-100' },
+  { title: 'The London 50', slug: 'the-london-50' },
+  { title: 'The New York 50', slug: 'the-new-york-50' },
+  { title: 'The Paris 25', slug: 'the-paris-25' },
+  { title: 'The Zurich 25', slug: 'the-zurich-25' },
+  { title: 'The Accessible 50', slug: 'the-accessible-50' },
+  { title: 'London Under $500', slug: 'the-london-accessible' },
+  {
+    title: 'The Italian & Swiss Lakes 35',
+    slug: 'the-italian-and-swiss-lakes-35',
+  },
+];
 
 export const Home: React.FC = () => {
   const indexData = getIndexData();
   const globalCollection = getCollection('the-global-100');
-  const globalHotels = globalCollection?.hotels?.slice(0, 5) ?? [];
-  const allCollections = (collectionsData as any).collections;
-  const publishedCollections = allCollections.filter((c: any) => c.title && c.slug);
+  const globalHotels = globalCollection?.hotels ?? [];
+  const previewHotels = globalHotels.slice(0, 5);
+  const reportHotels = globalHotels.slice(0, 3);
 
   return (
-    <div className={styles.home}>
-      {/* Hero Section */}
+    <main className={styles.home}>
       <section className={styles.hero}>
-        <div className={styles.heroOverlay} />
-        <Container variant="wide" className={styles.heroContent}>
-          <span className={styles.editionMeta}>{indexData.edition} Edition</span>
-          <h1 className={styles.heroTitle}>{indexData.title}</h1>
-          <p className={styles.heroSubtitle}>A global index of the hotels that best combine hospitality, brand, pricing power and enduring asset value.</p>
-          <div className={styles.heroCtas}>
-            <Link to="/collections/the-global-100" className={styles.heroCtaPrimary}>
-              <Button variant="dark-primary">Explore the Global 100</Button>
+        <div className={styles.heroShade} aria-hidden="true" />
+        <Container variant="wide" className={styles.heroInner}>
+          <div className={styles.heroCopy}>
+            <span className={styles.eyebrow}>{indexData.edition} Edition</span>
+            <h1 className={styles.heroTitle}>{indexData.title}</h1>
+            <p className={styles.heroSubtitle}>
+              A global index of the hotels that best combine hospitality,
+              brand, pricing power and enduring asset value.
+            </p>
+            <div className={styles.heroActions}>
+              <Link
+                to="/collections/the-global-100"
+                className={styles.primaryAction}
+              >
+                Explore the Global 100
+                <span aria-hidden="true">↗</span>
+              </Link>
+              <a href="#collections" className={styles.secondaryAction}>
+                Browse all editions
+              </a>
+            </div>
+          </div>
+        </Container>
+        <div className={styles.heroCaption}>DMW Hotels 100 · 2026</div>
+      </section>
+
+      <section className={styles.indexSection} id="collections">
+        <Container variant="wide">
+          <div className={styles.indexLayout}>
+            <header className={styles.indexIntroduction}>
+              <span className={styles.sectionNumber}>01 — The Index</span>
+              <h2 className={styles.sectionTitle}>The Global 100</h2>
+              <p className={styles.sectionLead}>
+                One hundred hotels assessed through the combined lenses of
+                hospitality, brand strength, pricing power and asset value.
+              </p>
+
+              <nav className={styles.collectionNav} aria-label="Hotel editions">
+                <span className={styles.collectionLabel}>Explore editions</span>
+                <ul className={styles.collectionList}>
+                  {PUBLIC_COLLECTIONS.map((collection) => (
+                    <li key={collection.slug}>
+                      <Link to={`/collections/${collection.slug}`}>
+                        {collection.title}
+                        <span aria-hidden="true">↗</span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+            </header>
+
+            <div className={styles.rankingPreview}>
+              <div className={styles.rankingHeader} aria-hidden="true">
+                <span>Rank</span>
+                <span>Hotel</span>
+                <span>Location</span>
+                <span>DMW</span>
+              </div>
+
+              <ol className={styles.rankingList}>
+                {previewHotels.map((hotel) => (
+                  <li key={hotel.id} className={styles.rankingRow}>
+                    <span className={styles.rankNumber}>
+                      {String(hotel.rank).padStart(2, '0')}
+                    </span>
+                    <Link to={hotel.profileUrl} className={styles.hotelName}>
+                      {hotel.name}
+                    </Link>
+                    <span className={styles.hotelLocation}>
+                      {hotel.location.displayLocation}
+                    </span>
+                    <span className={styles.hotelScore}>
+                      {hotel.scores ? hotel.scores.totalScore.toFixed(1) : '—'}
+                    </span>
+                  </li>
+                ))}
+              </ol>
+
+              <Link
+                to="/collections/the-global-100"
+                className={styles.indexAction}
+              >
+                View the complete Global 100
+                <span aria-hidden="true">→</span>
+              </Link>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      <section className={styles.askSection} aria-labelledby="ask-dmw-title">
+        <Container variant="wide">
+          <div className={styles.askLayout}>
+            <div className={styles.askIntroduction}>
+              <span className={styles.darkEyebrow}>Coming soon · Ask DMW</span>
+              <h2 id="ask-dmw-title">Build your own shortlist.</h2>
+              <p>
+                Describe the hotel, destination, price or experience you need.
+                Ask DMW will build a ranked shortlist using the intelligence in
+                our index.
+              </p>
+            </div>
+
+            <div className={styles.askDemo} aria-label="Ask DMW preview">
+              <div className={styles.promptPreview}>
+                <span>Find the best-value highly ranked hotels in Zurich</span>
+                <span className={styles.promptArrow} aria-hidden="true">→</span>
+              </div>
+              <div className={styles.promptExamples}>
+                <span>London under $500</span>
+                <span>Lakeside hotels for summer</span>
+                <span>Paris for business travel</span>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      <section className={styles.reportsSection}>
+        <Container variant="wide">
+          <header className={styles.reportsHeader}>
+            <div>
+              <span className={styles.sectionNumber}>02 — Intelligence</span>
+              <h2 className={styles.sectionTitle}>Latest Hotel Reports</h2>
+            </div>
+            <Link to="/insights" className={styles.reportsAction}>
+              View all insights <span aria-hidden="true">→</span>
             </Link>
-            <Link to="/editions" className={styles.heroCtaSecondary}>Browse all editions</Link>
-          </div>
-        </Container>
-      </section>
+          </header>
 
-      {/* Global 100 Preview */}
-      <section className={styles.globalPreview}>
-        <Container variant="wide">
-          <h2 className={styles.sectionTitle}>The Global 100</h2>
-          <p className={styles.sectionSubtitle}>Top luxury hotels worldwide, ranked by DMW methodology.</p>
-          <div className={styles.globalRows}>
-            {globalHotels.map(hotel => (
-              <div key={hotel.id} className={styles.globalRow}>
-                <span className={styles.globalRank}>#{hotel.rank}</span>
-                <Link to={hotel.profileUrl} className={styles.globalName}>{hotel.name}</Link>
-                <span className={styles.globalLocation}>{hotel.location.displayLocation}</span>
-                {hotel.scores && <span className={styles.globalScore}>Score: {hotel.scores.totalScore}</span>}
-              </div>
-            ))}
-          </div>
-          <Link to="/collections/the-global-100" className={styles.viewAll}>View the complete Global 100 →</Link>
-        </Container>
-      </section>
-
-      {/* Edition Navigation */}
-      <section className={styles.editionNav}>
-        <Container variant="wide">
-          <h2 className={styles.sectionTitle}>Explore Collections</h2>
-          <ul className={styles.editionGrid}>
-            {publishedCollections.map((col: any) => (
-              <li key={col.slug} className={styles.editionItem}>
-                <Link to={`/collections/${col.slug}`}>{col.title}</Link>
-              </li>
-            ))}
-          </ul>
-        </Container>
-      </section>
-
-      {/* Ask DMW Placeholder */}
-      <section className={styles.askDmw}>
-        <Container variant="wide">
-          <h2 className={styles.sectionTitle}>Build your own hotel shortlist</h2>
-          <p className={styles.askDescription}>Soon you’ll be able to ask DMW to generate custom lists from our index.</p>
-          <input readOnly placeholder="Find the best‑value highly ranked hotels in Zurich" className={styles.askInput} />
-          <div className={styles.examples}>
-            <span>Example: "Best boutique hotels in Paris"</span>
-            <span>Example: "High‑value resorts in the Caribbean"</span>
-            <span>Example: "Hotels with strong business travel scores in Tokyo"</span>
-          </div>
-          <span className={styles.comingSoon}>Coming soon</span>
-        </Container>
-      </section>
-
-      {/* Latest Reports */}
-      <section className={styles.latestReports}>
-        <Container variant="wide">
-          <h2 className={styles.sectionTitle}>Latest Hotel Reports</h2>
           <div className={styles.reportGrid}>
-            {/* Seasonal feature card */}
-            <article className={styles.reportCard}>
-              <div className={styles.reportInfo}>
-                <h3>The Summer Edit</h3>
-                <p>Spotlight on Côte d’Azur &amp; Italian/Swiss Lakes collections.</p>
-                <Link to="/collections/the-summer-edit">Explore</Link>
-              </div>
-            </article>
-            {globalHotels.slice(0, 2).map(hotel => (
-              <article key={hotel.id} className={styles.reportCard}>
-                <img src={hotel.primaryImage?.url || '/assets/placeholder-hero.jpg'} alt={hotel.primaryImage?.alt || hotel.name} className={styles.reportImage} />
-                <div className={styles.reportInfo}>
-                  <h3>{hotel.name}</h3>
-                  <p>{hotel.location.displayLocation}</p>
-                  <Link to={hotel.profileUrl}>Read report</Link>
+            <article className={`${styles.reportCard} ${styles.seasonalCard}`}>
+              <Link
+                to="/collections/the-italian-and-swiss-lakes-35"
+                className={styles.reportLink}
+              >
+                <div className={styles.reportMedia}>
+                  <img src="/assets/hero.png" alt="" />
+                  <span className={styles.reportTag}>The Summer Edit</span>
                 </div>
+                <div className={styles.reportCopy}>
+                  <span className={styles.reportMeta}>Riviera &amp; Lakes</span>
+                  <h3>The hotels defining summer on the water</h3>
+                  <span className={styles.readReport}>Explore the edit →</span>
+                </div>
+              </Link>
+            </article>
+
+            {reportHotels.map((hotel) => (
+              <article key={hotel.id} className={styles.reportCard}>
+                <Link to={hotel.profileUrl} className={styles.reportLink}>
+                  <div className={styles.reportMedia}>
+                    <img
+                      src={hotel.primaryImage?.url || '/assets/placeholder-hero.jpg'}
+                      alt={hotel.primaryImage?.alt || hotel.name}
+                    />
+                  </div>
+                  <div className={styles.reportCopy}>
+                    <span className={styles.reportMeta}>
+                      {hotel.location.displayLocation}
+                    </span>
+                    <h3>{hotel.name}</h3>
+                    <span className={styles.readReport}>Read report →</span>
+                  </div>
+                </Link>
               </article>
             ))}
           </div>
         </Container>
       </section>
-    </div>
+    </main>
   );
 };
