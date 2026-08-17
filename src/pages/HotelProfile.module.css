@@ -20,9 +20,8 @@
 .heroContent h1 { margin:0; font-size:clamp(4.5rem,8vw,9rem); line-height:.88; letter-spacing:-.025em; }
 .location { display:flex; align-items:center; gap:var(--space-2); margin:var(--space-5) 0; color:rgba(244,240,232,.76); font-family:var(--font-sans); font-size:var(--type-body-lg); }
 
-.workspace { display:grid; grid-template-columns:230px minmax(0,1fr) 270px; gap:clamp(36px,5vw,84px); align-items:start; padding-top:var(--space-8); }
-.sectionNav,.decisionPanel { position:sticky; top:96px; }
-.sectionNav { display:flex; flex-direction:column; border-top:1px solid var(--color-ink); }
+.workspace { display:grid; grid-template-columns:230px minmax(0,1fr); gap:clamp(36px,5vw,72px); align-items:start; padding-top:var(--space-8); }
+.sectionNav { position:sticky; top:96px; display:flex; flex-direction:column; border-top:1px solid var(--color-ink); }
 .navLabel { padding:var(--space-4) 0; color:var(--color-stone); }
 .sectionNav button { display:flex; flex-direction:column; gap:4px; padding:14px 0; border-top:1px solid rgba(18,18,18,.12); color:var(--color-stone); font-family:var(--font-sans); text-align:left; transition:color 180ms ease; }
 .sectionNav button:last-child { border-bottom:1px solid rgba(18,18,18,.12); }
@@ -69,22 +68,10 @@
 .embeddedComponent { margin:var(--space-7) 0 0 70px; }
 .factGrid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1px; margin:var(--space-7) 0 0 70px; background:rgba(18,18,18,.14); }
 .factGrid>* { min-height:120px; padding:var(--space-4); background:var(--color-paper); }
-
-.decisionPanel { padding:var(--space-5); border:1px solid rgba(18,18,18,.2); background:var(--color-paper); }
-.decisionScore { margin-top:var(--space-4); padding-bottom:var(--space-5); border-bottom:1px solid rgba(18,18,18,.2); }
-.decisionScore>span { color:var(--color-stone); font-family:var(--font-sans); font-size:var(--type-label); letter-spacing:.08em; text-transform:uppercase; }
-.decisionScore div { display:flex; align-items:baseline; margin-top:var(--space-2); }
-.decisionScore strong { font-family:var(--font-serif); font-size:3.5rem; font-weight:400; line-height:1; }
-.decisionScore small { color:var(--color-stone); }
-.decisionFacts { margin:0; }
-.decisionFacts dt { margin-top:var(--space-4); color:var(--color-stone); font-family:var(--font-sans); font-size:10px; letter-spacing:.1em; text-transform:uppercase; }
-.decisionFacts dd { margin:4px 0 0; color:var(--color-charcoal); font-family:var(--font-sans); font-size:var(--type-small); line-height:1.4; }
-.bookingAction { display:flex; justify-content:space-between; align-items:center; gap:var(--space-3); margin-top:var(--space-6); padding:15px; background:var(--color-ink); color:var(--color-ivory); font-family:var(--font-sans); font-size:var(--type-small); font-weight:600; }
-.bookingNote { margin:var(--space-3) 0 0; color:var(--color-stone); font-family:var(--font-sans); font-size:10px; line-height:1.4; }
 .mobileBookingBar { display:none; }
 
 .mainWrapper { min-width:0; }
-.atAGlanceHorizontal { display:none; margin-bottom:var(--space-7); padding:var(--space-5); background:var(--color-paper); border:1px solid rgba(18,18,18,.18); }
+.atAGlanceHorizontal { display:block; margin-bottom:var(--space-7); padding:var(--space-5); background:var(--color-paper); border:1px solid rgba(18,18,18,.18); }
 .glanceRow { display:flex; flex-wrap:wrap; align-items:center; gap:var(--space-4) var(--space-7); margin-top:var(--space-3); }
 .glanceItem { display:flex; flex-direction:column; gap:3px; }
 .glanceLabel { font-family:var(--font-sans); font-size:10px; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--color-stone); }
@@ -95,11 +82,6 @@
 .glanceAction { margin-left:auto; display:inline-flex; align-items:center; gap:var(--space-2); padding:10px 16px; background:var(--color-ink); color:var(--color-ivory); font-family:var(--font-sans); font-size:var(--type-small); font-weight:600; transition:background-color 180ms ease; }
 .glanceAction:hover { background:var(--color-charcoal); }
 
-@media(max-width:1280px){
-  .workspace{grid-template-columns:220px minmax(0,1fr);gap:var(--space-6);}
-  .decisionPanel{display:none;}
-  .atAGlanceHorizontal{display:block;}
-}
 @media(max-width:800px){
   .glanceAction{margin-left:0;width:100%;justify-content:center;}
   .profile{padding-bottom:90px}

@@ -380,27 +380,6 @@ export const HotelProfile: React.FC = () => {
             {sectionContent[activeSection]}
           </section>
         </div>
-
-        <aside className={styles.decisionPanel}>
-          <span className={styles.kicker}>At a glance</span>
-          {hotel.scores && (
-            <div className={styles.decisionScore}>
-              <span>DMW score</span>
-              <div><strong>{hotel.scores.totalScore.toFixed(1)}</strong><small>/100</small></div>
-            </div>
-          )}
-          <dl className={styles.decisionFacts}>
-            {indicativeRate && <><dt>Indicative rate</dt><dd>~${indicativeRate} / night</dd></>}
-            <dt>Strategic lens</dt><dd>{hotel.strategicLens}</dd>
-            <dt>Property</dt><dd>{hotel.propertyFacts.roomCount ? `${hotel.propertyFacts.roomCount} rooms` : hotel.archetype}</dd>
-          </dl>
-          {officialWebsite && (
-            <a className={styles.bookingAction} href={officialWebsite} target="_blank" rel="noopener noreferrer">
-              Check rates &amp; availability <ArrowRight size={17} />
-            </a>
-          )}
-          <p className={styles.bookingNote}>Rates and availability are provided by the hotel.</p>
-        </aside>
       </Container>
 
       {officialWebsite && (
