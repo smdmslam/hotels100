@@ -8,6 +8,7 @@ import {
   Building2,
   Car,
   CheckCircle2,
+  CircleHelp,
   ChevronLeft,
   ChevronRight,
   Coffee,
@@ -80,20 +81,43 @@ const AMENITY_ICONS: Record<string, React.ElementType> = {
   'ev-charging': Zap,
 };
 
-const DEFAULT_LUXURY_FACILITIES = [
-  { id: 'breakfast', label: 'Very Good Breakfast', category: 'Food and Drink', available: true },
-  { id: 'wifi', label: 'Free High-Speed Wi-Fi', category: 'Services', available: true },
-  { id: 'spa', label: 'Spa & Wellness Center', category: 'Wellness', available: true },
-  { id: 'gym', label: 'Fitness Center & Gym', category: 'Wellness', available: true },
-  { id: 'restaurant', label: 'Fine Dining / Restaurant', category: 'Food and Drink', available: true },
-  { id: 'bar', label: 'Cocktail Bar & Lounge', category: 'Food and Drink', available: true },
-  { id: 'concierge', label: '24-Hour Front Desk & Concierge', category: 'Services', available: true },
-  { id: 'parking', label: 'Valet Parking & Garage', category: 'Transport', available: true },
-  { id: 'air-conditioning', label: 'Air Conditioning', category: 'Rooms', available: true },
-  { id: 'room-service', label: '24-Hour Room Service', category: 'Food and Drink', available: true },
-  { id: 'pet-friendly', label: 'Pet Friendly', category: 'Services', available: true },
-  { id: 'ev-charging', label: 'EV Charging Stations', category: 'Transport', available: true },
+const FEATURED_FACILITY_IDS = [
+  'wifi',
+  'gym',
+  'fitness',
+  'pool',
+  'spa',
+  'parking',
+  'restaurant',
+  'breakfast',
+  'room-service',
+  'concierge',
 ];
+
+const FACILITY_CATEGORY_ORDER = [
+  'Connectivity & Work',
+  'Wellness',
+  'Food & Drink',
+  'Rooms',
+  'Access & Transport',
+  'Service',
+  'Accessibility',
+  'Policies',
+  'Other',
+];
+
+const normalizeFacilityCategory = (category?: string) => {
+  const normalized = category?.toLowerCase() || '';
+  if (normalized.includes('wellness') || normalized.includes('fitness')) return 'Wellness';
+  if (normalized.includes('food') || normalized.includes('drink') || normalized.includes('dining')) return 'Food & Drink';
+  if (normalized.includes('room')) return 'Rooms';
+  if (normalized.includes('transport') || normalized.includes('parking')) return 'Access & Transport';
+  if (normalized.includes('connect') || normalized.includes('business') || normalized.includes('work')) return 'Connectivity & Work';
+  if (normalized.includes('accessib')) return 'Accessibility';
+  if (normalized.includes('polic')) return 'Policies';
+  if (normalized.includes('service')) return 'Service';
+  return 'Other';
+};
 
 export const HotelProfile: React.FC = () => {
   const { slug = '' } = useParams<{ slug: string }>();
@@ -194,8 +218,21 @@ export const HotelProfile: React.FC = () => {
     </div>
   );
 
-  const rawAmenities = hotel.amenities || (hotel as unknown as { essentialAmenities?: any[] }).essentialAmenities || [];
-  const facilityList = rawAmenities.length >= 4 ? rawAmenities : DEFAULT_LUXURY_FACILITIES;
+  const facilityList = hotel.amenities || (hotel as unknown as { essentialAmenities?: any[] }).essentialAmenities || [];
+  const featuredFacilities = [...facilityList]
+    .sort((a: any, b: any) => {
+      const aIndex = FEATURED_FACILITY_IDS.indexOf(a.id);
+      const bIndex = FEATURED_FACILITY_IDS.indexOf(b.id);
+      return (aIndex === -1 ? 99 : aIndex) - (bIndex === -1 ? 99 : bIndex);
+    })
+    .slice(0, 8);
+
+  const groupedFacilities = FACILITY_CATEGORY_ORDER.map((category) => ({
+    category,
+    items: facilityList.filter(
+      (facility: any) => normalizeFacilityCategory(facility.category) === category,
+    ),
+  })).filter((group) => group.items.length > 0);
 
   const renderStay = () => (
     <div className={styles.panelContent}>
@@ -212,35 +249,86 @@ export const HotelProfile: React.FC = () => {
       </p>
 
       <div className={styles.popularFacilitiesSection}>
-        <h3 className={styles.facilitiesSubheading}>Most popular facilities</h3>
-        <div className={styles.facilityPillGrid}>
-          {facilityList.map((amenity: any) => {
-            const IconComponent = AMENITY_ICONS[amenity.id] || CheckCircle2;
+        <div className={styles.facilitiesHeadingRow}>
+          <h3 className={styles.facilitiesSubheading}>Most requested facilities</h3>
+          <span>Verified hotel information</span>
+        </div>
+
+        {featuredFacilities.length > 0 ? (
+          <div className={styles.featuredFacilityGrid}>
+          {featuredFacilities.map((amenity: any) => {
+            const isAvailable = amenity.available === true;
+            const isUnavailable = amenity.available === false;
+            const IconComponent = AMENITY_ICONS[amenity.id] || (isAvailable ? CheckCircle2 : CircleHelp);
             return (
               <div
                 key={amenity.id}
-                className={`${styles.facilityPill} ${!amenity.available ? styles.facilityPillUnavailable : ''}`}
+                className={`${styles.featuredFacility} ${isUnavailable ? styles.facilityUnavailable : ''} ${!isAvailable && !isUnavailable ? styles.facilityUnknown : ''}`}
               >
-                <IconComponent size={17} strokeWidth={1.5} className={styles.facilityPillIcon} />
-                <span>{amenity.label}</span>
+                <IconComponent size={25} strokeWidth={1.35} className={styles.facilityIcon} />
+                <div>
+                  <strong>{amenity.label}</strong>
+                  <span>{isAvailable ? 'Available' : isUnavailable ? 'Not available' : 'Verification pending'}</span>
+                </div>
               </div>
             );
           })}
+          </div>
+        ) : (
+          <div className={styles.facilityPending}>
+            <CircleHelp size={25} strokeWidth={1.35} />
+            <div>
+              <strong>Facility verification in progress</strong>
+              <p>Hotel amenities have not yet been added to this profile.</p>
+            </div>
+          </div>
+        )}
+      </div>
+
+      <div className={styles.practicalDetails}>
+        <div className={styles.practicalLabel}>Practical details</div>
+        <div className={styles.practicalItem}>
+          <span>Check-in</span>
+          <strong>{hotel.propertyFacts.checkInTime || 'To be verified'}</strong>
+        </div>
+        <div className={styles.practicalItem}>
+          <span>Check-out</span>
+          <strong>{hotel.propertyFacts.checkOutTime || 'To be verified'}</strong>
+        </div>
+        <div className={styles.practicalItem}>
+          <span>Neighbourhood</span>
+          <strong>{hotel.location.neighbourhood || hotel.location.city}</strong>
+        </div>
+        <div className={styles.practicalItem}>
+          <span>Indicative rate</span>
+          <strong>{indicativeRate ? `~$${indicativeRate} / night` : 'Check current rates'}</strong>
         </div>
       </div>
 
-      <div className={styles.staySpecsGrid}>
-        <div className={styles.specBox}>
-          <h4>Check-in / Check-out</h4>
-          <p>Check-in: <strong>{hotel.propertyFacts.checkInTime || '15:00'}</strong></p>
-          <p>Check-out: <strong>{hotel.propertyFacts.checkOutTime || '12:00'}</strong></p>
-        </div>
-        <div className={styles.specBox}>
-          <h4>Room &amp; Property Specs</h4>
-          <p>Total Keys: <strong>{hotel.propertyFacts.roomCount ? `${hotel.propertyFacts.roomCount} rooms & suites` : '100+ keys'}</strong></p>
-          <p>Archetype: <strong>{hotel.archetype}</strong></p>
-        </div>
-      </div>
+      {groupedFacilities.length > 0 && (
+        <section className={styles.allFacilitiesSection}>
+          <h3 className={styles.facilitiesSubheading}>All facilities</h3>
+          <div className={styles.facilityCategoryGrid}>
+            {groupedFacilities.map((group) => (
+              <div className={styles.facilityCategory} key={group.category}>
+                <h4>{group.category}</h4>
+                <ul>
+                  {group.items.map((amenity: any) => {
+                    const isAvailable = amenity.available === true;
+                    const isUnavailable = amenity.available === false;
+                    return (
+                      <li key={amenity.id} className={isUnavailable ? styles.facilityUnavailable : ''}>
+                        <span>{amenity.label}</span>
+                        <small>{isAvailable ? 'Yes' : isUnavailable ? 'No' : 'Pending'}</small>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       {hotel.specialPackages?.length ? (
         <div className={styles.embeddedComponent}>
