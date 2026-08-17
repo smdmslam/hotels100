@@ -273,6 +273,151 @@
   line-height: 1.45;
 }
 
+.suitabilityCard {
+  margin: var(--space-7) 0 var(--space-8) 70px;
+  padding: var(--space-6);
+  background: var(--color-paper);
+  border: 1px solid rgba(18, 18, 18, .16);
+}
+
+.suitabilityHeader h3 {
+  margin: var(--space-2) 0 0;
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.suitabilityGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-5);
+  margin-top: var(--space-5);
+}
+
+.suitabilityItem {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.suitabilityBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: var(--color-ink);
+  color: var(--color-ivory);
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+.suitabilityItem p {
+  margin: 0;
+  color: var(--color-charcoal);
+  font-family: var(--font-sans);
+  font-size: var(--type-small);
+  line-height: 1.55;
+}
+
+.scoreRationaleCard {
+  margin: 0 0 var(--space-8);
+  padding: var(--space-6);
+  background: var(--color-paper);
+  border-top: 2px solid var(--color-antique-gold);
+  border-bottom: 1px solid rgba(18, 18, 18, .15);
+}
+
+.scoreRationaleHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-6);
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid rgba(18, 18, 18, .12);
+}
+
+.scoreRationaleHeader h3 {
+  margin: var(--space-1) 0 0;
+  font-family: var(--font-serif);
+  font-size: 1.85rem;
+  font-weight: 400;
+}
+
+.scoreBigNum {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.scoreBigNum strong {
+  font-family: var(--font-serif);
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.scoreBigNum span {
+  font-family: var(--font-sans);
+  font-size: var(--type-small);
+  color: var(--color-stone);
+}
+
+.dimensionBreakdownGrid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.dimensionRow {
+  display: grid;
+  grid-template-columns: 240px 1fr 80px;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.dimInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.dimLabel {
+  font-family: var(--font-sans);
+  font-size: var(--type-small);
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.dimWeight {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  color: var(--color-stone);
+  text-transform: uppercase;
+}
+
+.dimBarWrapper {
+  height: 6px;
+  background: rgba(18, 18, 18, .1);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.dimBarFill {
+  height: 100%;
+  background: var(--color-antique-gold);
+  border-radius: 3px;
+}
+
+.dimScoreNum {
+  font-family: var(--font-sans);
+  font-size: var(--type-small);
+  font-weight: 600;
+  text-align: right;
+  color: var(--color-ink);
+}
+
 .proseSection {
   display: grid;
   grid-template-columns: 190px 1fr;

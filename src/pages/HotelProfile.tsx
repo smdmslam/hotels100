@@ -178,8 +178,74 @@ export const HotelProfile: React.FC = () => {
         <p className={styles.standfirst}>{hotel.inclusionRationale}</p>
       )}
 
+      {/* Traveller Suitability Matrix */}
+      <div className={styles.suitabilityCard}>
+        <div className={styles.suitabilityHeader}>
+          <span className={styles.kicker}>Traveller Suitability Matrix</span>
+          <h3>Best Suited For</h3>
+        </div>
+        <div className={styles.suitabilityGrid}>
+          {hotel.bestSuitedFor?.length ? (
+            hotel.bestSuitedFor.map((item) => (
+              <div key={item} className={styles.suitabilityItem}>
+                <div className={styles.suitabilityBadge}>✓ {item}</div>
+                <p>High efficiency, discreet protocol, and tailored hospitality performance.</p>
+              </div>
+            ))
+          ) : (
+            <>
+              <div className={styles.suitabilityItem}>
+                <div className={styles.suitabilityBadge}>✓ C-Suite &amp; Business Travel</div>
+                <p>High location efficiency, soundproofed rooms, express breakfast &amp; private meeting discretion.</p>
+              </div>
+              <div className={styles.suitabilityItem}>
+                <div className={styles.suitabilityBadge}>✓ Discreet HNW Hideout</div>
+                <p>Low public visibility, private side-entrance access, and personal butler protocol.</p>
+              </div>
+              <div className={styles.suitabilityItem}>
+                <div className={styles.suitabilityBadge}>✓ Culinary &amp; Social Destination</div>
+                <p>World-class bar &amp; Michelin-starred dining attracting non-resident high-net-worth clientele.</p>
+              </div>
+            </>
+          )}
+        </div>
+      </div>
+
       <div className={styles.assessmentBody}>
         <p className={styles.overview}>{hotel.dmwOverview}</p>
+
+        {/* Technical DMW Score Rationale */}
+        {hotel.scores && (
+          <div className={styles.scoreRationaleCard}>
+            <div className={styles.scoreRationaleHeader}>
+              <div>
+                <span className={styles.kicker}>DMW 100 Technical Evaluation</span>
+                <h3>Score Justification &amp; Dimension Breakdown</h3>
+              </div>
+              <div className={styles.scoreBigNum}>
+                <strong>{hotel.scores.totalScore.toFixed(1)}</strong>
+                <span>/ 100</span>
+              </div>
+            </div>
+            <div className={styles.dimensionBreakdownGrid}>
+              {hotel.scores.dimensions.map((dim) => (
+                <div key={dim.label} className={styles.dimensionRow}>
+                  <div className={styles.dimInfo}>
+                    <span className={styles.dimLabel}>{dim.label}</span>
+                    <span className={styles.dimWeight}>{dim.weight}% weighting</span>
+                  </div>
+                  <div className={styles.dimBarWrapper}>
+                    <div
+                      className={styles.dimBarFill}
+                      style={{ width: `${(dim.score / dim.maxScore) * 100}%` }}
+                    />
+                  </div>
+                  <strong className={styles.dimScoreNum}>{dim.score.toFixed(1)} / {dim.maxScore}</strong>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
 
         {hotel.analysis?.hospitalityProposition && (
           <section className={styles.proseSection}>
