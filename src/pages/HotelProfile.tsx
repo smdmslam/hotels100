@@ -278,18 +278,20 @@ export const HotelProfile: React.FC = () => {
         )}
         <div className={styles.heroShade} aria-hidden="true" />
         <Container variant="wide" className={styles.heroInner}>
-          <div className={styles.heroNavigation}>
-            <Link to={`/collections/${collectionSlug}`} className={styles.heroBack}>
-              <ArrowLeft size={16} /> {collection?.title || 'The index'}
-            </Link>
-            <div>
+          <div className={styles.heroTopBar}>
+            <div className={styles.heroMetaGroup}>
+              <span className={styles.rank}>DMW 100 · No. {hotel.rank}</span>
+              <Link to={`/collections/${collectionSlug}`} className={styles.heroBack}>
+                <ArrowLeft size={16} /> {collection?.title || 'The index'}
+              </Link>
+            </div>
+            <div className={styles.heroPrevNext}>
               {previousHotel && <Link to={previousHotel.profileUrl} state={{ collectionSlug }} aria-label="Previous hotel"><ChevronLeft size={20} /></Link>}
               {nextHotel && <Link to={nextHotel.profileUrl} state={{ collectionSlug }} aria-label="Next hotel"><ChevronRight size={20} /></Link>}
             </div>
           </div>
 
           <div className={styles.heroContent}>
-            <span className={styles.rank}>DMW 100 · No. {hotel.rank}</span>
             <h1>{hotel.name}</h1>
             <p className={styles.location}><MapPin size={18} /> {hotel.location.displayLocation}</p>
             <BlackbookActions hotelId={hotel.id} />
