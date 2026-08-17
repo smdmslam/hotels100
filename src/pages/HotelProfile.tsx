@@ -32,19 +32,19 @@ import styles from './HotelProfile.module.css';
 
 type ProfileSection =
   | 'assessment'
+  | 'insider'
   | 'stay'
   | 'property'
   | 'scorecard'
-  | 'pricing'
-  | 'insider';
+  | 'pricing';
 
 const SECTION_LABELS: Record<ProfileSection, string> = {
   assessment: 'Hotel Assessment',
+  insider: 'Insider View',
   stay: 'Stay Essentials',
   property: 'Property & Ownership',
   scorecard: 'Scorecard',
   pricing: 'Pricing Intelligence',
-  insider: 'Insider View',
 };
 
 const AMENITY_ICONS: Record<string, React.ElementType> = {
@@ -86,12 +86,17 @@ export const HotelProfile: React.FC = () => {
 
   const availableSections: ProfileSection[] = [
     'assessment',
+    ...(hotel.insiderReport ? (['insider'] as ProfileSection[]) : []),
     'stay',
     'property',
     ...(hotel.scores ? (['scorecard'] as ProfileSection[]) : []),
     ...(hotel.pricingIntelligence ? (['pricing'] as ProfileSection[]) : []),
-    ...(hotel.insiderReport ? (['insider'] as ProfileSection[]) : []),
   ];
+
+  const getSectionNum = (sec: ProfileSection) => {
+    const idx = availableSections.indexOf(sec);
+    return idx >= 0 ? String(idx + 1).padStart(2, '0') : '01';
+  };
 
   const officialWebsite = hotel.links?.officialWebsite;
   const indicativeRate = hotel.indicativeRate?.amount;
@@ -99,7 +104,7 @@ export const HotelProfile: React.FC = () => {
   const renderAssessment = () => (
     <div className={styles.panelContent}>
       <header className={styles.panelHeader}>
-        <span className={styles.panelNumber}>01</span>
+        <span className={styles.panelNumber}>{getSectionNum('assessment')}</span>
         <div>
           <span className={styles.kicker}>Independent hotel intelligence</span>
           <h2>Hotel Assessment</h2>
@@ -155,7 +160,7 @@ export const HotelProfile: React.FC = () => {
   const renderStay = () => (
     <div className={styles.panelContent}>
       <header className={styles.panelHeader}>
-        <span className={styles.panelNumber}>02</span>
+        <span className={styles.panelNumber}>{getSectionNum('stay')}</span>
         <div>
           <span className={styles.kicker}>For the stay</span>
           <h2>Stay Essentials</h2>
@@ -209,7 +214,7 @@ export const HotelProfile: React.FC = () => {
   const renderProperty = () => (
     <div className={styles.panelContent}>
       <header className={styles.panelHeader}>
-        <span className={styles.panelNumber}>03</span>
+        <span className={styles.panelNumber}>{getSectionNum('property')}</span>
         <div>
           <span className={styles.kicker}>Asset profile</span>
           <h2>Property &amp; Ownership</h2>
@@ -229,12 +234,21 @@ export const HotelProfile: React.FC = () => {
 
   const sectionContent: Record<ProfileSection, React.ReactNode> = {
     assessment: renderAssessment(),
+    insider: hotel.insiderReport ? (
+      <div className={styles.panelContent}>
+        <header className={styles.panelHeader}>
+          <span className={styles.panelNumber}>{getSectionNum('insider')}</span>
+          <div><span className={styles.kicker}>Practical intelligence</span><h2>Insider View</h2></div>
+        </header>
+        <div className={styles.embeddedComponent}><InsiderReport report={hotel.insiderReport} /></div>
+      </div>
+    ) : null,
     stay: renderStay(),
     property: renderProperty(),
     scorecard: hotel.scores ? (
       <div className={styles.panelContent}>
         <header className={styles.panelHeader}>
-          <span className={styles.panelNumber}>04</span>
+          <span className={styles.panelNumber}>{getSectionNum('scorecard')}</span>
           <div><span className={styles.kicker}>Technical assessment</span><h2>Scorecard</h2></div>
         </header>
         <div className={styles.embeddedComponent}><Scorecard scores={hotel.scores} /></div>
@@ -243,31 +257,22 @@ export const HotelProfile: React.FC = () => {
     pricing: hotel.pricingIntelligence ? (
       <div className={styles.panelContent}>
         <header className={styles.panelHeader}>
-          <span className={styles.panelNumber}>05</span>
+          <span className={styles.panelNumber}>{getSectionNum('pricing')}</span>
           <div><span className={styles.kicker}>Forward-rate observation</span><h2>Pricing Intelligence</h2></div>
         </header>
         <p className={styles.panelIntroduction}>Publicly available forward rates, observed to identify seasonality, pricing power and better booking windows.</p>
         <div className={styles.embeddedComponent}><PriceCurveChart pricing={hotel.pricingIntelligence} /></div>
       </div>
     ) : null,
-    insider: hotel.insiderReport ? (
-      <div className={styles.panelContent}>
-        <header className={styles.panelHeader}>
-          <span className={styles.panelNumber}>06</span>
-          <div><span className={styles.kicker}>Practical intelligence</span><h2>Insider View</h2></div>
-        </header>
-        <div className={styles.embeddedComponent}><InsiderReport report={hotel.insiderReport} /></div>
-      </div>
-    ) : null,
   };
 
   const sectionIcons: Record<ProfileSection, React.ElementType> = {
     assessment: FileText,
+    insider: KeyRound,
     stay: BedDouble,
     property: Building2,
     scorecard: Target,
     pricing: BarChart3,
-    insider: KeyRound,
   };
 
   return (
