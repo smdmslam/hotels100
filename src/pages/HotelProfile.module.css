@@ -302,7 +302,7 @@
 
 .suitabilityBadge {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 6px;
   padding: 10px 14px;
   min-height: 54px;
