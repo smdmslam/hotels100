@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Button } from '../components/shared';
 import { getIndexData, getCollection } from '../data/api';
+import collectionsData from '../../07-content/collections.json';
 import styles from './Home.module.css';
 
 export const Home: React.FC = () => {
-  const [viewMode] = useState<'published' | 'internal'>('published');
   const indexData = getIndexData();
   const globalCollection = getCollection('the-global-100');
   const globalHotels = globalCollection?.hotels?.slice(0, 5) ?? [];
-  const allCollections = (require('../../07-content/collections.json') as any).collections;
+  const allCollections = (collectionsData as any).collections;
   const publishedCollections = allCollections.filter((c: any) => c.title && c.slug);
 
   return (
@@ -83,7 +83,15 @@ export const Home: React.FC = () => {
         <Container variant="wide">
           <h2 className={styles.sectionTitle}>Latest Hotel Reports</h2>
           <div className={styles.reportGrid}>
-            {globalHotels.slice(0, 4).map(hotel => (
+            {/* Seasonal feature card */}
+            <article className={styles.reportCard}>
+              <div className={styles.reportInfo}>
+                <h3>The Summer Edit</h3>
+                <p>Spotlight on Côte d’Azur &amp; Italian/Swiss Lakes collections.</p>
+                <Link to="/collections/the-summer-edit">Explore</Link>
+              </div>
+            </article>
+            {globalHotels.slice(0, 2).map(hotel => (
               <article key={hotel.id} className={styles.reportCard}>
                 <img src={hotel.primaryImage?.url || '/assets/placeholder-hero.jpg'} alt={hotel.primaryImage?.alt || hotel.name} className={styles.reportImage} />
                 <div className={styles.reportInfo}>
@@ -93,18 +101,9 @@ export const Home: React.FC = () => {
                 </div>
               </article>
             ))}
-            {/* Seasonal feature card */}
-            <article className={styles.reportCard}>
-              <div className={styles.reportInfo}>
-                <h3>The Summer Edit</h3>
-                <p>Spotlight on Côte d’Azur & Italian/Swiss Lakes collections.</p>
-                <Link to="/collections/the-summer-edit">Explore</Link>
-              </div>
-            </article>
           </div>
         </Container>
       </section>
     </div>
   );
 };
-
