@@ -253,6 +253,57 @@
   letter-spacing: -.02em;
 }
 
+.assessmentJudgementHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+  margin: var(--space-6) 0 var(--space-6) 70px;
+  padding: var(--space-5);
+  background: var(--color-paper);
+  border: 1px solid rgba(18, 18, 18, .16);
+  border-left: 4px solid var(--color-antique-gold);
+}
+
+.judgementBadge {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  padding-right: var(--space-6);
+  border-right: 1px solid rgba(18, 18, 18, .15);
+}
+
+.judgementBadge span {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--color-stone);
+}
+
+.judgementBadge strong {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--color-ink);
+}
+
+.judgementBadge small {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  color: var(--color-stone);
+}
+
+.judgementMeta h3 {
+  margin: var(--space-1) 0 0;
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
 .standfirst {
   margin: var(--space-7) 0;
   font-family: var(--font-serif);

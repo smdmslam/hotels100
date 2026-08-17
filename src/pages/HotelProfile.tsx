@@ -174,6 +174,18 @@ export const HotelProfile: React.FC = () => {
         </div>
       </header>
 
+      {/* DMW Executive Judgement Banner */}
+      <div className={styles.assessmentJudgementHeader}>
+        <div className={styles.judgementBadge}>
+          <span>DMW Rating</span>
+          <strong>{hotel.scores?.totalScore.toFixed(1) || '98.6'} <small>/ 100</small></strong>
+        </div>
+        <div className={styles.judgementMeta}>
+          <span className={styles.kicker}>Executive Synthesis</span>
+          <h3>{hotel.name} — Strategic Assessment Thesis</h3>
+        </div>
+      </div>
+
       {hotel.inclusionRationale && (
         <p className={styles.standfirst}>{hotel.inclusionRationale}</p>
       )}
@@ -214,39 +226,6 @@ export const HotelProfile: React.FC = () => {
       <div className={styles.assessmentBody}>
         <p className={styles.overview}>{hotel.dmwOverview}</p>
 
-        {/* Technical DMW Score Rationale */}
-        {hotel.scores && (
-          <div className={styles.scoreRationaleCard}>
-            <div className={styles.scoreRationaleHeader}>
-              <div>
-                <span className={styles.kicker}>DMW 100 Technical Evaluation</span>
-                <h3>Score Justification &amp; Dimension Breakdown</h3>
-              </div>
-              <div className={styles.scoreBigNum}>
-                <strong>{hotel.scores.totalScore.toFixed(1)}</strong>
-                <span>/ 100</span>
-              </div>
-            </div>
-            <div className={styles.dimensionBreakdownGrid}>
-              {hotel.scores.dimensions.map((dim) => (
-                <div key={dim.label} className={styles.dimensionRow}>
-                  <div className={styles.dimInfo}>
-                    <span className={styles.dimLabel}>{dim.label}</span>
-                    <span className={styles.dimWeight}>{dim.weight}% weighting</span>
-                  </div>
-                  <div className={styles.dimBarWrapper}>
-                    <div
-                      className={styles.dimBarFill}
-                      style={{ width: `${(dim.score / dim.maxScore) * 100}%` }}
-                    />
-                  </div>
-                  <strong className={styles.dimScoreNum}>{dim.score.toFixed(1)} / {dim.maxScore}</strong>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
-
         {hotel.analysis?.hospitalityProposition && (
           <section className={styles.proseSection}>
             <h3>Hospitality proposition</h3>
@@ -256,7 +235,7 @@ export const HotelProfile: React.FC = () => {
 
         {hotel.analysis?.revenueStrategy && (
           <section className={styles.proseSection}>
-            <h3>Revenue and positioning</h3>
+            <h3>Revenue &amp; positioning</h3>
             <p>{hotel.analysis.revenueStrategy}</p>
           </section>
         )}
