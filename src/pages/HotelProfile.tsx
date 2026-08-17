@@ -47,6 +47,15 @@ const SECTION_LABELS: Record<ProfileSection, string> = {
   pricing: 'Pricing Intelligence',
 };
 
+const SECTION_DESCRIPTIONS: Record<ProfileSection, string> = {
+  assessment: 'Strategic analysis, field notes & thesis',
+  insider: 'Secret lore, quirks, best rooms & clientele',
+  stay: 'Amenities, packages & direct booking',
+  property: 'Specs, rooms, operator & asset facts',
+  scorecard: 'DMW score & dimension weights',
+  pricing: 'Forward rates & seasonal value windows',
+};
+
 const AMENITY_ICONS: Record<string, React.ElementType> = {
   gym: Dumbbell,
   parking: Car,
@@ -309,15 +318,19 @@ export const HotelProfile: React.FC = () => {
           <span className={styles.navLabel}>Explore the profile</span>
           {availableSections.map((section) => {
             const Icon = sectionIcons[section];
+            const isActive = activeSection === section;
             return (
               <button
                 type="button"
                 key={section}
-                className={activeSection === section ? styles.navActive : ''}
+                className={isActive ? styles.navActive : ''}
                 onClick={() => setActiveSection(section)}
               >
-                <Icon size={17} strokeWidth={1.4} />
-                <span>{SECTION_LABELS[section]}</span>
+                <div className={styles.navHeaderRow}>
+                  <Icon size={16} strokeWidth={1.4} />
+                  <span className={styles.navTitle}>{SECTION_LABELS[section]}</span>
+                </div>
+                <span className={styles.navSubtext}>{SECTION_DESCRIPTIONS[section]}</span>
               </button>
             );
           })}
