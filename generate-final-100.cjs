@@ -34,6 +34,19 @@ candidates.sort((a, b) => {
   return a.name.localeCompare(b.name);
 });
 
+// Load existing data to preserve enriched fields (insiderReport, amenities, propertyFacts, analysis, etc.)
+let existingMap = new Map();
+if (fs.existsSync(OUTPUT_FILE)) {
+  try {
+    const existingData = JSON.parse(fs.readFileSync(OUTPUT_FILE, 'utf8'));
+    if (existingData && existingData.hotels) {
+      existingData.hotels.forEach(h => existingMap.set(h.slug, h));
+    }
+  } catch (e) {
+    console.warn('Could not parse existing hotels.json:', e.message);
+  }
+}
+
 // Keep all candidates for the master database
 const allCandidates = candidates;
 
@@ -93,46 +106,53 @@ const indexData = {
     else if (rank <= 100) band = "Highly Convincing";
 
     // Replicate St Martins Lane data as a placeholder for others, or leave mostly empty
+    const slug = generateSlug(hotel.name, hotel.location);
+    const existing = existingMap.get(slug);
+
     return {
-      id: `dmw-hotel-${rank.toString().padStart(3, '0')}`,
-      slug: generateSlug(hotel.name, hotel.location),
-      profileUrl: `/hotels/${generateSlug(hotel.name, hotel.location)}`,
+      id: existing?.id || `dmw-hotel-${rank.toString().padStart(3, '0')}`,
+      slug: slug,
+      profileUrl: `/hotels/${slug}`,
       rank: rank,
       name: hotel.name,
       band: band,
-      featured: false,
+      featured: existing?.featured || false,
       strategicLens: getStrategicLens(hotel.name, hotel.brand),
-      distinctions: [],
-      location: {
+      distinctions: existing?.distinctions || [],
+      location: existing?.location || {
         city: hotel.location,
         country: hotel.country,
         region: getRegion(hotel.country),
         neighbourhood: "City Center",
         displayLocation: `${hotel.location}, ${hotel.country}`
       },
-      archetype: hotel.location.includes('Island') || hotel.location.includes('Valley') ? 'Resort' : 'Urban Luxury',
+      archetype: existing?.archetype || (hotel.location.includes('Island') || hotel.location.includes('Valley') ? 'Resort' : 'Urban Luxury'),
       dmwJudgement: hotel.name.toLowerCase().includes('chiltern firehouse')
         ? 'Globally recognised lifestyle trophy asset; operations temporarily paused following a fire.'
-        : (hotel.dmwJudgement || null),
-      assessmentPendingLabel: hotel.name.toLowerCase().includes('chiltern firehouse') ? 'Temporarily Closed' : null,
-      dmwOverview: null,
-      identity: {
+        : (existing?.dmwJudgement || hotel.dmwJudgement || null),
+      assessmentPendingLabel: hotel.name.toLowerCase().includes('chiltern firehouse') ? 'Temporarily Closed' : (existing?.assessmentPendingLabel || null),
+      dmwOverview: existing?.dmwOverview || null,
+      identity: existing?.identity || {
         owner: "Unknown",
         operator: hotel.brand !== 'Independent' ? hotel.brand : "Independent",
         brand: hotel.brand !== 'Independent' ? hotel.brand : null
       },
-      propertyFacts: {
-        roomCount: Math.floor(Math.random() * 150) + 50, // rough placeholder
+      propertyFacts: existing?.propertyFacts || {
+        roomCount: Math.floor(Math.random() * 150) + 50,
         openingYear: 2000 + Math.floor(Math.random() * 23)
       },
-      essentialAmenities: [
+      amenities: existing?.amenities || undefined,
+      essentialAmenities: existing?.essentialAmenities || [
         { id: 'gym', label: 'Gym', category: 'Wellness', available: true },
         { id: 'parking', label: 'Parking', category: 'Transport', available: Math.random() > 0.3 },
         { id: 'restaurant', label: 'Restaurant', category: 'Food and Drink', available: true },
         { id: 'star-rating', label: (Math.random() > 0.5 ? '5-Star' : '4-Star'), category: 'Other', available: true }
       ],
-      scores: null,
-      inclusionRationale: `A high-consensus asset representing the pinnacle of hospitality in ${hotel.location}.`
+      scores: existing?.scores || null,
+      analysis: existing?.analysis || undefined,
+      insiderReport: existing?.insiderReport || undefined,
+      pricingIntelligence: existing?.pricingIntelligence || undefined,
+      inclusionRationale: existing?.inclusionRationale || `A high-consensus asset representing the pinnacle of hospitality in ${hotel.location}.`
     };
   })
 };
