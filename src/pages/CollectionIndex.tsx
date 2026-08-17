@@ -148,6 +148,7 @@ export const CollectionIndex: React.FC = () => {
           <div className={styles.mastheadGrid}>
             <h1 className={styles.title}>{collection.title}</h1>
             <div className={styles.mastheadAside}>
+              <span className={styles.asideLabel}>About this edition</span>
               <p className={styles.subtitle}>{collection.description}</p>
               <div className={styles.collectionMeta}>
                 <span>{allHotels.length} hotels</span>
