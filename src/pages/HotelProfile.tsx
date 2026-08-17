@@ -336,9 +336,50 @@ export const HotelProfile: React.FC = () => {
           })}
         </nav>
 
-        <section className={styles.mainPanel} aria-live="polite">
-          {sectionContent[activeSection]}
-        </section>
+        <div className={styles.mainWrapper}>
+          <div className={styles.atAGlanceHorizontal}>
+            <span className={styles.kicker}>At a glance</span>
+            <div className={styles.glanceRow}>
+              {hotel.scores && (
+                <div className={styles.glanceItem}>
+                  <span className={styles.glanceLabel}>DMW Score</span>
+                  <div className={styles.glanceValue}>
+                    <strong>{hotel.scores.totalScore.toFixed(1)}</strong>
+                    <small>/100</small>
+                  </div>
+                </div>
+              )}
+              {indicativeRate && (
+                <div className={styles.glanceItem}>
+                  <span className={styles.glanceLabel}>Indicative Rate</span>
+                  <div className={styles.glanceValue}>
+                    <strong>~${indicativeRate}</strong>
+                    <small>/night</small>
+                  </div>
+                </div>
+              )}
+              <div className={styles.glanceItem}>
+                <span className={styles.glanceLabel}>Strategic Lens</span>
+                <div className={styles.glanceText}>{hotel.strategicLens}</div>
+              </div>
+              <div className={styles.glanceItem}>
+                <span className={styles.glanceLabel}>Property</span>
+                <div className={styles.glanceText}>
+                  {hotel.propertyFacts.roomCount ? `${hotel.propertyFacts.roomCount} rooms` : hotel.archetype}
+                </div>
+              </div>
+              {officialWebsite && (
+                <a className={styles.glanceAction} href={officialWebsite} target="_blank" rel="noopener noreferrer">
+                  Check availability <ArrowRight size={15} />
+                </a>
+              )}
+            </div>
+          </div>
+
+          <section className={styles.mainPanel} aria-live="polite">
+            {sectionContent[activeSection]}
+          </section>
+        </div>
 
         <aside className={styles.decisionPanel}>
           <span className={styles.kicker}>At a glance</span>
