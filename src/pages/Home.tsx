@@ -1,134 +1,110 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Container, Button, SectionHeader } from '../components/shared';
-import { getIndexData } from '../data/api';
-import { ArrowRight } from 'lucide-react';
+import { Container, Button } from '../components/shared';
+import { getIndexData, getCollection } from '../data/api';
 import styles from './Home.module.css';
 
 export const Home: React.FC = () => {
-  const [viewMode, setViewMode] = useState<'published' | 'internal'>('published');
+  const [viewMode] = useState<'published' | 'internal'>('published');
   const indexData = getIndexData();
+  const globalCollection = getCollection('the-global-100');
+  const globalHotels = globalCollection?.hotels?.slice(0, 5) ?? [];
+  const allCollections = (require('../../07-content/collections.json') as any).collections;
+  const publishedCollections = allCollections.filter((c: any) => c.title && c.slug);
 
   return (
     <div className={styles.home}>
       {/* Hero Section */}
       <section className={styles.hero}>
-        <Container variant="wide">
-          <div className={styles.heroContent}>
-            <span className={styles.editionMeta}>{indexData.edition} Edition</span>
-            <h1 className={styles.heroTitle}>{indexData.title}</h1>
-            <p className={styles.heroSubtitle}>
-              A global index of the hotels that best combine hospitality, brand, pricing power and enduring asset value.
-            </p>
-            <div className={styles.heroActions}>
-              {viewMode === 'published' ? (
-                <>
-                  <Link to="/collections/the-global-100" className={styles.buttonLink}>
-                    <Button variant="dark-primary">The Global 100</Button>
-                  </Link>
-                  <Link to="/collections/the-london-50" className={styles.buttonLink}>
-                    <Button variant="dark-secondary">The London 50</Button>
-                  </Link>
-                  <Link to="/collections/the-new-york-50" className={styles.buttonLink}>
-                    <Button variant="dark-secondary">The New York 50</Button>
-                  </Link>
-                  <Link to="/collections/the-zurich-25" className={styles.buttonLink}>
-                    <Button variant="dark-secondary">The Zurich 25</Button>
-                  </Link>
-                  <Link to="/collections/the-accessible-50" className={styles.buttonLink}>
-                    <Button variant="dark-secondary">The Accessible 50</Button>
-                  </Link>
-                  <Link to="/collections/the-london-accessible" className={styles.buttonLink}>
-                    <Button variant="dark-secondary">The London Accessible (Under $500)</Button>
-                  </Link>
-                  <Link to="/collections/the-paris-25" className={styles.buttonLink}>
-                    <Button variant="dark-secondary">The Paris 25</Button>
-                  </Link>
-                  <Link to="/collections/the-italian-and-swiss-lakes-35" className={styles.buttonLink}>
-                    <Button variant="dark-secondary">The Italian &amp; Swiss Lakes 35</Button>
-                  </Link>
-                </>
-              ) : (
-                <>
-                  <Link to="/collections/the-monaco-and-eastern-riviera-30" className={styles.buttonLink}>
-                    <Button variant="dark-primary">Monaco &amp; Eastern Riviera 30</Button>
-                  </Link>
-                </>
-              )}
-            </div>
+        <div className={styles.heroOverlay} />
+        <Container variant="wide" className={styles.heroContent}>
+          <span className={styles.editionMeta}>{indexData.edition} Edition</span>
+          <h1 className={styles.heroTitle}>{indexData.title}</h1>
+          <p className={styles.heroSubtitle}>A global index of the hotels that best combine hospitality, brand, pricing power and enduring asset value.</p>
+          <div className={styles.heroCtas}>
+            <Link to="/collections/the-global-100" className={styles.heroCtaPrimary}>
+              <Button variant="dark-primary">Explore the Global 100</Button>
+            </Link>
+            <Link to="/editions" className={styles.heroCtaSecondary}>Browse all editions</Link>
           </div>
         </Container>
       </section>
 
-      {/* Collections Section */}
-      <section className={styles.section} style={{ paddingTop: '2rem' }}>
+      {/* Global 100 Preview */}
+      <section className={styles.globalPreview}>
         <Container variant="wide">
-          <div className={styles.tabToggle} style={{ display: 'flex', gap: '1rem', marginBottom: '1.5rem', justifyContent: 'center' }}>
-            <button 
-              onClick={() => setViewMode('published')} 
-              style={{ 
-                background: 'none', 
-                border: 'none', 
-                padding: '0.5rem 1rem', 
-                cursor: 'pointer',
-                borderBottom: viewMode === 'published' ? '2px solid var(--accent)' : '2px solid transparent',
-                color: viewMode === 'published' ? 'var(--text-primary)' : 'var(--text-secondary)',
-                fontFamily: 'Inter',
-                fontSize: '0.875rem'
-              }}
-            >
-              Published Editions
-            </button>
-            <button 
-              onClick={() => setViewMode('internal')} 
-              style={{ 
-                background: 'none', 
-                border: 'none', 
-                padding: '0.5rem 1rem', 
-                cursor: 'pointer',
-                borderBottom: viewMode === 'internal' ? '2px solid var(--accent)' : '2px solid transparent',
-                color: viewMode === 'internal' ? 'var(--text-primary)' : 'var(--text-secondary)',
-                fontFamily: 'Inter',
-                fontSize: '0.875rem'
-              }}
-            >
-              Internal Research
-            </button>
+          <h2 className={styles.sectionTitle}>The Global 100</h2>
+          <p className={styles.sectionSubtitle}>Top luxury hotels worldwide, ranked by DMW methodology.</p>
+          <div className={styles.globalRows}>
+            {globalHotels.map(hotel => (
+              <div key={hotel.id} className={styles.globalRow}>
+                <span className={styles.globalRank}>#{hotel.rank}</span>
+                <Link to={hotel.profileUrl} className={styles.globalName}>{hotel.name}</Link>
+                <span className={styles.globalLocation}>{hotel.location.displayLocation}</span>
+                {hotel.scores && <span className={styles.globalScore}>Score: {hotel.scores.totalScore}</span>}
+              </div>
+            ))}
           </div>
+          <Link to="/collections/the-global-100" className={styles.viewAll}>View the complete Global 100 →</Link>
         </Container>
       </section>
 
-      {/* Featured Insight Section */}
-      <section className={styles.section}>
-        <Container variant="standard">
-          <SectionHeader 
-            title="Strategic Insights" 
-            action={
-              <Link to="/insights" className={styles.viewAll}>
-                View all insights <ArrowRight size={16} />
-              </Link>
-            } 
-          />
-          
-          <div className={styles.featuredInsight}>
-            <div className={styles.insightContent}>
-              <span className={styles.insightCategory}>Hotel Strategy</span>
-              <h3 className={styles.insightTitle}>Why St Martins Lane Works</h3>
-              <p className={styles.insightExcerpt}>
-                A masterclass in extracting maximum rate from a highly constrained building through sheer force of design and atmosphere. How a 1999 concept remains a template for modern lifestyle hospitality.
-              </p>
+      {/* Edition Navigation */}
+      <section className={styles.editionNav}>
+        <Container variant="wide">
+          <h2 className={styles.sectionTitle}>Explore Collections</h2>
+          <ul className={styles.editionGrid}>
+            {publishedCollections.map((col: any) => (
+              <li key={col.slug} className={styles.editionItem}>
+                <Link to={`/collections/${col.slug}`}>{col.title}</Link>
+              </li>
+            ))}
+          </ul>
+        </Container>
+      </section>
 
-              <Link to="/hotels/st-martins-lane-london">
-                <Button variant="primary">Read the Analysis</Button>
-              </Link>
-            </div>
-            <div className={styles.insightImagePlaceholder}>
-              {/* Image placeholder to emulate visual spec */}
-              <span>Visual Demo Placeholder</span>
-            </div>
+      {/* Ask DMW Placeholder */}
+      <section className={styles.askDmw}>
+        <Container variant="wide">
+          <h2 className={styles.sectionTitle}>Build your own hotel shortlist</h2>
+          <p className={styles.askDescription}>Soon you’ll be able to ask DMW to generate custom lists from our index.</p>
+          <input readOnly placeholder="Find the best‑value highly ranked hotels in Zurich" className={styles.askInput} />
+          <div className={styles.examples}>
+            <span>Example: "Best boutique hotels in Paris"</span>
+            <span>Example: "High‑value resorts in the Caribbean"</span>
+            <span>Example: "Hotels with strong business travel scores in Tokyo"</span>
+          </div>
+          <span className={styles.comingSoon}>Coming soon</span>
+        </Container>
+      </section>
+
+      {/* Latest Reports */}
+      <section className={styles.latestReports}>
+        <Container variant="wide">
+          <h2 className={styles.sectionTitle}>Latest Hotel Reports</h2>
+          <div className={styles.reportGrid}>
+            {globalHotels.slice(0, 4).map(hotel => (
+              <article key={hotel.id} className={styles.reportCard}>
+                <img src={hotel.primaryImage?.url || '/assets/placeholder-hero.jpg'} alt={hotel.primaryImage?.alt || hotel.name} className={styles.reportImage} />
+                <div className={styles.reportInfo}>
+                  <h3>{hotel.name}</h3>
+                  <p>{hotel.location.displayLocation}</p>
+                  <Link to={hotel.profileUrl}>Read report</Link>
+                </div>
+              </article>
+            ))}
+            {/* Seasonal feature card */}
+            <article className={styles.reportCard}>
+              <div className={styles.reportInfo}>
+                <h3>The Summer Edit</h3>
+                <p>Spotlight on Côte d’Azur & Italian/Swiss Lakes collections.</p>
+                <Link to="/collections/the-summer-edit">Explore</Link>
+              </div>
+            </article>
           </div>
         </Container>
       </section>
     </div>
   );
 };
+
