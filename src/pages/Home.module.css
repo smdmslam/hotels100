@@ -50,10 +50,12 @@
   gap: var(--space-4);
   flex-wrap: wrap;
   margin-bottom: var(--space-7);
+  justify-content: center; /* center buttons */
 }
 
 .buttonLink {
   text-decoration: none;
+  margin: 0.25rem; /* add spacing */
 }
 
 .prototypeNotice {

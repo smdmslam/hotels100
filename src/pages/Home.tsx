@@ -20,6 +20,42 @@ export const Home: React.FC = () => {
             <p className={styles.heroSubtitle}>
               A global index of the hotels that best combine hospitality, brand, pricing power and enduring asset value.
             </p>
+            <div className={styles.heroActions}>
+              {viewMode === 'published' ? (
+                <>
+                  <Link to="/collections/the-global-100" className={styles.buttonLink}>
+                    <Button variant="dark-primary">The Global 100</Button>
+                  </Link>
+                  <Link to="/collections/the-london-50" className={styles.buttonLink}>
+                    <Button variant="dark-secondary">The London 50</Button>
+                  </Link>
+                  <Link to="/collections/the-new-york-50" className={styles.buttonLink}>
+                    <Button variant="dark-secondary">The New York 50</Button>
+                  </Link>
+                  <Link to="/collections/the-zurich-25" className={styles.buttonLink}>
+                    <Button variant="dark-secondary">The Zurich 25</Button>
+                  </Link>
+                  <Link to="/collections/the-accessible-50" className={styles.buttonLink}>
+                    <Button variant="dark-secondary">The Accessible 50</Button>
+                  </Link>
+                  <Link to="/collections/the-london-accessible" className={styles.buttonLink}>
+                    <Button variant="dark-secondary">The London Accessible (Under $500)</Button>
+                  </Link>
+                  <Link to="/collections/the-paris-25" className={styles.buttonLink}>
+                    <Button variant="dark-secondary">The Paris 25</Button>
+                  </Link>
+                  <Link to="/collections/the-italian-and-swiss-lakes-35" className={styles.buttonLink}>
+                    <Button variant="dark-secondary">The Italian &amp; Swiss Lakes 35</Button>
+                  </Link>
+                </>
+              ) : (
+                <>
+                  <Link to="/collections/the-monaco-and-eastern-riviera-30" className={styles.buttonLink}>
+                    <Button variant="dark-primary">Monaco &amp; Eastern Riviera 30</Button>
+                  </Link>
+                </>
+              )}
+            </div>
           </div>
         </Container>
       </section>
@@ -59,43 +95,6 @@ export const Home: React.FC = () => {
               Internal Research
             </button>
           </div>
-
-          <div className={styles.heroActions}>
-            {viewMode === 'published' ? (
-              <>
-                <Link to="/collections/the-global-100" className={styles.buttonLink}>
-                  <Button variant="dark-primary">The Global 100</Button>
-                </Link>
-                <Link to="/collections/the-london-50" className={styles.buttonLink}>
-                  <Button variant="dark-secondary">The London 50</Button>
-                </Link>
-                <Link to="/collections/the-new-york-50" className={styles.buttonLink}>
-                  <Button variant="dark-secondary">The New York 50</Button>
-                </Link>
-                <Link to="/collections/the-zurich-25" className={styles.buttonLink}>
-                  <Button variant="dark-secondary">The Zurich 25</Button>
-                </Link>
-                <Link to="/collections/the-accessible-50" className={styles.buttonLink}>
-                  <Button variant="dark-secondary">The Accessible 50</Button>
-                </Link>
-                <Link to="/collections/the-london-accessible" className={styles.buttonLink}>
-                  <Button variant="dark-secondary">The London Accessible (Under $500)</Button>
-                </Link>
-                <Link to="/collections/the-paris-25" className={styles.buttonLink}>
-                  <Button variant="dark-secondary">The Paris 25</Button>
-                </Link>
-                <Link to="/collections/the-italian-and-swiss-lakes-35" className={styles.buttonLink}>
-                  <Button variant="dark-secondary">The Italian & Swiss Lakes 35</Button>
-                </Link>
-              </>
-            ) : (
-              <>
-                <Link to="/collections/the-monaco-and-eastern-riviera-30" className={styles.buttonLink}>
-                  <Button variant="dark-primary">Monaco & Eastern Riviera 30</Button>
-                </Link>
-              </>
-            )}
-          </div>
         </Container>
       </section>
 
@@ -118,6 +117,7 @@ export const Home: React.FC = () => {
               <p className={styles.insightExcerpt}>
                 A masterclass in extracting maximum rate from a highly constrained building through sheer force of design and atmosphere. How a 1999 concept remains a template for modern lifestyle hospitality.
               </p>
+
               <Link to="/hotels/st-martins-lane-london">
                 <Button variant="primary">Read the Analysis</Button>
               </Link>
