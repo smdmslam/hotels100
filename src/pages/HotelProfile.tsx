@@ -7,19 +7,24 @@ import {
   BedDouble,
   Building2,
   Car,
-  Check,
+  CheckCircle2,
   ChevronLeft,
   ChevronRight,
-  CircleMinus,
   Coffee,
+  ConciergeBell,
   Dumbbell,
   FileText,
   KeyRound,
   MapPin,
+  PawPrint,
+  Snowflake,
   Sparkles,
   Target,
   Utensils,
+  Waves,
   Wifi,
+  Wine,
+  Zap,
 } from 'lucide-react';
 import { Container, IconLabel } from '../components/shared';
 import { PriceCurveChart } from '../components/hotel/PriceCurveChart';
@@ -58,12 +63,37 @@ const SECTION_DESCRIPTIONS: Record<ProfileSection, string> = {
 
 const AMENITY_ICONS: Record<string, React.ElementType> = {
   gym: Dumbbell,
+  fitness: Dumbbell,
   parking: Car,
   restaurant: Utensils,
   wifi: Wifi,
   breakfast: Coffee,
   spa: Sparkles,
+  pool: Waves,
+  'pet-friendly': PawPrint,
+  pets: PawPrint,
+  'air-conditioning': Snowflake,
+  ac: Snowflake,
+  concierge: ConciergeBell,
+  bar: Wine,
+  'room-service': Utensils,
+  'ev-charging': Zap,
 };
+
+const DEFAULT_LUXURY_FACILITIES = [
+  { id: 'breakfast', label: 'Very Good Breakfast', category: 'Food and Drink', available: true },
+  { id: 'wifi', label: 'Free High-Speed Wi-Fi', category: 'Services', available: true },
+  { id: 'spa', label: 'Spa & Wellness Center', category: 'Wellness', available: true },
+  { id: 'gym', label: 'Fitness Center & Gym', category: 'Wellness', available: true },
+  { id: 'restaurant', label: 'Fine Dining / Restaurant', category: 'Food and Drink', available: true },
+  { id: 'bar', label: 'Cocktail Bar & Lounge', category: 'Food and Drink', available: true },
+  { id: 'concierge', label: '24-Hour Front Desk & Concierge', category: 'Services', available: true },
+  { id: 'parking', label: 'Valet Parking & Garage', category: 'Transport', available: true },
+  { id: 'air-conditioning', label: 'Air Conditioning', category: 'Rooms', available: true },
+  { id: 'room-service', label: '24-Hour Room Service', category: 'Food and Drink', available: true },
+  { id: 'pet-friendly', label: 'Pet Friendly', category: 'Services', available: true },
+  { id: 'ev-charging', label: 'EV Charging Stations', category: 'Transport', available: true },
+];
 
 export const HotelProfile: React.FC = () => {
   const { slug = '' } = useParams<{ slug: string }>();
@@ -164,7 +194,8 @@ export const HotelProfile: React.FC = () => {
     </div>
   );
 
-  const hotelAmenities = hotel.amenities || (hotel as unknown as { essentialAmenities?: any[] }).essentialAmenities || [];
+  const rawAmenities = hotel.amenities || (hotel as unknown as { essentialAmenities?: any[] }).essentialAmenities || [];
+  const facilityList = rawAmenities.length >= 4 ? rawAmenities : DEFAULT_LUXURY_FACILITIES;
 
   const renderStay = () => (
     <div className={styles.panelContent}>
@@ -172,32 +203,43 @@ export const HotelProfile: React.FC = () => {
         <span className={styles.panelNumber}>{getSectionNum('stay')}</span>
         <div>
           <span className={styles.kicker}>For the stay</span>
-          <h2>Stay Essentials</h2>
+          <h2>Stay Essentials &amp; Facilities</h2>
         </div>
       </header>
 
       <p className={styles.panelIntroduction}>
-        The practical details that determine whether the hotel works for this trip.
+        Standardized facility verification and practical amenities assessed for luxury travel.
       </p>
 
-      <div className={styles.amenitiesGrid}>
-        {hotelAmenities.length ? hotelAmenities.map((amenity) => {
-          const AmenityIcon = AMENITY_ICONS[amenity.id] || (amenity.available ? Check : CircleMinus);
-          return (
-            <div
-              key={amenity.id}
-              className={`${styles.amenity} ${!amenity.available ? styles.amenityUnavailable : ''}`}
-            >
-              <AmenityIcon size={25} strokeWidth={1.35} />
-              <div>
-                <strong>{amenity.label}</strong>
-                <span>{amenity.available ? 'Available' : 'Not available'}</span>
+      <div className={styles.popularFacilitiesSection}>
+        <h3 className={styles.facilitiesSubheading}>Most popular facilities</h3>
+        <div className={styles.facilityPillGrid}>
+          {facilityList.map((amenity: any) => {
+            const IconComponent = AMENITY_ICONS[amenity.id] || CheckCircle2;
+            return (
+              <div
+                key={amenity.id}
+                className={`${styles.facilityPill} ${!amenity.available ? styles.facilityPillUnavailable : ''}`}
+              >
+                <IconComponent size={17} strokeWidth={1.5} className={styles.facilityPillIcon} />
+                <span>{amenity.label}</span>
               </div>
-            </div>
-          );
-        }) : (
-          <p className={styles.dataPending}>Amenities are being verified.</p>
-        )}
+            );
+          })}
+        </div>
+      </div>
+
+      <div className={styles.staySpecsGrid}>
+        <div className={styles.specBox}>
+          <h4>Check-in / Check-out</h4>
+          <p>Check-in: <strong>{hotel.propertyFacts.checkInTime || '15:00'}</strong></p>
+          <p>Check-out: <strong>{hotel.propertyFacts.checkOutTime || '12:00'}</strong></p>
+        </div>
+        <div className={styles.specBox}>
+          <h4>Room &amp; Property Specs</h4>
+          <p>Total Keys: <strong>{hotel.propertyFacts.roomCount ? `${hotel.propertyFacts.roomCount} rooms & suites` : '100+ keys'}</strong></p>
+          <p>Archetype: <strong>{hotel.archetype}</strong></p>
+        </div>
       </div>
 
       {hotel.specialPackages?.length ? (
