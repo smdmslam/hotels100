@@ -30,9 +30,10 @@ export const Home: React.FC = () => {
 
   const notationItems = [
     { slug: 'the-global-100', label: 'Global 100 · No. 1' },
-    { slug: 'the-london-50', label: 'London 50 · No. 1' },
     { slug: 'the-switzerland-50', label: 'Switzerland 50 · No. 1' },
     { slug: 'the-italian-and-swiss-lakes-35', label: 'Lakes 35 · No. 1' },
+    { slug: 'the-new-york-50', label: 'New York 50 · No. 1' },
+    { slug: 'the-uae-50', label: 'UAE 50 · No. 1' },
   ].map((item) => {
     const col = getCollection(item.slug);
     const winner = col?.hotels?.[0];
