@@ -80,8 +80,7 @@ export const Home: React.FC = () => {
                   onClick={() => setAskDmwOpen(true)}
                 >
                   <Sparkles size={16} style={{ color: 'var(--color-antique-gold)' }} />
-                  <span>Ask DMW AI — Bespoke Advisory Desk</span>
-                  <span className={styles.aiPill}>AI Engine</span>
+                  <span>ASK DMW AI — AI ADVISORY ENGINE</span>
                 </button>
               </div>
             </div>
