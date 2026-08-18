@@ -67,7 +67,7 @@ export const Home: React.FC = () => {
                   <span aria-hidden="true">↗</span>
                 </Link>
                 <a href="#collections" className={styles.secondaryAction}>
-                  Browse all editions
+                  Browse regional lists
                 </a>
               </div>
             </div>
