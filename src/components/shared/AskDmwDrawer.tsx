@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { X, Send, Sparkles, Compass, ShieldCheck } from 'lucide-react';
+import { X, Sparkles, Compass, ShieldCheck } from 'lucide-react';
 import { getCollection } from '../../data/api';
 import type { HotelSummary } from '../../data/types';
 import styles from './AskDmwDrawer.module.css';
@@ -21,8 +21,6 @@ const PRESET_PROMPTS = [
 
 export const AskDmwDrawer: React.FC<AskDmwDrawerProps> = ({ isOpen, onClose, initialQuery = '' }) => {
   const [query, setQuery] = useState(initialQuery || 'Zurich business trip for 3 nights, quiet room, proper gym, under $500');
-  const [userEmail, setUserEmail] = useState('');
-  const [submitted, setSubmitted] = useState(false);
 
   if (!isOpen) return null;
 
@@ -57,15 +55,6 @@ export const AskDmwDrawer: React.FC<AskDmwDrawerProps> = ({ isOpen, onClose, ini
       .map(item => item.hotel)
       .slice(0, 3)
     : allHotels.slice(0, 3);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!userEmail) return;
-
-    // Simulate sending email inquiry to s.moralesmed@gmail.com
-    console.log(`Sending Ask DMW inquiry to s.moralesmed@gmail.com from ${userEmail} with prompt: "${query}"`);
-    setSubmitted(true);
-  };
 
   return (
     <>
@@ -106,7 +95,7 @@ export const AskDmwDrawer: React.FC<AskDmwDrawerProps> = ({ isOpen, onClose, ini
               className={styles.promptTextarea}
               placeholder='e.g., "Zurich business trip for 3 nights, quiet room, proper gym, under $500"'
               value={query}
-              onChange={(e) => { setQuery(e.target.value); setSubmitted(false); }}
+              onChange={(e) => setQuery(e.target.value)}
             />
 
             <div className={styles.presetsLabel} style={{ marginTop: 12 }}>
@@ -118,7 +107,7 @@ export const AskDmwDrawer: React.FC<AskDmwDrawerProps> = ({ isOpen, onClose, ini
                   key={preset.label}
                   type="button"
                   className={styles.presetChip}
-                  onClick={() => { setQuery(preset.prompt); setSubmitted(false); }}
+                  onClick={() => setQuery(preset.prompt)}
                 >
                   {preset.label}
                 </button>
@@ -160,35 +149,20 @@ export const AskDmwDrawer: React.FC<AskDmwDrawerProps> = ({ isOpen, onClose, ini
             )}
           </div>
 
-          {/* Section 4: Human Advisory Desk Backup */}
+          {/* Section 4: Direct Concierge Desk (Coming Soon) */}
           <div className={styles.advisoryFormCard}>
-            <h4 className={styles.advisoryFormTitle}>
-              <ShieldCheck size={16} style={{ display: 'inline', marginRight: 6, color: 'var(--color-antique-gold)' }} />
-              Request Direct Concierge Booking Assistance
-            </h4>
-            <p className={styles.advisoryFormSubtitle}>
-              Route your generated shortlist and dates directly to the DMW Advisory Desk (<code>s.moralesmed@gmail.com</code>).
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 6 }}>
+              <h4 className={styles.advisoryFormTitle} style={{ margin: 0 }}>
+                <ShieldCheck size={16} style={{ display: 'inline', marginRight: 6, color: 'var(--color-antique-gold)' }} />
+                DMW Personal Concierge Desk
+              </h4>
+              <span style={{ padding: '3px 8px', border: '1px solid var(--color-antique-gold)', background: 'rgba(197, 160, 89, 0.15)', color: 'var(--color-antique-gold)', fontSize: '10px', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase' }}>
+                Coming Soon
+              </span>
+            </div>
+            <p className={styles.advisoryFormSubtitle} style={{ marginBottom: 0 }}>
+              Direct human concierge booking and VIP amenity routing will be available exclusively to DMW Blackbook Pro Members in V2. For immediate reservations, use direct hotel links on individual property scorecards.
             </p>
-
-            {submitted ? (
-              <div style={{ padding: '12px 16px', background: 'rgba(197, 160, 89, 0.15)', border: '1px solid var(--color-antique-gold)', color: 'var(--color-ink)', fontSize: '13px', fontWeight: 600 }}>
-                ✓ Your inquiry has been routed to s.moralesmed@gmail.com. Our desk will contact you within 4 hours.
-              </div>
-            ) : (
-              <form onSubmit={handleSubmit} className={styles.inputGroup}>
-                <input
-                  type="email"
-                  required
-                  className={styles.emailInput}
-                  placeholder="Enter executive email address..."
-                  value={userEmail}
-                  onChange={(e) => setUserEmail(e.target.value)}
-                />
-                <button type="submit" className={styles.submitButton}>
-                  <Send size={14} /> Send Inquiry
-                </button>
-              </form>
-            )}
           </div>
         </div>
       </aside>
