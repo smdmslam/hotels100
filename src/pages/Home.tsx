@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Award } from 'lucide-react';
 import { Container } from '../components/shared';
 import { getCollection, getIndexData } from '../data/api';
 import styles from './Home.module.css';
@@ -8,6 +9,7 @@ const PUBLIC_COLLECTIONS = [
   { title: 'The Global 100', slug: 'the-global-100' },
   { title: 'The UAE 50', slug: 'the-uae-50' },
   { title: 'The London 50', slug: 'the-london-50' },
+  { title: 'The Switzerland 50', slug: 'the-switzerland-50' },
   { title: 'The New York 50', slug: 'the-new-york-50' },
   { title: 'The Paris 25', slug: 'the-paris-25' },
   { title: 'The Zurich 25', slug: 'the-zurich-25' },
@@ -25,6 +27,22 @@ export const Home: React.FC = () => {
   const globalHotels = globalCollection?.hotels ?? [];
   const previewHotels = globalHotels.slice(0, 5);
   const reportHotels = globalHotels.slice(0, 3);
+
+  const notationItems = [
+    { slug: 'the-global-100', label: 'Global 100 · No. 1' },
+    { slug: 'the-london-50', label: 'London 50 · No. 1' },
+    { slug: 'the-switzerland-50', label: 'Switzerland 50 · No. 1' },
+    { slug: 'the-italian-and-swiss-lakes-35', label: 'Lakes 35 · No. 1' },
+  ].map((item) => {
+    const col = getCollection(item.slug);
+    const winner = col?.hotels?.[0];
+    return {
+      editionSlug: item.slug,
+      editionLabel: item.label,
+      winnerName: winner?.name ?? 'Top Property',
+      winnerUrl: winner?.profileUrl ?? `/collections/${item.slug}`,
+    };
+  });
 
   return (
     <main className={styles.home}>
@@ -52,7 +70,31 @@ export const Home: React.FC = () => {
             </div>
           </div>
         </Container>
-        <div className={styles.heroCaption}>DMW Hotels 100 · 2026</div>
+
+        <div className={styles.heroNotationBar}>
+          <Container variant="wide">
+            <div className={styles.notationGrid}>
+              {notationItems.map((item) => (
+                <div key={item.editionSlug} className={styles.notationItem}>
+                  <Award
+                    className={styles.notationIcon}
+                    size={20}
+                    strokeWidth={1.15}
+                    aria-hidden="true"
+                  />
+                  <div className={styles.notationMeta}>
+                    <span className={styles.notationEdition}>
+                      {item.editionLabel}
+                    </span>
+                    <Link to={item.winnerUrl} className={styles.notationWinner}>
+                      {item.winnerName}
+                    </Link>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </Container>
+        </div>
       </section>
 
       <section className={styles.indexSection} id="collections">

@@ -163,7 +163,7 @@ const lakes35 = {
 };
 
 // 9. The UAE 50
-const uaeHotels = publicHotels.filter(h => h.location.country === 'United Arab Emirates');
+const uaeHotels = publicHotels.filter(h => h.location.country === 'UAE' || h.location.country === 'United Arab Emirates');
 const sortedUae = uaeHotels.sort((a, b) => (a.rank || 999) - (b.rank || 999));
 const top50Uae = sortedUae.slice(0, 50).map((h, index) => {
   return { ...h, rank: index + 1 };
@@ -176,7 +176,26 @@ const uae50 = {
   hotels: top50Uae
 };
 
-// 10. INTERNAL RESEARCH: Monaco & Eastern Riviera 30
+// 10. The Switzerland 50
+const swissCities = ['Zurich', 'Geneva', 'Lausanne', 'Ascona', 'Lugano', 'Andermatt', 'St. Moritz', 'Gstaad', 'Zermatt', 'Vevey', 'Montreux', 'Bad Ragaz', 'Vals'];
+const swissHotels = publicHotels.filter(h => h.location.country === 'Switzerland' || swissCities.includes(h.location.city));
+const sortedSwiss = swissHotels.sort((a, b) => {
+  const scoreA = a.scores ? a.scores.totalScore : 0;
+  const scoreB = b.scores ? b.scores.totalScore : 0;
+  return scoreB - scoreA;
+});
+const top50Swiss = sortedSwiss.slice(0, 50).map((h, index) => {
+  return { ...h, rank: index + 1 };
+});
+const switzerland50 = {
+  slug: 'the-switzerland-50',
+  title: "The Switzerland 50",
+  edition: "2026",
+  description: "Switzerland is the world reference market for discretion, private-wealth security, lake and alpine access, and uncompromised operating execution. The DMW Switzerland 50 ranks the definitive urban sanctuaries, heritage grand dames, and mountain retreats across Geneva, Zurich, Lausanne, and the Swiss Riviera.",
+  hotels: top50Swiss
+};
+
+// 11. INTERNAL RESEARCH: Monaco & Eastern Riviera 30
 const monacoHotels = internalHotels.filter(h => h.rank > 100 && h.rank <= 130);
 const monaco30 = {
   slug: 'the-monaco-and-eastern-riviera-30',
@@ -186,7 +205,7 @@ const monaco30 = {
   hotels: monacoHotels
 };
 
-const collections = [global100, uae50, accessible50, london50, newYork50, zurich25, londonAccessible, paris25, lakes35, monaco30];
+const collections = [global100, uae50, accessible50, london50, switzerland50, newYork50, zurich25, londonAccessible, paris25, lakes35, monaco30];
 
 fs.writeFileSync(COLLECTIONS_FILE, JSON.stringify({ collections }, null, 2));
 
