@@ -39,3 +39,10 @@ export function getHotelProfile(slug: string): HotelProfile | undefined {
   }
   return undefined;
 }
+
+/**
+ * Returns all collections.
+ */
+export function getAllCollections(): Collection[] {
+  return collectionsData.collections;
+}

@@ -7,6 +7,7 @@ import { Methodology } from './pages/Methodology';
 import { About } from './pages/About';
 import { Insights } from './pages/Insights';
 import { Login } from './pages/Login';
+import { Admin } from './pages/Admin';
 import { AuthProvider } from './context/AuthContext';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/login" element={<Login />} />
+              <Route path="/admin" element={<Admin />} />
               <Route path="/the-100" element={<Navigate to="/collections/the-global-100" replace />} />
               <Route path="/collections/:slug" element={<CollectionIndex />} />
               <Route path="/hotels/:slug" element={<HotelProfile />} />

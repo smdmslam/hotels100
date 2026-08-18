@@ -30,6 +30,7 @@ export const SiteHeader: React.FC<SiteHeaderProps> = ({ variant = 'light' }) => 
     { label: 'The Global 100', path: '/collections/the-global-100' },
     { label: 'Insights', path: '/insights' },
     { label: 'Methodology', path: '/methodology' },
+    ...(user ? [{ label: 'Admin Desk', path: '/admin' }] : []),
   ];
 
   return (
