@@ -140,7 +140,7 @@ Output your research STRICTLY as a single valid JSON object adhering to the sche
     content = content.replace(/:\s*not available/gi, ': null');
     content = content.replace(/:\s*N\/A/gi, ': null');
     content = content.replace(/:\s*unknown/gi, ': null');
-    content = content.replace(/,\s*([\}\]])/g, '$1');
+    content = content.replace(/,\s*([}\]])/g, '$1');
     return JSON.parse(content);
   } catch (error) {
     console.error(`Failed Perplexity query for ${hotelName}:`, error.message);

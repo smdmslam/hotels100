@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { X, Check, Send } from 'lucide-react';
-import { getAllHotels } from '../../data/api';
-import type { HotelSummary } from '../../data/types';
+import { getCollection } from '../../data/api';
+import type { Amenity, HotelSummary } from '../../data/types';
 import styles from './AskDmwDrawer.module.css';
 
 interface AskDmwDrawerProps {
@@ -26,7 +26,8 @@ export const AskDmwDrawer: React.FC<AskDmwDrawerProps> = ({ isOpen, onClose, ini
 
   if (!isOpen) return null;
 
-  const allHotels = getAllHotels();
+  const advisoryCollection = getCollection('the-global-100');
+  const allHotels = advisoryCollection?.hotels ?? [];
 
   // Simple dynamic decision query matcher across city, name, amenities, archetype, and rates
   const filteredHotels = query.trim()
@@ -38,8 +39,13 @@ export const AskDmwDrawer: React.FC<AskDmwDrawerProps> = ({ isOpen, onClose, ini
         const matchesArchetype = (hotel.archetype || '').toLowerCase().includes(q);
         const matchesLens = (hotel.strategicLens || '').toLowerCase().includes(q);
 
-        // Check amenities
-        const matchesAmenity = (hotel.essentialAmenities || []).some((a: { label: string }) => a.label.toLowerCase().includes(q));
+        const amenityPool = [
+          ...(hotel.essentialAmenities || []),
+          ...(('amenities' in hotel && Array.isArray((hotel as HotelSummary & { amenities?: Amenity[] }).amenities))
+            ? ((hotel as HotelSummary & { amenities?: Amenity[] }).amenities || [])
+            : []),
+        ];
+        const matchesAmenity = amenityPool.some((a) => a.label.toLowerCase().includes(q));
 
         // Check price terms (e.g. under 500)
         let matchesPrice = true;

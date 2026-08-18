@@ -112,7 +112,7 @@ async function run() {
 
       if (result) {
         data.hotels[idx].links = {
-          ...(data.hotels[idx].links || {}),
+          ...data.hotels[idx].links,
           officialWebsite: result.officialWebsite,
           bookingUrl: result.bookingUrl
         };

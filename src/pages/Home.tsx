@@ -165,7 +165,7 @@ export const Home: React.FC = () => {
         <Container variant="wide">
           <div className={styles.askLayout}>
             <div className={styles.askIntroduction}>
-              <span className={styles.darkEyebrow}>Coming soon · Ask DMW</span>
+              <span className={styles.darkEyebrow}>Ask DMW Advisory</span>
               <h2 id="ask-dmw-title">Build your own shortlist.</h2>
               <p>
                 Describe the hotel, destination, price or experience you need.
@@ -208,7 +208,7 @@ export const Home: React.FC = () => {
                 className={styles.reportLink}
               >
                 <div className={styles.reportMedia}>
-                  <img src="/assets/hero.png" alt="" />
+                  <img src="/hero-bg.png" alt="" />
                   <span className={styles.reportTag}>The Summer Edit</span>
                 </div>
                 <div className={styles.reportCopy}>
@@ -224,7 +224,7 @@ export const Home: React.FC = () => {
                 <Link to={hotel.profileUrl} className={styles.reportLink}>
                   <div className={styles.reportMedia}>
                     <img
-                      src={hotel.primaryImage?.url || '/assets/placeholder-hero.jpg'}
+                      src={hotel.primaryImage?.url || '/hero-bg.png'}
                       alt={hotel.primaryImage?.alt || hotel.name}
                     />
                   </div>
