@@ -155,20 +155,20 @@ export const AskDmwDrawer: React.FC<AskDmwDrawerProps> = ({ isOpen, onClose, ini
             <div className={styles.submitRow}>
               <button
                 type="button"
-                className={styles.proAiButton}
-                onClick={() => setShowProTooltip(!showProTooltip)}
-              >
-                <Globe size={13} style={{ color: 'var(--color-antique-gold)' }} />
-                <span>⚡ RUN PRO AI (LIVE WEB ENHANCED)</span>
-              </button>
-
-              <button
-                type="button"
                 className={styles.smallSubmitButton}
                 onClick={() => handleExecuteMatch(undefined, 'index')}
               >
                 <Sparkles size={13} />
-                RUN INDEX AI MATCH
+                RUN AI MATCH
+              </button>
+
+              <button
+                type="button"
+                className={styles.proAiButton}
+                onClick={() => setShowProTooltip(!showProTooltip)}
+              >
+                <Globe size={13} style={{ color: 'var(--color-antique-gold)' }} />
+                <span>⚡ PRO AI (WEB)</span>
               </button>
             </div>
 
