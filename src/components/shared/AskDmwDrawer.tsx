@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { X, Sparkles, Compass, ShieldCheck } from 'lucide-react';
-import { getCollection } from '../../data/api';
+import { getAllHotels } from '../../data/api';
 import type { HotelSummary } from '../../data/types';
 import styles from './AskDmwDrawer.module.css';
 
@@ -24,36 +24,52 @@ export const AskDmwDrawer: React.FC<AskDmwDrawerProps> = ({ isOpen, onClose, ini
 
   if (!isOpen) return null;
 
-  const advisoryCollection = getCollection('the-global-100');
-  const allHotels = advisoryCollection?.hotels ?? [];
+  const allHotels = getAllHotels();
 
-  // Smart tokenized relevance query matcher across name, location, archetype, lens, amenities, and price
+  // Smart location-strict & price-strict AI relevance query matcher across all 310+ hotels
   const filteredHotels = query.trim()
-    ? allHotels.map((hotel: HotelSummary) => {
+    ? (() => {
         const q = query.toLowerCase();
-        const tokens = q.split(/\s+/).filter(t => t.length > 2 && !['with', 'under', 'from', 'hotel', 'hotels', 'and', 'the', 'for'].includes(t));
-        
-        const searchableText = `${hotel.name} ${hotel.location.city} ${hotel.location.country} ${hotel.location.neighbourhood || ''} ${hotel.archetype || ''} ${hotel.strategicLens || ''} ${hotel.dmwJudgement || ''} ${(hotel.essentialAmenities || []).map(a => a.label).join(' ')}`.toLowerCase();
+        const tokens = q.split(/\s+/).filter(t => t.length > 2 && !['with', 'under', 'from', 'hotel', 'hotels', 'and', 'the', 'for', 'trip', 'nights', 'room'].includes(t));
 
-        let score = 0;
-        tokens.forEach(token => {
-          if (searchableText.includes(token)) score += 2;
-        });
+        // Location constraint keywords
+        const locationKeywords = ['zurich', 'london', 'paris', 'dubai', 'switzerland', 'lakes', 'léman', 'leman', 'new york', 'bangkok', 'tokyo', 'geneva', 'ascona', 'lausanne', 'vevey', 'montreux'];
+        const specifiedLocations = locationKeywords.filter(loc => q.includes(loc));
 
-        // Price filter handling
-        let priceMatch = true;
-        if (q.includes('under 500') || q.includes('under $500') || q.includes('under €500')) {
-          priceMatch = !!(hotel.indicativeRate && hotel.indicativeRate.amount <= 500);
-        } else if (q.includes('under 1000') || q.includes('under $1000') || q.includes('under €1000')) {
-          priceMatch = !!(hotel.indicativeRate && hotel.indicativeRate.amount <= 1000);
-        }
+        return allHotels.map((hotel: HotelSummary) => {
+          let score = 0;
+          const searchableText = `${hotel.name} ${hotel.location.city} ${hotel.location.country} ${hotel.location.neighbourhood || ''} ${hotel.archetype || ''} ${hotel.strategicLens || ''} ${hotel.dmwJudgement || ''} ${(hotel.essentialAmenities || []).map(a => a.label).join(' ')}`.toLowerCase();
 
-        return { hotel, score, priceMatch };
-      })
-      .filter(item => item.score > 0 && item.priceMatch)
-      .sort((a, b) => b.score - a.score || a.hotel.rank - b.hotel.rank)
-      .map(item => item.hotel)
-      .slice(0, 3)
+          // Strict location enforcement if query specifies a city/country/region
+          if (specifiedLocations.length > 0) {
+            const matchesLocation = specifiedLocations.some(loc => 
+              hotel.location.city.toLowerCase().includes(loc) || 
+              hotel.location.country.toLowerCase().includes(loc) ||
+              (hotel.location.displayLocation && hotel.location.displayLocation.toLowerCase().includes(loc)) ||
+              (loc === 'lakes' || loc === 'léman' || loc === 'leman' ? (hotel.location.city.toLowerCase().includes('ascona') || hotel.location.city.toLowerCase().includes('lausanne') || hotel.location.city.toLowerCase().includes('vevey') || hotel.location.city.toLowerCase().includes('montreux') || hotel.location.city.toLowerCase().includes('geneva') || hotel.location.country.toLowerCase().includes('switzerland')) : false)
+            );
+            if (!matchesLocation) return { hotel, score: -1, priceMatch: false };
+          }
+
+          tokens.forEach(token => {
+            if (searchableText.includes(token)) score += 3;
+          });
+
+          // Price filter handling
+          let priceMatch = true;
+          if (q.includes('under 500') || q.includes('under $500') || q.includes('under €500')) {
+            priceMatch = !!(hotel.indicativeRate && hotel.indicativeRate.amount <= 500);
+          } else if (q.includes('under 1000') || q.includes('under $1000') || q.includes('under €1000')) {
+            priceMatch = !!(hotel.indicativeRate && hotel.indicativeRate.amount <= 1000);
+          }
+
+          return { hotel, score, priceMatch };
+        })
+        .filter(item => item.score > 0 && item.priceMatch)
+        .sort((a, b) => b.score - a.score || a.hotel.rank - b.hotel.rank)
+        .map(item => item.hotel)
+        .slice(0, 3);
+      })()
     : allHotels.slice(0, 3);
 
   return (
