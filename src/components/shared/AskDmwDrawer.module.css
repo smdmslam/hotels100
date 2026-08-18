@@ -154,16 +154,40 @@
 
 .submitRow {
   display: flex;
-  justify-content: flex-start;
-  margin-top: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+  margin-top: 12px;
   margin-bottom: var(--space-4);
+}
+
+.proAiButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border: 1px solid var(--color-antique-gold);
+  background: rgba(197, 160, 89, 0.12);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.proAiButton:hover {
+  background: var(--color-antique-gold);
+  color: var(--color-ink);
 }
 
 .smallSubmitButton {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 8px 16px;
+  padding: 8px 14px;
   border: 1px solid var(--color-ink);
   background: var(--color-ink);
   color: var(--color-ivory);
@@ -179,6 +203,28 @@
 .smallSubmitButton:hover {
   background: var(--color-charcoal);
   border-color: var(--color-charcoal);
+}
+
+.proTooltipCard {
+  margin-bottom: var(--space-4);
+  padding: 12px 16px;
+  border: 1px solid var(--color-antique-gold);
+  background: rgba(197, 160, 89, 0.1);
+  animation: fadeIn 0.2s ease-out;
+}
+
+.webContextBanner {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: var(--space-4);
+  padding: 12px 14px;
+  border: 1px solid var(--color-antique-gold);
+  background: rgba(197, 160, 89, 0.12);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  line-height: 1.45;
 }
 
 .presetsLabel {

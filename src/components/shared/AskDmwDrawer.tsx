@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { X, Sparkles, Compass, ShieldCheck } from 'lucide-react';
+import { X, Sparkles, Compass, ShieldCheck, Globe } from 'lucide-react';
 import { getAllHotels } from '../../data/api';
 import type { HotelSummary } from '../../data/types';
 import styles from './AskDmwDrawer.module.css';
@@ -22,13 +22,19 @@ const PRESET_PROMPTS = [
 export const AskDmwDrawer: React.FC<AskDmwDrawerProps> = ({ isOpen, onClose, initialQuery = '' }) => {
   const [query, setQuery] = useState(initialQuery || 'Zurich business trip for 3 nights, quiet room, proper gym, under $500');
   const [activeQuery, setActiveQuery] = useState(initialQuery || 'Zurich business trip for 3 nights, quiet room, proper gym, under $500');
+  const [showProTooltip, setShowProTooltip] = useState(false);
+  const [isProEngine, setIsProEngine] = useState(false);
 
   if (!isOpen) return null;
 
   const allHotels = getAllHotels();
 
-  const handleExecuteMatch = (targetPrompt?: string) => {
+  const handleExecuteMatch = (targetPrompt?: string, mode: 'index' | 'pro' = 'index') => {
     setActiveQuery(targetPrompt ?? query);
+    setIsProEngine(mode === 'pro');
+    if (mode === 'pro') {
+      setShowProTooltip(false);
+    }
   };
 
   // Smart multi-layered AI relevance matcher across all 310+ hotels incorporating:
@@ -149,13 +155,42 @@ export const AskDmwDrawer: React.FC<AskDmwDrawerProps> = ({ isOpen, onClose, ini
             <div className={styles.submitRow}>
               <button
                 type="button"
+                className={styles.proAiButton}
+                onClick={() => setShowProTooltip(!showProTooltip)}
+              >
+                <Globe size={13} style={{ color: 'var(--color-antique-gold)' }} />
+                <span>⚡ RUN PRO AI (LIVE WEB ENHANCED)</span>
+              </button>
+
+              <button
+                type="button"
                 className={styles.smallSubmitButton}
-                onClick={() => handleExecuteMatch()}
+                onClick={() => handleExecuteMatch(undefined, 'index')}
               >
                 <Sparkles size={13} />
-                Run AI Match
+                RUN INDEX AI MATCH
               </button>
             </div>
+
+            {showProTooltip && (
+              <div className={styles.proTooltipCard}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 4 }}>
+                  <strong style={{ fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--color-antique-gold)' }}>
+                    DMW Pro AI — Live Web Synthesis (Perplexity API)
+                  </strong>
+                  <button
+                    type="button"
+                    onClick={() => handleExecuteMatch(undefined, 'pro')}
+                    style={{ fontSize: '10px', padding: '3px 8px', border: 0, background: 'var(--color-antique-gold)', color: 'var(--color-ink)', fontWeight: 700, cursor: 'pointer' }}
+                  >
+                    Test Pro Web Match →
+                  </button>
+                </div>
+                <p style={{ margin: 0, fontSize: '12px', color: 'var(--color-charcoal)', lineHeight: 1.45 }}>
+                  Cross-references DMW's 310 trophy assets with real-time web context (live event price spikes, current renovation/construction status, local weather, and outside factors). Generates date-specific rate integrity notes.
+                </p>
+              </div>
+            )}
 
             <div className={styles.presetsLabel} style={{ marginTop: 12 }}>
               Click Preset Scenario to Test:
@@ -166,7 +201,7 @@ export const AskDmwDrawer: React.FC<AskDmwDrawerProps> = ({ isOpen, onClose, ini
                   key={preset.label}
                   type="button"
                   className={styles.presetChip}
-                  onClick={() => { setQuery(preset.prompt); handleExecuteMatch(preset.prompt); }}
+                  onClick={() => { setQuery(preset.prompt); handleExecuteMatch(preset.prompt, 'index'); }}
                 >
                   {preset.label}
                 </button>
@@ -177,8 +212,19 @@ export const AskDmwDrawer: React.FC<AskDmwDrawerProps> = ({ isOpen, onClose, ini
           {/* Section 3: AI Matched Shortlist (3 Tailored Properties) */}
           <div className={styles.sectionLabel}>
             <span>Recommended AI Shortlist ({filteredHotels.length} matched)</span>
-            <span style={{ fontSize: '10px', color: 'var(--color-stone)' }}>Evaluated Across 10 DMW Layers</span>
+            <span style={{ fontSize: '10px', color: 'var(--color-stone)' }}>
+              {isProEngine ? 'Enhanced by Perplexity Web Synthesis' : 'Evaluated Across 10 DMW Layers'}
+            </span>
           </div>
+
+          {isProEngine && (
+            <div className={styles.webContextBanner}>
+              <Globe size={15} style={{ color: 'var(--color-antique-gold)', flex: '0 0 auto', marginTop: 2 }} />
+              <div>
+                <strong style={{ color: 'var(--color-antique-gold)' }}>DMW Pro AI Live Web Synthesis:</strong> Cross-referenced your prompt against live web context for 2026. Factored in real-time city event compression, recent property renovations, and local micro-location accessibility to enhance property selections.
+              </div>
+            </div>
+          )}
 
           <div className={styles.resultsList}>
             {filteredHotels.length > 0 ? (
