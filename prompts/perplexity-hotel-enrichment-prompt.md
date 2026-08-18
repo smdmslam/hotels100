@@ -13,7 +13,7 @@ Your objective is to conduct deep, high-asymmetry research on the property: [HOT
 
 We require three core categories of information:
 1. BOOKING-STYLE GRANULAR AMENITIES & PROPERTY FACTS: Comprehensive amenity breakdown across Wellness, Food & Drink, Connectivity, Access, Rooms, and Service.
-2. DMW 10-DIMENSION METHODOLOGY EVALUATION: Analytical breakdown and score distribution across DMW's 10 strategic dimensions.
+2. DMW 10-DIMENSION METHODOLOGY EVALUATION: Analytical breakdown and score distribution across DMW's 10 strategic dimensions. For "Service and Operating Execution", look for concrete empirical evidence of, if any: (a) anticipatory service intuition (such as seamless curbside name recognition or preference memory persistence), (b) unscripted front-line staff empowerment (e.g., line staff authorized to execute immediate surprise & delight gestures without manager approval), and (c) high staff-to-key operational density. If no evidence exists of unscripted empowerment or anticipatory intuition, cap the score accordingly.
 3. 5-PART INSIDER REPORT: Information-asymmetric lore, operational quirks, famous clientele, exact best room numbers to book, and ownership/operator power dynamics.
 
 Output your research STRICTLY as a single valid JSON object adhering to the schema below. Do not wrap in markdown text explanations. Return ONLY raw JSON.

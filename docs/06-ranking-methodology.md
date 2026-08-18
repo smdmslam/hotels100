@@ -145,24 +145,22 @@ How consistently and intelligently does the operation deliver the intended exper
 
 ### Assessment areas
 
-* Arrival
-* Front-desk efficiency
+* **Anticipatory Service Intuition**: Look for concrete empirical evidence of, if any, seamless curbside name recognition, preference memory, and proactive guest management.
+* **Unscripted Staff Empowerment**: Look for concrete evidence of, if any, front-line staff authorized to execute immediate surprise & delight gestures (e.g., complimentary bar tokens, unprompted upgrades) without manager sign-off.
+* **Staff-to-Key Density Ratio**: Operational bandwidth and staff availability per key.
+* Arrival and front-desk recognition
 * Concierge and doorman engagement
-* Housekeeping
-* Responsiveness
-* Personalisation
-* Problem resolution
-* Service speed
-* Cross-department consistency
-* Peak-period performance
+* Housekeeping and preference persistence
+* Problem resolution and recovery
+* Cross-department consistency under peak-period friction
 
 ### High score
 
-Service is anticipatory, efficient and appropriate to the hotel’s character without becoming intrusive or theatrical.
+Service is anticipatory, intuitive, and driven by unscripted staff empowerment without becoming intrusive or theatrical.
 
 ### Low score
 
-Queues, inconsistent departments, slow responses, poor recovery or a significant gap between brand promise and operating reality.
+Queues, rigid corporate scripting, unempowered line staff, slow responses, or a significant gap between brand promise and operating reality.
 
 ### Evidence limitation
 
