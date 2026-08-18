@@ -39,6 +39,96 @@
   font-size: var(--type-body);
 }
 
+.tabs {
+  display: flex;
+  gap: var(--space-4);
+  margin-bottom: var(--space-7);
+  border-bottom: 1px solid rgba(244, 240, 232, 0.16);
+}
+
+.tabButton {
+  padding: 12px 20px;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  color: var(--color-stone);
+  font-family: var(--font-sans);
+  font-size: var(--type-small);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tabButton:hover {
+  color: var(--color-ivory);
+}
+
+.tabActive {
+  color: var(--color-antique-gold);
+  border-bottom-color: var(--color-antique-gold);
+}
+
+.faqGrid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  margin-bottom: var(--space-8);
+}
+
+.faqCard {
+  padding: var(--space-6);
+  background: rgba(18, 18, 18, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(244, 240, 232, 0.14);
+}
+
+.faqQuestion {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 var(--space-3) 0;
+  color: var(--color-ivory);
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  line-height: 1.25;
+}
+
+.faqQuestionIcon {
+  color: var(--color-antique-gold);
+  flex: 0 0 auto;
+}
+
+.faqAnswer {
+  color: var(--color-ivory);
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.faqAnswer p {
+  margin: 0 0 var(--space-3) 0;
+}
+
+.faqAnswer p:last-child {
+  margin-bottom: 0;
+}
+
+.faqList {
+  margin: 8px 0 var(--space-4) 20px;
+  padding: 0;
+}
+
+.faqList li {
+  margin-bottom: 6px;
+  color: var(--color-stone);
+}
+
+.faqList li strong {
+  color: var(--color-ivory);
+}
+
 .kpiGrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

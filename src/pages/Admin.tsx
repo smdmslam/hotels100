@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { RefreshCw, Plus, Download, Sparkles, X, ShieldCheck } from 'lucide-react';
+import { RefreshCw, Plus, Download, Sparkles, X, ShieldCheck, BookOpen, HelpCircle, Users, Target, DollarSign, Zap } from 'lucide-react';
 import { Container } from '../components/shared';
 import { getAllHotels, getAllCollections } from '../data/api';
 import type { HotelSummary, Archetype } from '../data/types';
 import styles from './Admin.module.css';
 
 export const Admin: React.FC = () => {
+  const [activeTab, setActiveTab] = useState<'operations' | 'faq'>('operations');
   const [hotels, setHotels] = useState<HotelSummary[]>(getAllHotels());
   const collections = getAllCollections();
   const [searchTerm, setSearchTerm] = useState('');
@@ -125,6 +126,25 @@ export const Admin: React.FC = () => {
           </p>
         </header>
 
+        <nav className={styles.tabs} aria-label="Admin Navigation Tabs">
+          <button
+            type="button"
+            className={`${styles.tabButton} ${activeTab === 'operations' ? styles.tabActive : ''}`}
+            onClick={() => setActiveTab('operations')}
+          >
+            <ShieldCheck size={14} style={{ display: 'inline', marginRight: 6 }} />
+            Index Operations Desk
+          </button>
+          <button
+            type="button"
+            className={`${styles.tabButton} ${activeTab === 'faq' ? styles.tabActive : ''}`}
+            onClick={() => setActiveTab('faq')}
+          >
+            <BookOpen size={14} style={{ display: 'inline', marginRight: 6 }} />
+            Strategy &amp; Operating Playbook FAQ
+          </button>
+        </nav>
+
         {statusMessage && (
           <div style={{
             marginBottom: 24,
@@ -139,6 +159,9 @@ export const Admin: React.FC = () => {
             {statusMessage}
           </div>
         )}
+
+        {activeTab === 'operations' ? (
+          <>
 
         {/* Executive KPI Summary Cards */}
         <div className={styles.kpiGrid}>
@@ -234,6 +257,124 @@ export const Admin: React.FC = () => {
             </table>
           </div>
         </section>
+        </>
+        ) : (
+          <div className={styles.faqGrid}>
+            <article className={styles.faqCard}>
+              <h3 className={styles.faqQuestion}>
+                <Users className={styles.faqQuestionIcon} size={22} />
+                1. Who are DMW's target users and buyers?
+              </h3>
+              <div className={styles.faqAnswer}>
+                <p>
+                  DMW serves four core high-value user personas who cannot afford expensive hotel selection failures:
+                </p>
+                <ul className={styles.faqList}>
+                  <li><strong>High-Net-Worth Principals</strong>: Seeking privacy, asset quality, and authentic luxury without commercial fluff.</li>
+                  <li><strong>Executive Assistants (EAs) &amp; Chiefs of Staff</strong>: Booking for C-suite principals; need guaranteed, defensible shortlists without booking failure.</li>
+                  <li><strong>Family Office Directors &amp; Wealth Advisors</strong>: Managing travel logistics for family estates and high-value delegations.</li>
+                  <li><strong>Frequent Luxury Business Travellers</strong>: Require high-performance business utilities (serious gyms, quiet rooms, fast Wi-Fi, 24h dining).</li>
+                </ul>
+              </div>
+            </article>
+
+            <article className={styles.faqCard}>
+              <h3 className={styles.faqQuestion}>
+                <Target className={styles.faqQuestionIcon} size={22} />
+                2. Why do users come to DMW instead of Booking.com or TripAdvisor?
+              </h3>
+              <div className={styles.faqAnswer}>
+                <p>
+                  Booking sites handle payment; DMW owns the <strong>difficult decision before booking</strong>: <em>“Given who I am and what I’m spending, which hotel should I actually choose?”</em>
+                </p>
+                <ul className={styles.faqList}>
+                  <li><strong>Shortlist Reduction</strong>: Cuts 600 search results down to the 5 that genuinely fit.</li>
+                  <li><strong>Honest Compromise Exposure</strong>: Explicitly reveals trade-offs PR hides (e.g. <em>tired entry rooms, noisy street orientation, small basement gym</em>).</li>
+                  <li><strong>Rate Integrity &amp; Seasonality Signals</strong>: Flags 🟢 <em>Lowest 10% Rate Windows</em> vs. 🔴 <em>Peak Surge Compression (+75%)</em>.</li>
+                  <li><strong>Decision Confidence</strong>: Gives EAs and principals absolute clarity before reserving.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article className={styles.faqCard}>
+              <h3 className={styles.faqQuestion}>
+                <HelpCircle className={styles.faqQuestionIcon} size={22} />
+                3. What do users search for? (Bespoke Intent Data)
+              </h3>
+              <div className={styles.faqAnswer}>
+                <p>
+                  Users enter high-intent prompt queries through <strong>Ask DMW</strong>:
+                </p>
+                <ul className={styles.faqList}>
+                  <li><em>“Zurich business hotel under $500 with a proper gym and quiet room”</em></li>
+                  <li><em>“Mayfair suites with private butler and private dining for 6”</em></li>
+                  <li><em>“Swiss Lakes &amp; Léman luxury resort sanctuary with lakefront access”</em></li>
+                  <li><em>“Dubai high-ADR hotel with quiet beach and private pool”</em></li>
+                </ul>
+              </div>
+            </article>
+
+            <article className={styles.faqCard}>
+              <h3 className={styles.faqQuestion}>
+                <DollarSign className={styles.faqQuestionIcon} size={22} />
+                4. How does the Free vs. Paid Subscription Model work?
+              </h3>
+              <div className={styles.faqAnswer}>
+                <p>
+                  A clean, zero-friction two-tier model designed to build a massive free email subscriber base while monetising high-value intelligence:
+                </p>
+                <ul className={styles.faqList}>
+                  <li>
+                    <strong>Free Public Tier (Lead Generation Engine)</strong>:
+                    Full browsing of all 11 regional collections, 10-dimension scorecards, direct booking links, top 10 flagship Insider Reports, and 3 trial AI queries (capturing email leads).
+                  </li>
+                  <li>
+                    <strong>Paid DMW Blackbook Member ($49/month or $490/year)</strong>:
+                    Unlocks unlimited 5-part Insider Reports, Side-by-Side Head-to-Head Comparative Matrices (<em>Connaught vs Claridge’s</em>), Mispricing/Rate Drop Alerts, and Priority Advisory Desk Routing (<code>s.moralesmed@gmail.com</code>).
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <article className={styles.faqCard}>
+              <h3 className={styles.faqQuestion}>
+                <Zap className={styles.faqQuestionIcon} size={22} />
+                5. How do we manage AI Usage &amp; Unit Economics?
+              </h3>
+              <div className={styles.faqAnswer}>
+                <p>
+                  To protect gross margins and keep API costs minimal:
+                </p>
+                <ul className={styles.faqList}>
+                  <li>
+                    <strong>Free AI Search</strong>: Driven by ultra-cheap, fast LLMs (e.g. <code>gpt-4o-mini</code> or <code>llama-3.3-70b</code> @ $0.0005/query).
+                  </li>
+                  <li>
+                    <strong>Deep Perplexity AI Enrichment</strong>: Executed via Admin Panel (<code>/admin</code>) once per property and cached permanently in <code>hotels.json</code> ($0.00 serving cost).
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <article className={styles.faqCard}>
+              <h3 className={styles.faqQuestion}>
+                <BookOpen className={styles.faqQuestionIcon} size={22} />
+                6. What do paid subscribers pay for &amp; how do custom reports work?
+              </h3>
+              <div className={styles.faqAnswer}>
+                <p>
+                  Subscribers pay for high-asymmetry decision advantages:
+                </p>
+                <ul className={styles.faqList}>
+                  <li><strong>Head-to-Head Comparative Matrices</strong>: Direct diagnostic guidance comparing competing flagships.</li>
+                  <li><strong>Full 5-Part Insider Reports</strong>: UnGoogleable history, operational quirks, famous clientele, exact best room numbers to book, and owner-operator power dynamics.</li>
+                  <li><strong>Automated Rate Drop Alerts</strong>: Instant notification when a saved Blackbook hotel enters its 🟢 <em>Lowest 10% Rate Window</em>.</li>
+                  <li><strong>On-Demand Report Generation</strong>: When a subscriber requests a report for an un-cached hotel, the AI generates it and <strong>caches it permanently into the database for all future users</strong>.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        )}
       </Container>
 
       {/* Modal 1: Add New Hotel Candidate */}
