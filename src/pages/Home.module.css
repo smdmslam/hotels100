@@ -175,6 +175,7 @@
   display: flex;
   align-items: center;
   gap: var(--space-5);
+  margin-bottom: var(--space-4);
 }
 
 .primaryAction {
@@ -196,10 +197,15 @@
   background: var(--color-white);
 }
 
+.heroAiRow {
+  display: flex;
+  align-items: center;
+}
+
 .askDmwHeroAction {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   padding: 14px 22px;
   border: 1px solid var(--color-antique-gold);
   background: rgba(197, 160, 89, 0.14);
@@ -208,7 +214,7 @@
   font-family: var(--font-sans);
   font-size: var(--type-small);
   font-weight: 600;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.25s ease;
@@ -218,6 +224,25 @@
   background: var(--color-antique-gold);
   color: var(--color-ink);
   transform: translateY(-2px);
+}
+
+.aiPill {
+  display: inline-block;
+  padding: 2px 7px;
+  border-radius: 2px;
+  background: var(--color-antique-gold);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: all 0.25s ease;
+}
+
+.askDmwHeroAction:hover .aiPill {
+  background: var(--color-ink);
+  color: var(--color-antique-gold);
 }
 
 .secondaryAction {

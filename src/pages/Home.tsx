@@ -68,17 +68,21 @@ export const Home: React.FC = () => {
                   Explore the Global 100
                   <span aria-hidden="true">↗</span>
                 </Link>
+                <a href="#collections" className={styles.secondaryAction}>
+                  Browse regional lists
+                </a>
+              </div>
+
+              <div className={styles.heroAiRow}>
                 <button
                   type="button"
                   className={styles.askDmwHeroAction}
                   onClick={() => setAskDmwOpen(true)}
                 >
-                  <Sparkles size={15} />
-                  Ask DMW
+                  <Sparkles size={16} style={{ color: 'var(--color-antique-gold)' }} />
+                  <span>Ask DMW AI — Bespoke Advisory Desk</span>
+                  <span className={styles.aiPill}>AI Engine</span>
                 </button>
-                <a href="#collections" className={styles.secondaryAction}>
-                  Browse regional lists
-                </a>
               </div>
             </div>
 
