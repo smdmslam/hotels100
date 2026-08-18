@@ -1,8 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const CSV_FILE = path.join(__dirname, 'candidate-master.csv');
-const OUTPUT_FILE = path.join(__dirname, '07-content', 'hotels.json');
+const CSV_FILE = path.join(__dirname, '..', 'candidate-master.csv');
+const OUTPUT_FILE = path.join(__dirname, '..', '07-content', 'hotels.json');
 
 // Read the CSV
 const csvData = fs.readFileSync(CSV_FILE, 'utf8').split('\n');

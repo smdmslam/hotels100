@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "build:pipeline": "node generate-final-100.cjs && node generate-scores.cjs && node generate-rates.cjs && node scripts/merge-pricing.cjs && node generate-collections.cjs",
+    "build:pipeline": "node scripts/generate-final-100.cjs && node scripts/generate-scores.cjs && node scripts/generate-rates.cjs && node scripts/merge-pricing.cjs && node scripts/generate-collections.cjs",
     "fetch-prices": "node scripts/fetch-serpapi-pricing.cjs",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"

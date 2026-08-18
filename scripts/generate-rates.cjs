@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const HOTELS_FILE = path.join(__dirname, '07-content', 'hotels.json');
+const HOTELS_FILE = path.join(__dirname, '..', '07-content', 'hotels.json');
 
 // Read the JSON
 const jsonData = fs.readFileSync(HOTELS_FILE, 'utf-8');

@@ -1,8 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const HOTELS_FILE = path.join(__dirname, '07-content', 'hotels.json');
-const COLLECTIONS_FILE = path.join(__dirname, '07-content', 'collections.json');
+const HOTELS_FILE = path.join(__dirname, '..', '07-content', 'hotels.json');
+const COLLECTIONS_FILE = path.join(__dirname, '..', '07-content', 'collections.json');
 
 // Read the master JSON
 const jsonData = fs.readFileSync(HOTELS_FILE, 'utf-8');

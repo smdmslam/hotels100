@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const HOTELS_FILE = path.join(__dirname, '07-content', 'hotels.json');
+const HOTELS_FILE = path.join(__dirname, '..', '07-content', 'hotels.json');
 const data = JSON.parse(fs.readFileSync(HOTELS_FILE, 'utf8'));
 
 // The 10 dimensions and their max weights

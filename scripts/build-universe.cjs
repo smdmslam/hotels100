@@ -1,8 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const SOURCES_DIR = path.join(__dirname, 'src', 'data', 'sources');
-const OUTPUT_FILE = path.join(__dirname, 'candidate-master.csv');
+const SOURCES_DIR = path.join(__dirname, '..', 'src', 'data', 'sources');
+const OUTPUT_FILE = path.join(__dirname, '..', 'candidate-master.csv');
 
 // Standardize names for deduplication (lowercase, remove punctuation)
 function normalizeName(name) {
