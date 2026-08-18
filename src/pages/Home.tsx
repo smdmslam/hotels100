@@ -49,52 +49,50 @@ export const Home: React.FC = () => {
       <section className={styles.hero}>
         <div className={styles.heroShade} aria-hidden="true" />
         <Container variant="wide" className={styles.heroInner}>
-          <div className={styles.heroCopy}>
-            <span className={styles.eyebrow}>{indexData.edition} Edition</span>
-            <h1 className={styles.heroTitle}>{indexData.title}</h1>
-            <p className={styles.heroSubtitle}>
-              A global index of the hotels that best combine hospitality,
-              brand, pricing power and enduring asset value.
-            </p>
-            <div className={styles.heroActions}>
-              <Link
-                to="/collections/the-global-100"
-                className={styles.primaryAction}
-              >
-                Explore the Global 100
-                <span aria-hidden="true">↗</span>
-              </Link>
-              <a href="#collections" className={styles.secondaryAction}>
-                Browse all editions
-              </a>
+          <div className={styles.heroLayout}>
+            <div className={styles.heroCopy}>
+              <span className={styles.eyebrow}>{indexData.edition} Edition</span>
+              <h1 className={styles.heroTitle}>{indexData.title}</h1>
+              <p className={styles.heroSubtitle}>
+                A global index of the hotels that best combine hospitality,
+                brand, pricing power and enduring asset value.
+              </p>
+              <div className={styles.heroActions}>
+                <Link
+                  to="/collections/the-global-100"
+                  className={styles.primaryAction}
+                >
+                  Explore the Global 100
+                  <span aria-hidden="true">↗</span>
+                </Link>
+                <a href="#collections" className={styles.secondaryAction}>
+                  Browse all editions
+                </a>
+              </div>
             </div>
-          </div>
-        </Container>
 
-        <div className={styles.heroNotationBar}>
-          <Container variant="wide">
-            <div className={styles.notationGrid}>
+            <div className={styles.heroWinnersStack} aria-label="Edition leaders">
               {notationItems.map((item) => (
-                <div key={item.editionSlug} className={styles.notationItem}>
+                <div key={item.editionSlug} className={styles.badgeItem}>
                   <Award
-                    className={styles.notationIcon}
-                    size={20}
+                    className={styles.badgeIcon}
+                    size={22}
                     strokeWidth={1.15}
                     aria-hidden="true"
                   />
-                  <div className={styles.notationMeta}>
-                    <span className={styles.notationEdition}>
+                  <div className={styles.badgeMeta}>
+                    <span className={styles.badgeEdition}>
                       {item.editionLabel}
                     </span>
-                    <Link to={item.winnerUrl} className={styles.notationWinner}>
+                    <Link to={item.winnerUrl} className={styles.badgeWinner}>
                       {item.winnerName}
                     </Link>
                   </div>
                 </div>
               ))}
             </div>
-          </Container>
-        </div>
+          </div>
+        </Container>
       </section>
 
       <section className={styles.indexSection} id="collections">
