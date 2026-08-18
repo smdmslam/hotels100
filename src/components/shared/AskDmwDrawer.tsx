@@ -21,15 +21,20 @@ const PRESET_PROMPTS = [
 
 export const AskDmwDrawer: React.FC<AskDmwDrawerProps> = ({ isOpen, onClose, initialQuery = '' }) => {
   const [query, setQuery] = useState(initialQuery || 'Zurich business trip for 3 nights, quiet room, proper gym, under $500');
+  const [activeQuery, setActiveQuery] = useState(initialQuery || 'Zurich business trip for 3 nights, quiet room, proper gym, under $500');
 
   if (!isOpen) return null;
 
   const allHotels = getAllHotels();
 
+  const handleExecuteMatch = (targetPrompt?: string) => {
+    setActiveQuery(targetPrompt ?? query);
+  };
+
   // Smart location-strict & price-strict AI relevance query matcher across all 310+ hotels
-  const filteredHotels = query.trim()
+  const filteredHotels = activeQuery.trim()
     ? (() => {
-        const q = query.toLowerCase();
+        const q = activeQuery.toLowerCase();
         const tokens = q.split(/\s+/).filter(t => t.length > 2 && !['with', 'under', 'from', 'hotel', 'hotels', 'and', 'the', 'for', 'trip', 'nights', 'room'].includes(t));
 
         // Location constraint keywords
@@ -112,7 +117,19 @@ export const AskDmwDrawer: React.FC<AskDmwDrawerProps> = ({ isOpen, onClose, ini
               placeholder='e.g., "Zurich business trip for 3 nights, quiet room, proper gym, under $500"'
               value={query}
               onChange={(e) => setQuery(e.target.value)}
+              onKeyDown={(e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); handleExecuteMatch(); } }}
             />
+
+            <div className={styles.submitRow}>
+              <button
+                type="button"
+                className={styles.smallSubmitButton}
+                onClick={() => handleExecuteMatch()}
+              >
+                <Sparkles size={13} />
+                Run AI Match
+              </button>
+            </div>
 
             <div className={styles.presetsLabel} style={{ marginTop: 12 }}>
               Click Preset Scenario to Test:
@@ -123,7 +140,7 @@ export const AskDmwDrawer: React.FC<AskDmwDrawerProps> = ({ isOpen, onClose, ini
                   key={preset.label}
                   type="button"
                   className={styles.presetChip}
-                  onClick={() => setQuery(preset.prompt)}
+                  onClick={() => { setQuery(preset.prompt); handleExecuteMatch(preset.prompt); }}
                 >
                   {preset.label}
                 </button>
