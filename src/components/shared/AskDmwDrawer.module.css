@@ -13,7 +13,7 @@
   right: 0;
   bottom: 0;
   z-index: 101;
-  width: min(540px, 92vw);
+  width: min(580px, 94vw);
   display: flex;
   flex-direction: column;
   background: var(--color-ivory);
@@ -37,7 +37,9 @@
 }
 
 .badge {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   margin-bottom: 4px;
   color: var(--color-antique-gold);
   font-family: var(--font-sans);
@@ -50,7 +52,7 @@
 .title {
   margin: 0;
   font-family: var(--font-serif);
-  font-size: 1.6rem;
+  font-size: 1.55rem;
   line-height: 1.1;
 }
 
@@ -79,8 +81,38 @@
   padding: var(--space-6);
 }
 
+/* Section 1: Executive Preface */
+.prefaceCard {
+  margin-bottom: var(--space-6);
+  padding: var(--space-5);
+  border: 1px solid var(--color-antique-gold);
+  background: rgba(197, 160, 89, 0.08);
+  font-family: var(--font-sans);
+}
+
+.prefaceTitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 6px 0;
+  color: var(--color-ink);
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.prefaceText {
+  margin: 0;
+  color: var(--color-charcoal);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Section 2: Unified AI Hero Prompt */
 .sectionLabel {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: var(--space-3);
   color: var(--color-stone);
   font-family: var(--font-sans);
@@ -90,20 +122,61 @@
   text-transform: uppercase;
 }
 
+.promptBox {
+  margin-bottom: var(--space-5);
+}
+
+.promptTextarea {
+  width: 100%;
+  min-height: 96px;
+  padding: 14px 16px;
+  border: 2px solid var(--color-ink);
+  background: #fff;
+  color: var(--color-ink);
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  line-height: 1.4;
+  outline: none;
+  resize: vertical;
+  transition: border-color 0.2s ease;
+}
+
+.promptTextarea:focus {
+  border-color: var(--color-antique-gold);
+  box-shadow: 0 0 0 3px rgba(197, 160, 89, 0.2);
+}
+
+.promptTextarea::placeholder {
+  color: var(--color-stone);
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+}
+
+.presetsLabel {
+  margin-bottom: 8px;
+  color: var(--color-stone);
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
 .presets {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-2);
+  gap: 8px;
   margin-bottom: var(--space-6);
 }
 
 .presetChip {
-  padding: 8px 14px;
+  padding: 7px 12px;
   border: 1px solid rgba(18, 18, 18, 0.2);
-  background: transparent;
+  background: #fff;
   color: var(--color-ink);
   font-family: var(--font-sans);
-  font-size: var(--type-small);
+  font-size: 12px;
+  font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease;
 }
@@ -113,103 +186,95 @@
   background: rgba(18, 18, 18, 0.05);
 }
 
-.searchBox {
-  position: relative;
-  margin-bottom: var(--space-6);
-}
-
-.searchInput {
-  width: 100%;
-  height: 48px;
-  padding: 0 16px;
-  border: 1px solid var(--color-ink);
-  background: transparent;
-  color: var(--color-ink);
-  font-family: var(--font-serif);
-  font-size: 1.1rem;
-  outline: none;
-}
-
-.searchInput::placeholder {
-  color: var(--color-stone);
-  font-family: var(--font-sans);
-  font-size: 0.95rem;
-}
-
+/* Section 3: AI Matched Shortlist */
 .resultsList {
   display: flex;
   flex-direction: column;
-  gap: var(--space-3);
-  margin-bottom: var(--space-6);
+  gap: var(--space-4);
+  margin-bottom: var(--space-7);
 }
 
 .resultCard {
   display: flex;
   flex-direction: column;
-  padding: var(--space-4);
-  border: 1px solid rgba(18, 18, 18, 0.12);
-  background: rgba(255, 255, 255, 0.6);
+  gap: 6px;
+  padding: var(--space-5);
+  border: 1px solid rgba(18, 18, 18, 0.16);
+  background: #fff;
   text-decoration: none;
-  color: inherit;
+  color: var(--color-ink);
   transition: all 0.2s ease;
 }
 
 .resultCard:hover {
-  border-color: var(--color-ink);
-  background: #fff;
-  transform: translateY(-2px);
+  border-color: var(--color-antique-gold);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transform: translateY(-1px);
 }
 
 .resultHeader {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  margin-bottom: 4px;
 }
 
 .resultName {
   font-family: var(--font-serif);
   font-size: 1.25rem;
   font-weight: 600;
-  color: var(--color-ink);
 }
 
 .resultRank {
+  color: var(--color-antique-gold);
   font-family: var(--font-sans);
   font-size: var(--type-label);
   font-weight: 600;
-  color: var(--color-antique-gold);
 }
 
 .resultLocation {
+  color: var(--color-stone);
   font-family: var(--font-sans);
   font-size: var(--type-small);
-  color: var(--color-stone);
-  margin-bottom: 6px;
 }
 
 .resultRationale {
+  margin: 4px 0 0 0;
+  color: var(--color-charcoal);
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+/* Section 4: Human Advisory Desk Backup */
+.advisoryFormCard {
+  padding: var(--space-5);
+  border-top: 1px solid rgba(18, 18, 18, 0.15);
+  background: rgba(244, 240, 232, 0.6);
+}
+
+.advisoryFormTitle {
+  margin: 0 0 6px 0;
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+}
+
+.advisoryFormSubtitle {
+  margin: 0 0 var(--space-4) 0;
+  color: var(--color-stone);
   font-family: var(--font-sans);
   font-size: 0.85rem;
-  line-height: 1.4;
-  color: var(--color-charcoal);
 }
 
-.emailSection {
-  padding-top: var(--space-5);
-  border-top: 1px solid rgba(18, 18, 18, 0.12);
-}
-
-.emailForm {
+.inputGroup {
   display: flex;
-  flex-direction: column;
   gap: var(--space-3);
 }
 
 .emailInput {
-  height: 46px;
+  flex: 1;
+  height: 44px;
   padding: 0 14px;
-  border: 1px solid rgba(18, 18, 18, 0.25);
+  border: 1px solid rgba(18, 18, 18, 0.3);
   background: #fff;
   color: var(--color-ink);
   font-family: var(--font-sans);
@@ -222,34 +287,25 @@
 }
 
 .submitButton {
-  height: 48px;
-  display: flex;
+  height: 44px;
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
+  gap: 8px;
+  padding: 0 20px;
   border: 0;
   background: var(--color-ink);
   color: var(--color-ivory);
   font-family: var(--font-sans);
   font-size: var(--type-small);
   font-weight: 600;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   cursor: pointer;
-  transition: opacity 0.2s ease;
+  transition: background-color 0.2s ease;
 }
 
 .submitButton:hover {
-  opacity: 0.9;
-}
-
-.successMessage {
-  padding: var(--space-4);
-  border: 1px solid var(--color-antique-gold);
-  background: rgba(197, 160, 89, 0.1);
-  color: var(--color-ink);
-  font-family: var(--font-sans);
-  font-size: var(--type-small);
-  line-height: 1.4;
+  background: var(--color-charcoal);
 }
 
 @keyframes fadeIn {
