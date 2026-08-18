@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Award } from 'lucide-react';
+import { Award, Sparkles } from 'lucide-react';
 import { Container } from '../components/shared';
+import { AskDmwDrawer } from '../components/shared/AskDmwDrawer';
 import { getCollection, getIndexData } from '../data/api';
 import styles from './Home.module.css';
 
@@ -22,6 +23,7 @@ const PUBLIC_COLLECTIONS = [
 ];
 
 export const Home: React.FC = () => {
+  const [askDmwOpen, setAskDmwOpen] = useState(false);
   const indexData = getIndexData();
   const globalCollection = getCollection('the-global-100');
   const globalHotels = globalCollection?.hotels ?? [];
@@ -66,6 +68,14 @@ export const Home: React.FC = () => {
                   Explore the Global 100
                   <span aria-hidden="true">↗</span>
                 </Link>
+                <button
+                  type="button"
+                  className={styles.askDmwHeroAction}
+                  onClick={() => setAskDmwOpen(true)}
+                >
+                  <Sparkles size={15} />
+                  Ask DMW
+                </button>
                 <a href="#collections" className={styles.secondaryAction}>
                   Browse regional lists
                 </a>
@@ -242,6 +252,7 @@ export const Home: React.FC = () => {
           </div>
         </Container>
       </section>
+      <AskDmwDrawer isOpen={askDmwOpen} onClose={() => setAskDmwOpen(false)} />
     </main>
   );
 };
