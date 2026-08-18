@@ -208,7 +208,6 @@ export const Home: React.FC = () => {
                 className={styles.reportLink}
               >
                 <div className={styles.reportMedia}>
-                  <img src="/hero-bg.png" alt="" />
                   <span className={styles.reportTag}>The Summer Edit</span>
                 </div>
                 <div className={styles.reportCopy}>
@@ -222,12 +221,14 @@ export const Home: React.FC = () => {
             {reportHotels.map((hotel) => (
               <article key={hotel.id} className={styles.reportCard}>
                 <Link to={hotel.profileUrl} className={styles.reportLink}>
-                  <div className={styles.reportMedia}>
-                    <img
-                      src={hotel.primaryImage?.url || '/hero-bg.png'}
-                      alt={hotel.primaryImage?.alt || hotel.name}
-                    />
-                  </div>
+                  {hotel.primaryImage?.url && (
+                    <div className={styles.reportMedia}>
+                      <img
+                        src={hotel.primaryImage.url}
+                        alt={hotel.primaryImage.alt || hotel.name}
+                      />
+                    </div>
+                  )}
                   <div className={styles.reportCopy}>
                     <span className={styles.reportMeta}>
                       {hotel.location.displayLocation}
