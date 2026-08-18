@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
+import { Award } from 'lucide-react';
 import type { DimensionScore, HotelSummary } from '../../data/types';
 import styles from './RankedHotelItem.module.css';
 
@@ -15,6 +16,8 @@ export const RankedHotelItem: React.FC<RankedHotelItemProps> = ({ hotel }) => {
       .slice(0, 3);
   }
 
+  const isFlagship = !!(hotel.dmwJudgement || hotel.rank <= 5);
+
   return (
     <article className={styles.item}>
       <div className={styles.rankBlock} aria-label={`Rank ${hotel.rank}`}>
@@ -23,6 +26,12 @@ export const RankedHotelItem: React.FC<RankedHotelItemProps> = ({ hotel }) => {
       </div>
 
       <div className={styles.identity}>
+        {isFlagship && (
+          <div className={styles.flagshipBadge}>
+            <Award size={13} strokeWidth={1.5} />
+            <span>DMW Assessed Flagship</span>
+          </div>
+        )}
         <h2 className={styles.name}>
           <Link to={hotel.profileUrl} state={{ collectionSlug: slug }}>{hotel.name}</Link>
         </h2>

@@ -5,6 +5,7 @@
 .rankNumber { margin-top:var(--space-2); color:var(--color-antique-gold); font-family:var(--font-serif); font-size:clamp(2.7rem,3.4vw,4.25rem); line-height:.9; }
 .name { margin:0; font-size:clamp(2.25rem,3vw,4rem); line-height:.98; }
 .name a:hover { text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:6px; }
+.flagshipBadge { display:inline-flex; align-items:center; gap:6px; margin-bottom:8px; padding:3px 8px; border:1px solid var(--color-antique-gold); background:rgba(197,160,89,0.08); color:var(--color-antique-gold); font-family:var(--font-sans); font-size:10px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; }
 .meta { display:flex; flex-wrap:wrap; gap:8px 0; margin-top:var(--space-4); color:var(--color-stone); font-family:var(--font-sans); font-size:var(--type-small); }
 .meta span:not(:last-child)::after { content:'·'; margin:0 10px; color:var(--color-antique-gold); }
 .lens { margin:var(--space-4) 0 0; color:var(--color-charcoal); font-family:var(--font-sans); font-size:var(--type-small); }

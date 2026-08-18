@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { Navigate, useParams } from 'react-router-dom';
 import { Container } from '../components/shared';
 import { RankedHotelItem } from '../components/index/RankedHotelItem';
+import { AskDmwDrawer } from '../components/shared/AskDmwDrawer';
 import { getCollection } from '../data/api';
 import styles from './CollectionIndex.module.css';
 
@@ -23,6 +24,8 @@ export const CollectionIndex: React.FC = () => {
   const { slug = '' } = useParams<{ slug: string }>();
   const collection = getCollection(slug);
   const allHotels = collection?.hotels ?? [];
+
+  const [askDmwOpen, setAskDmwOpen] = useState(false);
 
   const [search, setSearch] = useState('');
   const [regionFilter, setRegionFilter] = useState('All regions');
@@ -182,9 +185,13 @@ export const CollectionIndex: React.FC = () => {
               >
                 Filters {activeFilterCount > 0 && <span>{activeFilterCount}</span>}
               </button>
-              <button type="button" className={styles.askButton} disabled>
+              <button
+                type="button"
+                className={styles.askButton}
+                onClick={() => setAskDmwOpen(true)}
+              >
                 <span>Ask DMW</span>
-                <small>Coming soon</small>
+                <small>AI Advisory</small>
               </button>
             </div>
           </div>
@@ -264,6 +271,7 @@ export const CollectionIndex: React.FC = () => {
           </div>
         </Container>
       </section>
+      <AskDmwDrawer isOpen={askDmwOpen} onClose={() => setAskDmwOpen(false)} />
     </main>
   );
 };
