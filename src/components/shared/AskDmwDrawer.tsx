@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { X, Check, Send } from 'lucide-react';
 import { getCollection } from '../../data/api';
-import type { Amenity, HotelSummary } from '../../data/types';
+import type { HotelSummary } from '../../data/types';
 import styles from './AskDmwDrawer.module.css';
 
 interface AskDmwDrawerProps {
@@ -29,32 +29,33 @@ export const AskDmwDrawer: React.FC<AskDmwDrawerProps> = ({ isOpen, onClose, ini
   const advisoryCollection = getCollection('the-global-100');
   const allHotels = advisoryCollection?.hotels ?? [];
 
-  // Simple dynamic decision query matcher across city, name, amenities, archetype, and rates
+  // Smart tokenized relevance query matcher across name, location, archetype, lens, amenities, and price
   const filteredHotels = query.trim()
-    ? allHotels.filter((hotel: HotelSummary) => {
+    ? allHotels.map((hotel: HotelSummary) => {
         const q = query.toLowerCase();
-        const matchesName = hotel.name.toLowerCase().includes(q);
-        const matchesCity = hotel.location.city.toLowerCase().includes(q);
-        const matchesCountry = hotel.location.country.toLowerCase().includes(q);
-        const matchesArchetype = (hotel.archetype || '').toLowerCase().includes(q);
-        const matchesLens = (hotel.strategicLens || '').toLowerCase().includes(q);
+        const tokens = q.split(/\s+/).filter(t => t.length > 2 && !['with', 'under', 'from', 'hotel', 'hotels', 'and', 'the', 'for'].includes(t));
+        
+        const searchableText = `${hotel.name} ${hotel.location.city} ${hotel.location.country} ${hotel.location.neighbourhood || ''} ${hotel.archetype || ''} ${hotel.strategicLens || ''} ${hotel.dmwJudgement || ''} ${(hotel.essentialAmenities || []).map(a => a.label).join(' ')}`.toLowerCase();
 
-        const amenityPool = [
-          ...(hotel.essentialAmenities || []),
-          ...(('amenities' in hotel && Array.isArray((hotel as HotelSummary & { amenities?: Amenity[] }).amenities))
-            ? ((hotel as HotelSummary & { amenities?: Amenity[] }).amenities || [])
-            : []),
-        ];
-        const matchesAmenity = amenityPool.some((a) => a.label.toLowerCase().includes(q));
+        let score = 0;
+        tokens.forEach(token => {
+          if (searchableText.includes(token)) score += 2;
+        });
 
-        // Check price terms (e.g. under 500)
-        let matchesPrice = true;
+        // Price filter handling
+        let priceMatch = true;
         if (q.includes('under 500') || q.includes('under $500') || q.includes('under €500')) {
-          matchesPrice = !!(hotel.indicativeRate && hotel.indicativeRate.amount <= 500);
+          priceMatch = !!(hotel.indicativeRate && hotel.indicativeRate.amount <= 500);
+        } else if (q.includes('under 1000') || q.includes('under $1000') || q.includes('under €1000')) {
+          priceMatch = !!(hotel.indicativeRate && hotel.indicativeRate.amount <= 1000);
         }
 
-        return (matchesName || matchesCity || matchesCountry || matchesArchetype || matchesLens || matchesAmenity) && matchesPrice;
-      }).slice(0, 5)
+        return { hotel, score, priceMatch };
+      })
+      .filter(item => item.score > 0 && item.priceMatch)
+      .sort((a, b) => b.score - a.score || a.hotel.rank - b.hotel.rank)
+      .map(item => item.hotel)
+      .slice(0, 5)
     : allHotels.slice(0, 4);
 
   const handleSubmit = (e: React.FormEvent) => {
