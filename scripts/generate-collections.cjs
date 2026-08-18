@@ -162,7 +162,21 @@ const lakes35 = {
   hotels: top35Lakes
 };
 
-// 9. INTERNAL RESEARCH: Monaco & Eastern Riviera 30
+// 9. The UAE 50
+const uaeHotels = publicHotels.filter(h => h.location.country === 'United Arab Emirates');
+const sortedUae = uaeHotels.sort((a, b) => (a.rank || 999) - (b.rank || 999));
+const top50Uae = sortedUae.slice(0, 50).map((h, index) => {
+  return { ...h, rank: index + 1 };
+});
+const uae50 = {
+  slug: 'the-uae-50',
+  title: "The UAE 50",
+  edition: "2026",
+  description: "The United Arab Emirates is the world's most dynamic luxury hospitality market, where ultra-high ADRs, flagship starchitecture, and intense operator competition meet sovereign asset backing. The DMW UAE 50 evaluates the premier urban resorts, desert sanctuaries, and beach palaces across Dubai, Abu Dhabi, and the Northern Emirates.",
+  hotels: top50Uae
+};
+
+// 10. INTERNAL RESEARCH: Monaco & Eastern Riviera 30
 const monacoHotels = internalHotels.filter(h => h.rank > 100 && h.rank <= 130);
 const monaco30 = {
   slug: 'the-monaco-and-eastern-riviera-30',
@@ -172,7 +186,7 @@ const monaco30 = {
   hotels: monacoHotels
 };
 
-const collections = [global100, accessible50, london50, newYork50, zurich25, londonAccessible, paris25, lakes35, monaco30];
+const collections = [global100, uae50, accessible50, london50, newYork50, zurich25, londonAccessible, paris25, lakes35, monaco30];
 
 fs.writeFileSync(COLLECTIONS_FILE, JSON.stringify({ collections }, null, 2));
 

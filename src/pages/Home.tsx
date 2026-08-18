@@ -6,6 +6,7 @@ import styles from './Home.module.css';
 
 const PUBLIC_COLLECTIONS = [
   { title: 'The Global 100', slug: 'the-global-100' },
+  { title: 'The UAE 50', slug: 'the-uae-50' },
   { title: 'The London 50', slug: 'the-london-50' },
   { title: 'The New York 50', slug: 'the-new-york-50' },
   { title: 'The Paris 25', slug: 'the-paris-25' },

@@ -29,14 +29,27 @@ async function fetchPerplexityData(hotelName, location) {
 
 Conduct deep, high-asymmetry research on the property: ${hotelName} in ${location}.
 
-We require three core categories of information:
-1. BOOKING-STYLE GRANULAR AMENITIES & PROPERTY FACTS: Comprehensive amenity breakdown across Wellness, Food & Drink, Connectivity, Access, Rooms, and Service.
-2. DMW 10-DIMENSION METHODOLOGY EVALUATION: Analytical breakdown and score distribution across DMW's 10 strategic dimensions.
-3. 5-PART INSIDER REPORT: Information-asymmetric lore, operational quirks, famous clientele, exact best room numbers to book, and ownership/operator power dynamics.
+We require four core categories of information:
+1. OFFICIAL WEBSITE LINKS & IDENTITY: Official website URL, direct booking URL, brand, operator, owner, architect, and designer.
+2. BOOKING-STYLE GRANULAR AMENITIES & PROPERTY FACTS: Comprehensive amenity breakdown across Wellness, Food & Drink, Connectivity, Access, Rooms, and Service.
+3. DMW 10-DIMENSION METHODOLOGY EVALUATION: Analytical breakdown and score distribution across DMW's 10 strategic dimensions.
+4. 5-PART INSIDER REPORT: Information-asymmetric lore, operational quirks, famous clientele, exact best room numbers to book, and ownership/operator power dynamics.
 
 Output your research STRICTLY as a single valid JSON object adhering to the schema below. Use null for any numbers or missing fields (do NOT use words like 'not available' or 'N/A'). Do not wrap in markdown text explanations. Return ONLY raw JSON.
 
 {
+  "links": {
+    "officialWebsite": "https://www.claridges.co.uk",
+    "bookingUrl": "https://www.claridges.co.uk/rooms-suites/"
+  },
+  "identity": {
+    "brand": "Maybourne Hotel Group",
+    "operator": "Maybourne Hotel Group",
+    "owner": "Constellation Hotels",
+    "ownershipPubliclyConfirmed": true,
+    "architect": "CW Stephens",
+    "designer": "Thierry Despont / Bryan O'Sullivan"
+  },
   "propertyFacts": {
     "openingYear": 1897,
     "lastMajorRenovationYear": 2022,
@@ -159,6 +172,8 @@ async function run() {
     const result = await fetchPerplexityData(hotel.name, hotel.location.displayLocation);
 
     if (result) {
+      if (result.links) hotel.links = result.links;
+      if (result.identity) hotel.identity = { ...hotel.identity, ...result.identity };
       if (result.propertyFacts) hotel.propertyFacts = { ...hotel.propertyFacts, ...result.propertyFacts };
       if (result.amenities && Array.isArray(result.amenities)) {
         hotel.amenities = result.amenities;
