@@ -263,17 +263,41 @@ export const Admin: React.FC = () => {
             <article className={styles.faqCard}>
               <h3 className={styles.faqQuestion}>
                 <Users className={styles.faqQuestionIcon} size={22} />
-                1. Who are DMW's target users and buyers?
+                1. Target Cohorts &amp; Their "Magnetic Pull" (How We Fish For Customers)
               </h3>
               <div className={styles.faqAnswer}>
                 <p>
-                  DMW serves four core high-value user personas who cannot afford expensive hotel selection failures:
+                  To systematically acquire users at every tier, DMW uses a dedicated <strong>Magnetic Pull (Value Hook)</strong> tailored to each buyer cohort:
                 </p>
                 <ul className={styles.faqList}>
-                  <li><strong>High-Net-Worth Principals</strong>: Seeking privacy, asset quality, and authentic luxury without commercial fluff.</li>
-                  <li><strong>Executive Assistants (EAs) &amp; Chiefs of Staff</strong>: Booking for C-suite principals; need guaranteed, defensible shortlists without booking failure.</li>
-                  <li><strong>Family Office Directors &amp; Wealth Advisors</strong>: Managing travel logistics for family estates and high-value delegations.</li>
-                  <li><strong>Frequent Luxury Business Travellers</strong>: Require high-performance business utilities (serious gyms, quiet rooms, fast Wi-Fi, 24h dining).</li>
+                  <li>
+                    <strong>Cohort A: High-Net-Worth Principals &amp; Sovereign Wealth</strong>
+                    <br />
+                    🧲 <em>Magnetic Pull</em>: <strong>UnGoogleable Truth &amp; Zero Fluff</strong>. Principals ignore generic PR. They care about privacy, noise insulation, spatial discretion, and asset scarcity.
+                    <br />
+                    🎣 <em>Execution Hook</em>: Explicit trade-off disclosure (e.g. <em>“avoid 2nd floor street noise”</em>) + Unlocked Top 10 Flagship Insider Reports + 🟢 <em>Lowest 10% Rate Window</em> alerts.
+                  </li>
+                  <li style={{ marginTop: 12 }}>
+                    <strong>Cohort B: Executive Assistants (EAs) &amp; Chiefs of Staff</strong>
+                    <br />
+                    🧲 <em>Magnetic Pull</em>: <strong>Zero-Failure Decision Defensibility</strong>. Booking a bad hotel for a C-suite boss is a career failure. An EA needs a defensible recommendation in 60 seconds.
+                    <br />
+                    🎣 <em>Execution Hook</em>: Shortlist reduction (5 curated options instead of 600 sponsored OTA ads) + instant <strong>Ask DMW</strong> prompt queries (*“Zurich business under $500 with gym &amp; quiet desk”*).
+                  </li>
+                  <li style={{ marginTop: 12 }}>
+                    <strong>Cohort C: Family Office Directors &amp; Wealth Advisors</strong>
+                    <br />
+                    🧲 <em>Magnetic Pull</em>: <strong>Rate Intelligence &amp; Multi-Room Security Logistics</strong>. Managing delegation travel and family estates requires rate predictability and owner-operator stability.
+                    <br />
+                    🎣 <em>Execution Hook</em>: Rate compression surge warnings + automated price drop alerts + direct advisory desk routing to <code>s.moralesmed@gmail.com</code>.
+                  </li>
+                  <li style={{ marginTop: 12 }}>
+                    <strong>Cohort D: Frequent Luxury Business Travellers</strong>
+                    <br />
+                    🧲 <em>Magnetic Pull</em>: <strong>High-Performance Utility &amp; Value Under $500</strong>. Need serious 24h gyms, fast Wi-Fi, late check-out, and high-ADR luxury assets under $500/night.
+                    <br />
+                    🎣 <em>Execution Hook</em>: <strong>The Accessible 50</strong> and <strong>London Under $500</strong> collection editions.
+                  </li>
                 </ul>
               </div>
             </article>
