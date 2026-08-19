@@ -7,25 +7,19 @@ import {
   BedDouble,
   Building2,
   Car,
-  CheckCircle2,
-  CircleHelp,
+  Check,
   ChevronLeft,
   ChevronRight,
+  CircleMinus,
   Coffee,
-  ConciergeBell,
   Dumbbell,
   FileText,
   KeyRound,
   MapPin,
-  PawPrint,
-  Snowflake,
   Sparkles,
   Target,
   Utensils,
-  Waves,
   Wifi,
-  Wine,
-  Zap,
 } from 'lucide-react';
 import { Container, IconLabel } from '../components/shared';
 import { PriceCurveChart } from '../components/hotel/PriceCurveChart';
@@ -38,85 +32,28 @@ import styles from './HotelProfile.module.css';
 
 type ProfileSection =
   | 'assessment'
-  | 'insider'
   | 'stay'
   | 'property'
   | 'scorecard'
-  | 'pricing';
+  | 'pricing'
+  | 'insider';
 
 const SECTION_LABELS: Record<ProfileSection, string> = {
   assessment: 'Hotel Assessment',
-  insider: 'Insider View',
   stay: 'Stay Essentials',
   property: 'Property & Ownership',
   scorecard: 'Scorecard',
   pricing: 'Pricing Intelligence',
-};
-
-const SECTION_DESCRIPTIONS: Record<ProfileSection, string> = {
-  assessment: 'Strategic analysis, field notes & thesis',
-  insider: 'Secret lore, quirks, best rooms & clientele',
-  stay: 'Amenities, packages & direct booking',
-  property: 'Specs, rooms, operator & asset facts',
-  scorecard: 'DMW score & dimension weights',
-  pricing: 'Forward rates & seasonal value windows',
+  insider: 'Insider View',
 };
 
 const AMENITY_ICONS: Record<string, React.ElementType> = {
   gym: Dumbbell,
-  fitness: Dumbbell,
   parking: Car,
   restaurant: Utensils,
   wifi: Wifi,
   breakfast: Coffee,
   spa: Sparkles,
-  pool: Waves,
-  'pet-friendly': PawPrint,
-  pets: PawPrint,
-  'air-conditioning': Snowflake,
-  ac: Snowflake,
-  concierge: ConciergeBell,
-  bar: Wine,
-  'room-service': Utensils,
-  'ev-charging': Zap,
-};
-
-const FEATURED_FACILITY_IDS = [
-  'wifi',
-  'gym',
-  'fitness',
-  'pool',
-  'spa',
-  'parking',
-  'restaurant',
-  'breakfast',
-  'room-service',
-  'concierge',
-];
-
-const FACILITY_CATEGORY_ORDER = [
-  'Connectivity & Work',
-  'Wellness',
-  'Food & Drink',
-  'Rooms',
-  'Access & Transport',
-  'Service',
-  'Accessibility',
-  'Policies',
-  'Other',
-];
-
-const normalizeFacilityCategory = (category?: string) => {
-  const normalized = category?.toLowerCase() || '';
-  if (normalized.includes('wellness') || normalized.includes('fitness')) return 'Wellness';
-  if (normalized.includes('food') || normalized.includes('drink') || normalized.includes('dining')) return 'Food & Drink';
-  if (normalized.includes('room')) return 'Rooms';
-  if (normalized.includes('transport') || normalized.includes('parking')) return 'Access & Transport';
-  if (normalized.includes('connect') || normalized.includes('business') || normalized.includes('work')) return 'Connectivity & Work';
-  if (normalized.includes('accessib')) return 'Accessibility';
-  if (normalized.includes('polic')) return 'Policies';
-  if (normalized.includes('service')) return 'Service';
-  return 'Other';
 };
 
 export const HotelProfile: React.FC = () => {
@@ -149,17 +86,12 @@ export const HotelProfile: React.FC = () => {
 
   const availableSections: ProfileSection[] = [
     'assessment',
-    ...(hotel.insiderReport ? (['insider'] as ProfileSection[]) : []),
     'stay',
     'property',
     ...(hotel.scores ? (['scorecard'] as ProfileSection[]) : []),
     ...(hotel.pricingIntelligence ? (['pricing'] as ProfileSection[]) : []),
+    ...(hotel.insiderReport ? (['insider'] as ProfileSection[]) : []),
   ];
-
-  const getSectionNum = (sec: ProfileSection) => {
-    const idx = availableSections.indexOf(sec);
-    return idx >= 0 ? String(idx + 1).padStart(2, '0') : '01';
-  };
 
   const officialWebsite = hotel.links?.officialWebsite;
   const indicativeRate = hotel.indicativeRate?.amount;
@@ -167,62 +99,16 @@ export const HotelProfile: React.FC = () => {
   const renderAssessment = () => (
     <div className={styles.panelContent}>
       <header className={styles.panelHeader}>
-        <span className={styles.panelNumber}>{getSectionNum('assessment')}</span>
+        <span className={styles.panelNumber}>01</span>
         <div>
-          <span className={styles.kicker}>DMW Assessment</span>
-          <h2>Assessment &amp; Strategic Positioning</h2>
+          <span className={styles.kicker}>Independent hotel intelligence</span>
+          <h2>Hotel Assessment</h2>
         </div>
       </header>
 
       {hotel.inclusionRationale && (
-        <p className={styles.standfirst} style={{ fontSize: '1.25rem', fontFamily: 'var(--font-serif)', lineHeight: 1.4, color: 'var(--color-ivory)', marginBottom: 'var(--space-5)', fontStyle: 'italic' }}>
-          "{hotel.inclusionRationale}"
-        </p>
+        <p className={styles.standfirst}>{hotel.inclusionRationale}</p>
       )}
-
-      <div className={styles.assessmentJudgementHeader}>
-        <div className={styles.judgementBadge}>
-          <span>DMW Rating</span>
-          <strong>{hotel.scores?.totalScore.toFixed(1) || '98.6'} <small>/ 100</small></strong>
-        </div>
-        <div className={styles.judgementMeta}>
-          <span className={styles.kicker}>Executive Synthesis</span>
-          <h3>{hotel.name} — Strategic Assessment Thesis</h3>
-        </div>
-      </div>
-
-      {/* Traveller Suitability Matrix */}
-      <div className={styles.suitabilityCard}>
-        <div className={styles.suitabilityHeader}>
-          <span className={styles.kicker}>Traveller Suitability Matrix</span>
-          <h3>Best Suited For</h3>
-        </div>
-        <div className={styles.suitabilityGrid}>
-          {hotel.bestSuitedFor?.length ? (
-            hotel.bestSuitedFor.map((item) => (
-              <div key={item} className={styles.suitabilityItem}>
-                <div className={styles.suitabilityBadge}>✓ {item}</div>
-                <p>High efficiency, discreet protocol, and tailored hospitality performance.</p>
-              </div>
-            ))
-          ) : (
-            <>
-              <div className={styles.suitabilityItem}>
-                <div className={styles.suitabilityBadge}>✓ C-Suite &amp; Business Travel</div>
-                <p>High location efficiency, soundproofed rooms, express breakfast &amp; private meeting discretion.</p>
-              </div>
-              <div className={styles.suitabilityItem}>
-                <div className={styles.suitabilityBadge}>✓ Discreet HNW Hideout</div>
-                <p>Low public visibility, private side-entrance access, and personal butler protocol.</p>
-              </div>
-              <div className={styles.suitabilityItem}>
-                <div className={styles.suitabilityBadge}>✓ Culinary &amp; Social Destination</div>
-                <p>World-class bar &amp; Michelin-starred dining attracting non-resident high-net-worth clientele.</p>
-              </div>
-            </>
-          )}
-        </div>
-      </div>
 
       <div className={styles.assessmentBody}>
         <p className={styles.overview}>{hotel.dmwOverview}</p>
@@ -236,7 +122,7 @@ export const HotelProfile: React.FC = () => {
 
         {hotel.analysis?.revenueStrategy && (
           <section className={styles.proseSection}>
-            <h3>Revenue &amp; positioning</h3>
+            <h3>Revenue and positioning</h3>
             <p>{hotel.analysis.revenueStrategy}</p>
           </section>
         )}
@@ -264,117 +150,39 @@ export const HotelProfile: React.FC = () => {
     </div>
   );
 
-  const facilityList = hotel.amenities || (hotel as unknown as { essentialAmenities?: any[] }).essentialAmenities || [];
-  const featuredFacilities = [...facilityList]
-    .sort((a: any, b: any) => {
-      const aIndex = FEATURED_FACILITY_IDS.indexOf(a.id);
-      const bIndex = FEATURED_FACILITY_IDS.indexOf(b.id);
-      return (aIndex === -1 ? 99 : aIndex) - (bIndex === -1 ? 99 : bIndex);
-    })
-    .slice(0, 8);
-
-  const groupedFacilities = FACILITY_CATEGORY_ORDER.map((category) => ({
-    category,
-    items: facilityList.filter(
-      (facility: any) => normalizeFacilityCategory(facility.category) === category,
-    ),
-  })).filter((group) => group.items.length > 0);
-
   const renderStay = () => (
     <div className={styles.panelContent}>
       <header className={styles.panelHeader}>
-        <span className={styles.panelNumber}>{getSectionNum('stay')}</span>
+        <span className={styles.panelNumber}>02</span>
         <div>
           <span className={styles.kicker}>For the stay</span>
-          <h2>Stay Essentials &amp; Facilities</h2>
+          <h2>Stay Essentials</h2>
         </div>
       </header>
 
       <p className={styles.panelIntroduction}>
-        Standardized facility verification and practical amenities assessed for luxury travel.
+        The practical details that determine whether the hotel works for this trip.
       </p>
 
-      <div className={styles.popularFacilitiesSection}>
-        <div className={styles.facilitiesHeadingRow}>
-          <h3 className={styles.facilitiesSubheading}>Most requested facilities</h3>
-          <span>Verified hotel information</span>
-        </div>
-
-        {featuredFacilities.length > 0 ? (
-          <div className={styles.featuredFacilityGrid}>
-          {featuredFacilities.map((amenity: any) => {
-            const isAvailable = amenity.available === true;
-            const isUnavailable = amenity.available === false;
-            const IconComponent = AMENITY_ICONS[amenity.id] || (isAvailable ? CheckCircle2 : CircleHelp);
-            return (
-              <div
-                key={amenity.id}
-                className={`${styles.featuredFacility} ${isUnavailable ? styles.facilityUnavailable : ''} ${!isAvailable && !isUnavailable ? styles.facilityUnknown : ''}`}
-              >
-                <IconComponent size={25} strokeWidth={1.35} className={styles.facilityIcon} />
-                <div>
-                  <strong>{amenity.label}</strong>
-                  <span>{isAvailable ? 'Available' : isUnavailable ? 'Not available' : 'Verification pending'}</span>
-                </div>
+      <div className={styles.amenitiesGrid}>
+        {((hotel.amenities || (hotel as any).essentialAmenities || []) as any[]).length ? ((hotel.amenities || (hotel as any).essentialAmenities || []) as any[]).map((amenity: any) => {
+          const AmenityIcon = AMENITY_ICONS[amenity.id] || (amenity.available ? Check : CircleMinus);
+          return (
+            <div
+              key={amenity.id}
+              className={`${styles.amenity} ${!amenity.available ? styles.amenityUnavailable : ''}`}
+            >
+              <AmenityIcon size={25} strokeWidth={1.35} />
+              <div>
+                <strong>{amenity.label}</strong>
+                <span>{amenity.available ? 'Available' : 'Not available'}</span>
               </div>
-            );
-          })}
-          </div>
-        ) : (
-          <div className={styles.facilityPending}>
-            <CircleHelp size={25} strokeWidth={1.35} />
-            <div>
-              <strong>Facility verification in progress</strong>
-              <p>Hotel amenities have not yet been added to this profile.</p>
             </div>
-          </div>
+          );
+        }) : (
+          <p className={styles.dataPending}>Amenities are being verified.</p>
         )}
       </div>
-
-      <div className={styles.practicalDetails}>
-        <div className={styles.practicalLabel}>Practical details</div>
-        <div className={styles.practicalItem}>
-          <span>Check-in</span>
-          <strong>{hotel.propertyFacts.checkInTime || 'To be verified'}</strong>
-        </div>
-        <div className={styles.practicalItem}>
-          <span>Check-out</span>
-          <strong>{hotel.propertyFacts.checkOutTime || 'To be verified'}</strong>
-        </div>
-        <div className={styles.practicalItem}>
-          <span>Neighbourhood</span>
-          <strong>{hotel.location.neighbourhood || hotel.location.city}</strong>
-        </div>
-        <div className={styles.practicalItem}>
-          <span>Indicative rate</span>
-          <strong>{indicativeRate ? `~$${indicativeRate} / night` : 'Check current rates'}</strong>
-        </div>
-      </div>
-
-      {groupedFacilities.length > 0 && (
-        <section className={styles.allFacilitiesSection}>
-          <h3 className={styles.facilitiesSubheading}>All facilities</h3>
-          <div className={styles.facilityCategoryGrid}>
-            {groupedFacilities.map((group) => (
-              <div className={styles.facilityCategory} key={group.category}>
-                <h4>{group.category}</h4>
-                <ul>
-                  {group.items.map((amenity: any) => {
-                    const isAvailable = amenity.available === true;
-                    const isUnavailable = amenity.available === false;
-                    return (
-                      <li key={amenity.id} className={isUnavailable ? styles.facilityUnavailable : ''}>
-                        <span>{amenity.label}</span>
-                        <small>{isAvailable ? 'Yes' : isUnavailable ? 'No' : 'Pending'}</small>
-                      </li>
-                    );
-                  })}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </section>
-      )}
 
       {hotel.specialPackages?.length ? (
         <div className={styles.embeddedComponent}>
@@ -399,7 +207,7 @@ export const HotelProfile: React.FC = () => {
   const renderProperty = () => (
     <div className={styles.panelContent}>
       <header className={styles.panelHeader}>
-        <span className={styles.panelNumber}>{getSectionNum('property')}</span>
+        <span className={styles.panelNumber}>03</span>
         <div>
           <span className={styles.kicker}>Asset profile</span>
           <h2>Property &amp; Ownership</h2>
@@ -419,21 +227,12 @@ export const HotelProfile: React.FC = () => {
 
   const sectionContent: Record<ProfileSection, React.ReactNode> = {
     assessment: renderAssessment(),
-    insider: hotel.insiderReport ? (
-      <div className={styles.panelContent}>
-        <header className={styles.panelHeader}>
-          <span className={styles.panelNumber}>{getSectionNum('insider')}</span>
-          <div><span className={styles.kicker}>Practical intelligence</span><h2>Insider View</h2></div>
-        </header>
-        <div className={styles.embeddedComponent}><InsiderReport report={hotel.insiderReport} /></div>
-      </div>
-    ) : null,
     stay: renderStay(),
     property: renderProperty(),
     scorecard: hotel.scores ? (
       <div className={styles.panelContent}>
         <header className={styles.panelHeader}>
-          <span className={styles.panelNumber}>{getSectionNum('scorecard')}</span>
+          <span className={styles.panelNumber}>04</span>
           <div><span className={styles.kicker}>Technical assessment</span><h2>Scorecard</h2></div>
         </header>
         <div className={styles.embeddedComponent}><Scorecard scores={hotel.scores} /></div>
@@ -442,22 +241,31 @@ export const HotelProfile: React.FC = () => {
     pricing: hotel.pricingIntelligence ? (
       <div className={styles.panelContent}>
         <header className={styles.panelHeader}>
-          <span className={styles.panelNumber}>{getSectionNum('pricing')}</span>
+          <span className={styles.panelNumber}>05</span>
           <div><span className={styles.kicker}>Forward-rate observation</span><h2>Pricing Intelligence</h2></div>
         </header>
         <p className={styles.panelIntroduction}>Publicly available forward rates, observed to identify seasonality, pricing power and better booking windows.</p>
         <div className={styles.embeddedComponent}><PriceCurveChart pricing={hotel.pricingIntelligence} /></div>
       </div>
     ) : null,
+    insider: hotel.insiderReport ? (
+      <div className={styles.panelContent}>
+        <header className={styles.panelHeader}>
+          <span className={styles.panelNumber}>06</span>
+          <div><span className={styles.kicker}>Practical intelligence</span><h2>Insider View</h2></div>
+        </header>
+        <div className={styles.embeddedComponent}><InsiderReport report={hotel.insiderReport} /></div>
+      </div>
+    ) : null,
   };
 
   const sectionIcons: Record<ProfileSection, React.ElementType> = {
     assessment: FileText,
-    insider: KeyRound,
     stay: BedDouble,
     property: Building2,
     scorecard: Target,
     pricing: BarChart3,
+    insider: KeyRound,
   };
 
   return (
@@ -468,20 +276,18 @@ export const HotelProfile: React.FC = () => {
         )}
         <div className={styles.heroShade} aria-hidden="true" />
         <Container variant="wide" className={styles.heroInner}>
-          <div className={styles.heroTopBar}>
-            <div className={styles.heroMetaGroup}>
-              <span className={styles.rank}>DMW 100 · No. {hotel.rank}</span>
-              <Link to={`/collections/${collectionSlug}`} className={styles.heroBack}>
-                <ArrowLeft size={16} /> {collection?.title || 'The index'}
-              </Link>
-            </div>
-            <div className={styles.heroPrevNext}>
+          <div className={styles.heroNavigation}>
+            <Link to={`/collections/${collectionSlug}`} className={styles.heroBack}>
+              <ArrowLeft size={16} /> {collection?.title || 'The index'}
+            </Link>
+            <div>
               {previousHotel && <Link to={previousHotel.profileUrl} state={{ collectionSlug }} aria-label="Previous hotel"><ChevronLeft size={20} /></Link>}
               {nextHotel && <Link to={nextHotel.profileUrl} state={{ collectionSlug }} aria-label="Next hotel"><ChevronRight size={20} /></Link>}
             </div>
           </div>
 
           <div className={styles.heroContent}>
+            <span className={styles.rank}>DMW 100 · No. {hotel.rank}</span>
             <h1>{hotel.name}</h1>
             <p className={styles.location}><MapPin size={18} /> {hotel.location.displayLocation}</p>
             <BlackbookActions hotelId={hotel.id} />
@@ -494,68 +300,44 @@ export const HotelProfile: React.FC = () => {
           <span className={styles.navLabel}>Explore the profile</span>
           {availableSections.map((section) => {
             const Icon = sectionIcons[section];
-            const isActive = activeSection === section;
             return (
               <button
                 type="button"
                 key={section}
-                className={isActive ? styles.navActive : ''}
+                className={activeSection === section ? styles.navActive : ''}
                 onClick={() => setActiveSection(section)}
               >
-                <div className={styles.navHeaderRow}>
-                  <Icon size={16} strokeWidth={1.4} />
-                  <span className={styles.navTitle}>{SECTION_LABELS[section]}</span>
-                </div>
-                <span className={styles.navSubtext}>{SECTION_DESCRIPTIONS[section]}</span>
+                <Icon size={17} strokeWidth={1.4} />
+                <span>{SECTION_LABELS[section]}</span>
               </button>
             );
           })}
         </nav>
 
-        <div className={styles.mainWrapper}>
-          <div className={styles.atAGlanceHorizontal}>
-            <span className={styles.kicker}>At a glance</span>
-            <div className={styles.glanceRow}>
-              {hotel.scores && (
-                <div className={styles.glanceItem}>
-                  <span className={styles.glanceLabel}>DMW Score</span>
-                  <div className={styles.glanceValue}>
-                    <strong>{hotel.scores.totalScore.toFixed(1)}</strong>
-                    <small>/100</small>
-                  </div>
-                </div>
-              )}
-              {indicativeRate && (
-                <div className={styles.glanceItem}>
-                  <span className={styles.glanceLabel}>Indicative Rate</span>
-                  <div className={styles.glanceValue}>
-                    <strong>~${indicativeRate}</strong>
-                    <small>/night</small>
-                  </div>
-                </div>
-              )}
-              <div className={styles.glanceItem}>
-                <span className={styles.glanceLabel}>Strategic Lens</span>
-                <div className={styles.glanceText}>{hotel.strategicLens}</div>
-              </div>
-              <div className={styles.glanceItem}>
-                <span className={styles.glanceLabel}>Property</span>
-                <div className={styles.glanceText}>
-                  {hotel.propertyFacts.roomCount ? `${hotel.propertyFacts.roomCount} rooms` : hotel.archetype}
-                </div>
-              </div>
-              {officialWebsite && (
-                <a className={styles.glanceAction} href={officialWebsite} target="_blank" rel="noopener noreferrer">
-                  Check availability <ArrowRight size={15} />
-                </a>
-              )}
-            </div>
-          </div>
+        <section className={styles.mainPanel} aria-live="polite">
+          {sectionContent[activeSection]}
+        </section>
 
-          <section className={styles.mainPanel} aria-live="polite">
-            {sectionContent[activeSection]}
-          </section>
-        </div>
+        <aside className={styles.decisionPanel}>
+          <span className={styles.kicker}>At a glance</span>
+          {hotel.scores && (
+            <div className={styles.decisionScore}>
+              <span>DMW score</span>
+              <div><strong>{hotel.scores.totalScore.toFixed(1)}</strong><small>/100</small></div>
+            </div>
+          )}
+          <dl className={styles.decisionFacts}>
+            {indicativeRate && <><dt>Indicative rate</dt><dd>~${indicativeRate} / night</dd></>}
+            <dt>Strategic lens</dt><dd>{hotel.strategicLens}</dd>
+            <dt>Property</dt><dd>{hotel.propertyFacts.roomCount ? `${hotel.propertyFacts.roomCount} rooms` : hotel.archetype}</dd>
+          </dl>
+          {officialWebsite && (
+            <a className={styles.bookingAction} href={officialWebsite} target="_blank" rel="noopener noreferrer">
+              Check rates &amp; availability <ArrowRight size={17} />
+            </a>
+          )}
+          <p className={styles.bookingNote}>Rates and availability are provided by the hotel.</p>
+        </aside>
       </Container>
 
       {officialWebsite && (
