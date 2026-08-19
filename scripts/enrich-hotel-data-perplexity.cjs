@@ -24,53 +24,54 @@ args.forEach(arg => {
   if (arg.startsWith('--limit=')) limit = parseInt(arg.split('=')[1], 10);
 });
 
-async function fetchPerplexityData(hotelName, location) {
-  const prompt = `You are a senior hospitality strategist and investigative luxury hotel researcher for DMW Finance Group — The World’s 100 Most Exceptional Hotels.
+// Helper for making safe OpenRouter Perplexity queries
+async function queryPerplexityAPI(systemPrompt, userPrompt) {
+  if (!OPENROUTER_API_KEY) return null;
 
-Conduct deep, high-asymmetry research on the property: ${hotelName} in ${location}.
+  const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+    method: "POST",
+    headers: {
+      "Authorization": `Bearer ${OPENROUTER_API_KEY}`,
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      model: "perplexity/sonar",
+      messages: [
+        { role: "system", content: systemPrompt },
+        { role: "user", content: userPrompt }
+      ]
+    })
+  });
 
-We require four core categories of information:
-1. OFFICIAL WEBSITE LINKS & IDENTITY: Official website URL, direct booking URL, brand, operator, owner, architect, and designer.
-2. BOOKING-STYLE GRANULAR AMENITIES & PROPERTY FACTS: Comprehensive amenity breakdown across Wellness, Food & Drink, Connectivity, Access, Rooms, and Service.
-3. DMW 10-DIMENSION METHODOLOGY EVALUATION: Analytical breakdown and score distribution across DMW's 10 strategic dimensions. For "Service and Operating Execution", look for concrete empirical evidence of, if any: (a) anticipatory service intuition (such as seamless curbside name recognition or preference memory persistence), (b) unscripted front-line staff empowerment (e.g., line staff authorized to execute immediate surprise & delight gestures without manager approval), and (c) high staff-to-key operational density. If no evidence exists of unscripted empowerment or anticipatory intuition, cap the score accordingly.
-4. 5-PART INSIDER REPORT: Information-asymmetric lore, operational quirks, famous clientele, exact best room numbers to book, and ownership/operator power dynamics.
+  if (!response.ok) {
+    throw new Error(`API returned status ${response.status}: ${response.statusText}`);
+  }
 
-Output your research STRICTLY as a single valid JSON object adhering to the schema below. Use null for any numbers or missing fields (do NOT use words like 'not available' or 'N/A'). Do not wrap in markdown text explanations. Return ONLY raw JSON.
+  const responseData = await response.json();
+  let content = responseData.choices[0].message.content;
+  content = content.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
+  content = content.replace(/:\s*not available/gi, ': null');
+  content = content.replace(/:\s*N\/A/gi, ': null');
+  content = content.replace(/:\s*unknown/gi, ': null');
+  content = content.replace(/,\s*([}\]])/g, '$1');
+  return JSON.parse(content);
+}
 
+// Lane 1: Property Facts, Amenities & 10 DMW Dimension Scorecards
+async function fetchLane1FactsAndScores(hotelName, location) {
+  const prompt = `Conduct deep research on property: ${hotelName} in ${location}.
+Return a single JSON object with links, identity, propertyFacts, amenities, and scores.
+
+JSON Schema:
 {
-  "links": {
-    "officialWebsite": "https://www.claridges.co.uk",
-    "bookingUrl": "https://www.claridges.co.uk/rooms-suites/"
-  },
-  "identity": {
-    "brand": "Maybourne Hotel Group",
-    "operator": "Maybourne Hotel Group",
-    "owner": "Constellation Hotels",
-    "ownershipPubliclyConfirmed": true,
-    "architect": "CW Stephens",
-    "designer": "Thierry Despont / Bryan O'Sullivan"
-  },
-  "propertyFacts": {
-    "openingYear": 1897,
-    "lastMajorRenovationYear": 2022,
-    "roomCount": 120,
-    "suiteCount": 35,
-    "checkInTime": "15:00",
-    "checkOutTime": "12:00",
-    "propertyType": "Urban Grand Hotel"
-  },
+  "links": { "officialWebsite": "https://...", "bookingUrl": "https://..." },
+  "identity": { "brand": "...", "operator": "...", "owner": "...", "architect": "...", "designer": "..." },
+  "propertyFacts": { "openingYear": 1897, "lastMajorRenovationYear": 2022, "roomCount": 120, "suiteCount": 35, "checkInTime": "15:00", "checkOutTime": "12:00", "propertyType": "Urban Grand Hotel" },
   "amenities": [
-    { "id": "spa", "label": "Subterranean Spa & Hydrotherapy Sanctuary", "category": "Wellness", "available": true, "detail": "Full hydrotherapy pool, steam room, and thermal suites." },
-    { "id": "gym", "label": "24-Hour Fitness Studio", "category": "Wellness", "available": true, "detail": "Technogym Artis series, Peloton bikes, and private trainers." },
-    { "id": "michelin-dining", "label": "Michelin-Starred Dining", "category": "Food & Drink", "available": true, "venueName": "Signature Restaurant" },
-    { "id": "bar", "label": "Destination Cocktail Lounge", "category": "Food & Drink", "available": true, "venueName": "Main Bar" },
-    { "id": "room-service", "label": "24-Hour In-Room Dining", "category": "Food & Drink", "available": true },
-    { "id": "butler-service", "label": "24-Hour Private Butler Service", "category": "Service", "available": true },
-    { "id": "concierge", "label": "Les Clefs d'Or Concierge Desk", "category": "Service", "available": true },
-    { "id": "valet-parking", "label": "Valet Parking & Underground Garage", "category": "Transport", "available": true },
-    { "id": "ev-charging", "label": "EV Charging Stations", "category": "Transport", "available": true },
-    { "id": "executive-wifi", "label": "High-Speed Encrypted Wi-Fi", "category": "Business", "available": true },
-    { "id": "meeting-rooms", "label": "Private Boardrooms & Executive Salon", "category": "Business", "available": true }
+    { "id": "spa", "label": "Subterranean Spa & Hydrotherapy Sanctuary", "category": "Wellness", "available": true, "detail": "..." },
+    { "id": "gym", "label": "24-Hour Fitness Studio", "category": "Wellness", "available": true, "detail": "..." },
+    { "id": "michelin-dining", "label": "Michelin-Starred Dining", "category": "Food & Drink", "available": true },
+    { "id": "bar", "label": "Destination Lounge", "category": "Food & Drink", "available": true }
   ],
   "scores": {
     "totalScore": 92.4,
@@ -87,68 +88,54 @@ Output your research STRICTLY as a single valid JSON object adhering to the sche
       { "label": "Business-Travel Effectiveness", "score": 6.2, "maxScore": 7, "weight": 7 },
       { "label": "Long-Term Resilience", "score": 5.7, "maxScore": 6, "weight": 6 }
     ]
-  },
-  "analysis": {
-    "hospitalityProposition": "High-level thesis on why this hotel exists and its core guest promise.",
-    "atmosphere": "Tactile and sensory description of arrival experience, lighting, acoustic profile, and crowd.",
-    "intendedClientele": "Primary guest personas (HNW leisure, sovereign wealth, C-suite executives, fashion leaders).",
-    "designLogic": "Architectural and interior design strategy (materials, spatial flow, lighting).",
-    "locationLogic": "Micro-location advantages and address scarcity.",
-    "revenueStrategy": "How the asset monetises F&B, rooms, spa, and ancillary services.",
-    "pricingPowerThesis": "Why the hotel can command premium ADRs relative to immediate competitors.",
-    "competitiveMoat": "Structural advantages protecting market share (heritage, address, brand license).",
-    "investorQuestion": "The central strategic question facing owners and asset managers."
-  },
-  "insiderReport": {
-    "unGoogleableHistory": "Secret history, scandals, historic architectural lore, or unpublicised origins. NEVER use generic disclaimers like 'could not be verified'. Provide deep provenance facts.",
-    "operationalQuirks": "Discreet arrival protocols, luggage routing, or unique staff service habits (e.g. unscripted staff empowerment, drink tokens, curbside name recognition). NEVER use generic hedging language.",
-    "famousGuests": "Notable past/present clientele, royalty, heads of state, or cultural figures. Provide specific historical & contemporary guest lore.",
-    "theTrueBestRoom": "CRITICAL: State specific room numbers, floor tiers, or facing aspects to book vs avoid (e.g. 'Book upper-floor penthouse suite stock facing Carlos Place; avoid 2nd floor street-facing rooms near Carlos Place bar entrance'). NEVER use disclaimers like 'could not be verified'.",
-    "powerDynamics": "Ownership structure, operator agreement terms, asset ownership friction, or management dynamics."
   }
+}`;
+
+  return queryPerplexityAPI("You are an expert luxury hotel data auditor. Output strict JSON.", prompt);
 }
 
-CRITICAL REPORT GUARANTEES:
-- Provide rich, detailed, multi-sentence paragraphs (120–250 words per section) for all 5 insider report fields.
-- DO NOT use disclaimer hedging such as 'could not be verified', 'not clearly public', or 'N/A'. Provide specific, authoritative room numbers, floor tiers, and operational lore.
-- If existing rich data exists for a property and incoming AI output contains hedging phrases ('could not be verified'), preserve the existing rich content.`;
+// Lane 2: Dedicated High-Asymmetry Insider Writer (The Main Event)
+async function fetchLane2InsiderReport(hotelName, location) {
+  const prompt = `You are the lead investigative luxury hotel researcher for DMW Finance Group — The World’s 100 Most Exceptional Hotels.
+Conduct deep, high-asymmetry research on property: ${hotelName} in ${location}.
 
-  if (!OPENROUTER_API_KEY) {
-    console.log(`[DRY-RUN / MOCK MODE] Simulated Perplexity research for ${hotelName}`);
-    return null;
+Your 100% focus is on generating rich, detailed, 120-250 word unhedged narrative paragraphs for the 5-part Insider Report.
+
+CRITICAL DIRECTIVES:
+- DO NOT use generic disclaimers like "could not be verified", "not clearly public", or "N/A".
+- State exact room numbers, floor tiers, facing aspects (e.g. "Book upper-floor Mayfair penthouse suite stock facing Carlos Place; avoid 2nd floor street-facing rooms near Carlos Place bar entrance").
+- Describe specific unscripted service nuances (e.g. curbside name recognition, line staff authorized with free drink tokens, private butler routing).
+
+JSON Schema:
+{
+  "insiderReport": {
+    "unGoogleableHistory": "Rich historical provenance, scandals, restoration lore, or unpublicised origins.",
+    "operationalQuirks": "Secret arrival protocols, luggage routing, or unscripted front-line staff service empowerment habits.",
+    "famousGuests": "Notable past and contemporary guest clientele, royalty, heads of state, or cultural figures.",
+    "theTrueBestRoom": "EXACT room numbers, floor tiers, or facing aspects to book vs avoid for quiet work and views.",
+    "powerDynamics": "Ownership structure, operator agreement terms, asset ownership friction, or management dynamics."
   }
+}`;
 
+  return queryPerplexityAPI("You are an investigative luxury hospitality author. Output strict JSON with deep narrative paragraphs.", prompt);
+}
+
+// Multi-Lane Parallel Execution Engine (Max 2 Lanes to avoid rate caps)
+async function fetchPerplexityData(hotelName, location) {
   try {
-    const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
-      method: "POST",
-      headers: {
-        "Authorization": `Bearer ${OPENROUTER_API_KEY}`,
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        model: "perplexity/sonar",
-        messages: [
-          { role: "system", content: "You are an expert luxury hotel researcher. You output raw, strict JSON objects." },
-          { role: "user", content: prompt }
-        ]
-      })
-    });
+    const [lane1, lane2] = await Promise.all([
+      fetchLane1FactsAndScores(hotelName, location).catch(e => { console.error(`  ⚠️ Lane 1 failed for ${hotelName}:`, e.message); return null; }),
+      fetchLane2InsiderReport(hotelName, location).catch(e => { console.error(`  ⚠️ Lane 2 failed for ${hotelName}:`, e.message); return null; })
+    ]);
 
-    if (!response.ok) {
-      throw new Error(`API returned status ${response.status}: ${response.statusText}`);
-    }
+    if (!lane1 && !lane2) return null;
 
-    const responseData = await response.json();
-    let content = responseData.choices[0].message.content;
-    content = content.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
-    // Robustly sanitize non-standard LLM JSON outputs
-    content = content.replace(/:\s*not available/gi, ': null');
-    content = content.replace(/:\s*N\/A/gi, ': null');
-    content = content.replace(/:\s*unknown/gi, ': null');
-    content = content.replace(/,\s*([}\]])/g, '$1');
-    return JSON.parse(content);
-  } catch (error) {
-    console.error(`Failed Perplexity query for ${hotelName}:`, error.message);
+    return {
+      ...(lane1 || {}),
+      insiderReport: lane2?.insiderReport || lane1?.insiderReport || null
+    };
+  } catch (err) {
+    console.error(`Multi-lane research failed for ${hotelName}:`, err.message);
     return null;
   }
 }
@@ -166,13 +153,13 @@ async function run() {
     targetHotels = targetHotels.slice(0, limit);
   }
 
-  console.log(`Starting Perplexity enrichment for ${targetHotels.length} target hotels...`);
+  console.log(`Starting 2-Lane Parallel Perplexity enrichment for ${targetHotels.length} target hotels...`);
 
   let updatedCount = 0;
 
   for (let i = 0; i < targetHotels.length; i++) {
     const hotel = targetHotels[i];
-    console.log(`[${i + 1}/${targetHotels.length}] Querying Perplexity for ${hotel.name} (${hotel.location.displayLocation})...`);
+    console.log(`[${i + 1}/${targetHotels.length}] Running 2-Lane Parallel Research for ${hotel.name} (${hotel.location.displayLocation})...`);
 
     const result = await fetchPerplexityData(hotel.name, hotel.location.displayLocation);
 
@@ -186,6 +173,8 @@ async function run() {
       }
       if (result.scores) hotel.scores = result.scores;
       if (result.analysis) hotel.analysis = { ...hotel.analysis, ...result.analysis };
+
+      // Anti-hedging guardrail for Insider Report
       if (result.insiderReport) {
         const isHedged = (str) => typeof str === 'string' && (
           str.toLowerCase().includes('could not be verified') || 
@@ -207,19 +196,14 @@ async function run() {
       }
 
       updatedCount++;
-      console.log(`  ✅ Successfully enriched ${hotel.name}`);
+      console.log(`  ✅ Successfully enriched ${hotel.name} via 2-Lane Execution`);
     } else {
       console.log(`  ⚠️ Skipped / No API response for ${hotel.name}`);
     }
-
-    // Rate limiting pause
-    await new Promise(resolve => setTimeout(resolve, 1500));
   }
 
-  if (updatedCount > 0) {
-    fs.writeFileSync(HOTELS_FILE, JSON.stringify(data, null, 2));
-    console.log(`\nSuccessfully updated ${updatedCount} hotel records in ${HOTELS_FILE}`);
-  }
+  fs.writeFileSync(HOTELS_FILE, JSON.stringify(data, null, 2));
+  console.log(`\nSuccessfully updated ${updatedCount} hotel records in ${HOTELS_FILE}`);
 }
 
 run();
