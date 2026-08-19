@@ -164,103 +164,146 @@ export const HotelProfile: React.FC = () => {
   const officialWebsite = hotel.links?.officialWebsite;
   const indicativeRate = hotel.indicativeRate?.amount;
 
+  // ASSESSMENT-V2: concise synthesis of scorecard, insider evidence and pricing.
+  const assessmentScore = hotel.scores?.totalScore;
+  const assessmentPosition = assessmentScore == null
+    ? 'Assessment in preparation'
+    : assessmentScore >= 95
+      ? 'Exceptional recommendation'
+      : assessmentScore >= 88
+        ? 'Strong recommendation'
+        : assessmentScore >= 80
+          ? 'Qualified recommendation'
+          : 'Selective recommendation';
+
+  const definingStrength =
+    hotel.centralStrength ||
+    hotel.analysis?.competitiveMoat ||
+    hotel.analysis?.hospitalityProposition;
+
+  const materialReservation =
+    hotel.centralQuestion ||
+    hotel.rooms?.spatialCompromise ||
+    hotel.pricingIntelligence?.limitations;
+
+  const valueConclusion =
+    hotel.pricingIntelligence?.dmwInterpretation ||
+    hotel.analysis?.pricingPowerThesis ||
+    hotel.analysis?.revenueStrategy;
+
+  const dmwView =
+    hotel.dmwOverview ||
+    hotel.analysis?.hospitalityProposition ||
+    hotel.inclusionRationale;
+
+  const thinkTwiceIf = Array.from(new Set([
+    hotel.rooms?.spatialCompromise,
+    hotel.businessTravel?.sleepAndNoise,
+  ].filter((item): item is string => Boolean(item)))).slice(0, 3);
+
+  const finalPosition =
+    hotel.dmwJudgement ||
+    hotel.inclusionRationale ||
+    dmwView;
+
   const renderAssessment = () => (
-    <div className={styles.panelContent}>
+    <div className={styles.panelContent} data-assessment-version="verdict-v2">
       <header className={styles.panelHeader}>
         <span className={styles.panelNumber}>{getSectionNum('assessment')}</span>
         <div>
-          <span className={styles.kicker}>DMW Assessment</span>
-          <h2>Assessment &amp; Strategic Positioning</h2>
+          <span className={styles.kicker}>Independent hotel intelligence</span>
+          <h2>Hotel Assessment</h2>
         </div>
       </header>
 
-      {hotel.inclusionRationale && (
-        <p className={styles.standfirst} style={{ fontSize: '1.25rem', fontFamily: 'var(--font-serif)', lineHeight: 1.4, color: 'var(--color-ivory)', marginBottom: 'var(--space-5)', fontStyle: 'italic' }}>
-          "{hotel.inclusionRationale}"
-        </p>
+      <section className={styles.finalJudgement}>
+        <div className={styles.finalJudgementCopy}>
+          <span className={styles.kicker}>Final judgement</span>
+          <p>{hotel.inclusionRationale || dmwView}</p>
+        </div>
+        <aside className={styles.recommendationRail} aria-label="DMW recommendation">
+          <span>DMW position</span>
+          <strong>{assessmentPosition}</strong>
+          {assessmentScore != null && (
+            <div className={styles.assessmentScore}>
+              <b>{assessmentScore.toFixed(1)}</b>
+              <small>/100</small>
+            </div>
+          )}
+          <p>
+            {hotel.pricingIntelligence?.bestValuePeriod
+              ? `Best value observed: ${hotel.pricingIntelligence.bestValuePeriod}`
+              : indicativeRate
+                ? 'Recommendation subject to room category and observed rate.'
+                : 'Recommendation based on the available DMW evidence.'}
+          </p>
+        </aside>
+      </section>
+
+      <section className={styles.conclusionGrid} aria-label="Three-part conclusion">
+        {definingStrength && (
+          <article className={styles.conclusionItem}>
+            <span>01</span>
+            <h3>Defining strength</h3>
+            <p>{definingStrength}</p>
+          </article>
+        )}
+        {materialReservation && (
+          <article className={styles.conclusionItem}>
+            <span>02</span>
+            <h3>Material reservation</h3>
+            <p>{materialReservation}</p>
+          </article>
+        )}
+        {valueConclusion && (
+          <article className={styles.conclusionItem}>
+            <span>03</span>
+            <h3>Value conclusion</h3>
+            <p>{valueConclusion}</p>
+          </article>
+        )}
+      </section>
+
+      {dmwView && (
+        <section className={styles.dmwView}>
+          <div className={styles.dmwViewLabel}>
+            <span className={styles.kicker}>The DMW view</span>
+            <small>Scorecard, operating intelligence and pricing considered together.</small>
+          </div>
+          <p>{dmwView}</p>
+        </section>
       )}
 
-      <div className={styles.assessmentJudgementHeader}>
-        <div className={styles.judgementBadge}>
-          <span>DMW Rating</span>
-          <strong>{hotel.scores?.totalScore.toFixed(1) || '98.6'} <small>/ 100</small></strong>
-        </div>
-        <div className={styles.judgementMeta}>
-          <span className={styles.kicker}>Executive Synthesis</span>
-          <h3>{hotel.name} — Strategic Assessment Thesis</h3>
-        </div>
-      </div>
-
-      {/* Traveller Suitability Matrix */}
-      <div className={styles.suitabilityCard}>
-        <div className={styles.suitabilityHeader}>
-          <span className={styles.kicker}>Traveller Suitability Matrix</span>
-          <h3>Best Suited For</h3>
-        </div>
-        <div className={styles.suitabilityGrid}>
-          {hotel.bestSuitedFor?.length ? (
-            hotel.bestSuitedFor.map((item) => (
-              <div key={item} className={styles.suitabilityItem}>
-                <div className={styles.suitabilityBadge}>✓ {item}</div>
-                <p>High efficiency, discreet protocol, and tailored hospitality performance.</p>
-              </div>
-            ))
-          ) : (
-            <>
-              <div className={styles.suitabilityItem}>
-                <div className={styles.suitabilityBadge}>✓ C-Suite &amp; Business Travel</div>
-                <p>High location efficiency, soundproofed rooms, express breakfast &amp; private meeting discretion.</p>
-              </div>
-              <div className={styles.suitabilityItem}>
-                <div className={styles.suitabilityBadge}>✓ Discreet HNW Hideout</div>
-                <p>Low public visibility, private side-entrance access, and personal butler protocol.</p>
-              </div>
-              <div className={styles.suitabilityItem}>
-                <div className={styles.suitabilityBadge}>✓ Culinary &amp; Social Destination</div>
-                <p>World-class bar &amp; Michelin-starred dining attracting non-resident high-net-worth clientele.</p>
-              </div>
-            </>
+      {(hotel.bestSuitedFor?.length > 0 || thinkTwiceIf.length > 0) && (
+        <section className={styles.bookingDecision}>
+          {hotel.bestSuitedFor?.length > 0 && (
+            <div className={styles.decisionGroup}>
+              <span className={styles.kicker}>Best for</span>
+              <ul>
+                {hotel.bestSuitedFor.slice(0, 4).map((item) => <li key={item}>{item}</li>)}
+              </ul>
+            </div>
           )}
-        </div>
-      </div>
-
-      <div className={styles.assessmentBody}>
-        <p className={styles.overview}>{hotel.dmwOverview}</p>
-
-        {hotel.analysis?.hospitalityProposition && (
-          <section className={styles.proseSection}>
-            <h3>Hospitality proposition</h3>
-            <p>{hotel.analysis.hospitalityProposition}</p>
-          </section>
-        )}
-
-        {hotel.analysis?.revenueStrategy && (
-          <section className={styles.proseSection}>
-            <h3>Revenue &amp; positioning</h3>
-            <p>{hotel.analysis.revenueStrategy}</p>
-          </section>
-        )}
-
-        {hotel.fieldReports?.map((report) => (
-          <section className={styles.fieldNote} key={report.id}>
-            <div className={styles.fieldNoteHeader}>
-              <span className={styles.kicker}>Observed firsthand</span>
-              <span>{report.visitDate}</span>
+          {thinkTwiceIf.length > 0 && (
+            <div className={styles.decisionGroup}>
+              <span className={styles.kicker}>Think twice if</span>
+              <ul>
+                {thinkTwiceIf.map((item) => <li key={item}>{item}</li>)}
+              </ul>
             </div>
-            <h3>A note from our stay</h3>
-            <div className={styles.fieldNoteGrid}>
-              <div><strong>Arrival</strong><p>{report.arrivalObservation}</p></div>
-              <div><strong>Room</strong><p>{report.roomObservation}</p></div>
-              <div><strong>Service</strong><p>{report.serviceObservation}</p></div>
-              <div><strong>Atmosphere</strong><p>{report.atmosphereObservation}</p></div>
-            </div>
-            <div className={styles.verdict}>
-              <strong>Assessment after the stay</strong>
-              <p>{report.thesisConfirmation}</p>
-            </div>
-          </section>
-        ))}
-      </div>
+          )}
+        </section>
+      )}
+
+      {finalPosition && (
+        <footer className={styles.assessmentConclusion}>
+          <div>
+            <span className={styles.kicker}>Final position</span>
+            <h3>{assessmentPosition}</h3>
+          </div>
+          <p>{finalPosition}</p>
+        </footer>
+      )}
     </div>
   );
 
@@ -302,23 +345,23 @@ export const HotelProfile: React.FC = () => {
 
         {featuredFacilities.length > 0 ? (
           <div className={styles.featuredFacilityGrid}>
-          {featuredFacilities.map((amenity: any) => {
-            const isAvailable = amenity.available === true;
-            const isUnavailable = amenity.available === false;
-            const IconComponent = AMENITY_ICONS[amenity.id] || (isAvailable ? CheckCircle2 : CircleHelp);
-            return (
-              <div
-                key={amenity.id}
-                className={`${styles.featuredFacility} ${isUnavailable ? styles.facilityUnavailable : ''} ${!isAvailable && !isUnavailable ? styles.facilityUnknown : ''}`}
-              >
-                <IconComponent size={25} strokeWidth={1.35} className={styles.facilityIcon} />
-                <div>
-                  <strong>{amenity.label}</strong>
-                  <span>{isAvailable ? 'Available' : isUnavailable ? 'Not available' : 'Verification pending'}</span>
+            {featuredFacilities.map((amenity: any) => {
+              const isAvailable = amenity.available === true;
+              const isUnavailable = amenity.available === false;
+              const IconComponent = AMENITY_ICONS[amenity.id] || (isAvailable ? CheckCircle2 : CircleHelp);
+              return (
+                <div
+                  key={amenity.id}
+                  className={`${styles.featuredFacility} ${isUnavailable ? styles.facilityUnavailable : ''} ${!isAvailable && !isUnavailable ? styles.facilityUnknown : ''}`}
+                >
+                  <IconComponent size={25} strokeWidth={1.35} className={styles.facilityIcon} />
+                  <div>
+                    <strong>{amenity.label}</strong>
+                    <span>{isAvailable ? 'Available' : isUnavailable ? 'Not available' : 'Verification pending'}</span>
+                  </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
           </div>
         ) : (
           <div className={styles.facilityPending}>
