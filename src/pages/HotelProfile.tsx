@@ -164,20 +164,10 @@ export const HotelProfile: React.FC = () => {
   const officialWebsite = hotel.links?.officialWebsite;
   const indicativeRate = hotel.indicativeRate?.amount;
 
-  // ASSESSMENT-V2: concise synthesis of scorecard, insider evidence and pricing.
   const assessmentScore = hotel.scores?.totalScore;
-  const assessmentPosition = assessmentScore == null
-    ? 'Assessment in preparation'
-    : assessmentScore >= 95
-      ? 'Exceptional recommendation'
-      : assessmentScore >= 88
-        ? 'Strong recommendation'
-        : assessmentScore >= 80
-          ? 'Qualified recommendation'
-          : 'Selective recommendation';
 
   const renderAssessment = () => (
-    <div className={styles.panelContent} data-assessment-version="verdict-v2">
+    <div className={styles.panelContent}>
       <header className={styles.panelHeader}>
         <span className={styles.panelNumber}>{getSectionNum('assessment')}</span>
         <div>
@@ -186,72 +176,36 @@ export const HotelProfile: React.FC = () => {
         </div>
       </header>
 
-      <section className={styles.finalJudgement}>
-        <div className={styles.finalJudgementCopy}>
-          <span className={styles.kicker}>Final judgement</span>
-          <p>{hotel.inclusionRationale || hotel.dmwOverview}</p>
+      {/* Substantive Executive Synthesis Paragraphs */}
+      <div className={styles.assessmentBody} style={{ maxWidth: '840px', marginTop: 'var(--space-6)' }}>
+        <div style={{ fontSize: '1.25rem', fontFamily: 'var(--font-serif)', lineHeight: 1.6, color: 'var(--color-ink)', marginBottom: 'var(--space-5)' }}>
+          <p style={{ marginBottom: 'var(--space-5)' }}>
+            {hotel.dmwOverview || hotel.analysis?.hospitalityProposition || hotel.inclusionRationale}
+          </p>
+          {hotel.analysis?.revenueStrategy && (
+            <p style={{ marginBottom: 'var(--space-5)' }}>
+              {hotel.analysis.revenueStrategy}
+            </p>
+          )}
         </div>
-        <aside className={styles.recommendationRail} aria-label="DMW recommendation">
-          <span>DMW position</span>
-          <strong>{assessmentPosition}</strong>
+
+        {/* Discreet Closing Verdict Line & Supporting Metadata */}
+        <div style={{ paddingTop: 'var(--space-5)', borderTop: '1px solid rgba(18, 18, 18, .18)', marginTop: 'var(--space-6)', display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: 'var(--space-4)' }}>
+          <div>
+            <span className={styles.kicker} style={{ display: 'block', marginBottom: '4px' }}>DMW Position</span>
+            <strong style={{ fontFamily: 'var(--font-serif)', fontSize: '1.35rem', fontWeight: 400, color: 'var(--color-ink)' }}>
+              {hotel.dmwJudgement || (assessmentScore != null ? (assessmentScore >= 92 ? 'Strong recommendation, conditional on room category' : 'Qualified recommendation') : 'Strong recommendation')}
+            </strong>
+          </div>
           {assessmentScore != null && (
-            <div className={styles.assessmentScore}>
-              <b>{assessmentScore.toFixed(1)}</b>
-              <small>/100</small>
+            <div style={{ fontFamily: 'var(--font-sans)', fontSize: '0.85rem', color: 'var(--color-stone)' }}>
+              <span style={{ fontWeight: 600, color: 'var(--color-ink)', fontFamily: 'var(--font-serif)', fontSize: '1.2rem', marginRight: '4px' }}>
+                {assessmentScore.toFixed(1)}
+              </span>
+              / 100 supporting metadata
             </div>
           )}
-          <p>
-            {hotel.pricingIntelligence?.bestValuePeriod
-              ? `Best value observed: ${hotel.pricingIntelligence.bestValuePeriod}`
-              : indicativeRate
-                ? `Indicative rate: ~$${indicativeRate} / night.`
-                : 'Recommendation based on available DMW evidence.'}
-          </p>
-        </aside>
-      </section>
-
-      {/* Synthesized Executive Assessment Prose */}
-      <div className={styles.assessmentBody}>
-        {hotel.dmwOverview && (
-          <section className={styles.proseSection}>
-            <h3>Executive Overview</h3>
-            <p>{hotel.dmwOverview}</p>
-          </section>
-        )}
-
-        {hotel.analysis?.hospitalityProposition && (
-          <section className={styles.proseSection}>
-            <h3>Hospitality Proposition</h3>
-            <p>{hotel.analysis.hospitalityProposition}</p>
-          </section>
-        )}
-
-        {hotel.analysis?.revenueStrategy && (
-          <section className={styles.proseSection}>
-            <h3>Revenue &amp; Positioning</h3>
-            <p>{hotel.analysis.revenueStrategy}</p>
-          </section>
-        )}
-
-        {hotel.fieldReports?.map((report) => (
-          <section className={styles.fieldNote} key={report.id}>
-            <div className={styles.fieldNoteHeader}>
-              <span className={styles.kicker}>Observed firsthand</span>
-              <span>{report.visitDate}</span>
-            </div>
-            <h3>A note from our stay</h3>
-            <div className={styles.fieldNoteGrid}>
-              <div><strong>Arrival</strong><p>{report.arrivalObservation}</p></div>
-              <div><strong>Room</strong><p>{report.roomObservation}</p></div>
-              <div><strong>Service</strong><p>{report.serviceObservation}</p></div>
-              <div><strong>Atmosphere</strong><p>{report.atmosphereObservation}</p></div>
-            </div>
-            <div className={styles.verdict}>
-              <strong>Assessment after the stay</strong>
-              <p>{report.thesisConfirmation}</p>
-            </div>
-          </section>
-        ))}
+        </div>
       </div>
     </div>
   );
