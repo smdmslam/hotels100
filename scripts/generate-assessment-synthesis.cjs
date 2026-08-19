@@ -11,7 +11,12 @@ if (!OPENROUTER_API_KEY) {
   process.exit(1);
 }
 
-const targetSlug = process.argv.find(arg => arg.startsWith('--slug='))?.split('=')[1] || 'cheval-blanc-paris-paris';
+const args = process.argv.slice(2);
+const targetSlug = args.find(arg => arg.startsWith('--slug='))?.split('=')[1];
+const isTop100 = args.includes('--top100');
+const isAll = args.includes('--all');
+const limitArg = args.find(arg => arg.startsWith('--limit='))?.split('=')[1];
+const limit = limitArg ? parseInt(limitArg, 10) : null;
 
 async function queryAI(systemPrompt, userPrompt) {
   const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
@@ -45,32 +50,29 @@ async function queryAI(systemPrompt, userPrompt) {
 }
 
 async function synthesizeAssessmentForHotel(hotel) {
-  console.log(`\nSynthesizing Assessment for ${hotel.name} (${hotel.location.displayLocation})...`);
-
-  // Gather all collected evidence for this hotel
   const collectedEvidence = {
     hotelName: hotel.name,
     location: hotel.location.displayLocation,
     rank: hotel.rank,
     dmwScore: hotel.scores?.totalScore || 92.5,
     dimensionScores: hotel.scores?.dimensions?.map(d => `${d.label}: ${d.score}/${d.maxScore}`) || [],
-    insiderLore: hotel.insiderReport?.unGoogleableHistory || "Not specified",
-    bestRoomAdvice: hotel.insiderReport?.theTrueBestRoom || "Not specified",
-    operationalQuirks: hotel.insiderReport?.operationalQuirks || "Not specified",
-    powerDynamics: hotel.insiderReport?.powerDynamics || "Not specified",
+    insiderLore: typeof hotel.insiderReport?.unGoogleableHistory === 'object' ? hotel.insiderReport.unGoogleableHistory.text : hotel.insiderReport?.unGoogleableHistory || "Not specified",
+    bestRoomAdvice: typeof hotel.insiderReport?.theTrueBestRoom === 'object' ? hotel.insiderReport.theTrueBestRoom.text : hotel.insiderReport?.theTrueBestRoom || "Not specified",
+    operationalQuirks: typeof hotel.insiderReport?.operationalQuirks === 'object' ? hotel.insiderReport.operationalQuirks.text : hotel.insiderReport?.operationalQuirks || "Not specified",
+    powerDynamics: typeof hotel.insiderReport?.powerDynamics === 'object' ? hotel.insiderReport.powerDynamics.text : hotel.insiderReport?.powerDynamics || "Not specified",
     indicativeRate: hotel.indicativeRate?.amount ? `$${hotel.indicativeRate.amount}/night` : "High premium tier",
-    roomCount: hotel.propertyFacts?.roomCount || 72,
-    propertyType: hotel.propertyFacts?.propertyType || "Luxury Maison"
+    roomCount: hotel.propertyFacts?.roomCount || 100,
+    propertyType: hotel.propertyFacts?.propertyType || "Luxury Hotel"
   };
 
-  const systemPrompt = `You are the Lead Hotel Analyst for DMW Finance Group. Your task is to synthesize collected hotel evidence into a high-level executive assessment.
+  const systemPrompt = `You are the Lead Hotel Analyst for DMW Finance Group — The World's 100 Most Exceptional Hotels. Your task is to synthesize collected hotel evidence into a high-level executive assessment.
 
 THE ASSESSMENT PHILOSOPHY:
 - Evidence is presented in other sections (Scorecard, Insider Report, Pricing).
 - The Assessment SYNTHESIZES those inputs into two substantive paragraphs and a closing verdict line:
   * Paragraph 1 (Coherence Thesis): Explain how ownership, location, architecture, operating model, room count, and top scorecard metrics reinforce each other into a coherent proposition.
   * Paragraph 2 (Qualification & Rate Integrity): State the exact qualification (e.g. room category dependencies, standard room compromises vs suite scarcity), rate defensibility, and who the property is best suited for.
-  * DMW Position: A discreet 1-line verdict string, e.g. "Strong recommendation, conditional on room category".
+  * DMW Position: A discreet 1-line verdict string, e.g. "Strong recommendation, conditional on room category" or "Exceptional recommendation for complete ecosystem stays".
 
 OUTPUT FORMAT: Strict JSON only:
 {
@@ -84,41 +86,67 @@ ${JSON.stringify(collectedEvidence, null, 2)}
 
 Generate the 2-paragraph synthesized Assessment and DMW Position line based strictly on this collected evidence.`;
 
-  const result = await queryAI(systemPrompt, userPrompt);
-  return result;
+  return await queryAI(systemPrompt, userPrompt);
+}
+
+// Pool worker for capped parallel processing (2 max concurrent workers)
+async function processPool(items, maxConcurrent, fn) {
+  let index = 0;
+  const results = [];
+  
+  async function worker() {
+    while (index < items.length) {
+      const i = index++;
+      results[i] = await fn(items[i], i, items.length);
+    }
+  }
+
+  const workers = Array.from({ length: Math.min(maxConcurrent, items.length) }, () => worker());
+  await Promise.all(workers);
+  return results;
 }
 
 async function run() {
   const filePath = path.join(__dirname, '../07-content/hotels.json');
   const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
 
-  const hotel = data.hotels.find(h => h.slug === targetSlug);
-  if (!hotel) {
-    console.error(`❌ Hotel with slug "${targetSlug}" not found in hotels.json`);
-    process.exit(1);
+  let targetHotels = data.hotels;
+
+  if (targetSlug) {
+    targetHotels = targetHotels.filter(h => h.slug === targetSlug);
+  } else if (isTop100) {
+    targetHotels = targetHotels.filter(h => h.rank && h.rank <= 100);
   }
 
-  const synthesis = await synthesizeAssessmentForHotel(hotel);
+  if (limit && limit > 0) {
+    targetHotels = targetHotels.slice(0, limit);
+  }
 
-  console.log('\n======================================================');
-  console.log('GENERATED SYNTHESIS ASSESSMENT FROM COLLECTED EVIDENCE:');
-  console.log('======================================================');
-  console.log('\n[PARAGRAPH 1: COHERENCE THESIS]');
-  console.log(synthesis.paragraph1_coherence);
-  console.log('\n[PARAGRAPH 2: QUALIFICATION & RATE INTEGRITY]');
-  console.log(synthesis.paragraph2_qualification);
-  console.log('\n[DMW POSITION VERDICT LINE]');
-  console.log(synthesis.dmwJudgement);
-  console.log('======================================================\n');
+  console.log(`🚀 Starting DMW Assessment Synthesis for ${targetHotels.length} hotels (Max 2 concurrent workers)...`);
 
-  // Update hotel record in hotels.json
-  hotel.dmwOverview = synthesis.paragraph1_coherence;
-  if (!hotel.analysis) hotel.analysis = {};
-  hotel.analysis.revenueStrategy = synthesis.paragraph2_qualification;
-  hotel.dmwJudgement = synthesis.dmwJudgement;
+  let successCount = 0;
+  let failCount = 0;
+
+  await processPool(targetHotels, 2, async (hotel, idx, total) => {
+    try {
+      console.log(`[${idx + 1}/${total}] Synthesizing assessment for ${hotel.name} (${hotel.location.displayLocation})...`);
+      const synthesis = await synthesizeAssessmentForHotel(hotel);
+
+      hotel.dmwOverview = synthesis.paragraph1_coherence;
+      if (!hotel.analysis) hotel.analysis = {};
+      hotel.analysis.revenueStrategy = synthesis.paragraph2_qualification;
+      hotel.dmwJudgement = synthesis.dmwJudgement;
+
+      successCount++;
+      console.log(`  ✅ Successfully synthesized ${hotel.name}`);
+    } catch (err) {
+      failCount++;
+      console.error(`  ⚠️ Failed to synthesize ${hotel.name}: ${err.message}`);
+    }
+  });
 
   fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
-  console.log(`✅ Successfully updated ${hotel.name} in hotels.json with synthesized assessment!`);
+  console.log(`\n🎉 Synthesis completed! ${successCount} updated, ${failCount} failed.`);
 }
 
 run().catch(console.error);
