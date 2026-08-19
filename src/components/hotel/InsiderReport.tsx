@@ -10,6 +10,24 @@ interface InsiderReportProps {
 export const InsiderReport: React.FC<InsiderReportProps> = ({ report }) => {
   if (!report) return null;
 
+  const renderSection = (itemData: any, defaultTitle: string, IconComponent: any) => {
+    if (!itemData) return null;
+    const title = typeof itemData === 'object' && itemData.title ? itemData.title : defaultTitle;
+    const text = typeof itemData === 'object' && itemData.text ? itemData.text : typeof itemData === 'string' ? itemData : null;
+
+    if (!text) return null;
+
+    return (
+      <div className={styles.item}>
+        <div className={styles.itemHeader}>
+          <IconComponent className={styles.icon} size={16} />
+          <h4>{title}</h4>
+        </div>
+        <p className={styles.text}>{text}</p>
+      </div>
+    );
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.header}>
@@ -18,55 +36,11 @@ export const InsiderReport: React.FC<InsiderReportProps> = ({ report }) => {
       </div>
 
       <div className={styles.grid}>
-        {report.unGoogleableHistory && (
-          <div className={styles.item}>
-            <div className={styles.itemHeader}>
-              <Key className={styles.icon} size={16} />
-              <h4>Secret Lore</h4>
-            </div>
-            <p className={styles.text}>{report.unGoogleableHistory}</p>
-          </div>
-        )}
-
-        {report.theTrueBestRoom && (
-          <div className={styles.item}>
-            <div className={styles.itemHeader}>
-              <MapPin className={styles.icon} size={16} />
-              <h4>The True Best Room</h4>
-            </div>
-            <p className={styles.text}>{report.theTrueBestRoom}</p>
-          </div>
-        )}
-
-        {report.operationalQuirks && (
-          <div className={styles.item}>
-            <div className={styles.itemHeader}>
-              <Eye className={styles.icon} size={16} />
-              <h4>Operational Quirks</h4>
-            </div>
-            <p className={styles.text}>{report.operationalQuirks}</p>
-          </div>
-        )}
-
-        {report.famousGuests && (
-          <div className={styles.item}>
-            <div className={styles.itemHeader}>
-              <Users className={styles.icon} size={16} />
-              <h4>Notable Clientele</h4>
-            </div>
-            <p className={styles.text}>{report.famousGuests}</p>
-          </div>
-        )}
-
-        {report.powerDynamics && (
-          <div className={styles.item}>
-            <div className={styles.itemHeader}>
-              <Building className={styles.icon} size={16} />
-              <h4>Power Dynamics</h4>
-            </div>
-            <p className={styles.text}>{report.powerDynamics}</p>
-          </div>
-        )}
+        {renderSection(report.unGoogleableHistory, "Secret Lore & Provenance", Key)}
+        {renderSection(report.theTrueBestRoom, "The True Best Room to Book", MapPin)}
+        {renderSection(report.operationalQuirks, "Unscripted Service & Quirks", Eye)}
+        {renderSection(report.famousGuests, "Notable Clientele & Atmosphere", Users)}
+        {renderSection(report.powerDynamics, "Ownership & Operator Alignment", Building)}
       </div>
     </div>
   );

@@ -99,25 +99,26 @@ async function fetchLane2InsiderReport(hotelName, location) {
   const prompt = `You are the lead investigative luxury hotel researcher for DMW Finance Group — The World’s 100 Most Exceptional Hotels.
 Conduct deep, high-asymmetry research on property: ${hotelName} in ${location}.
 
-Your 100% focus is on generating rich, detailed, 120-250 word unhedged narrative paragraphs for the 5-part Insider Report.
+Your 100% focus is on generating rich, detailed, 120-250 word unhedged narrative paragraphs for the 5-part Insider Report, along with custom, property-specific editorial section titles (e.g. "From Coburg to Maybourne: 125 Years of Mayfair Power" instead of generic labels).
 
 CRITICAL DIRECTIVES:
 - DO NOT use generic disclaimers like "could not be verified", "not clearly public", or "N/A".
-- State exact room numbers, floor tiers, facing aspects (e.g. "Book upper-floor Mayfair penthouse suite stock facing Carlos Place; avoid 2nd floor street-facing rooms near Carlos Place bar entrance").
+- State exact room numbers, floor tiers, facing aspects (e.g. "Book upper-floor Seine view suite stock; avoid 2nd floor street-facing rooms near main lobby").
 - Describe specific unscripted service nuances (e.g. curbside name recognition, line staff authorized with free drink tokens, private butler routing).
+- For each section, provide a property-specific custom headline title and rich text paragraph.
 
 JSON Schema:
 {
   "insiderReport": {
-    "unGoogleableHistory": "Rich historical provenance, scandals, restoration lore, or unpublicised origins.",
-    "operationalQuirks": "Secret arrival protocols, luggage routing, or unscripted front-line staff service empowerment habits.",
-    "famousGuests": "Notable past and contemporary guest clientele, royalty, heads of state, or cultural figures.",
-    "theTrueBestRoom": "EXACT room numbers, floor tiers, or facing aspects to book vs avoid for quiet work and views.",
-    "powerDynamics": "Ownership structure, operator agreement terms, asset ownership friction, or management dynamics."
+    "unGoogleableHistory": { "title": "Custom History Headline", "text": "Rich historical provenance..." },
+    "operationalQuirks": { "title": "Custom Service Quirks Headline", "text": "Unscripted front-line staff service habits..." },
+    "famousGuests": { "title": "Custom Clientele Headline", "text": "Notable past and contemporary guest lore..." },
+    "theTrueBestRoom": { "title": "Custom Room Booking Headline", "text": "EXACT room numbers, floor tiers, or facing aspects to book vs avoid..." },
+    "powerDynamics": { "title": "Custom Ownership Headline", "text": "Ownership structure, operator agreement terms, management dynamics..." }
   }
 }`;
 
-  return queryPerplexityAPI("You are an investigative luxury hospitality author. Output strict JSON with deep narrative paragraphs.", prompt);
+  return queryPerplexityAPI("You are an investigative luxury hospitality author. Output strict JSON with dynamic section titles and deep narrative paragraphs.", prompt);
 }
 
 // Multi-Lane Parallel Execution Engine (Max 2 Lanes to avoid rate caps)
