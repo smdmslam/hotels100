@@ -100,13 +100,18 @@ Output your research STRICTLY as a single valid JSON object adhering to the sche
     "investorQuestion": "The central strategic question facing owners and asset managers."
   },
   "insiderReport": {
-    "unGoogleableHistory": "Secret history, scandals, historic architectural lore, or unpublicised origins.",
-    "operationalQuirks": "Secret entrances, discreet arrival protocols, luggage routing, or unique staff service habits.",
-    "famousGuests": "Notable past/present clientele, royalty, heads of state, or cultural figures.",
-    "theTrueBestRoom": "Specific room numbers, suite tiers, or floor wings to book (and which specific rooms to avoid).",
+    "unGoogleableHistory": "Secret history, scandals, historic architectural lore, or unpublicised origins. NEVER use generic disclaimers like 'could not be verified'. Provide deep provenance facts.",
+    "operationalQuirks": "Discreet arrival protocols, luggage routing, or unique staff service habits (e.g. unscripted staff empowerment, drink tokens, curbside name recognition). NEVER use generic hedging language.",
+    "famousGuests": "Notable past/present clientele, royalty, heads of state, or cultural figures. Provide specific historical & contemporary guest lore.",
+    "theTrueBestRoom": "CRITICAL: State specific room numbers, floor tiers, or facing aspects to book vs avoid (e.g. 'Book upper-floor penthouse suite stock facing Carlos Place; avoid 2nd floor street-facing rooms near Carlos Place bar entrance'). NEVER use disclaimers like 'could not be verified'.",
     "powerDynamics": "Ownership structure, operator agreement terms, asset ownership friction, or management dynamics."
   }
-}`;
+}
+
+CRITICAL REPORT GUARANTEES:
+- Provide rich, detailed, multi-sentence paragraphs (120–250 words per section) for all 5 insider report fields.
+- DO NOT use disclaimer hedging such as 'could not be verified', 'not clearly public', or 'N/A'. Provide specific, authoritative room numbers, floor tiers, and operational lore.
+- If existing rich data exists for a property and incoming AI output contains hedging phrases ('could not be verified'), preserve the existing rich content.`;
 
   if (!OPENROUTER_API_KEY) {
     console.log(`[DRY-RUN / MOCK MODE] Simulated Perplexity research for ${hotelName}`);
@@ -181,7 +186,25 @@ async function run() {
       }
       if (result.scores) hotel.scores = result.scores;
       if (result.analysis) hotel.analysis = { ...hotel.analysis, ...result.analysis };
-      if (result.insiderReport) hotel.insiderReport = result.insiderReport;
+      if (result.insiderReport) {
+        const isHedged = (str) => typeof str === 'string' && (
+          str.toLowerCase().includes('could not be verified') || 
+          str.toLowerCase().includes('not clearly public') || 
+          str.toLowerCase().includes('no specific data available')
+        );
+
+        if (!hotel.insiderReport) {
+          hotel.insiderReport = result.insiderReport;
+        } else {
+          hotel.insiderReport = {
+            unGoogleableHistory: isHedged(result.insiderReport.unGoogleableHistory) ? hotel.insiderReport.unGoogleableHistory : result.insiderReport.unGoogleableHistory,
+            operationalQuirks: isHedged(result.insiderReport.operationalQuirks) ? hotel.insiderReport.operationalQuirks : result.insiderReport.operationalQuirks,
+            famousGuests: isHedged(result.insiderReport.famousGuests) ? hotel.insiderReport.famousGuests : result.insiderReport.famousGuests,
+            theTrueBestRoom: isHedged(result.insiderReport.theTrueBestRoom) ? hotel.insiderReport.theTrueBestRoom : result.insiderReport.theTrueBestRoom,
+            powerDynamics: isHedged(result.insiderReport.powerDynamics) ? hotel.insiderReport.powerDynamics : result.insiderReport.powerDynamics,
+          };
+        }
+      }
 
       updatedCount++;
       console.log(`  ✅ Successfully enriched ${hotel.name}`);
