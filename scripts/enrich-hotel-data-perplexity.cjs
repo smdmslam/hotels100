@@ -57,21 +57,29 @@ async function queryPerplexityAPI(systemPrompt, userPrompt) {
   return JSON.parse(content);
 }
 
-// Lane 1: Property Facts, Amenities & 10 DMW Dimension Scorecards
+// Lane 1: Property Facts, Amenities, 10 DMW Dimension Scorecards & Synthesized Assessment
 async function fetchLane1FactsAndScores(hotelName, location) {
   const prompt = `Conduct deep research on property: ${hotelName} in ${location}.
-Return a single JSON object with links, identity, propertyFacts, amenities, and scores.
+Return a single JSON object with links, identity, propertyFacts, amenities, scores, dmwOverview, analysis, and dmwJudgement.
+
+SYNTHESIZED ASSESSMENT DIRECTIVES:
+- dmwOverview (Paragraph 1): Write a 100-150 word executive synthesis paragraph explaining how the hotel's ownership, location, architecture, operating model, and top scorecard dimensions reinforce each other into a coherent proposition.
+- analysis.revenueStrategy (Paragraph 2): Write a 100-150 word qualification paragraph diagnosing rate integrity vs room category, stating when the rate is defensible vs when lower-tier rooms compromise the experience, and stating who the property is best suited for.
+- dmwJudgement: Write a concise closing verdict line, e.g. "Strong recommendation, conditional on room category" or "Exceptional recommendation for complete ecosystem stays".
 
 JSON Schema:
 {
   "links": { "officialWebsite": "https://...", "bookingUrl": "https://..." },
   "identity": { "brand": "...", "operator": "...", "owner": "...", "architect": "...", "designer": "..." },
   "propertyFacts": { "openingYear": 1897, "lastMajorRenovationYear": 2022, "roomCount": 120, "suiteCount": 35, "checkInTime": "15:00", "checkOutTime": "12:00", "propertyType": "Urban Grand Hotel" },
+  "dmwOverview": "Cheval Blanc Paris is an unusually coherent luxury proposition because its ownership, location, architecture, operating model and intended clientele all reinforce one another...",
+  "analysis": {
+    "revenueStrategy": "The qualification is that rate integrity depends heavily on room category. At an observed standard-room rate of $2,429..."
+  },
+  "dmwJudgement": "Strong recommendation, conditional on room category",
   "amenities": [
     { "id": "spa", "label": "Subterranean Spa & Hydrotherapy Sanctuary", "category": "Wellness", "available": true, "detail": "..." },
-    { "id": "gym", "label": "24-Hour Fitness Studio", "category": "Wellness", "available": true, "detail": "..." },
-    { "id": "michelin-dining", "label": "Michelin-Starred Dining", "category": "Food & Drink", "available": true },
-    { "id": "bar", "label": "Destination Lounge", "category": "Food & Drink", "available": true }
+    { "id": "gym", "label": "24-Hour Fitness Studio", "category": "Wellness", "available": true, "detail": "..." }
   ],
   "scores": {
     "totalScore": 92.4,
@@ -91,7 +99,7 @@ JSON Schema:
   }
 }`;
 
-  return queryPerplexityAPI("You are an expert luxury hotel data auditor. Output strict JSON.", prompt);
+  return queryPerplexityAPI("You are an expert luxury hotel data auditor. Output strict JSON with synthesized assessment paragraphs.", prompt);
 }
 
 // Lane 2: Dedicated High-Asymmetry Insider Writer (The Main Event)
