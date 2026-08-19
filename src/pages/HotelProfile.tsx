@@ -176,36 +176,6 @@ export const HotelProfile: React.FC = () => {
           ? 'Qualified recommendation'
           : 'Selective recommendation';
 
-  const definingStrength =
-    hotel.centralStrength ||
-    hotel.analysis?.competitiveMoat ||
-    hotel.analysis?.hospitalityProposition;
-
-  const materialReservation =
-    hotel.centralQuestion ||
-    hotel.rooms?.spatialCompromise ||
-    hotel.pricingIntelligence?.limitations;
-
-  const valueConclusion =
-    hotel.pricingIntelligence?.dmwInterpretation ||
-    hotel.analysis?.pricingPowerThesis ||
-    hotel.analysis?.revenueStrategy;
-
-  const dmwView =
-    hotel.dmwOverview ||
-    hotel.analysis?.hospitalityProposition ||
-    hotel.inclusionRationale;
-
-  const thinkTwiceIf = Array.from(new Set([
-    hotel.rooms?.spatialCompromise,
-    hotel.businessTravel?.sleepAndNoise,
-  ].filter((item): item is string => Boolean(item)))).slice(0, 3);
-
-  const finalPosition =
-    hotel.dmwJudgement ||
-    hotel.inclusionRationale ||
-    dmwView;
-
   const renderAssessment = () => (
     <div className={styles.panelContent} data-assessment-version="verdict-v2">
       <header className={styles.panelHeader}>
@@ -219,7 +189,7 @@ export const HotelProfile: React.FC = () => {
       <section className={styles.finalJudgement}>
         <div className={styles.finalJudgementCopy}>
           <span className={styles.kicker}>Final judgement</span>
-          <p>{hotel.inclusionRationale || dmwView}</p>
+          <p>{hotel.inclusionRationale || hotel.dmwOverview}</p>
         </div>
         <aside className={styles.recommendationRail} aria-label="DMW recommendation">
           <span>DMW position</span>
@@ -234,76 +204,55 @@ export const HotelProfile: React.FC = () => {
             {hotel.pricingIntelligence?.bestValuePeriod
               ? `Best value observed: ${hotel.pricingIntelligence.bestValuePeriod}`
               : indicativeRate
-                ? 'Recommendation subject to room category and observed rate.'
-                : 'Recommendation based on the available DMW evidence.'}
+                ? `Indicative rate: ~$${indicativeRate} / night.`
+                : 'Recommendation based on available DMW evidence.'}
           </p>
         </aside>
       </section>
 
-      <section className={styles.conclusionGrid} aria-label="Three-part conclusion">
-        {definingStrength && (
-          <article className={styles.conclusionItem}>
-            <span>01</span>
-            <h3>Defining strength</h3>
-            <p>{definingStrength}</p>
-          </article>
+      {/* Synthesized Executive Assessment Prose */}
+      <div className={styles.assessmentBody}>
+        {hotel.dmwOverview && (
+          <section className={styles.proseSection}>
+            <h3>Executive Overview</h3>
+            <p>{hotel.dmwOverview}</p>
+          </section>
         )}
-        {materialReservation && (
-          <article className={styles.conclusionItem}>
-            <span>02</span>
-            <h3>Material reservation</h3>
-            <p>{materialReservation}</p>
-          </article>
-        )}
-        {valueConclusion && (
-          <article className={styles.conclusionItem}>
-            <span>03</span>
-            <h3>Value conclusion</h3>
-            <p>{valueConclusion}</p>
-          </article>
-        )}
-      </section>
 
-      {dmwView && (
-        <section className={styles.dmwView}>
-          <div className={styles.dmwViewLabel}>
-            <span className={styles.kicker}>The DMW view</span>
-            <small>Scorecard, operating intelligence and pricing considered together.</small>
-          </div>
-          <p>{dmwView}</p>
-        </section>
-      )}
+        {hotel.analysis?.hospitalityProposition && (
+          <section className={styles.proseSection}>
+            <h3>Hospitality Proposition</h3>
+            <p>{hotel.analysis.hospitalityProposition}</p>
+          </section>
+        )}
 
-      {(hotel.bestSuitedFor?.length > 0 || thinkTwiceIf.length > 0) && (
-        <section className={styles.bookingDecision}>
-          {hotel.bestSuitedFor?.length > 0 && (
-            <div className={styles.decisionGroup}>
-              <span className={styles.kicker}>Best for</span>
-              <ul>
-                {hotel.bestSuitedFor.slice(0, 4).map((item) => <li key={item}>{item}</li>)}
-              </ul>
+        {hotel.analysis?.revenueStrategy && (
+          <section className={styles.proseSection}>
+            <h3>Revenue &amp; Positioning</h3>
+            <p>{hotel.analysis.revenueStrategy}</p>
+          </section>
+        )}
+
+        {hotel.fieldReports?.map((report) => (
+          <section className={styles.fieldNote} key={report.id}>
+            <div className={styles.fieldNoteHeader}>
+              <span className={styles.kicker}>Observed firsthand</span>
+              <span>{report.visitDate}</span>
             </div>
-          )}
-          {thinkTwiceIf.length > 0 && (
-            <div className={styles.decisionGroup}>
-              <span className={styles.kicker}>Think twice if</span>
-              <ul>
-                {thinkTwiceIf.map((item) => <li key={item}>{item}</li>)}
-              </ul>
+            <h3>A note from our stay</h3>
+            <div className={styles.fieldNoteGrid}>
+              <div><strong>Arrival</strong><p>{report.arrivalObservation}</p></div>
+              <div><strong>Room</strong><p>{report.roomObservation}</p></div>
+              <div><strong>Service</strong><p>{report.serviceObservation}</p></div>
+              <div><strong>Atmosphere</strong><p>{report.atmosphereObservation}</p></div>
             </div>
-          )}
-        </section>
-      )}
-
-      {finalPosition && (
-        <footer className={styles.assessmentConclusion}>
-          <div>
-            <span className={styles.kicker}>Final position</span>
-            <h3>{assessmentPosition}</h3>
-          </div>
-          <p>{finalPosition}</p>
-        </footer>
-      )}
+            <div className={styles.verdict}>
+              <strong>Assessment after the stay</strong>
+              <p>{report.thesisConfirmation}</p>
+            </div>
+          </section>
+        ))}
+      </div>
     </div>
   );
 
