@@ -169,12 +169,17 @@ export const HotelProfile: React.FC = () => {
       <header className={styles.panelHeader}>
         <span className={styles.panelNumber}>{getSectionNum('assessment')}</span>
         <div>
-          <span className={styles.kicker}>Independent hotel intelligence</span>
-          <h2>Hotel Assessment</h2>
+          <span className={styles.kicker}>DMW Assessment</span>
+          <h2>Assessment &amp; Strategic Positioning</h2>
         </div>
       </header>
 
-      {/* DMW Executive Judgement Banner */}
+      {hotel.inclusionRationale && (
+        <p className={styles.standfirst} style={{ fontSize: '1.25rem', fontFamily: 'var(--font-serif)', lineHeight: 1.4, color: 'var(--color-ivory)', marginBottom: 'var(--space-5)', fontStyle: 'italic' }}>
+          "{hotel.inclusionRationale}"
+        </p>
+      )}
+
       <div className={styles.assessmentJudgementHeader}>
         <div className={styles.judgementBadge}>
           <span>DMW Rating</span>
@@ -185,10 +190,6 @@ export const HotelProfile: React.FC = () => {
           <h3>{hotel.name} — Strategic Assessment Thesis</h3>
         </div>
       </div>
-
-      {hotel.inclusionRationale && (
-        <p className={styles.standfirst}>{hotel.inclusionRationale}</p>
-      )}
 
       {/* Traveller Suitability Matrix */}
       <div className={styles.suitabilityCard}>
