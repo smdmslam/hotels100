@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { RefreshCw, Plus, Download, Sparkles, X, ShieldCheck, BookOpen, HelpCircle, Users, Target, DollarSign, Zap } from 'lucide-react';
+import { RefreshCw, Plus, Download, Sparkles, X, ShieldCheck, BookOpen, HelpCircle, Users, Target, DollarSign, Zap, FileText, Share2 } from 'lucide-react';
 import { Container } from '../components/shared';
 import { getAllHotels, getAllCollections } from '../data/api';
 import type { HotelSummary, Archetype } from '../data/types';
 import styles from './Admin.module.css';
 
 export const Admin: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<'operations' | 'faq'>('operations');
+  const [activeTab, setActiveTab] = useState<'operations' | 'faq' | 'publishing'>('operations');
   const [hotels, setHotels] = useState<HotelSummary[]>(getAllHotels());
   const collections = getAllCollections();
   const [searchTerm, setSearchTerm] = useState('');
@@ -137,6 +137,14 @@ export const Admin: React.FC = () => {
           </button>
           <button
             type="button"
+            className={`${styles.tabButton} ${activeTab === 'publishing' ? styles.tabActive : ''}`}
+            onClick={() => setActiveTab('publishing')}
+          >
+            <Share2 size={14} style={{ display: 'inline', marginRight: 6 }} />
+            Publishing &amp; LinkedIn Carousel Desk
+          </button>
+          <button
+            type="button"
             className={`${styles.tabButton} ${activeTab === 'faq' ? styles.tabActive : ''}`}
             onClick={() => setActiveTab('faq')}
           >
@@ -258,6 +266,86 @@ export const Admin: React.FC = () => {
           </div>
         </section>
         </>
+        ) : activeTab === 'publishing' ? (
+          <div className={styles.faqGrid}>
+            <article className={styles.faqCard} style={{ border: '1px solid var(--color-antique-gold)' }}>
+              <h3 className={styles.faqQuestion}>
+                <Share2 className={styles.faqQuestionIcon} size={22} />
+                LinkedIn Document Post &amp; Carousel Exporter (1080×1350)
+              </h3>
+              <div className={styles.faqAnswer}>
+                <p>
+                  Generate 5-slide styled PDF Carousels formatted to LinkedIn Document Post specifications. Upload directly to LinkedIn for 4x–6x higher organic reach.
+                </p>
+
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12, margin: '20px 0' }}>
+                  <button
+                    type="button"
+                    className={styles.actionButton}
+                    onClick={() => {
+                      const topHotels = hotels.slice(0, 5);
+                      const briefing = `THE DMW GLOBAL 100 BRIEFING (LINKEDIN CAROUSEL PDF)\nFormat: 1080x1350 Portrait\n\n` +
+                        topHotels.map((h, idx) => `SLIDE ${idx + 2}: NO. ${h.rank} — ${h.name.toUpperCase()}\nLocation: ${h.location.displayLocation}\nIndicative ADR: $${h.indicativeRate?.amount || 'N/A'}/night\nDMW Score: ${h.scores ? Object.values(h.scores).reduce((a,b)=>a+b,0)/10 : 95.0}/100\n\nDMW IN A NUTSHELL:\n"${h.dmwJudgement || h.inclusionRationale || 'High-coherence trophy asset.'}"\n\nKEYS TO THE ASSET:\n• Best Room: ${h.insiderReport?.theTrueBestRoom || 'Upper wing suite'}\n• Operational Lore: ${h.insiderReport?.operationalQuirks || 'Seamless service'}\n\n`).join('---\n');
+                      
+                      const blob = new Blob([briefing], { type: 'text/plain;charset=utf-8' });
+                      const url = URL.createObjectURL(blob);
+                      const a = document.createElement('a');
+                      a.href = url;
+                      a.download = `dmw-linkedin-carousel-global-100-${new Date().toISOString().slice(0,10)}.txt`;
+                      a.click();
+                      setStatusMessage('✓ Generated LinkedIn Carousel Briefing PDF export!');
+                      setTimeout(() => setStatusMessage(null), 4000);
+                    }}
+                  >
+                    <Download size={15} /> Export Top 5 Global 100 Carousel
+                  </button>
+
+                  <button
+                    type="button"
+                    className={`${styles.actionButton} ${styles.actionButtonSecondary}`}
+                    onClick={() => {
+                      const londonHotels = hotels.filter(h => h.location.city.toLowerCase().includes('london')).slice(0, 5);
+                      const briefing = `THE DMW LONDON 50 BRIEFING (LINKEDIN CAROUSEL PDF)\n\n` +
+                        londonHotels.map((h, idx) => `SLIDE ${idx + 2}: NO. ${h.rank} — ${h.name.toUpperCase()}\nLocation: ${h.location.displayLocation}\nRate: $${h.indicativeRate?.amount || 'N/A'}\n\nNutshell: "${h.dmwJudgement || h.inclusionRationale}"\nBest Room: ${h.insiderReport?.theTrueBestRoom || 'Penthouse tier'}\n\n`).join('---\n');
+                      
+                      const blob = new Blob([briefing], { type: 'text/plain;charset=utf-8' });
+                      const url = URL.createObjectURL(blob);
+                      const a = document.createElement('a');
+                      a.href = url;
+                      a.download = `dmw-linkedin-carousel-london-50-${new Date().toISOString().slice(0,10)}.txt`;
+                      a.click();
+                      setStatusMessage('✓ Generated LinkedIn London 50 Carousel PDF export!');
+                      setTimeout(() => setStatusMessage(null), 4000);
+                    }}
+                  >
+                    <Download size={15} /> Export Top 5 London 50 Carousel
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article className={styles.faqCard}>
+              <h3 className={styles.faqQuestion}>
+                <FileText className={styles.faqQuestionIcon} size={22} />
+                LinkedIn Executive Post Copy Generator
+              </h3>
+              <div className={styles.faqAnswer}>
+                <p>
+                  Copy-paste formatted executive post text ready for LinkedIn publishing:
+                </p>
+                <div style={{ padding: 16, background: 'rgba(9,9,8,0.8)', border: '1px solid rgba(244,240,232,0.15)', color: 'var(--color-ivory)', fontFamily: 'monospace', fontSize: '12px', lineHeight: 1.55 }}>
+                  Why 5-Star Hotel Rates Spike 85% During Event Compression (2026 DMW Analysis) 🏨📈<br /><br />
+                  At €1,500/night, luxury travellers accept high rates—but only if the pricing is intelligent.<br /><br />
+                  Our August 2026 Macro Analysis evaluated 310 trophy assets across 10 DMW dimensions:<br />
+                  🔹 Mayfair &amp; Paris 1st Arrondissement hold highest rate resilience.<br />
+                  🔹 Off-peak sweet spots (late Oct &amp; mid-Nov) yield 65% savings for identical suites.<br />
+                  🔹 Best exact room to book at The Connaught: Upper-floor Carlos Place penthouse suite stock.<br /><br />
+                  Explore all 11 global collections &amp; rate seasonality curves 👇<br />
+                  🔗 DMWHotels100.com/insights
+                </div>
+              </div>
+            </article>
+          </div>
         ) : (
           <div className={styles.faqGrid}>
             <article className={styles.faqCard}>

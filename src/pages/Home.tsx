@@ -204,10 +204,10 @@ export const Home: React.FC = () => {
 
       <section className={styles.reportsSection}>
         <Container variant="wide">
-          <header className={styles.reportsHeader}>
-            <div>
-              <span className={styles.sectionNumber}>02 — Intelligence</span>
-              <h2 className={styles.sectionTitle}>Latest Hotel Reports</h2>
+          <header className={styles.sectionHeader}>
+            <div className={styles.sectionHeaderTitle}>
+              <span className={styles.darkEyebrow}>Strategic Publishing &amp; Briefings</span>
+              <h2 className={styles.sectionTitle}>Monthly Intelligence &amp; Hotel Briefings</h2>
             </div>
             <Link to="/insights" className={styles.reportsAction}>
               View all insights <span aria-hidden="true">→</span>
@@ -217,16 +217,16 @@ export const Home: React.FC = () => {
           <div className={styles.reportGrid}>
             <article className={`${styles.reportCard} ${styles.seasonalCard}`}>
               <Link
-                to="/collections/the-italian-and-swiss-lakes-35"
+                to="/insights"
                 className={styles.reportLink}
               >
                 <div className={styles.reportMedia}>
-                  <span className={styles.reportTag}>The Summer Edit</span>
+                  <span className={styles.reportTag}>August 2026 Strategic Report</span>
                 </div>
                 <div className={styles.reportCopy}>
-                  <span className={styles.reportMeta}>Riviera &amp; Lakes</span>
-                  <h3>The hotels defining summer on the water</h3>
-                  <span className={styles.readReport}>Explore the edit →</span>
+                  <span className={styles.reportMeta}>Macro Industry Briefing</span>
+                  <h3>The Compression Pricing Surge: Why Event Demand Inflates Trophy ADRs by 85%</h3>
+                  <span className={styles.readReport}>Read strategic briefing →</span>
                 </div>
               </Link>
             </article>

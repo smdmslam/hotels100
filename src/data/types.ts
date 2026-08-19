@@ -98,6 +98,8 @@ export interface HotelSummary {
   primaryImage?: Image | null;
   profileUrl: string;
   articleUrl?: string | null;
+  insiderReport?: InsiderReport | null;
+  inclusionRationale?: string | null;
 }
 
 export interface FieldReport {
