@@ -144,7 +144,7 @@ export const HotelProfile: React.FC = () => {
     );
   }
 
-  const currentIndex = collection?.hotels.findIndex((item) => item.id === hotel.id) ?? -1;
+  const currentIndex = collection?.hotels.findIndex((item) => item.slug === hotel.slug || item.id === hotel.id) ?? -1;
   const previousHotel = currentIndex > 0 ? collection?.hotels[currentIndex - 1] : null;
   const nextHotel =
     collection && currentIndex >= 0 && currentIndex < collection.hotels.length - 1
