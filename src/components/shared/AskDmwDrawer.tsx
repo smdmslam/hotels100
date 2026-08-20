@@ -162,9 +162,22 @@ export const AskDmwDrawer: React.FC<AskDmwDrawerProps> = ({ isOpen, onClose, ini
               <Compass size={18} style={{ color: 'var(--color-antique-gold)' }} />
               What is the Luxury Hotel Decision Engine?
             </h3>
-            <p className={styles.prefaceText}>
-              Our decision engine evaluates 326 trophy assets across DMW’s complete intelligence database—including our <strong>10 granular dimension scorecards</strong> (hospitality execution, acoustics &amp; soundproofing, wellness &amp; gym quality, hard product, dining credentials), <strong>5-part Insider Reports</strong> (exact room numbers to book vs avoid, operational quirks, clientele lore), <strong>rate curve seasonality</strong> (off-peak value windows vs peak compression surges), and <strong>micro-geographic positioning</strong>. Describe your trip requirements in plain language to generate your tailored shortlist.
-            </p>
+            <div className={styles.prefaceText} style={{ fontSize: '0.85rem', lineHeight: 1.55 }}>
+              <p style={{ marginBottom: '8px' }}>
+                DMW provides two distinct intelligence modes to evaluate 326 trophy assets across our global database:
+              </p>
+              <ul style={{ margin: '0 0 10px 0', paddingLeft: '16px', display: 'flex', flexDirection: 'column', gap: '6px' }}>
+                <li>
+                  <strong>Hotel Search (AI) — <em>Proprietary Ranking Match</em></strong>: Queries DMW’s proprietary hotel ranking system across our 10 granular dimension scorecards (acoustics &amp; soundproofing, service execution, wellness, hard product), 5-part Insider Reports (exact room numbers to book vs avoid, operational quirks, clientele lore), and rate curves.
+                </li>
+                <li>
+                  <strong>Hotel Search (AI Plus) — <em>Live Web Synthesis</em></strong>: Fuses our proprietary hotel ranking system with live internet intelligence. Layer real-time parameters—such as live rate compression, local event dates (e.g. WEF, Art Basel, Fashion Week), active property renovations, snow depth, or neighborhood landmarks—on top of our ranking foundation. <em>(Note: Real-time web synthesis accuracy relies on current public web data availability for your target dates).</em>
+                </li>
+              </ul>
+              <p style={{ margin: 0, fontWeight: 500, color: 'var(--color-ink)' }}>
+                Describe your trip requirements in plain language to generate your tailored shortlist.
+              </p>
+            </div>
           </div>
 
           {/* Section 2: Unified Hero AI Prompt Input */}
