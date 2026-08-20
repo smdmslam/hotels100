@@ -397,7 +397,7 @@ export const HotelProfile: React.FC = () => {
           <div><span className={styles.kicker}>Forward-rate observation</span><h2>Pricing Intelligence</h2></div>
         </header>
         <p className={styles.panelIntroduction}>Publicly available forward rates, observed to identify seasonality, pricing power and better booking windows.</p>
-        <div className={styles.embeddedComponent}><PriceCurveChart pricing={hotel.pricingIntelligence} /></div>
+        <div className={styles.embeddedComponent}><PriceCurveChart pricing={hotel.pricingIntelligence} hotelName={hotel.name} /></div>
       </div>
     ) : null,
   };

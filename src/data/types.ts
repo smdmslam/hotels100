@@ -124,8 +124,10 @@ export interface FieldReport {
 export interface PricePoint {
   date: string; // YYYY-MM-DD
   rate: number;
+  observedRate?: number | null;
   available?: boolean | null;
   roomCategory?: string | null;
+  roomType?: string | null;
   rateType?: string | null;
   notes?: string | null;
   tenor?: string | null;
@@ -154,8 +156,14 @@ export interface PricingIntelligence {
   peakPeriod?: string | null;
   weekdayWeekendObservation?: string | null;
   dmwInterpretation?: string | null;
+  summaryStats?: {
+    lowestObserved?: number | null;
+    highestObserved?: number | null;
+    medianObserved?: number | null;
+    averageDailyRate?: number | null;
+  } | null;
   dataPoints: PricePoint[];
-  eventMarkers: EventMarker[];
+  eventMarkers?: EventMarker[] | null;
   limitations?: string | null;
 }
 
