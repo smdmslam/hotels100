@@ -22,34 +22,36 @@ const PUBLIC_COLLECTIONS = [
   },
 ];
 
-const SAMPLE_PROMPTS = [
-  "Find the best-value highly ranked hotels in Zurich",
-  "Quiet Mayfair suite under $600/night with Michelin dining",
-  "St. Moritz ski-in/ski-out hotel with outstanding spa",
-  "Top Paris 1st Arrondissement luxury hotel for business travel",
-  "Swiss Lakes sanctuary with private lake access and gym",
-  "Dubai beachfront resort with private pool villas under $1,200",
-  "London luxury hotel with 24h room service and quiet courtyard",
-  "New York Midtown boutique hotel with high acoustic insulation",
-  "Best Geneva luxury hotel for private family office meetings",
-  "Lake Como grand hotel with lowest off-peak seasonal rates",
-  "Paris palace hotel with exceptional concierge and butler protocol",
-  "Top Zurich hotel near Bahnhofstrasse with 24h fitness center",
-  "Best luxury hotel in Kyoto with traditional garden views",
-  "Mayfair grand hotel with private dining room for 8 guests",
-  "London hotel under $500/night with 5-star amenities",
-  "Swiss Alpine resort with Michelin-starred dining and infinity pool",
-  "Tokyo high-floor suite with quiet acoustic rating and city view",
-  "Miami Beach historic luxury hotel with quiet private cabanas",
-  "Best Milan luxury boutique hotel near fashion district",
-  "Zurich lakefront hotel with private boat shuttle service"
+const SAMPLE_PROMPTS_STRUCTURED = [
+  { text: "Find the best-value highly ranked hotels in ", highlight: "Zurich", raw: "Find the best-value highly ranked hotels in Zurich" },
+  { text: "Quiet ", highlight: "Mayfair suite under $600/night", suffix: " with Michelin dining", raw: "Quiet Mayfair suite under $600/night with Michelin dining" },
+  { text: "St. Moritz ", highlight: "ski-in/ski-out hotel", suffix: " with outstanding spa", raw: "St. Moritz ski-in/ski-out hotel with outstanding spa" },
+  { text: "Top Paris 1st Arrondissement ", highlight: "luxury hotel for business travel", raw: "Top Paris 1st Arrondissement luxury hotel for business travel" },
+  { text: "Swiss Lakes sanctuary with ", highlight: "private lake access and gym", raw: "Swiss Lakes sanctuary with private lake access and gym" },
+  { text: "Dubai beachfront resort with ", highlight: "private pool villas under $1,200", raw: "Dubai beachfront resort with private pool villas under $1,200" },
+  { text: "London luxury hotel with 24h service and ", highlight: "quiet courtyard", raw: "London luxury hotel with 24h room service and quiet courtyard" },
+  { text: "New York Midtown boutique hotel with ", highlight: "high acoustic insulation", raw: "New York Midtown boutique hotel with high acoustic insulation" },
+  { text: "Best Geneva luxury hotel for ", highlight: "private family office meetings", raw: "Best Geneva luxury hotel for private family office meetings" },
+  { text: "Lake Como grand hotel with ", highlight: "lowest off-peak seasonal rates", raw: "Lake Como grand hotel with lowest off-peak seasonal rates" },
+  { text: "Paris palace hotel with ", highlight: "exceptional butler protocol", raw: "Paris palace hotel with exceptional concierge and butler protocol" },
+  { text: "Top Zurich hotel near Bahnhofstrasse with ", highlight: "24h fitness center", raw: "Top Zurich hotel near Bahnhofstrasse with 24h fitness center" },
+  { text: "Best luxury hotel in Kyoto with ", highlight: "traditional garden views", raw: "Best luxury hotel in Kyoto with traditional garden views" },
+  { text: "Mayfair grand hotel with ", highlight: "private dining room for 8 guests", raw: "Mayfair grand hotel with private dining room for 8 guests" },
+  { text: "London hotel under $500/night with ", highlight: "5-star amenities", raw: "London hotel under $500/night with 5-star amenities" },
+  { text: "Swiss Alpine resort with ", highlight: "Michelin dining and infinity pool", raw: "Swiss Alpine resort with Michelin-starred dining and infinity pool" },
+  { text: "Tokyo high-floor suite with ", highlight: "quiet acoustic rating", raw: "Tokyo high-floor suite with quiet acoustic rating and city view" },
+  { text: "Miami Beach historic luxury hotel with ", highlight: "quiet private cabanas", raw: "Miami Beach historic luxury hotel with quiet private cabanas" },
+  { text: "Best Milan luxury boutique hotel near ", highlight: "fashion district", raw: "Best Milan luxury boutique hotel near fashion district" },
+  { text: "Zurich lakefront hotel with ", highlight: "private boat shuttle service", raw: "Zurich lakefront hotel with private boat shuttle service" }
 ];
 
 export const Home: React.FC = () => {
   const [askDmwOpen, setAskDmwOpen] = useState(false);
   const [promptIndex, setPromptIndex] = useState(0);
+  const [isFading, setIsFading] = useState(false);
   const [userQuery, setUserQuery] = useState('');
   const [drawerQuery, setDrawerQuery] = useState('');
+  const inputRef = React.useRef<HTMLInputElement>(null);
 
   const indexData = getIndexData();
   const totalHotelsCount = getAllHotels().length;
@@ -58,16 +60,22 @@ export const Home: React.FC = () => {
   const previewHotels = globalHotels.slice(0, 5);
   const reportHotels = globalHotels.slice(0, 3);
 
-  // Cycle through sample prompts every 3.5s
+  // Cycle through sample prompts every 5.5s with smooth fade
   useEffect(() => {
     const timer = setInterval(() => {
-      setPromptIndex((prev) => (prev + 1) % SAMPLE_PROMPTS.length);
-    }, 3500);
+      setIsFading(true);
+      setTimeout(() => {
+        setPromptIndex((prev) => (prev + 1) % SAMPLE_PROMPTS_STRUCTURED.length);
+        setIsFading(false);
+      }, 250);
+    }, 5500);
     return () => clearInterval(timer);
   }, []);
 
+  const currentPrompt = SAMPLE_PROMPTS_STRUCTURED[promptIndex];
+
   const handleLaunchSearch = (targetQuery?: string) => {
-    const queryToUse = targetQuery || userQuery || SAMPLE_PROMPTS[promptIndex];
+    const queryToUse = targetQuery || userQuery || currentPrompt.raw;
     setDrawerQuery(queryToUse);
     setAskDmwOpen(true);
   };
@@ -243,16 +251,43 @@ export const Home: React.FC = () => {
                 }}
                 className={styles.askSearchForm}
               >
-                <div className={styles.askInputWrapper}>
-                  <Sparkles size={20} className={styles.askInputSparkle} />
-                  <input
-                    type="text"
-                    className={styles.askSearchInput}
-                    value={userQuery}
-                    onChange={(e) => setUserQuery(e.target.value)}
-                    placeholder={SAMPLE_PROMPTS[promptIndex]}
-                    aria-label="Describe your target hotel or travel preferences"
-                  />
+                <div
+                  className={styles.askInputWrapper}
+                  onClick={() => inputRef.current?.focus()}
+                >
+                  <Sparkles size={22} className={styles.askInputSparkle} />
+
+                  {userQuery ? (
+                    <input
+                      ref={inputRef}
+                      type="text"
+                      className={styles.askSearchInputActive}
+                      value={userQuery}
+                      onChange={(e) => setUserQuery(e.target.value)}
+                      placeholder="Describe your target hotel or travel preferences..."
+                      aria-label="Describe your target hotel or travel preferences"
+                    />
+                  ) : (
+                    <div className={`${styles.promptDisplayContainer} ${isFading ? styles.promptFading : ''}`}>
+                      <span className={styles.quoteMark}>“</span>
+                      <span className={styles.promptTextNormal}>{currentPrompt.text}</span>
+                      <span className={styles.promptTextGold}>{currentPrompt.highlight}</span>
+                      {currentPrompt.suffix && (
+                        <span className={styles.promptTextNormal}>{currentPrompt.suffix}</span>
+                      )}
+                      <span className={styles.quoteMark}>”</span>
+
+                      <input
+                        ref={inputRef}
+                        type="text"
+                        className={styles.askSearchInputHidden}
+                        value={userQuery}
+                        onChange={(e) => setUserQuery(e.target.value)}
+                        aria-label="Describe your target hotel or travel preferences"
+                      />
+                    </div>
+                  )}
+
                   <button
                     type="submit"
                     className={styles.askSubmitButton}

@@ -537,21 +537,65 @@
   flex-shrink: 0;
 }
 
-.askSearchInput {
+.promptDisplayContainer {
+  flex: 1;
+  position: relative;
+  font-family: var(--font-serif);
+  font-size: clamp(1.2rem, 1.9vw, 1.65rem);
+  line-height: 1.25;
+  color: #ffffff;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  cursor: text;
+}
+
+.promptFading {
+  opacity: 0;
+  transform: translateY(-4px);
+}
+
+.quoteMark {
+  color: var(--color-antique-gold);
+  font-size: 1.25em;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.promptTextNormal {
+  color: #ffffff;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.promptTextGold {
+  color: var(--color-antique-gold);
+  font-weight: 700;
+  font-style: normal;
+  background: rgba(197, 160, 89, 0.18);
+  padding: 2px 8px;
+  border-radius: 2px;
+  border-bottom: 1px solid var(--color-antique-gold);
+  margin: 0 4px;
+}
+
+.askSearchInputActive {
   flex: 1;
   background: transparent;
   border: 0;
-  color: var(--color-ivory);
+  color: #ffffff;
   font-family: var(--font-serif);
-  font-size: clamp(1.15rem, 1.8vw, 1.55rem);
+  font-size: clamp(1.2rem, 1.9vw, 1.65rem);
   line-height: 1.25;
   outline: none;
 }
 
-.askSearchInput::placeholder {
-  color: rgba(244, 240, 232, 0.5);
-  font-style: italic;
-  transition: opacity 0.3s ease;
+.askSearchInputHidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: text;
 }
 
 .askSubmitButton {
