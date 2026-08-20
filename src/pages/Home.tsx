@@ -169,8 +169,8 @@ export const Home: React.FC = () => {
                 hospitality, brand strength, pricing power and asset value.
               </p>
 
-              <nav className={styles.collectionNav} aria-label="Hotel editions">
-                <span className={styles.collectionLabel}>Explore editions</span>
+              <nav className={styles.collectionNav} aria-label="Hotel collections">
+                <span className={styles.collectionLabel}>Explore regional &amp; thematic collections</span>
                 <ul className={styles.collectionList}>
                   {PUBLIC_COLLECTIONS.map((collection) => (
                     <li key={collection.slug}>
