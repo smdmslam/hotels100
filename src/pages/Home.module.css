@@ -476,35 +476,27 @@
   line-height: 1.6;
 }
 
-.engineBadgesRow {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  margin-top: var(--space-5);
-}
-
-.engineBadgeFast,
-.engineBadgePro {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 6px 12px;
+.engineFeatureNote {
+  max-width: 520px;
+  margin: var(--space-4) 0 0;
+  color: rgba(244, 240, 232, 0.78);
   font-family: var(--font-sans);
-  font-size: 12px;
-  border-radius: 2px;
-  max-width: max-content;
+  font-size: var(--type-small);
+  line-height: 1.6;
 }
 
-.engineBadgeFast {
-  background: rgba(197, 160, 89, 0.15);
-  border: 1px solid rgba(197, 160, 89, 0.35);
+.goldInlineIcon {
+  display: inline-block;
+  vertical-align: -2px;
   color: var(--color-antique-gold);
+  margin: 0 2px 0 4px;
 }
 
-.engineBadgePro {
-  background: rgba(56, 189, 248, 0.12);
-  border: 1px solid rgba(56, 189, 248, 0.3);
+.blueInlineIcon {
+  display: inline-block;
+  vertical-align: -2px;
   color: #38bdf8;
+  margin: 0 2px 0 4px;
 }
 
 .askDemo {

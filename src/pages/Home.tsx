@@ -233,16 +233,9 @@ export const Home: React.FC = () => {
                 Describe your destination, suite needs, acoustic priorities, or budget below. Our decision engine queries 326 evaluated trophy assets to generate your exact property match.
               </p>
 
-              <div className={styles.engineBadgesRow}>
-                <span className={styles.engineBadgeFast}>
-                  <Sparkles size={14} style={{ color: 'var(--color-antique-gold)' }} />
-                  <strong>Hotel Search (AI)</strong>: Full-Site Intelligence
-                </span>
-                <span className={styles.engineBadgePro}>
-                  <Globe size={14} style={{ color: '#38bdf8' }} />
-                  <strong>Hotel Search (AI Plus)</strong>: Full-Site Search + Live Web Synthesis
-                </span>
-              </div>
+              <p className={styles.engineFeatureNote}>
+                With <Sparkles size={14} className={styles.goldInlineIcon} /> <strong>Hotel Search (AI)</strong> for Full-Site Intelligence, and <Globe size={14} className={styles.blueInlineIcon} /> <strong>Hotel Search (AI Plus)</strong> for Full-Site Search + Live Web Synthesis.
+              </p>
             </div>
 
             <div className={styles.askDemo} aria-label="Ask DMW interactive intent search">
