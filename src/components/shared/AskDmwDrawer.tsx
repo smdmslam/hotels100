@@ -200,8 +200,11 @@ export const AskDmwDrawer: React.FC<AskDmwDrawerProps> = ({ isOpen, onClose, ini
                 className={styles.smallSubmitButton}
                 onClick={() => handleExecuteMatch(undefined, 'index')}
               >
-                <Sparkles size={13} />
-                Hotel Search (AI)
+                <Sparkles size={15} style={{ flexShrink: 0 }} />
+                <div className={styles.btnTextCol}>
+                  <span className={styles.btnTitle}>Hotel Search (AI)</span>
+                  <span className={styles.btnSubtext}>Proprietary Ranking &amp; Monthly Rates</span>
+                </div>
               </button>
 
               <button
@@ -209,8 +212,11 @@ export const AskDmwDrawer: React.FC<AskDmwDrawerProps> = ({ isOpen, onClose, ini
                 className={styles.proAiButton}
                 onClick={() => handleExecuteMatch(undefined, 'pro')}
               >
-                <Globe size={13} style={{ color: 'var(--color-antique-gold)' }} />
-                <span>Hotel Search (AI Plus)</span>
+                <Globe size={15} style={{ color: 'var(--color-antique-gold)', flexShrink: 0 }} />
+                <div className={styles.btnTextCol}>
+                  <span className={styles.btnTitle}>Hotel Search (AI Plus)</span>
+                  <span className={styles.btnSubtext}>Live Web Synthesis &amp; Real-Time Tariffs</span>
+                </div>
               </button>
             </div>
 
