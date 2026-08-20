@@ -118,7 +118,7 @@ export const PriceCurveChart: React.FC<PriceCurveChartProps> = ({ pricing, hotel
               strokeDasharray="4 4" 
               strokeWidth={1.5}
               label={{ 
-                value: 'TODAY', 
+                value: 'CURRENT MONTH', 
                 position: 'top', 
                 fill: '#C5A059', 
                 fontSize: 10, 
