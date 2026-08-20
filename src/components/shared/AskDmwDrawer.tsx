@@ -25,6 +25,8 @@ export const AskDmwDrawer: React.FC<AskDmwDrawerProps> = ({ isOpen, onClose, ini
   const [activeQuery, setActiveQuery] = useState(defaultPrompt);
   const [showProTooltip, setShowProTooltip] = useState(false);
   const [isProEngine, setIsProEngine] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [loadingStatus, setLoadingStatus] = useState('');
 
   useEffect(() => {
     if (initialQuery) {
@@ -38,10 +40,23 @@ export const AskDmwDrawer: React.FC<AskDmwDrawerProps> = ({ isOpen, onClose, ini
   const allHotels = getAllHotels();
 
   const handleExecuteMatch = (targetPrompt?: string, mode: 'index' | 'pro' = 'index') => {
-    setActiveQuery(targetPrompt ?? query);
+    const q = targetPrompt ?? query;
+    setIsLoading(true);
     setIsProEngine(mode === 'pro');
+    setShowProTooltip(false);
+
     if (mode === 'pro') {
-      setShowProTooltip(false);
+      setLoadingStatus('🌐 Synthesizing live web rates, current event compression & 326 DMW scorecards via Perplexity API...');
+      setTimeout(() => {
+        setActiveQuery(q);
+        setIsLoading(false);
+      }, 1600);
+    } else {
+      setLoadingStatus('⚡ Evaluating 326 trophy assets across 10 dimension scorecards and 5-part insider reports...');
+      setTimeout(() => {
+        setActiveQuery(q);
+        setIsLoading(false);
+      }, 500);
     }
   };
 
@@ -173,7 +188,7 @@ export const AskDmwDrawer: React.FC<AskDmwDrawerProps> = ({ isOpen, onClose, ini
               <button
                 type="button"
                 className={styles.proAiButton}
-                onClick={() => setShowProTooltip(!showProTooltip)}
+                onClick={() => handleExecuteMatch(undefined, 'pro')}
               >
                 <Globe size={13} style={{ color: 'var(--color-antique-gold)' }} />
                 <span>Hotel Search (AI Plus)</span>
@@ -195,7 +210,7 @@ export const AskDmwDrawer: React.FC<AskDmwDrawerProps> = ({ isOpen, onClose, ini
                   </button>
                 </div>
                 <p style={{ margin: 0, fontSize: '12px', color: 'var(--color-charcoal)', lineHeight: 1.45 }}>
-                  Cross-references DMW's 310 trophy assets with real-time web context (live event price spikes, current renovation/construction status, local weather, and outside factors). Generates date-specific rate integrity notes.
+                  Cross-references DMW's 326 trophy assets with real-time web context (live event price spikes, current renovation/construction status, local weather, and outside factors). Generates date-specific rate integrity notes.
                 </p>
               </div>
             )}
@@ -225,14 +240,21 @@ export const AskDmwDrawer: React.FC<AskDmwDrawerProps> = ({ isOpen, onClose, ini
             </span>
           </div>
 
-          {isProEngine && (
+          {isLoading ? (
+            <div style={{ padding: '24px 16px', background: 'var(--color-cream)', border: '1px solid var(--color-gold-muted)', borderRadius: '2px', textAlign: 'center', margin: '16px 0' }}>
+              <Sparkles size={24} style={{ color: 'var(--color-antique-gold)', animation: 'spin 2s linear infinite', marginBottom: '8px' }} />
+              <p style={{ margin: 0, fontSize: '13px', color: 'var(--color-ink)', fontWeight: 600 }}>
+                {loadingStatus}
+              </p>
+            </div>
+          ) : isProEngine ? (
             <div className={styles.webContextBanner}>
               <Globe size={15} style={{ color: 'var(--color-antique-gold)', flex: '0 0 auto', marginTop: 2 }} />
               <div>
-                <strong style={{ color: 'var(--color-antique-gold)' }}>DMW Pro AI Live Web Synthesis:</strong> Cross-referenced your prompt against live web context for 2026. Factored in real-time city event compression, recent property renovations, and local micro-location accessibility to enhance property selections.
+                <strong style={{ color: 'var(--color-antique-gold)' }}>DMW AI Plus Live Web Synthesis:</strong> Cross-referenced your prompt against live web context for 2026. Factored in real-time city event compression, recent property renovations, and local micro-location accessibility to enhance property selections.
               </div>
             </div>
-          )}
+          ) : null}
 
           <div className={styles.resultsList}>
             {filteredHotels.length > 0 ? (
