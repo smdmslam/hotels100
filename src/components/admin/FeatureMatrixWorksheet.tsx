@@ -307,6 +307,9 @@ export const FeatureMatrixWorksheet: React.FC = () => {
   const existingCount = features.filter(f => f.status === 'existing').length;
   const futureCount = features.filter(f => f.status === 'future').length;
 
+  const existingFeatures = filteredFeatures.filter(f => f.status === 'existing');
+  const futureFeatures = filteredFeatures.filter(f => f.status === 'future');
+
   return (
     <div className={styles.container}>
       <header className={styles.worksheetHeader}>
@@ -417,73 +420,181 @@ export const FeatureMatrixWorksheet: React.FC = () => {
             </tr>
           </thead>
           <tbody>
-            {filteredFeatures.map(item => (
-              <tr key={item.id} className={styles.matrixRow}>
-                <td className={styles.featureCell}>
-                  <div className={styles.editableField}>
-                    <input
-                      type="text"
-                      className={styles.editableNameInput}
-                      value={item.name}
-                      onChange={(e) => handleUpdateName(item.id, e.target.value)}
-                      placeholder="Enter feature title..."
-                    />
-                  </div>
-                  <div className={styles.editableField}>
-                    <input
-                      type="text"
-                      className={styles.editableDescInput}
-                      value={item.description}
-                      onChange={(e) => handleUpdateDescription(item.id, e.target.value)}
-                      placeholder="Enter feature description or rationale..."
-                    />
-                  </div>
-                </td>
-                <td className={styles.statusCell}>
-                  <button
-                    type="button"
-                    className={`${styles.statusBadge} ${item.status === 'existing' ? styles.statusExisting : styles.statusFuture}`}
-                    onClick={() => toggleStatus(item.id)}
-                    title="Click to toggle between Existing Live and Future Roadmap"
-                  >
-                    {item.status === 'existing' ? '🟢 Existing' : '🚀 Future'}
-                  </button>
-                </td>
-                <td className={styles.catCell}>
-                  <span className={styles.categoryBadge}>{item.category}</span>
-                </td>
-                <td className={styles.checkCell} onClick={() => toggleTier(item.id, 'free')}>
-                  <div className={`${styles.checkbox} ${item.free ? styles.checkedFree : ''}`}>
-                    {item.free && <Check size={14} />}
-                  </div>
-                </td>
-                <td className={styles.checkCell} onClick={() => toggleTier(item.id, 'sub1')}>
-                  <div className={`${styles.checkbox} ${item.sub1 ? styles.checkedSub1 : ''}`}>
-                    {item.sub1 && <Check size={14} />}
-                  </div>
-                </td>
-                <td className={styles.checkCell} onClick={() => toggleTier(item.id, 'sub2')}>
-                  <div className={`${styles.checkbox} ${item.sub2 ? styles.checkedSub2 : ''}`}>
-                    {item.sub2 && <Check size={14} />}
-                  </div>
-                </td>
-                <td className={styles.checkCell} onClick={() => toggleTier(item.id, 'sub3')}>
-                  <div className={`${styles.checkbox} ${item.sub3 ? styles.checkedSub3 : ''}`}>
-                    {item.sub3 && <Check size={14} />}
-                  </div>
-                </td>
-                <td className={styles.actionCell}>
-                  <button
-                    type="button"
-                    className={styles.deleteBtn}
-                    onClick={() => handleDeleteFeature(item.id)}
-                    title="Delete Feature Row"
-                  >
-                    <Trash2 size={15} />
-                  </button>
-                </td>
-              </tr>
-            ))}
+            {/* Group 1: Existing Live Capabilities */}
+            {(selectedStatus === 'All' || selectedStatus === 'existing') && (
+              <>
+                <tr className={styles.groupHeaderRow}>
+                  <td colSpan={8} className={styles.groupHeaderCell}>
+                    <div className={styles.groupHeaderContent}>
+                      <span className={styles.groupHeaderBadgeExisting}>🟢 Group 1</span>
+                      <strong>Existing Live Capabilities</strong>
+                      <span className={styles.groupHeaderCount}>({existingFeatures.length} features live in platform)</span>
+                    </div>
+                  </td>
+                </tr>
+                {existingFeatures.length === 0 ? (
+                  <tr>
+                    <td colSpan={8} className={styles.emptyGroupCell}>No existing features match your current filter.</td>
+                  </tr>
+                ) : (
+                  existingFeatures.map(item => (
+                    <tr key={item.id} className={styles.matrixRow}>
+                      <td className={styles.featureCell}>
+                        <div className={styles.editableField}>
+                          <input
+                            type="text"
+                            className={styles.editableNameInput}
+                            value={item.name}
+                            onChange={(e) => handleUpdateName(item.id, e.target.value)}
+                            placeholder="Enter feature title..."
+                          />
+                        </div>
+                        <div className={styles.editableField}>
+                          <input
+                            type="text"
+                            className={styles.editableDescInput}
+                            value={item.description}
+                            onChange={(e) => handleUpdateDescription(item.id, e.target.value)}
+                            placeholder="Enter feature description or rationale..."
+                          />
+                        </div>
+                      </td>
+                      <td className={styles.statusCell}>
+                        <button
+                          type="button"
+                          className={`${styles.statusBadge} ${styles.statusExisting}`}
+                          onClick={() => toggleStatus(item.id)}
+                          title="Click to toggle between Existing Live and Future Roadmap"
+                        >
+                          🟢 Existing
+                        </button>
+                      </td>
+                      <td className={styles.catCell}>
+                        <span className={styles.categoryBadge}>{item.category}</span>
+                      </td>
+                      <td className={styles.checkCell} onClick={() => toggleTier(item.id, 'free')}>
+                        <div className={`${styles.checkbox} ${item.free ? styles.checkedFree : ''}`}>
+                          {item.free && <Check size={14} />}
+                        </div>
+                      </td>
+                      <td className={styles.checkCell} onClick={() => toggleTier(item.id, 'sub1')}>
+                        <div className={`${styles.checkbox} ${item.sub1 ? styles.checkedSub1 : ''}`}>
+                          {item.sub1 && <Check size={14} />}
+                        </div>
+                      </td>
+                      <td className={styles.checkCell} onClick={() => toggleTier(item.id, 'sub2')}>
+                        <div className={`${styles.checkbox} ${item.sub2 ? styles.checkedSub2 : ''}`}>
+                          {item.sub2 && <Check size={14} />}
+                        </div>
+                      </td>
+                      <td className={styles.checkCell} onClick={() => toggleTier(item.id, 'sub3')}>
+                        <div className={`${styles.checkbox} ${item.sub3 ? styles.checkedSub3 : ''}`}>
+                          {item.sub3 && <Check size={14} />}
+                        </div>
+                      </td>
+                      <td className={styles.actionCell}>
+                        <button
+                          type="button"
+                          className={styles.deleteBtn}
+                          onClick={() => handleDeleteFeature(item.id)}
+                          title="Delete Feature Row"
+                        >
+                          <Trash2 size={15} />
+                        </button>
+                      </td>
+                    </tr>
+                  ))
+                )}
+              </>
+            )}
+
+            {/* Group 2: Future Roadmap Items */}
+            {(selectedStatus === 'All' || selectedStatus === 'future') && (
+              <>
+                <tr className={styles.groupHeaderRow}>
+                  <td colSpan={8} className={styles.groupHeaderCell}>
+                    <div className={styles.groupHeaderContent}>
+                      <span className={styles.groupHeaderBadgeFuture}>🚀 Group 2</span>
+                      <strong>Future Roadmap Items</strong>
+                      <span className={styles.groupHeaderCount}>({futureFeatures.length} candidate features in backlog)</span>
+                    </div>
+                  </td>
+                </tr>
+                {futureFeatures.length === 0 ? (
+                  <tr>
+                    <td colSpan={8} className={styles.emptyGroupCell}>No future features match your current filter.</td>
+                  </tr>
+                ) : (
+                  futureFeatures.map(item => (
+                    <tr key={item.id} className={styles.matrixRow}>
+                      <td className={styles.featureCell}>
+                        <div className={styles.editableField}>
+                          <input
+                            type="text"
+                            className={styles.editableNameInput}
+                            value={item.name}
+                            onChange={(e) => handleUpdateName(item.id, e.target.value)}
+                            placeholder="Enter feature title..."
+                          />
+                        </div>
+                        <div className={styles.editableField}>
+                          <input
+                            type="text"
+                            className={styles.editableDescInput}
+                            value={item.description}
+                            onChange={(e) => handleUpdateDescription(item.id, e.target.value)}
+                            placeholder="Enter feature description or rationale..."
+                          />
+                        </div>
+                      </td>
+                      <td className={styles.statusCell}>
+                        <button
+                          type="button"
+                          className={`${styles.statusBadge} ${styles.statusFuture}`}
+                          onClick={() => toggleStatus(item.id)}
+                          title="Click to toggle between Existing Live and Future Roadmap"
+                        >
+                          🚀 Future
+                        </button>
+                      </td>
+                      <td className={styles.catCell}>
+                        <span className={styles.categoryBadge}>{item.category}</span>
+                      </td>
+                      <td className={styles.checkCell} onClick={() => toggleTier(item.id, 'free')}>
+                        <div className={`${styles.checkbox} ${item.free ? styles.checkedFree : ''}`}>
+                          {item.free && <Check size={14} />}
+                        </div>
+                      </td>
+                      <td className={styles.checkCell} onClick={() => toggleTier(item.id, 'sub1')}>
+                        <div className={`${styles.checkbox} ${item.sub1 ? styles.checkedSub1 : ''}`}>
+                          {item.sub1 && <Check size={14} />}
+                        </div>
+                      </td>
+                      <td className={styles.checkCell} onClick={() => toggleTier(item.id, 'sub2')}>
+                        <div className={`${styles.checkbox} ${item.sub2 ? styles.checkedSub2 : ''}`}>
+                          {item.sub2 && <Check size={14} />}
+                        </div>
+                      </td>
+                      <td className={styles.checkCell} onClick={() => toggleTier(item.id, 'sub3')}>
+                        <div className={`${styles.checkbox} ${item.sub3 ? styles.checkedSub3 : ''}`}>
+                          {item.sub3 && <Check size={14} />}
+                        </div>
+                      </td>
+                      <td className={styles.actionCell}>
+                        <button
+                          type="button"
+                          className={styles.deleteBtn}
+                          onClick={() => handleDeleteFeature(item.id)}
+                          title="Delete Feature Row"
+                        >
+                          <Trash2 size={15} />
+                        </button>
+                      </td>
+                    </tr>
+                  ))
+                )}
+              </>
+            )}
           </tbody>
         </table>
       </div>
