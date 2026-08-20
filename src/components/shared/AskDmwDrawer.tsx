@@ -29,6 +29,7 @@ export const AskDmwDrawer: React.FC<AskDmwDrawerProps> = ({ isOpen, onClose, ini
   const [isProEngine, setIsProEngine] = useState(aiState.activeMode === 'pro');
   const [isLoading, setIsLoading] = useState(false);
   const [loadingStatus, setLoadingStatus] = useState('');
+  const [matchLimit, setMatchLimit] = useState<3 | 5 | 10>(3);
 
   useEffect(() => {
     const q = initialQuery || aiState.activeQuery;
@@ -134,9 +135,9 @@ export const AskDmwDrawer: React.FC<AskDmwDrawerProps> = ({ isOpen, onClose, ini
         .filter(item => item.score > 0 && item.priceMatch)
         .sort((a, b) => b.score - a.score || a.hotel.rank - b.hotel.rank)
         .map(item => item.hotel)
-        .slice(0, 3);
+        .slice(0, matchLimit);
       })()
-    : allHotels.slice(0, 3);
+    : allHotels.slice(0, matchLimit);
 
   return (
     <>
@@ -258,11 +259,32 @@ export const AskDmwDrawer: React.FC<AskDmwDrawerProps> = ({ isOpen, onClose, ini
           </div>
 
           {/* Section 3: AI Matched Shortlist (3 Tailored Properties) */}
-          <div className={styles.sectionLabel}>
+          <div className={styles.sectionLabel} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
             <span>Recommended AI Shortlist ({filteredHotels.length} matched)</span>
-            <span style={{ fontSize: '10px', color: 'var(--color-stone)' }}>
-              {isProEngine ? 'Enhanced by Perplexity Web Synthesis' : 'Evaluated Across 10 DMW Layers'}
-            </span>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <span style={{ fontSize: '10px', color: 'var(--color-stone)', textTransform: 'uppercase', letterSpacing: '0.08em', fontWeight: 600 }}>Show:</span>
+              {([3, 5, 10] as const).map((num) => (
+                <button
+                  key={num}
+                  type="button"
+                  onClick={() => setMatchLimit(num)}
+                  style={{
+                    padding: '2px 7px',
+                    fontSize: '10px',
+                    fontWeight: 700,
+                    border: '1px solid',
+                    borderColor: matchLimit === num ? 'var(--color-antique-gold)' : 'rgba(18, 18, 18, 0.2)',
+                    background: matchLimit === num ? 'var(--color-ink)' : '#fff',
+                    color: matchLimit === num ? 'var(--color-antique-gold)' : 'var(--color-ink)',
+                    cursor: 'pointer',
+                    borderRadius: '2px'
+                  }}
+                  title={`Show top ${num} matched properties`}
+                >
+                  {num}
+                </button>
+              ))}
+            </div>
           </div>
 
           {isLoading ? (

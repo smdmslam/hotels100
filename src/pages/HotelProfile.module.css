@@ -45,8 +45,26 @@
   transition: opacity 0.2s ease;
 }
 
-.aiShortlistReturnBtn:hover {
-  opacity: 0.9;
+.officialWebsiteBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  background: rgba(197, 160, 89, 0.15);
+  border: 1px solid var(--color-antique-gold);
+  color: var(--color-antique-gold);
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: all 0.2s ease;
+}
+
+.officialWebsiteBtn:hover {
+  background: var(--color-antique-gold);
+  color: var(--color-ink);
 }
 
 .notFound {

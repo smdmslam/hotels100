@@ -14,7 +14,9 @@ import {
   Coffee,
   ConciergeBell,
   Dumbbell,
+  ExternalLink,
   FileText,
+  Globe,
   KeyRound,
   MapPin,
   PawPrint,
@@ -431,7 +433,25 @@ export const HotelProfile: React.FC = () => {
 
           <div className={styles.heroContent}>
             <h1>{hotel.name}</h1>
-            <p className={styles.location}><MapPin size={18} /> {hotel.location.displayLocation}</p>
+            <p className={styles.location}>
+              <MapPin size={18} />{' '}
+              {hotel.location.addressLine1
+                ? `${hotel.location.addressLine1}${hotel.location.postalCode ? `, ${hotel.location.postalCode}` : ''}, ${hotel.location.displayLocation}`
+                : hotel.location.displayLocation}
+            </p>
+            {officialWebsite && (
+              <div style={{ marginTop: '10px', marginBottom: '16px' }}>
+                <a
+                  href={officialWebsite}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.officialWebsiteBtn}
+                  title={`Visit Official Website of ${hotel.name}`}
+                >
+                  <Globe size={14} /> Official Hotel Website <ExternalLink size={13} style={{ marginLeft: 2 }} />
+                </a>
+              </div>
+            )}
             <BlackbookActions hotelId={hotel.id} />
           </div>
         </Container>
