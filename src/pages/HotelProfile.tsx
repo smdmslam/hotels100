@@ -416,21 +416,6 @@ export const HotelProfile: React.FC = () => {
         )}
         <div className={styles.heroShade} aria-hidden="true" />
         <Container variant="wide" className={styles.heroInner}>
-          {aiState.hasActiveSearch && (
-            <div className={styles.aiShortlistBanner}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                <Sparkles size={14} style={{ color: 'var(--color-antique-gold)' }} />
-                <span>Active AI Shortlist: <strong style={{ color: 'var(--color-antique-gold)' }}>"{aiState.activeQuery}"</strong></span>
-              </div>
-              <button 
-                type="button" 
-                onClick={() => openDrawer()} 
-                className={styles.aiShortlistReturnBtn}
-              >
-                Return to Shortlist →
-              </button>
-            </div>
-          )}
           <div className={styles.heroTopBar}>
             <div className={styles.heroMetaGroup}>
               <span className={styles.rank}>DMW 100 · No. {hotel.rank}</span>
@@ -451,6 +436,24 @@ export const HotelProfile: React.FC = () => {
           </div>
         </Container>
       </header>
+
+      {aiState.hasActiveSearch && (
+        <div className={styles.aiShortlistNarrowBand}>
+          <Container variant="wide" className={styles.aiShortlistNarrowInner}>
+            <div className={styles.aiShortlistNarrowLeft}>
+              <Sparkles size={14} style={{ color: 'var(--color-antique-gold)' }} />
+              <span>Active AI Shortlist: <strong style={{ color: 'var(--color-antique-gold)' }}>"{aiState.activeQuery}"</strong></span>
+            </div>
+            <button 
+              type="button" 
+              onClick={() => openDrawer()} 
+              className={styles.aiShortlistReturnBtn}
+            >
+              Return to Shortlist →
+            </button>
+          </Container>
+        </div>
+      )}
 
       <Container variant="wide" className={styles.workspace}>
         <nav className={styles.sectionNav} aria-label="Hotel profile sections">
