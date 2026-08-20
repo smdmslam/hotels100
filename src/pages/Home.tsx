@@ -59,7 +59,7 @@ export const Home: React.FC = () => {
   const previewHotels = globalHotels.slice(0, 5);
   const reportHotels = globalHotels.slice(0, 3);
 
-  // Cycle through sample prompts every 5.5s with smooth fade
+  // Cycle through sample prompts every 10s with smooth fade
   useEffect(() => {
     const timer = setInterval(() => {
       setIsFading(true);
@@ -67,7 +67,7 @@ export const Home: React.FC = () => {
         setPromptIndex((prev) => (prev + 1) % SAMPLE_PROMPTS_STRUCTURED.length);
         setIsFading(false);
       }, 250);
-    }, 5500);
+    }, 10000);
     return () => clearInterval(timer);
   }, []);
 
