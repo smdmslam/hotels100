@@ -240,7 +240,7 @@ export const Home: React.FC = () => {
                 </span>
                 <span className={styles.engineBadgePro}>
                   <Globe size={14} style={{ color: '#38bdf8' }} />
-                  <strong>Hotel Search (AI Plus)</strong>: Full-Site Search + Real-Time Live Web Synthesis
+                  <strong>Hotel Search (AI Plus)</strong>: Full-Site Search + Live Web Synthesis
                 </span>
               </div>
             </div>
