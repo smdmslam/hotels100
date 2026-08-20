@@ -295,6 +295,7 @@ export interface HotelProfile extends Omit<HotelSummary, 'essentialAmenities'> {
   
   links: {
     officialWebsite?: string | null;
+    googleMapsUrl?: string | null;
     bookingUrl?: string | null;
     pressPage?: string | null;
   };

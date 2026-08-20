@@ -166,6 +166,7 @@ export const HotelProfile: React.FC = () => {
   };
 
   const officialWebsite = hotel.links?.officialWebsite;
+  const googleMapsUrl = hotel.links?.googleMapsUrl || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(hotel.name + ' ' + (hotel.location.addressLine1 || '') + ' ' + hotel.location.city)}`;
   const indicativeRate = hotel.indicativeRate?.amount;
 
   const assessmentScore = hotel.scores?.totalScore;
@@ -439,8 +440,8 @@ export const HotelProfile: React.FC = () => {
                 ? `${hotel.location.addressLine1}${hotel.location.postalCode ? `, ${hotel.location.postalCode}` : ''}, ${hotel.location.displayLocation}`
                 : hotel.location.displayLocation}
             </p>
-            {officialWebsite && (
-              <div style={{ marginTop: '10px', marginBottom: '16px' }}>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', marginTop: '12px', marginBottom: '18px' }}>
+              {officialWebsite && (
                 <a
                   href={officialWebsite}
                   target="_blank"
@@ -450,8 +451,17 @@ export const HotelProfile: React.FC = () => {
                 >
                   <Globe size={14} /> Official Hotel Website <ExternalLink size={13} style={{ marginLeft: 2 }} />
                 </a>
-              </div>
-            )}
+              )}
+              <a
+                href={googleMapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.mapsBtn}
+                title={`Open ${hotel.name} in Google Maps`}
+              >
+                <MapPin size={14} style={{ color: 'var(--color-antique-gold)' }} /> Open in Google Maps <ExternalLink size={13} style={{ marginLeft: 2 }} />
+              </a>
+            </div>
             <BlackbookActions hotelId={hotel.id} />
           </div>
         </Container>

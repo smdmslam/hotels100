@@ -67,6 +67,29 @@
   color: var(--color-ink);
 }
 
+.mapsBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(244, 240, 232, 0.3);
+  color: var(--color-ivory);
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: all 0.2s ease;
+}
+
+.mapsBtn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: var(--color-ivory);
+  color: var(--color-ivory);
+}
+
 .notFound {
   padding: var(--space-10) 0;
   text-align: center;
