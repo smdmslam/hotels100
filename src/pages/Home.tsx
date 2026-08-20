@@ -255,8 +255,6 @@ export const Home: React.FC = () => {
                   className={styles.askInputWrapper}
                   onClick={() => inputRef.current?.focus()}
                 >
-                  <Sparkles size={22} className={styles.askInputSparkle} />
-
                   {userQuery ? (
                     <input
                       ref={inputRef}
