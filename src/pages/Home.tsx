@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Award, Sparkles } from 'lucide-react';
 import { Container } from '../components/shared';
@@ -22,14 +22,55 @@ const PUBLIC_COLLECTIONS = [
   },
 ];
 
+const SAMPLE_PROMPTS = [
+  "Find the best-value highly ranked hotels in Zurich",
+  "Quiet Mayfair suite under $600/night with Michelin dining",
+  "St. Moritz ski-in/ski-out hotel with outstanding spa",
+  "Top Paris 1st Arrondissement luxury hotel for business travel",
+  "Swiss Lakes sanctuary with private lake access and gym",
+  "Dubai beachfront resort with private pool villas under $1,200",
+  "London luxury hotel with 24h room service and quiet courtyard",
+  "New York Midtown boutique hotel with high acoustic insulation",
+  "Best Geneva luxury hotel for private family office meetings",
+  "Lake Como grand hotel with lowest off-peak seasonal rates",
+  "Paris palace hotel with exceptional concierge and butler protocol",
+  "Top Zurich hotel near Bahnhofstrasse with 24h fitness center",
+  "Best luxury hotel in Kyoto with traditional garden views",
+  "Mayfair grand hotel with private dining room for 8 guests",
+  "London hotel under $500/night with 5-star amenities",
+  "Swiss Alpine resort with Michelin-starred dining and infinity pool",
+  "Tokyo high-floor suite with quiet acoustic rating and city view",
+  "Miami Beach historic luxury hotel with quiet private cabanas",
+  "Best Milan luxury boutique hotel near fashion district",
+  "Zurich lakefront hotel with private boat shuttle service"
+];
+
 export const Home: React.FC = () => {
   const [askDmwOpen, setAskDmwOpen] = useState(false);
+  const [promptIndex, setPromptIndex] = useState(0);
+  const [userQuery, setUserQuery] = useState('');
+  const [drawerQuery, setDrawerQuery] = useState('');
+
   const indexData = getIndexData();
   const totalHotelsCount = getAllHotels().length;
   const globalCollection = getCollection('the-global-100');
   const globalHotels = globalCollection?.hotels ?? [];
   const previewHotels = globalHotels.slice(0, 5);
   const reportHotels = globalHotels.slice(0, 3);
+
+  // Cycle through sample prompts every 3.5s
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setPromptIndex((prev) => (prev + 1) % SAMPLE_PROMPTS.length);
+    }, 3500);
+    return () => clearInterval(timer);
+  }, []);
+
+  const handleLaunchSearch = (targetQuery?: string) => {
+    const queryToUse = targetQuery || userQuery || SAMPLE_PROMPTS[promptIndex];
+    setDrawerQuery(queryToUse);
+    setAskDmwOpen(true);
+  };
 
   const notationItems = [
     { slug: 'the-global-100', label: 'Global 100 · No. 1' },
@@ -77,10 +118,10 @@ export const Home: React.FC = () => {
                 <button
                   type="button"
                   className={styles.askDmwHeroAction}
-                  onClick={() => setAskDmwOpen(true)}
+                  onClick={() => handleLaunchSearch()}
                 >
                   <Sparkles size={16} style={{ color: 'var(--color-antique-gold)' }} />
-                  <span>ASK DMW AI — AI ADVISORY ENGINE</span>
+                  <span>ASK DMW AI — PERSONALIZED INTENT ENGINE</span>
                 </button>
               </div>
             </div>
@@ -178,24 +219,68 @@ export const Home: React.FC = () => {
         <Container variant="wide">
           <div className={styles.askLayout}>
             <div className={styles.askIntroduction}>
-              <span className={styles.darkEyebrow}>Ask DMW Advisory</span>
-              <h2 id="ask-dmw-title">Build your own shortlist.</h2>
+              <span className={styles.darkEyebrow}>ASK DMW AI — PERSONALIZED INTENT ENGINE</span>
+              <h2 id="ask-dmw-title">Build Your Custom Shortlist.</h2>
               <p>
-                Describe the hotel, destination, price or experience you need.
-                Ask DMW will build a ranked shortlist using the intelligence in
-                our index.
+                Static leaderboards demonstrate domain authority, but your travel needs are specific. Describe your destination, acoustic priorities, budget, or dining preferences below to query our 326 evaluated luxury assets.
               </p>
+
+              <div className={styles.engineBadgesRow}>
+                <span className={styles.engineBadgeFast}>
+                  ⚡ <strong>Fast AI</strong>: Instant 10-Dimension Scorecard Match
+                </span>
+                <span className={styles.engineBadgePro}>
+                  🌐 <strong>Pro AI Web</strong>: Live Web Synthesis &amp; Availability
+                </span>
+              </div>
             </div>
 
-            <div className={styles.askDemo} aria-label="Ask DMW preview">
-              <div className={styles.promptPreview}>
-                <span>Find the best-value highly ranked hotels in Zurich</span>
-                <span className={styles.promptArrow} aria-hidden="true">→</span>
-              </div>
-              <div className={styles.promptExamples}>
-                <span>London under $500</span>
-                <span>Lakeside hotels for summer</span>
-                <span>Paris for business travel</span>
+            <div className={styles.askDemo} aria-label="Ask DMW interactive intent search">
+              <form
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  handleLaunchSearch();
+                }}
+                className={styles.askSearchForm}
+              >
+                <div className={styles.askInputWrapper}>
+                  <Sparkles size={20} className={styles.askInputSparkle} />
+                  <input
+                    type="text"
+                    className={styles.askSearchInput}
+                    value={userQuery}
+                    onChange={(e) => setUserQuery(e.target.value)}
+                    placeholder={SAMPLE_PROMPTS[promptIndex]}
+                    aria-label="Describe your target hotel or travel preferences"
+                  />
+                  <button
+                    type="submit"
+                    className={styles.askSubmitButton}
+                    title="Execute AI Search & Build Shortlist"
+                  >
+                    <span aria-hidden="true">→</span>
+                  </button>
+                </div>
+              </form>
+
+              <div className={styles.promptPresetPills}>
+                <span className={styles.pillsLabel}>Sample Prompts:</span>
+                {[
+                  "Zurich business under $500",
+                  "Mayfair Michelin dining",
+                  "St. Moritz Ski & Spa",
+                  "Paris Palace Suites",
+                  "Lake Como Off-Peak"
+                ].map((pillText) => (
+                  <button
+                    key={pillText}
+                    type="button"
+                    className={styles.presetPillButton}
+                    onClick={() => handleLaunchSearch(pillText)}
+                  >
+                    {pillText} ↗
+                  </button>
+                ))}
               </div>
             </div>
           </div>
@@ -255,7 +340,7 @@ export const Home: React.FC = () => {
           </div>
         </Container>
       </section>
-      <AskDmwDrawer isOpen={askDmwOpen} onClose={() => setAskDmwOpen(false)} />
+      <AskDmwDrawer isOpen={askDmwOpen} onClose={() => setAskDmwOpen(false)} initialQuery={drawerQuery} />
     </main>
   );
 };

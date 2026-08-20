@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { X, Sparkles, Compass, ShieldCheck, Globe } from 'lucide-react';
 import { getAllHotels } from '../../data/api';
@@ -20,10 +20,18 @@ const PRESET_PROMPTS = [
 ];
 
 export const AskDmwDrawer: React.FC<AskDmwDrawerProps> = ({ isOpen, onClose, initialQuery = '' }) => {
-  const [query, setQuery] = useState(initialQuery || 'Zurich business trip for 3 nights, quiet room, proper gym, under $500');
-  const [activeQuery, setActiveQuery] = useState(initialQuery || 'Zurich business trip for 3 nights, quiet room, proper gym, under $500');
+  const defaultPrompt = initialQuery || 'Zurich business trip for 3 nights, quiet room, proper gym, under $500';
+  const [query, setQuery] = useState(defaultPrompt);
+  const [activeQuery, setActiveQuery] = useState(defaultPrompt);
   const [showProTooltip, setShowProTooltip] = useState(false);
   const [isProEngine, setIsProEngine] = useState(false);
+
+  useEffect(() => {
+    if (initialQuery) {
+      setQuery(initialQuery);
+      setActiveQuery(initialQuery);
+    }
+  }, [initialQuery, isOpen]);
 
   if (!isOpen) return null;
 

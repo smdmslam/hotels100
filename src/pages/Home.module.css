@@ -476,43 +476,137 @@
   line-height: 1.6;
 }
 
-.askDemo {
-  border-top: 1px solid rgba(244, 240, 232, 0.42);
+.engineBadgesRow {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: var(--space-5);
 }
 
-.promptPreview {
+.engineBadgeFast,
+.engineBadgePro {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  border-radius: 2px;
+  max-width: max-content;
+}
+
+.engineBadgeFast {
+  background: rgba(197, 160, 89, 0.15);
+  border: 1px solid rgba(197, 160, 89, 0.35);
+  color: var(--color-antique-gold);
+}
+
+.engineBadgePro {
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  color: #38bdf8;
+}
+
+.askDemo {
+  padding-top: var(--space-2);
+}
+
+.askSearchForm {
+  width: 100%;
+}
+
+.askInputWrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: var(--space-5);
-  min-height: 118px;
-  border-bottom: 1px solid rgba(244, 240, 232, 0.42);
+  gap: 14px;
+  padding: 12px 18px;
+  background: rgba(10, 10, 9, 0.85);
+  border: 1px solid var(--color-antique-gold);
+  border-radius: 2px;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.askInputWrapper:focus-within {
+  border-color: #fff;
+  box-shadow: 0 0 25px rgba(197, 160, 89, 0.3);
+}
+
+.askInputSparkle {
+  color: var(--color-antique-gold);
+  flex-shrink: 0;
+}
+
+.askSearchInput {
+  flex: 1;
+  background: transparent;
+  border: 0;
   color: var(--color-ivory);
   font-family: var(--font-serif);
-  font-size: clamp(1.65rem, 2.5vw, 3rem);
-  line-height: 1.15;
+  font-size: clamp(1.15rem, 1.8vw, 1.55rem);
+  line-height: 1.25;
+  outline: none;
 }
 
-.promptArrow {
+.askSearchInput::placeholder {
+  color: rgba(244, 240, 232, 0.5);
+  font-style: italic;
+  transition: opacity 0.3s ease;
+}
+
+.askSubmitButton {
   display: grid;
-  flex: 0 0 48px;
-  width: 48px;
-  height: 48px;
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
   place-items: center;
-  border: 1px solid rgba(244, 240, 232, 0.5);
-  border-radius: 50%;
+  background: var(--color-antique-gold);
+  border: 0;
+  color: var(--color-ink);
   font-family: var(--font-sans);
   font-size: 1.35rem;
+  font-weight: 700;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
 
-.promptExamples {
+.askSubmitButton:hover {
+  background: #d4ac5e;
+  transform: scale(1.05);
+}
+
+.promptPresetPills {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
-  gap: var(--space-3) var(--space-5);
-  padding-top: var(--space-4);
-  color: rgba(244, 240, 232, 0.52);
+  gap: 8px 12px;
+  margin-top: var(--space-4);
+}
+
+.pillsLabel {
+  color: var(--color-stone);
   font-family: var(--font-sans);
-  font-size: var(--type-small);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.presetPillButton {
+  padding: 6px 14px;
+  background: rgba(244, 240, 232, 0.06);
+  border: 1px solid rgba(244, 240, 232, 0.16);
+  color: rgba(244, 240, 232, 0.85);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.2s ease;
+}
+
+.presetPillButton:hover {
+  background: rgba(197, 160, 89, 0.2);
+  border-color: var(--color-antique-gold);
+  color: var(--color-ivory);
 }
 
 .reportsHeader {
