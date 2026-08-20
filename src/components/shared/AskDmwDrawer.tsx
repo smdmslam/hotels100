@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { X, Sparkles, Compass, ShieldCheck, Globe } from 'lucide-react';
+import { X, Sparkles, Globe, ShieldCheck, Compass } from 'lucide-react';
 import { getAllHotels } from '../../data/api';
+import { useAiDecision } from '../../context/AiDecisionContext';
 import type { HotelSummary } from '../../data/types';
 import styles from './AskDmwDrawer.module.css';
 
@@ -13,27 +14,30 @@ interface AskDmwDrawerProps {
 
 const PRESET_PROMPTS = [
   { label: '💼 Zurich Business under $500', prompt: 'Zurich business trip for 3 nights, quiet room, proper gym, under $500' },
-  { label: '🎩 Mayfair Butler Suites', prompt: 'London Mayfair suites with private butler service and quiet aspect' },
-  { label: '🏔️ Swiss Lakes & Léman Sanctuary', prompt: 'Swiss Lakes & Léman luxury resort sanctuary with lakefront views' },
-  { label: '🌴 Dubai Beach & High-ADR', prompt: 'Dubai high-ADR luxury resort with private beach and quiet pool' },
-  { label: '🇫🇷 Paris Palace & Michelin Dining', prompt: 'Paris luxury palace hotel with Michelin dining and central location' },
+  { label: '🎩 Mayfair Butler Suites', prompt: 'London Mayfair grand hotel with 24h butler protocol and private dining' },
+  { label: '🏔️ Swiss Lakes & Léman Sanctuary', prompt: 'Swiss Lakes sanctuary with private lake access, spa, and Michelin dining' },
+  { label: '🌴 Dubai Beach & High-ADR', prompt: 'Dubai beachfront resort with private pool villas under $1,200' },
+  { label: '🇫🇷 Paris Palace & Michelin Dining', prompt: 'Paris palace hotel with 3-star Michelin dining and quiet court aspect' },
 ];
 
 export const AskDmwDrawer: React.FC<AskDmwDrawerProps> = ({ isOpen, onClose, initialQuery = '' }) => {
-  const defaultPrompt = initialQuery || 'Zurich business trip for 3 nights, quiet room, proper gym, under $500';
+  const { state: aiState, saveSearchState } = useAiDecision();
+  const defaultPrompt = initialQuery || aiState.activeQuery || 'Zurich business trip for 3 nights, quiet room, proper gym, under $500';
   const [query, setQuery] = useState(defaultPrompt);
   const [activeQuery, setActiveQuery] = useState(defaultPrompt);
   const [showProTooltip, setShowProTooltip] = useState(false);
-  const [isProEngine, setIsProEngine] = useState(false);
+  const [isProEngine, setIsProEngine] = useState(aiState.activeMode === 'pro');
   const [isLoading, setIsLoading] = useState(false);
   const [loadingStatus, setLoadingStatus] = useState('');
 
   useEffect(() => {
-    if (initialQuery) {
-      setQuery(initialQuery);
-      setActiveQuery(initialQuery);
+    const q = initialQuery || aiState.activeQuery;
+    if (q) {
+      setQuery(q);
+      setActiveQuery(q);
+      setIsProEngine(aiState.activeMode === 'pro');
     }
-  }, [initialQuery, isOpen]);
+  }, [initialQuery, aiState.activeQuery, aiState.activeMode, isOpen]);
 
   if (!isOpen) return null;
 
@@ -44,6 +48,8 @@ export const AskDmwDrawer: React.FC<AskDmwDrawerProps> = ({ isOpen, onClose, ini
     setIsLoading(true);
     setIsProEngine(mode === 'pro');
     setShowProTooltip(false);
+
+    saveSearchState(q, mode);
 
     if (mode === 'pro') {
       setLoadingStatus('🌐 Synthesizing live web rates, current event compression & 326 DMW scorecards via Perplexity API...');

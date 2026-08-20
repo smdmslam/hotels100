@@ -34,6 +34,7 @@ import { BlackbookActions } from '../components/hotel/BlackbookActions';
 import { SpecialPackages } from '../components/hotel/SpecialPackages';
 import { InsiderReport } from '../components/hotel/InsiderReport';
 import { getCollection, getHotelProfile } from '../data/api';
+import { useAiDecision } from '../context/AiDecisionContext';
 import styles from './HotelProfile.module.css';
 
 type ProfileSection =
@@ -126,6 +127,7 @@ export const HotelProfile: React.FC = () => {
   const hotel = getHotelProfile(slug);
   const collection = getCollection(collectionSlug);
   const [activeSection, setActiveSection] = useState<ProfileSection>('assessment');
+  const { state: aiState, openDrawer } = useAiDecision();
 
   if (!hotel) {
     return (
@@ -414,6 +416,21 @@ export const HotelProfile: React.FC = () => {
         )}
         <div className={styles.heroShade} aria-hidden="true" />
         <Container variant="wide" className={styles.heroInner}>
+          {aiState.hasActiveSearch && (
+            <div className={styles.aiShortlistBanner}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <Sparkles size={14} style={{ color: 'var(--color-antique-gold)' }} />
+                <span>Active AI Shortlist: <strong style={{ color: 'var(--color-antique-gold)' }}>"{aiState.activeQuery}"</strong></span>
+              </div>
+              <button 
+                type="button" 
+                onClick={() => openDrawer()} 
+                className={styles.aiShortlistReturnBtn}
+              >
+                Return to Shortlist →
+              </button>
+            </div>
+          )}
           <div className={styles.heroTopBar}>
             <div className={styles.heroMetaGroup}>
               <span className={styles.rank}>DMW 100 · No. {hotel.rank}</span>

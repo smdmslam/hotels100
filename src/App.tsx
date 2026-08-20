@@ -9,30 +9,33 @@ import { Insights } from './pages/Insights';
 import { Login } from './pages/Login';
 import { Admin } from './pages/Admin';
 import { AuthProvider } from './context/AuthContext';
+import { AiDecisionProvider } from './context/AiDecisionContext';
 
 function App() {
   return (
     <AuthProvider>
-      <Router>
-        <div className="app-wrapper" style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-          <SiteHeader />
-          <main>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/login" element={<Login />} />
-              <Route path="/admin" element={<Admin />} />
-              <Route path="/the-100" element={<Navigate to="/collections/the-global-100" replace />} />
-              <Route path="/collections/:slug" element={<CollectionIndex />} />
-              <Route path="/hotels/:slug" element={<HotelProfile />} />
-              <Route path="/insights" element={<Insights />} />
-              <Route path="/insights/:slug" element={<div>Strategic Feature</div>} />
-              <Route path="/methodology" element={<Methodology />} />
-              <Route path="/about" element={<About />} />
-            </Routes>
-          </main>
-          <SiteFooter />
-        </div>
-      </Router>
+      <AiDecisionProvider>
+        <Router>
+          <div className="app-wrapper" style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+            <SiteHeader />
+            <main>
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/admin" element={<Admin />} />
+                <Route path="/the-100" element={<Navigate to="/collections/the-global-100" replace />} />
+                <Route path="/collections/:slug" element={<CollectionIndex />} />
+                <Route path="/hotels/:slug" element={<HotelProfile />} />
+                <Route path="/insights" element={<Insights />} />
+                <Route path="/insights/:slug" element={<div>Strategic Feature</div>} />
+                <Route path="/methodology" element={<Methodology />} />
+                <Route path="/about" element={<About />} />
+              </Routes>
+            </main>
+            <SiteFooter />
+          </div>
+        </Router>
+      </AiDecisionProvider>
     </AuthProvider>
   );
 }

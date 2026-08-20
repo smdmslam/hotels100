@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Award, Sparkles, Globe } from 'lucide-react';
 import { Container } from '../components/shared';
-import { AskDmwDrawer } from '../components/shared/AskDmwDrawer';
+import { useAiDecision } from '../context/AiDecisionContext';
 import { getCollection, getIndexData, getAllHotels } from '../data/api';
 import styles from './Home.module.css';
 
@@ -46,11 +46,10 @@ const SAMPLE_PROMPTS_STRUCTURED = [
 ];
 
 export const Home: React.FC = () => {
-  const [askDmwOpen, setAskDmwOpen] = useState(false);
+  const { openDrawer } = useAiDecision();
   const [promptIndex, setPromptIndex] = useState(0);
   const [isFading, setIsFading] = useState(false);
   const [userQuery, setUserQuery] = useState('');
-  const [drawerQuery, setDrawerQuery] = useState('');
   const inputRef = React.useRef<HTMLInputElement>(null);
 
   const indexData = getIndexData();
@@ -74,10 +73,9 @@ export const Home: React.FC = () => {
 
   const currentPrompt = SAMPLE_PROMPTS_STRUCTURED[promptIndex];
 
-  const handleLaunchSearch = (targetQuery?: string) => {
+  const handleLaunchSearch = (targetQuery?: string, mode: 'index' | 'pro' = 'index') => {
     const queryToUse = targetQuery || userQuery || currentPrompt.raw;
-    setDrawerQuery(queryToUse);
-    setAskDmwOpen(true);
+    openDrawer(queryToUse, mode);
   };
 
   const notationItems = [
@@ -368,7 +366,6 @@ export const Home: React.FC = () => {
           </div>
         </Container>
       </section>
-      <AskDmwDrawer isOpen={askDmwOpen} onClose={() => setAskDmwOpen(false)} initialQuery={drawerQuery} />
     </main>
   );
 };

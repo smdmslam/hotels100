@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Search, Menu, X, User } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
+import { useAiDecision } from '../../context/AiDecisionContext';
 import { auth } from '../../lib/firebase';
 import { Container } from './Container';
 import { AskDmwDrawer } from './AskDmwDrawer';
@@ -13,7 +14,7 @@ interface SiteHeaderProps {
 
 export const SiteHeader: React.FC<SiteHeaderProps> = ({ variant = 'light' }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isAskDmwOpen, setIsAskDmwOpen] = useState(false);
+  const { isDrawerOpen, openDrawer, closeDrawer, state } = useAiDecision();
   const location = useLocation();
   const { user } = useAuth();
 
@@ -70,9 +71,26 @@ export const SiteHeader: React.FC<SiteHeaderProps> = ({ variant = 'light' }) => 
             <button 
               className={styles.iconButton} 
               aria-label="Ask DMW Search"
-              onClick={() => setIsAskDmwOpen(true)}
+              title={state.hasActiveSearch ? `Active AI Search: "${state.activeQuery}"` : "Luxury Hotel Decision Engine"}
+              onClick={() => openDrawer()}
+              style={{ position: 'relative' }}
             >
               <Search size={20} strokeWidth={1.5} />
+              {state.hasActiveSearch && (
+                <span 
+                  style={{
+                    position: 'absolute',
+                    top: 2,
+                    right: 2,
+                    width: 7,
+                    height: 7,
+                    borderRadius: '50%',
+                    background: 'var(--color-antique-gold)',
+                    boxShadow: '0 0 8px var(--color-antique-gold)'
+                  }} 
+                  title="Active AI Search Results Available"
+                />
+              )}
             </button>
             <button 
               className={`${styles.iconButton} ${styles.mobileMenuToggle}`} 
@@ -106,7 +124,7 @@ export const SiteHeader: React.FC<SiteHeaderProps> = ({ variant = 'light' }) => 
         </div>
       )}
 
-      <AskDmwDrawer isOpen={isAskDmwOpen} onClose={() => setIsAskDmwOpen(false)} />
+      <AskDmwDrawer isOpen={isDrawerOpen} onClose={closeDrawer} />
     </header>
   );
 };
