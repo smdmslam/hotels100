@@ -186,13 +186,22 @@ const DEFAULT_FEATURES: FeatureMatrixItem[] = [
   }
 ];
 
-const STORAGE_KEY = 'dmw_subscription_feature_matrix_v1';
+const STORAGE_KEY = 'dmw_subscription_feature_matrix_v2';
 
 export const FeatureMatrixWorksheet: React.FC = () => {
   const [features, setFeatures] = useState<FeatureMatrixItem[]>(() => {
     try {
-      const saved = localStorage.getItem(STORAGE_KEY);
-      if (saved) return JSON.parse(saved);
+      const saved = localStorage.getItem(STORAGE_KEY) || localStorage.getItem('dmw_subscription_feature_matrix_v1');
+      if (saved) {
+        const parsed: FeatureMatrixItem[] = JSON.parse(saved);
+        return parsed.map(item => {
+          const defaultMatch = DEFAULT_FEATURES.find(d => d.id === item.id);
+          return {
+            ...item,
+            status: item.status || defaultMatch?.status || 'existing'
+          };
+        });
+      }
     } catch (e) {
       console.error('Failed to load feature matrix from localStorage:', e);
     }
