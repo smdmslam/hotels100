@@ -227,7 +227,7 @@ export const Home: React.FC = () => {
         <Container variant="wide">
           <div className={styles.askLayout}>
             <div className={styles.askIntroduction}>
-              <span className={styles.darkEyebrow}>DMW INTELLIGENCE SEARCH</span>
+              <span className={styles.darkEyebrow}>DMW HOTELS 100</span>
               <h2 id="ask-dmw-title">Luxury Hotel Decision Engine.</h2>
               <p>
                 Describe your destination, suite needs, acoustic priorities, or budget below. Our decision engine queries 326 evaluated trophy assets to generate your exact property match.
