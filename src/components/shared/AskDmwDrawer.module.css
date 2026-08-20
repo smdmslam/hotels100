@@ -330,40 +330,41 @@
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
-  padding: 8px 16px;
+  padding: 6px 14px;
   background: var(--color-ink);
   color: var(--color-ivory);
   border: 1px solid var(--color-antique-gold);
   border-radius: 2px;
-  min-width: 100px;
+  min-width: 105px;
   text-align: right;
   flex-shrink: 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
-.scoreBadgeRank {
-  font-family: var(--font-serif);
-  font-size: 1.35rem;
+.scoreBadgeTopLabel {
+  font-family: var(--font-sans);
+  font-size: 10px;
   font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
   color: var(--color-antique-gold);
-  line-height: 1.1;
-  letter-spacing: -0.01em;
 }
 
-.scoreBadgeNum {
+.scoreBadgeMainValue {
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  font-weight: 600;
+  color: var(--color-ivory);
+  line-height: 1.1;
+  margin-top: 1px;
+}
+
+.scoreBadgeScale {
   font-family: var(--font-sans);
   font-size: 0.75rem;
   font-weight: 500;
-  color: rgba(244, 240, 232, 0.75);
-  margin-top: 2px;
-  white-space: nowrap;
-}
-
-.scoreBadgeNum strong {
-  font-family: var(--font-sans);
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--color-ivory);
+  color: rgba(244, 240, 232, 0.65);
+  margin-left: 2px;
 }
 
 .resultLocation {

@@ -282,13 +282,13 @@ export const AskDmwDrawer: React.FC<AskDmwDrawerProps> = ({ isOpen, onClose, ini
                       </p>
                     </div>
                     <div className={styles.scoreBadgeBox}>
-                      <span className={styles.scoreBadgeRank}>No. {hotel.rank}</span>
+                      <span className={styles.scoreBadgeTopLabel}>No. {hotel.rank} · Score</span>
                       {hotel.scores?.totalScore ? (
-                        <span className={styles.scoreBadgeNum}>
-                          <strong>{hotel.scores.totalScore.toFixed(1)}</strong> / 100
+                        <span className={styles.scoreBadgeMainValue}>
+                          {hotel.scores.totalScore.toFixed(1)}<span className={styles.scoreBadgeScale}>/100</span>
                         </span>
                       ) : (
-                        <span className={styles.scoreBadgeNum}>DMW Verified</span>
+                        <span className={styles.scoreBadgeMainValue}>Verified</span>
                       )}
                     </div>
                   </div>
