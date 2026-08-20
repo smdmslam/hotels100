@@ -129,7 +129,7 @@ export const Home: React.FC = () => {
                   onClick={() => handleLaunchSearch()}
                 >
                   <Sparkles size={16} style={{ color: 'var(--color-antique-gold)' }} />
-                  <span>ASK DMW AI — PERSONALIZED INTENT ENGINE</span>
+                  <span>LUXURY HOTEL DECISION ENGINE</span>
                 </button>
               </div>
             </div>
@@ -227,10 +227,10 @@ export const Home: React.FC = () => {
         <Container variant="wide">
           <div className={styles.askLayout}>
             <div className={styles.askIntroduction}>
-              <span className={styles.darkEyebrow}>ASK DMW AI — PERSONALIZED INTENT ENGINE</span>
-              <h2 id="ask-dmw-title">Build Your Custom Shortlist.</h2>
+              <span className={styles.darkEyebrow}>DMW INTELLIGENCE SEARCH</span>
+              <h2 id="ask-dmw-title">Luxury Hotel Decision Engine.</h2>
               <p>
-                Static leaderboards demonstrate domain authority, but your travel needs are specific. Describe your destination, acoustic priorities, budget, or dining preferences below to query our 326 evaluated luxury assets.
+                Describe your destination, suite needs, acoustic priorities, or budget below. Our decision engine queries 326 evaluated trophy assets to generate your exact property match.
               </p>
 
               <div className={styles.engineBadgesRow}>

@@ -125,9 +125,9 @@ export const AskDmwDrawer: React.FC<AskDmwDrawerProps> = ({ isOpen, onClose, ini
           <div className={styles.titleGroup}>
             <span className={styles.badge}>
               <Sparkles size={13} />
-              DMW AI Advisory Engine
+              DMW Intelligence Engine
             </span>
-            <h2 className={styles.title}>ASK DMW AI — DECISION DESK</h2>
+            <h2 className={styles.title}>LUXURY HOTEL DECISION ENGINE</h2>
           </div>
           <button type="button" className={styles.closeButton} onClick={onClose} aria-label="Close drawer">
             <X size={18} />
@@ -135,14 +135,14 @@ export const AskDmwDrawer: React.FC<AskDmwDrawerProps> = ({ isOpen, onClose, ini
         </header>
 
         <div className={styles.content}>
-          {/* Section 1: Executive Preface (Detailed DMW Intelligence Layers) */}
+          {/* Section 1: Executive Preface */}
           <div className={styles.prefaceCard}>
             <h3 className={styles.prefaceTitle}>
               <Compass size={18} style={{ color: 'var(--color-antique-gold)' }} />
-              What is the DMW AI Advisory Engine?
+              What is the Luxury Hotel Decision Engine?
             </h3>
             <p className={styles.prefaceText}>
-              Our decision engine evaluates 310+ trophy assets across DMW’s complete intelligence database—including our <strong>10 granular dimension scorecards</strong> (hospitality execution, acoustics &amp; soundproofing, wellness &amp; gym quality, hard product, dining credentials), <strong>5-part Insider Reports</strong> (exact room numbers to book vs avoid, operational quirks, clientele lore), <strong>rate curve seasonality</strong> (off-peak value windows vs peak compression surges), and <strong>micro-geographic positioning</strong>. Describe your trip requirements in plain language to generate your tailored 3-property shortlist.
+              Our decision engine evaluates 326 trophy assets across DMW’s complete intelligence database—including our <strong>10 granular dimension scorecards</strong> (hospitality execution, acoustics &amp; soundproofing, wellness &amp; gym quality, hard product, dining credentials), <strong>5-part Insider Reports</strong> (exact room numbers to book vs avoid, operational quirks, clientele lore), <strong>rate curve seasonality</strong> (off-peak value windows vs peak compression surges), and <strong>micro-geographic positioning</strong>. Describe your trip requirements in plain language to generate your tailored shortlist.
             </p>
           </div>
 
