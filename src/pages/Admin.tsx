@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-import { RefreshCw, Plus, Download, Sparkles, X, ShieldCheck, BookOpen, HelpCircle, Users, Target, DollarSign, Zap, FileText, Share2 } from 'lucide-react';
+import { RefreshCw, Plus, Download, Sparkles, X, ShieldCheck, BookOpen, HelpCircle, Users, Target, DollarSign, Zap, FileText, Share2, Sliders } from 'lucide-react';
 import { Container } from '../components/shared';
 import { getAllHotels, getAllCollections } from '../data/api';
 import type { HotelSummary, Archetype } from '../data/types';
+import { FeatureMatrixWorksheet } from '../components/admin/FeatureMatrixWorksheet';
 import styles from './Admin.module.css';
 
 export const Admin: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<'operations' | 'faq' | 'publishing'>('operations');
+  const [activeTab, setActiveTab] = useState<'operations' | 'publishing' | 'subscription-strategy' | 'faq'>('operations');
   const [hotels, setHotels] = useState<HotelSummary[]>(getAllHotels());
   const collections = getAllCollections();
   const [searchTerm, setSearchTerm] = useState('');
@@ -120,9 +121,9 @@ export const Admin: React.FC = () => {
             <ShieldCheck size={14} style={{ display: 'inline', marginRight: 6 }} />
             DMW Executive Admin Portal
           </span>
-          <h1 className={styles.title}>Index Operations &amp; Research Desk</h1>
+          <h1 className={styles.title}>Index Operations &amp; Strategy Desk</h1>
           <p className={styles.subtitle}>
-            Control panel for index recalculations, Perplexity AI research runs, hotel candidate management, and advisory lead export.
+            Control panel for index recalculations, Perplexity AI research runs, subscription feature matrix mapping, and LinkedIn publishing.
           </p>
         </header>
 
@@ -137,11 +138,19 @@ export const Admin: React.FC = () => {
           </button>
           <button
             type="button"
+            className={`${styles.tabButton} ${activeTab === 'subscription-strategy' ? styles.tabActive : ''}`}
+            onClick={() => setActiveTab('subscription-strategy')}
+          >
+            <Sliders size={14} style={{ display: 'inline', marginRight: 6 }} />
+            Subscription Feature Matrix
+          </button>
+          <button
+            type="button"
             className={`${styles.tabButton} ${activeTab === 'publishing' ? styles.tabActive : ''}`}
             onClick={() => setActiveTab('publishing')}
           >
             <Share2 size={14} style={{ display: 'inline', marginRight: 6 }} />
-            Publishing &amp; LinkedIn Carousel Desk
+            Publishing &amp; Carousel Desk
           </button>
           <button
             type="button"
@@ -149,7 +158,7 @@ export const Admin: React.FC = () => {
             onClick={() => setActiveTab('faq')}
           >
             <BookOpen size={14} style={{ display: 'inline', marginRight: 6 }} />
-            Strategy &amp; Operating Playbook FAQ
+            Operating Strategy Playbook
           </button>
         </nav>
 
@@ -266,6 +275,8 @@ export const Admin: React.FC = () => {
           </div>
         </section>
         </>
+        ) : activeTab === 'subscription-strategy' ? (
+          <FeatureMatrixWorksheet />
         ) : activeTab === 'publishing' ? (
           <div className={styles.faqGrid}>
             <article className={styles.faqCard} style={{ border: '1px solid var(--color-antique-gold)' }}>
