@@ -6,7 +6,8 @@ import {
   YAxis, 
   CartesianGrid, 
   Tooltip, 
-  ResponsiveContainer
+  ResponsiveContainer,
+  ReferenceLine
 } from 'recharts';
 import type { PricingIntelligence } from '../../data/types';
 import styles from './PriceCurveChart.module.css';
@@ -65,6 +66,7 @@ export const PriceCurveChart: React.FC<PriceCurveChartProps> = ({ pricing, hotel
       monthLabel: pt.tenor || (pt.date ? new Date(pt.date).toLocaleDateString('en-US', { month: 'short' }) : '')
     }));
 
+  const currentMonthLabel = new Date().toLocaleDateString('en-US', { month: 'short' }); // e.g., "Aug"
   const medianVal = pricing.summaryStats?.medianObserved || pricing.medianObservedRate || Math.round(sortedData.reduce((acc, p) => acc + p.rate, 0) / sortedData.length);
   const highestVal = pricing.summaryStats?.highestObserved || pricing.highestObservedRate || Math.max(...sortedData.map(p => p.rate));
 
@@ -92,7 +94,7 @@ export const PriceCurveChart: React.FC<PriceCurveChartProps> = ({ pricing, hotel
       
       <div className={styles.chartWrapper}>
         <ResponsiveContainer width="100%" height={320}>
-          <LineChart data={sortedData} margin={{ top: 25, right: 30, left: 20, bottom: 25 }}>
+          <LineChart data={sortedData} margin={{ top: 30, right: 30, left: 20, bottom: 25 }}>
             <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="rgba(18, 18, 18, 0.12)" />
             <XAxis 
               dataKey="monthLabel" 
@@ -110,6 +112,22 @@ export const PriceCurveChart: React.FC<PriceCurveChartProps> = ({ pricing, hotel
               dx={-10}
             />
             <Tooltip content={<CustomTooltip />} />
+            <ReferenceLine 
+              x={currentMonthLabel} 
+              stroke="#C5A059" 
+              strokeDasharray="4 4" 
+              strokeWidth={1.5}
+              label={{ 
+                value: 'TODAY', 
+                position: 'top', 
+                fill: '#C5A059', 
+                fontSize: 10, 
+                fontFamily: 'Inter, sans-serif', 
+                fontWeight: 700,
+                letterSpacing: '0.08em',
+                dy: -8
+              }} 
+            />
             <Line 
               type="monotone" 
               dataKey="rate" 
