@@ -213,12 +213,85 @@
   margin-bottom: 4px;
 }
 
-.featureCell p {
-  margin: 0;
+.editableField {
+  margin-bottom: 4px;
+}
+
+.editableNameInput {
+  width: 100%;
+  padding: 4px 8px;
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--color-ivory);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 2px;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.editableNameInput:hover {
+  border-color: rgba(244, 240, 232, 0.2);
+  background: rgba(244, 240, 232, 0.04);
+}
+
+.editableNameInput:focus {
+  border-color: var(--color-antique-gold);
+  background: rgba(18, 18, 18, 0.9);
+  outline: none;
+}
+
+.editableDescInput {
+  width: 100%;
+  padding: 4px 8px;
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--color-stone);
   font-family: var(--font-sans);
   font-size: 12px;
+  border-radius: 2px;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.editableDescInput:hover {
+  border-color: rgba(244, 240, 232, 0.15);
+  background: rgba(244, 240, 232, 0.04);
+  color: var(--color-ivory);
+}
+
+.editableDescInput:focus {
+  border-color: var(--color-antique-gold);
+  background: rgba(18, 18, 18, 0.9);
+  color: var(--color-ivory);
+  outline: none;
+}
+
+.actionCol {
+  width: 6%;
+  text-align: center;
+}
+
+.actionCell {
+  padding: 16px 12px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.deleteBtn {
+  background: transparent;
+  border: 0;
   color: var(--color-stone);
-  line-height: 1.4;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 2px;
+  transition: all 0.2s ease;
+}
+
+.deleteBtn:hover {
+  color: #ef4444;
+  background: rgba(239, 68, 68, 0.1);
 }
 
 .catCell {

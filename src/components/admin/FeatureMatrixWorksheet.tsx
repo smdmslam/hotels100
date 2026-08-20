@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Copy, Check, RotateCcw, Filter } from 'lucide-react';
+import { Copy, Check, RotateCcw, Filter, Plus, Trash2 } from 'lucide-react';
 import styles from './FeatureMatrixWorksheet.module.css';
 
 export interface FeatureMatrixItem {
@@ -199,8 +199,37 @@ export const FeatureMatrixWorksheet: React.FC = () => {
     }));
   };
 
+  const handleUpdateName = (id: string, newName: string) => {
+    setFeatures(prev => prev.map(item => item.id === id ? { ...item, name: newName } : item));
+  };
+
+  const handleUpdateDescription = (id: string, newDesc: string) => {
+    setFeatures(prev => prev.map(item => item.id === id ? { ...item, description: newDesc } : item));
+  };
+
+  const handleAddCustomFeature = () => {
+    const newId = `custom-feature-${Date.now()}`;
+    const newItem: FeatureMatrixItem = {
+      id: newId,
+      name: 'New Custom Strategy Feature',
+      category: selectedCategory !== 'All' ? (selectedCategory as any) : 'Intelligence & AI',
+      description: 'Click to edit description, context, or business rationale...',
+      free: false,
+      sub1: true,
+      sub2: true,
+      sub3: true
+    };
+    setFeatures(prev => [newItem, ...prev]);
+  };
+
+  const handleDeleteFeature = (id: string) => {
+    if (window.confirm('Delete this feature row from your matrix worksheet?')) {
+      setFeatures(prev => prev.filter(item => item.id !== id));
+    }
+  };
+
   const handleResetToDefaults = () => {
-    if (window.confirm('Reset all feature tier allocations back to baseline strategy defaults?')) {
+    if (window.confirm('Reset all feature titles, descriptions, and tier allocations back to baseline strategy defaults?')) {
       setFeatures(DEFAULT_FEATURES);
       localStorage.removeItem(STORAGE_KEY);
     }
@@ -239,10 +268,13 @@ export const FeatureMatrixWorksheet: React.FC = () => {
           <span className={styles.kicker}>Strategic Pricing &amp; Product Packaging</span>
           <h2>Subscription Feature Matrix Worksheet</h2>
           <p className={styles.subtitle}>
-            Interactive strategy tool to assign, test, and map features to subscription tiers (Free, Pro $49/mo, Executive $149/mo, B2B Advisory $499/mo).
+            Interactive strategy tool to edit feature titles, test tier assignments, and map features to subscription tiers (Free, Pro $49/mo, Executive $149/mo, B2B Advisory $499/mo).
           </p>
         </div>
         <div className={styles.headerActions}>
+          <button type="button" className={styles.secondaryBtn} onClick={handleAddCustomFeature}>
+            <Plus size={15} /> Add Custom Feature
+          </button>
           <button type="button" className={styles.secondaryBtn} onClick={handleResetToDefaults}>
             <RotateCcw size={15} /> Reset Defaults
           </button>
@@ -282,7 +314,7 @@ export const FeatureMatrixWorksheet: React.FC = () => {
         <table className={styles.matrixTable}>
           <thead>
             <tr>
-              <th className={styles.featureCol}>Feature &amp; Rationale</th>
+              <th className={styles.featureCol}>Editable Feature &amp; Rationale</th>
               <th className={styles.catCol}>Category</th>
               <th className={styles.tierCol}>
                 <div className={styles.tierHeader}>
@@ -308,14 +340,31 @@ export const FeatureMatrixWorksheet: React.FC = () => {
                   <small>$499 / month</small>
                 </div>
               </th>
+              <th className={styles.actionCol}>Action</th>
             </tr>
           </thead>
           <tbody>
             {filteredFeatures.map(item => (
               <tr key={item.id} className={styles.matrixRow}>
                 <td className={styles.featureCell}>
-                  <strong>{item.name}</strong>
-                  <p>{item.description}</p>
+                  <div className={styles.editableField}>
+                    <input
+                      type="text"
+                      className={styles.editableNameInput}
+                      value={item.name}
+                      onChange={(e) => handleUpdateName(item.id, e.target.value)}
+                      placeholder="Enter feature title..."
+                    />
+                  </div>
+                  <div className={styles.editableField}>
+                    <input
+                      type="text"
+                      className={styles.editableDescInput}
+                      value={item.description}
+                      onChange={(e) => handleUpdateDescription(item.id, e.target.value)}
+                      placeholder="Enter feature description or rationale..."
+                    />
+                  </div>
                 </td>
                 <td className={styles.catCell}>
                   <span className={styles.categoryBadge}>{item.category}</span>
@@ -339,6 +388,16 @@ export const FeatureMatrixWorksheet: React.FC = () => {
                   <div className={`${styles.checkbox} ${item.sub3 ? styles.checkedSub3 : ''}`}>
                     {item.sub3 && <Check size={14} />}
                   </div>
+                </td>
+                <td className={styles.actionCell}>
+                  <button
+                    type="button"
+                    className={styles.deleteBtn}
+                    onClick={() => handleDeleteFeature(item.id)}
+                    title="Delete Feature Row"
+                  >
+                    <Trash2 size={15} />
+                  </button>
                 </td>
               </tr>
             ))}
