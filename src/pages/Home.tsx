@@ -236,7 +236,7 @@ export const Home: React.FC = () => {
               <div className={styles.engineBadgesRow}>
                 <span className={styles.engineBadgeFast}>
                   <Sparkles size={14} style={{ color: 'var(--color-antique-gold)' }} />
-                  <strong>Hotel Search (AI)</strong>: Full-Site Intelligence &amp; Insider Report Match
+                  <strong>Hotel Search (AI)</strong>: Full-Site Intelligence
                 </span>
                 <span className={styles.engineBadgePro}>
                   <Globe size={14} style={{ color: '#38bdf8' }} />
