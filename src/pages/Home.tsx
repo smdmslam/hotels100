@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Award, Sparkles } from 'lucide-react';
 import { Container } from '../components/shared';
 import { AskDmwDrawer } from '../components/shared/AskDmwDrawer';
-import { getCollection, getIndexData } from '../data/api';
+import { getCollection, getIndexData, getAllHotels } from '../data/api';
 import styles from './Home.module.css';
 
 const PUBLIC_COLLECTIONS = [
@@ -25,6 +25,7 @@ const PUBLIC_COLLECTIONS = [
 export const Home: React.FC = () => {
   const [askDmwOpen, setAskDmwOpen] = useState(false);
   const indexData = getIndexData();
+  const totalHotelsCount = getAllHotels().length;
   const globalCollection = getCollection('the-global-100');
   const globalHotels = globalCollection?.hotels ?? [];
   const previewHotels = globalHotels.slice(0, 5);
@@ -54,11 +55,10 @@ export const Home: React.FC = () => {
         <Container variant="wide" className={styles.heroInner}>
           <div className={styles.heroLayout}>
             <div className={styles.heroCopy}>
-              <span className={styles.eyebrow}>{indexData.edition} Edition</span>
-              <h1 className={styles.heroTitle}>{indexData.title}</h1>
+              <span className={styles.eyebrow}>{indexData.edition} EDITION · {totalHotelsCount} EVALUATED ASSETS</span>
+              <h1 className={styles.heroTitle}>The Global Luxury Hotel Index</h1>
               <p className={styles.heroSubtitle}>
-                A global index of the hotels that best combine hospitality,
-                brand, pricing power and enduring asset value.
+                Evaluating {totalHotelsCount} trophy hotel properties across 10 operational dimensions, pricing power, and enduring asset value — anchored by the flagship Global 100.
               </p>
               <div className={styles.heroActions}>
                 <Link
