@@ -272,12 +272,23 @@ export const AskDmwDrawer: React.FC<AskDmwDrawerProps> = ({ isOpen, onClose, ini
                   onClick={onClose}
                 >
                   <div className={styles.resultHeader}>
-                    <span className={styles.resultName}>{hotel.name}</span>
-                    <span className={styles.resultRank}>No. {hotel.rank}</span>
+                    <div className={styles.resultTitleGroup}>
+                      <span className={styles.resultName}>{hotel.name}</span>
+                      <span className={styles.resultLocation}>
+                        {hotel.location.displayLocation} • {hotel.indicativeRate ? `$${hotel.indicativeRate.amount}/night` : 'Inquire for rate'}
+                      </span>
+                    </div>
+                    <div className={styles.scoreBadgeBox}>
+                      <span className={styles.scoreBadgeRank}>No. {hotel.rank}</span>
+                      {hotel.scores?.totalScore ? (
+                        <span className={styles.scoreBadgeNum}>
+                          <strong>{hotel.scores.totalScore.toFixed(1)}</strong> / 100
+                        </span>
+                      ) : (
+                        <span className={styles.scoreBadgeNum}>DMW Verified</span>
+                      )}
+                    </div>
                   </div>
-                  <span className={styles.resultLocation}>
-                    {hotel.location.displayLocation} • {hotel.indicativeRate ? `$${hotel.indicativeRate.amount}/night` : 'Inquire for rate'}
-                  </span>
                   <p className={styles.resultRationale}>
                     <strong>DMW Strategic Assessment:</strong> {hotel.dmwJudgement || `${hotel.archetype} asset delivering high proposition coherence for business and leisure.`}
                   </p>
