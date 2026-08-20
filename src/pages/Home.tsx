@@ -289,6 +289,28 @@ export const Home: React.FC = () => {
                 </div>
               </form>
 
+              <div className={styles.promptDotsBar} aria-label="Sample prompt carousel navigation">
+                <span className={styles.promptDotsLabel}>Prompts (1–20):</span>
+                <div className={styles.promptDotsRow}>
+                  {SAMPLE_PROMPTS_STRUCTURED.map((promptItem, idx) => (
+                    <button
+                      key={idx}
+                      type="button"
+                      className={`${styles.promptDot} ${idx === promptIndex ? styles.promptDotActive : ''}`}
+                      onClick={() => {
+                        setIsFading(true);
+                        setTimeout(() => {
+                          setPromptIndex(idx);
+                          setIsFading(false);
+                        }, 150);
+                      }}
+                      title={`Prompt ${idx + 1}: "${promptItem.raw}"`}
+                      aria-label={`Jump to sample prompt ${idx + 1}`}
+                    />
+                  ))}
+                </div>
+              </div>
+
               <div className={styles.promptPresetPills}>
                 <span className={styles.pillsLabel}>Sample Prompts:</span>
                 {[
