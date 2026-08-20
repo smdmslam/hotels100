@@ -287,7 +287,6 @@
 .resultCard {
   display: flex;
   flex-direction: column;
-  gap: 6px;
   padding: var(--space-5);
   border: 1px solid rgba(18, 18, 18, 0.16);
   background: #fff;
@@ -302,17 +301,20 @@
   transform: translateY(-1px);
 }
 
-.resultHeader {
+.resultCardBody {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-  gap: var(--space-4);
+  gap: var(--space-6);
+  width: 100%;
 }
 
-.resultTitleGroup {
+.resultMainContent {
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 4px;
+  flex: 1;
+  min-width: 0;
 }
 
 .resultName {

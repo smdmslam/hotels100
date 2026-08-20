@@ -271,12 +271,15 @@ export const AskDmwDrawer: React.FC<AskDmwDrawerProps> = ({ isOpen, onClose, ini
                   className={styles.resultCard}
                   onClick={onClose}
                 >
-                  <div className={styles.resultHeader}>
-                    <div className={styles.resultTitleGroup}>
+                  <div className={styles.resultCardBody}>
+                    <div className={styles.resultMainContent}>
                       <span className={styles.resultName}>{hotel.name}</span>
                       <span className={styles.resultLocation}>
                         {hotel.location.displayLocation} • {hotel.indicativeRate ? `$${hotel.indicativeRate.amount}/night` : 'Inquire for rate'}
                       </span>
+                      <p className={styles.resultRationale}>
+                        <strong>DMW Strategic Assessment:</strong> {hotel.dmwJudgement || `${hotel.archetype} asset delivering high proposition coherence for business and leisure.`}
+                      </p>
                     </div>
                     <div className={styles.scoreBadgeBox}>
                       <span className={styles.scoreBadgeRank}>No. {hotel.rank}</span>
@@ -289,9 +292,6 @@ export const AskDmwDrawer: React.FC<AskDmwDrawerProps> = ({ isOpen, onClose, ini
                       )}
                     </div>
                   </div>
-                  <p className={styles.resultRationale}>
-                    <strong>DMW Strategic Assessment:</strong> {hotel.dmwJudgement || `${hotel.archetype} asset delivering high proposition coherence for business and leisure.`}
-                  </p>
                 </Link>
               ))
             ) : (
