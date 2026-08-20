@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Award, Sparkles } from 'lucide-react';
+import { Award, Sparkles, Globe } from 'lucide-react';
 import { Container } from '../components/shared';
 import { AskDmwDrawer } from '../components/shared/AskDmwDrawer';
 import { getCollection, getIndexData, getAllHotels } from '../data/api';
@@ -235,10 +235,12 @@ export const Home: React.FC = () => {
 
               <div className={styles.engineBadgesRow}>
                 <span className={styles.engineBadgeFast}>
-                  ⚡ <strong>Hotel Search (AI)</strong>: Instant 10-Dimension Scorecard Match
+                  <Sparkles size={14} style={{ color: 'var(--color-antique-gold)' }} />
+                  <strong>Hotel Search (AI)</strong>: Full-Site Intelligence &amp; Insider Report Match
                 </span>
                 <span className={styles.engineBadgePro}>
-                  🌐 <strong>Hotel Search (AI Plus)</strong>: Live Web Search Synthesis &amp; Real-Time Context
+                  <Globe size={14} style={{ color: '#38bdf8' }} />
+                  <strong>Hotel Search (AI Plus)</strong>: Full-Site Search + Real-Time Live Web Synthesis
                 </span>
               </div>
             </div>

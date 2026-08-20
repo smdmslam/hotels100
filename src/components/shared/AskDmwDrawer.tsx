@@ -176,7 +176,7 @@ export const AskDmwDrawer: React.FC<AskDmwDrawerProps> = ({ isOpen, onClose, ini
                 onClick={() => setShowProTooltip(!showProTooltip)}
               >
                 <Globe size={13} style={{ color: 'var(--color-antique-gold)' }} />
-                <span>⚡ Hotel Search (AI Plus)</span>
+                <span>Hotel Search (AI Plus)</span>
               </button>
             </div>
 
