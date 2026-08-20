@@ -3,7 +3,7 @@ import { Navigate, useParams } from 'react-router-dom';
 import { Container } from '../components/shared';
 import { RankedHotelItem } from '../components/index/RankedHotelItem';
 import { AskDmwDrawer } from '../components/shared/AskDmwDrawer';
-import { getCollection } from '../data/api';
+import { getCollection, getAllHotels } from '../data/api';
 import styles from './CollectionIndex.module.css';
 
 const PRICE_BANDS = [
@@ -20,14 +20,22 @@ const AMENITIES = [
   { id: 'restaurant', label: 'Restaurant' },
 ];
 
+const normalizeText = (text: string) =>
+  text
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '') // remove diacritics
+    .replace(/[^a-zA-Z0-9\s]/g, '') // remove punctuation
+    .toLowerCase();
+
 export const CollectionIndex: React.FC = () => {
   const { slug = '' } = useParams<{ slug: string }>();
   const collection = getCollection(slug);
-  const allHotels = collection?.hotels ?? [];
+  const listHotels = collection?.hotels ?? [];
 
   const [askDmwOpen, setAskDmwOpen] = useState(false);
 
   const [search, setSearch] = useState('');
+  const [searchScope, setSearchScope] = useState<'list' | 'global'>('list');
   const [regionFilter, setRegionFilter] = useState('All regions');
   const [priceFilter, setPriceFilter] = useState('All prices');
   const [lensFilter, setLensFilter] = useState('All lenses');
@@ -54,6 +62,7 @@ export const CollectionIndex: React.FC = () => {
     }
 
     setSearch('');
+    setSearchScope('list');
     setRegionFilter('All regions');
     setPriceFilter('All prices');
     setLensFilter('All lenses');
@@ -63,47 +72,80 @@ export const CollectionIndex: React.FC = () => {
   }, [slug]);
 
   const regions = useMemo(
-    () => ['All regions', ...Array.from(new Set(allHotels.map((hotel) => hotel.location.region).filter(Boolean)))],
-    [allHotels],
+    () => ['All regions', ...Array.from(new Set(listHotels.map((hotel) => hotel.location.region).filter(Boolean)))],
+    [listHotels],
   );
 
   const lenses = useMemo(
-    () => ['All lenses', ...Array.from(new Set(allHotels.map((hotel) => hotel.strategicLens).filter(Boolean)))],
-    [allHotels],
+    () => ['All lenses', ...Array.from(new Set(listHotels.map((hotel) => hotel.strategicLens).filter(Boolean)))],
+    [listHotels],
   );
 
   const filteredHotels = useMemo(() => {
-    const query = search.trim().toLowerCase();
+    const queryRaw = search.trim();
+    const queryNorm = normalizeText(queryRaw);
     const selectedBand = PRICE_BANDS.find((band) => band.label === priceFilter);
+    const targetHotels = searchScope === 'global' ? getAllHotels() : listHotels;
 
-    return allHotels.filter((hotel) => {
-      const matchesSearch =
-        !query ||
-        hotel.name.toLowerCase().includes(query) ||
-        hotel.location.city.toLowerCase().includes(query) ||
-        hotel.location.displayLocation.toLowerCase().includes(query);
+    if (!queryNorm) {
+      return targetHotels.filter((hotel) => {
+        const matchesRegion = regionFilter === 'All regions' || hotel.location.region === regionFilter;
+        const rate = hotel.indicativeRate?.amount;
+        const matchesPrice = !selectedBand || selectedBand.label === 'All prices' || (typeof rate === 'number' && rate >= selectedBand.min && rate <= selectedBand.max);
+        const matchesLens = lensFilter === 'All lenses' || hotel.strategicLens === lensFilter;
+        const matchesAmenities = amenityFilters.every((amenityId) => hotel.essentialAmenities?.some((amenity) => amenity.id === amenityId && amenity.available === true));
 
-      const matchesRegion =
-        regionFilter === 'All regions' || hotel.location.region === regionFilter;
+        return matchesRegion && matchesPrice && matchesLens && matchesAmenities;
+      });
+    }
 
-      const rate = hotel.indicativeRate?.amount;
-      const matchesPrice =
-        !selectedBand ||
-        selectedBand.label === 'All prices' ||
-        (typeof rate === 'number' && rate >= selectedBand.min && rate <= selectedBand.max);
+    // High-precision weighted multi-attribute matching
+    const queryTokens = queryNorm.split(/\s+/).filter(Boolean);
 
-      const matchesLens =
-        lensFilter === 'All lenses' || hotel.strategicLens === lensFilter;
+    return targetHotels
+      .map((hotel) => {
+        const nameNorm = normalizeText(hotel.name);
+        const cityNorm = normalizeText(hotel.location.city);
+        const countryNorm = normalizeText(hotel.location.country);
+        const neighNorm = normalizeText(hotel.location.neighbourhood || '');
+        const brandNorm = normalizeText((hotel as any).identity?.brand || (hotel as any).identity?.operator || '');
+        const lensNorm = normalizeText(hotel.strategicLens || '');
+        const archNorm = normalizeText(hotel.archetype || '');
+        const amenitiesNorm = normalizeText((hotel.essentialAmenities || []).map(a => a.label).join(' '));
 
-      const matchesAmenities = amenityFilters.every((amenityId) =>
-        hotel.essentialAmenities?.some(
-          (amenity) => amenity.id === amenityId && amenity.available === true,
-        ),
-      );
+        let score = 0;
 
-      return matchesSearch && matchesRegion && matchesPrice && matchesLens && matchesAmenities;
-    });
-  }, [allHotels, search, regionFilter, priceFilter, lensFilter, amenityFilters]);
+        // Exact or starts-with name match (Highest priority)
+        if (nameNorm === queryNorm) score += 200;
+        else if (nameNorm.startsWith(queryNorm)) score += 120;
+        else if (nameNorm.includes(queryNorm)) score += 80;
+
+        // Token matches across multi-attribute layers
+        queryTokens.forEach((token) => {
+          if (nameNorm.includes(token)) score += 30;
+          if (neighNorm.includes(token)) score += 25;
+          if (cityNorm.includes(token)) score += 20;
+          if (countryNorm.includes(token)) score += 15;
+          if (brandNorm.includes(token)) score += 20;
+          if (archNorm.includes(token) || lensNorm.includes(token)) score += 10;
+          if (amenitiesNorm.includes(token)) score += 10;
+        });
+
+        // Filter constraints
+        const matchesRegion = regionFilter === 'All regions' || hotel.location.region === regionFilter;
+        const rate = hotel.indicativeRate?.amount;
+        const matchesPrice = !selectedBand || selectedBand.label === 'All prices' || (typeof rate === 'number' && rate >= selectedBand.min && rate <= selectedBand.max);
+        const matchesLens = lensFilter === 'All lenses' || hotel.strategicLens === lensFilter;
+        const matchesAmenities = amenityFilters.every((amenityId) => hotel.essentialAmenities?.some((amenity) => amenity.id === amenityId && amenity.available === true));
+
+        const isMatch = score > 0 && matchesRegion && matchesPrice && matchesLens && matchesAmenities;
+
+        return { hotel, score, isMatch };
+      })
+      .filter((item) => item.isMatch)
+      .sort((a, b) => b.score - a.score || a.hotel.rank - b.hotel.rank)
+      .map((item) => item.hotel);
+  }, [listHotels, search, searchScope, regionFilter, priceFilter, lensFilter, amenityFilters]);
 
   if (!collection) {
     return <Navigate to="/collections/the-global-100" replace />;
@@ -154,7 +196,7 @@ export const CollectionIndex: React.FC = () => {
               <span className={styles.asideLabel}>About this edition</span>
               <p className={styles.subtitle}>{collection.description}</p>
               <div className={styles.collectionMeta}>
-                <span>{allHotels.length} hotels</span>
+                <span>{listHotels.length} hotels</span>
                 <span>Independently assessed</span>
               </div>
             </div>
@@ -166,14 +208,32 @@ export const CollectionIndex: React.FC = () => {
         <Container variant="wide">
           <div className={styles.discoveryBar}>
             <label className={styles.searchField}>
-              <span className="visually-hidden">Search hotels or cities</span>
+              <span className="visually-hidden">Search hotels, cities, neighborhoods, or brands</span>
               <span className={styles.searchMark} aria-hidden="true">⌕</span>
               <input
                 type="search"
-                placeholder="Search hotels or cities"
+                placeholder={searchScope === 'list' ? `Search within ${collection.title}...` : 'Search full 326 DMW Global Database...'}
                 value={search}
                 onChange={(event) => setSearch(event.target.value)}
               />
+              <div className={styles.scopeSelectorPills}>
+                <button
+                  type="button"
+                  className={`${styles.scopePill} ${searchScope === 'list' ? styles.scopePillActive : ''}`}
+                  onClick={() => setSearchScope('list')}
+                  title={`Limit search to ${collection.title} (${listHotels.length} hotels)`}
+                >
+                  Current List ({listHotels.length})
+                </button>
+                <button
+                  type="button"
+                  className={`${styles.scopePill} ${searchScope === 'global' ? styles.scopePillActive : ''}`}
+                  onClick={() => setSearchScope('global')}
+                  title="Search across all 326 evaluated assets globally"
+                >
+                  Global 326
+                </button>
+              </div>
             </label>
 
             <div className={styles.discoveryActions}>
@@ -195,6 +255,19 @@ export const CollectionIndex: React.FC = () => {
               </button>
             </div>
           </div>
+
+          {search.trim() !== '' && filteredHotels.length === 0 && searchScope === 'list' && (
+            <div className={styles.globalSuggestBanner}>
+              <span>No matching hotels found in <strong>{collection.title}</strong> for "{search.trim()}".</span>
+              <button
+                type="button"
+                onClick={() => setSearchScope('global')}
+                className={styles.globalSuggestBtn}
+              >
+                Search "{search.trim()}" across full 326 DMW Global Database →
+              </button>
+            </div>
+          )}
 
           {filtersOpen && (
             <div className={styles.filterPanel}>
@@ -251,7 +324,7 @@ export const CollectionIndex: React.FC = () => {
         <Container variant="wide">
           <div className={styles.resultsHeader}>
             <span>
-              Showing <strong>{filteredHotels.length}</strong> of {allHotels.length} hotels
+              Showing <strong>{filteredHotels.length}</strong> of {searchScope === 'global' ? 326 : listHotels.length} hotels {searchScope === 'global' ? '(Global 326 Database)' : `in ${collection.title}`}
             </span>
             {activeFilterCount > 0 && (
               <button type="button" onClick={clearFilters}>Clear filters</button>
