@@ -67,11 +67,19 @@ const DEFAULT_FEATURES: FeatureMatrixItem[] = [
     free: false, sub1: true, sub2: true, sub3: true
   },
   {
-    id: 'pro-ai-web-synthesis',
-    name: 'Live Web Synthesis Engine (⚡ PRO AI WEB)',
+    id: 'hotel-search-ai',
+    name: 'Hotel Search (AI) — Proprietary Index Match',
     category: 'Intelligence & AI',
     status: 'existing',
-    description: 'Perplexity sonar live web synthesis combining site dataset with real-time web facts.',
+    description: 'Multi-layer matching across 326 trophy assets, 10 dimension scorecards, and 5-part insider reports.',
+    free: true, sub1: true, sub2: true, sub3: true
+  },
+  {
+    id: 'hotel-search-ai-plus',
+    name: 'Hotel Search (AI Plus) — Live Web Synthesis',
+    category: 'Intelligence & AI',
+    status: 'existing',
+    description: 'Real-time web search synthesis combining DMW dataset with live tariffs, event dates, and current facts.',
     free: false, sub1: true, sub2: true, sub3: true
   },
   {

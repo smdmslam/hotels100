@@ -167,7 +167,7 @@ export const AskDmwDrawer: React.FC<AskDmwDrawerProps> = ({ isOpen, onClose, ini
                 onClick={() => handleExecuteMatch(undefined, 'index')}
               >
                 <Sparkles size={13} />
-                RUN AI MATCH
+                Hotel Search (AI)
               </button>
 
               <button
@@ -176,7 +176,7 @@ export const AskDmwDrawer: React.FC<AskDmwDrawerProps> = ({ isOpen, onClose, ini
                 onClick={() => setShowProTooltip(!showProTooltip)}
               >
                 <Globe size={13} style={{ color: 'var(--color-antique-gold)' }} />
-                <span>⚡ PRO AI (WEB)</span>
+                <span>⚡ Hotel Search (AI Plus)</span>
               </button>
             </div>
 
@@ -184,14 +184,14 @@ export const AskDmwDrawer: React.FC<AskDmwDrawerProps> = ({ isOpen, onClose, ini
               <div className={styles.proTooltipCard}>
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 4 }}>
                   <strong style={{ fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--color-antique-gold)' }}>
-                    DMW Pro AI — Live Web Synthesis (Perplexity API)
+                    Hotel Search (AI Plus) — Live Web Synthesis
                   </strong>
                   <button
                     type="button"
                     onClick={() => handleExecuteMatch(undefined, 'pro')}
                     style={{ fontSize: '10px', padding: '3px 8px', border: 0, background: 'var(--color-antique-gold)', color: 'var(--color-ink)', fontWeight: 700, cursor: 'pointer' }}
                   >
-                    Test Pro Web Match →
+                    Run AI Plus Match →
                   </button>
                 </div>
                 <p style={{ margin: 0, fontSize: '12px', color: 'var(--color-charcoal)', lineHeight: 1.45 }}>

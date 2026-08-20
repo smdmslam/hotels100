@@ -235,10 +235,10 @@ export const Home: React.FC = () => {
 
               <div className={styles.engineBadgesRow}>
                 <span className={styles.engineBadgeFast}>
-                  ⚡ <strong>Fast AI</strong>: Instant 10-Dimension Scorecard Match
+                  ⚡ <strong>Hotel Search (AI)</strong>: Instant 10-Dimension Scorecard Match
                 </span>
                 <span className={styles.engineBadgePro}>
-                  🌐 <strong>Pro AI Web</strong>: Live Web Synthesis &amp; Availability
+                  🌐 <strong>Hotel Search (AI Plus)</strong>: Live Web Search Synthesis &amp; Real-Time Context
                 </span>
               </div>
             </div>
